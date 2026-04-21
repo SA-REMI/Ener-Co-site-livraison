@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#14181d">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <title>Engagements de direction · qualité, sécurité, environnement | Ener-Co</title>
+  <meta name="description" content="Engagements de la direction Ener-Co : qualité des prestations, prévention SSE, responsabilité environnementale, éthique, compétences et amélioration continue. Cohérent MASE et ISO 9001.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ener-Co">
+  <meta property="og:title" content="Engagements de direction · Ener-Co">
+  <meta property="og:description" content="Qualité, prévention, responsabilité environnementale et amélioration continue. Engagements de la direction Ener-Co.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="Ener-Co · Accueil">
+        <img src="assets/enerco-logo.png" alt="Ener-Co">
+      </a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="expertise.html" data-i18n="nav.expertise">Expertise</a>
+        <a href="realisations.html" data-i18n="nav.realisations">Réalisations</a>
+        <a href="secteurs.html" data-i18n="nav.secteurs">Secteurs</a>
+        <a href="engagements.html" data-i18n="nav.engagements" class="is-active">Engagements</a>
+        <a href="references.html" data-i18n="nav.references">Références</a>
+        <a href="recrutement.html" data-i18n="nav.recrutement">Recrutement</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="header-meta">
+        <a href="tel:+33426076779" class="header-phone" aria-label="+33 4 26 07 67 79">+33 (0)4 26 07 67 79</a>
+        <div class="lang-switch">
+          <button type="button" class="lang-trigger" aria-haspopup="listbox" aria-expanded="false" aria-label="Langue">
+            <span class="lang-current">FR</span>
+            <svg class="lang-caret" viewBox="0 0 10 10" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3.5L5 6.5L8 3.5"/></svg>
+          </button>
+          <div class="lang-menu" role="listbox">
+            <button type="button" data-lang="fr" role="option"><span>Français</span><span class="lang-code">FR</span></button>
+            <button type="button" data-lang="en" role="option"><span>English</span><span class="lang-code">EN</span></button>
+            <button type="button" data-lang="it" role="option"><span>Italiano</span><span class="lang-code">IT</span></button>
+          </div>
+        </div>
+        <a href="contact.html" class="header-cta" data-i18n="nav.cta">Nous consulter</a>
+        <a href="tel:+33426076779" class="header-mobile-tel" aria-label="Appeler Ener-Co">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+        <button type="button" class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="burger__lines" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="backdrop" aria-hidden="true"></div>
+  <aside id="mobile-drawer" class="mobile-drawer" aria-label="Menu mobile" aria-hidden="true">
+    <nav aria-label="Navigation mobile">
+      <a href="index.html">Accueil</a>
+      <a href="expertise.html">Expertise</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="secteurs.html">Secteurs</a>
+      <a href="engagements.html">Engagements</a>
+      <a href="references.html">Références</a>
+      <a href="recrutement.html">Recrutement</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile-drawer__footer">
+      <a href="tel:+33426076779" class="mobile-drawer__tel">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +33 (0)4 26 07 67 79
+      </a>
+      <div class="mobile-drawer__lang" role="group" aria-label="Langue">
+        <button type="button" data-lang="fr" class="is-active">FR</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="it">IT</button>
+      </div>
+      <a href="contact.html" class="mobile-drawer__cta">Nous consulter</a>
+    </div>
+  </aside>
+
+  <main class="main" id="main">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="page-hero__breadcrumb" aria-label="Fil d'ariane">
+          <a href="index.html" data-i18n="eng.bc.home">Accueil</a>
+          <span class="sep">/</span>
+          <span class="current" data-i18n="eng.bc.current">Engagements</span>
+        </nav>
+
+        <div class="page-hero__copy">
+          <span class="eyebrow" data-i18n="eng.hero.eyebrow">Politique de direction</span>
+          <h1 data-i18n="eng.hero.h1">Qualité, prévention, responsabilité et amélioration continue.</h1>
+          <p class="page-hero__lede" data-i18n="eng.hero.lede">La direction d'Ener-Co inscrit ses engagements dans une logique de qualité, de prévention SSE, de maîtrise opérationnelle, de responsabilité environnementale et d'amélioration continue — adaptée à la réalité de nos interventions sur sites techniques et industriels sensibles.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO BAND -->
+    <section class="engage-intro-band">
+      <div class="container">
+        <div class="engage-intro-band__grid">
+          <span class="engage-intro-band__label" data-i18n="eng.intro.label">En résumé</span>
+          <div class="engage-intro-band__text">
+            <p data-i18n="eng.intro.p1">Dans le cadre de ses activités en distribution d'énergie industrielle, Ener-Co structure son fonctionnement autour d'exigences claires&nbsp;: sécurité des personnes, qualité d'exécution, conformité réglementaire, satisfaction client, développement des compétences et suivi de la performance.</p>
+            <p data-i18n="eng.intro.p2">Cette démarche s'appuie sur des principes cohérents avec les exigences d'un management structuré de la qualité et de la prévention SSE, adaptés à la réalité de nos interventions sur sites techniques et industriels sensibles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOMMAIRE (TOC) -->
+    <nav class="engage-toc" aria-label="Sommaire">
+      <div class="container">
+        <ul class="engage-toc__list">
+          <li><a href="#s-direction"><span>01</span><span data-i18n="eng.toc.01">Engagement direction</span></a></li>
+          <li><a href="#s-qualite"><span>02</span><span data-i18n="eng.toc.02">Qualité</span></a></li>
+          <li><a href="#s-securite"><span>03</span><span data-i18n="eng.toc.03">Santé &amp; sécurité</span></a></li>
+          <li><a href="#s-technique"><span>04</span><span data-i18n="eng.toc.04">Maîtrise technique</span></a></li>
+          <li><a href="#s-equipes"><span>05</span><span data-i18n="eng.toc.05">Compétences</span></a></li>
+          <li><a href="#s-environnement"><span>06</span><span data-i18n="eng.toc.06">Environnement</span></a></li>
+          <li><a href="#s-ethique"><span>07</span><span data-i18n="eng.toc.07">Éthique</span></a></li>
+          <li><a href="#s-territoire"><span>08</span><span data-i18n="eng.toc.08">Territoire</span></a></li>
+          <li><a href="#s-pilotage"><span>09</span><span data-i18n="eng.toc.09">Pilotage</span></a></li>
+          <li><a href="#s-deploiement"><span>10</span><span data-i18n="eng.toc.10">Déploiement</span></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 01 · ENGAGEMENT DIRECTION -->
+    <section class="section" id="s-direction">
+      <span class="engage-anchor"></span>
+      <div class="container">
+        <header class="section-header">
+          <div class="section-header__title">
+            <span class="eyebrow" data-i18n="eng.s1.eyebrow">01 · Direction</span>
+            <h2 data-i18n="eng.s1.title">Engagement de la direction.</h2>
+          </div>
+          <p class="section-header__intro" data-i18n="eng.s1.intro">La direction définit, porte et revoit régulièrement les engagements de l'entreprise afin de garantir la cohérence entre les objectifs fixés, les moyens engagés et les résultats attendus.</p>
+        </header>
+
+        <div class="engage-grid-3">
+          <article class="engage-card">
+            <span class="engage-num">01</span>
+            <h3 data-i18n="eng.s1.c1.h">Sécurité des personnes</h3>
+            <p data-i18n="eng.s1.c1.p">Assurer la sécurité et préserver la santé des collaborateurs, des intervenants et des tiers.</p>
+          </article>
+          <article class="engage-card">
+            <span class="engage-num">02</span>
+            <h3 data-i18n="eng.s1.c2.h">Conformité et fiabilité</h3>
+            <p data-i18n="eng.s1.c2.p">Garantir la conformité, la qualité et la fiabilité des prestations réalisées.</p>
+          </article>
+          <article class="engage-card">
+            <span class="engage-num">03</span>
+            <h3 data-i18n="eng.s1.c3.h">Moyens adaptés</h3>
+            <p data-i18n="eng.s1.c3.p">Mettre à disposition les moyens humains, techniques et organisationnels adaptés aux interventions.</p>
+          </article>
+          <article class="engage-card">
+            <span class="engage-num">04</span>
+            <h3 data-i18n="eng.s1.c4.h">Prévention intégrée</h3>
+            <p data-i18n="eng.s1.c4.p">Intégrer la prévention des risques, la protection de l'environnement et la maîtrise des impacts dans les activités.</p>
+          </article>
+          <article class="engage-card">
+            <span class="engage-num">05</span>
+            <h3 data-i18n="eng.s1.c5.h">Compétences et implication</h3>
+            <p data-i18n="eng.s1.c5.p">Développer les compétences, l'implication et la responsabilisation des équipes.</p>
+          </article>
+          <article class="engage-card">
+            <span class="engage-num">06</span>
+            <h3 data-i18n="eng.s1.c6.h">Amélioration continue</h3>
+            <p data-i18n="eng.s1.c6.p">Retour d'expérience, suivi d'indicateurs et pilotage des actions structurent la progression de l'entreprise.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 · QUALITÉ -->
+    <section class="section section--alt" id="s-qualite">
+      <span class="engage-anchor"></span>
+      <div class="container">
+        <header class="section-header">
+          <div class="section-header__title">
+            <span class="eyebrow" data-i18n="eng.s2.eyebrow">02 · Qualité</span>
+            <h2 data-i18n="eng.s2.title">Qualité des prestations et satisfaction client.</h2>
+          </div>
+          <p class="section-header__intro" data-i18n="eng.s2.intro">Ener-Co s'engage à fournir des prestations conformes aux exigences de ses clients, aux normes applicables, aux contraintes techniques des sites et aux règles internes de l'entreprise.</p>
+        </header>
+
+        <div class="engage-two-col">
+          <div class="engage-two-col__text">
+            <p data-i18n="eng.s2.p1">Cette exigence repose sur la préparation, la maîtrise des interfaces, l'adaptation des moyens et le contrôle de l'exécution tout au long du chantier.</p>
+            <p data-i18n="eng.s2.p2">Les retours clients et les constats terrain sont intégrés à la démarche pour alimenter l'amélioration continue des pratiques.</p>
+          </div>
+
+          <div class="engage-checklist-wrap">
+            <ul class="engage-checklist">
+              <li data-i18n="eng.s2.cl1">Clarification du besoin et du périmètre d'intervention.</li>
+              <li data-i18n="eng.s2.cl2">Préparation des opérations en amont du chantier.</li>
+              <li data-i18n="eng.s2.cl3">Maîtrise des interfaces techniques et organisationnelles.</li>
+              <li data-i18n="eng.s2.cl4">Adaptation des moyens aux travaux réalisés.</li>
+              <li data-i18n="eng.s2.cl5">Contrôle de l'exécution et vérification des points sensibles.</li>
+              <li data-i18n="eng.s2.cl6">Prise en compte des retours clients et des constats terrain.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="engage-callout" data-i18n="eng.s2.callout"><strong>La satisfaction client</strong> constitue un indicateur essentiel de la performance de l'entreprise et alimente l'amélioration continue de ses pratiques.</div>
+      </div>
+    </section>
+
+    <!-- 03 · SANTÉ & SÉCURITÉ — dark section, 8-tile grid -->
+    <section class="section engage-dark" id="s-securite">
+      <span class="engage-anchor"></span>
+      <div class="container">
+        <header class="section-header">
+          <div class="section-header__title">
+            <span class="eyebrow" data-i18n="eng.s3.eyebrow">03 · Santé &amp; sécurité</span>
+            <h2 data-i18n="eng.s3.title">Prévention et maîtrise des risques.</h2>
+          </div>
+          <p class="section-header__intro" data-i18n="eng.s3.intro">La prévention des risques constitue une priorité absolue au regard de la nature des activités de l'entreprise, notamment sur des environnements techniques, industriels ou sensibles.</p>
+        </header>
+
+        <div class="engage-dark-grid">
+          <div class="engage-dark-tile">
+            <span class="engage-dark-tile__num">01</span>
+            <p data-i18n="eng.s3.t1">Identification, évaluation et mise à jour continue des risques.</p>
+          </div>
+          <div class="engage-dark-tile">
+            <span class="engage-dark-tile__num">02</span>
+            <p data-i18n="eng.s3.t2">Préparation des interventions et analyse préalable des conditions de travail.</p>
+          </div>
+          <div class="engage-dark-tile">
+            <span class="engage-dark-tile__num">03</span>
+            <p data-i18n="eng.s3.t3">Plans de prévention, PPSPS et documents applicables à chaque chantier.</p>
+          </div>
+          <div class="engage-dark-tile">
+            <span class="engage-dark-tile__num">04</span>
+            <p data-i18n="eng.s3.t4">Procédures de consignation, vérification d'absence de tension et sécurisation des interventions.</p>
+          </div>
+          <div class="engage-dark-tile">
+            <span class="engage-dark-tile__num">05</span>
+            <p data-i18n="eng.s3.t5">Suivi des habilitations, autorisations et formations obligatoires.</p>
+          </div>
+          <div class="engage-dark-tile">
+            <span class="engage-dark-tile__num">06</span>
+            <p data-i18n="eng.s3.t6">Organisation des causeries sécurité et des temps de mise au travail.</p>
+          </div>
+          <div class="engage-dark-tile">
+            <span class="engage-dark-tile__num">07</span>
+            <p data-i18n="eng.s3.t7">Analyse des incidents, situations dangereuses et presqu'accidents.</p>
+          </div>
+          <div class="engage-dark-tile">
+            <span class="engage-dark-tile__num">08</span>
+            <p data-i18n="eng.s3.t8">Déploiement d'actions correctives et préventives adaptées.</p>
+          </div>
+        </div>
+
+        <div class="engage-dark-footer" data-i18n="eng.s3.footer">L'entreprise veille également à intégrer les facteurs organisationnels et humains dans l'analyse des situations de travail, afin de renforcer la maîtrise réelle des risques sur le terrain.</div>
+      </div>
+    </section>
+
+    <!-- 04 · MAÎTRISE TECHNIQUE -->
+    <section class="section" id="s-technique">
+      <span class="engage-anchor"></span>
+      <div class="container">
+        <header class="section-header">
+          <div class="section-header__title">
+            <span class="eyebrow" data-i18n="eng.s4.eyebrow">04 · Technique</span>
+            <h2 data-i18n="eng.s4.title">Maîtrise des interventions techniques.</h2>
+          </div>
+          <p class="section-header__intro" data-i18n="eng.s4.intro">Les interventions d'Ener-Co — HTA, TGBT, tableaux, gaines à barres et raccordements de puissance — sont réalisées dans un cadre de maîtrise technique exigeant, adossé à la préparation, l'expérience terrain et le retour d'expérience systématique.</p>
+        </header>
+
+        <div class="engage-two-col engage-two-col--reverse">
+          <div class="engage-checklist-wrap">
+            <ul class="engage-checklist">
+              <li data-i18n="eng.s4.cl1">Définir les méthodes d'intervention adaptées au contexte du chantier.</li>
+              <li data-i18n="eng.s4.cl2">Vérifier l'adéquation des équipements, outillages et moyens de levage ou de manutention.</li>
+              <li data-i18n="eng.s4.cl3">Maîtriser les travaux en hauteur, les manutentions et les interfaces avec les installations existantes.</li>
+              <li data-i18n="eng.s4.cl4">Prendre en compte les exigences spécifiques des sites en exploitation ou réglementés.</li>
+              <li data-i18n="eng.s4.cl5">Sécuriser les phases de raccordement, de contrôle et de mise sous tension.</li>
+              <li data-i18n="eng.s4.cl6">Garantir une exécution lisible, fiable et conforme aux attentes du client.</li>
+            </ul>
+          </div>
+
+          <div class="engage-two-col__text">
+            <p data-i18n="eng.s4.p1">Chaque chantier fait l'objet d'une préparation dédiée&nbsp;: analyse du contexte, définition des méthodes, vérification des moyens, validation des interfaces avec les installations existantes.</p>
+            <p data-i18n="eng.s4.p2">Les phases critiques — raccordement, contrôle et mise sous tension — sont conduites dans un cadre formalisé, en lien direct avec les équipes d'exploitation du site.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 · COMPÉTENCES & ÉQUIPES -->
+    <section class="section section--alt" id="s-equipes">
+      <span class="engage-anchor"></span>
+      <div class="container">
+        <header class="section-header">
+          <div class="section-header__title">
+            <span class="eyebrow" data-i18n="eng.s5.eyebrow">05 · Équipes</span>
+            <h2 data-i18n="eng.s5.title">Compétences, conditions de travail et implication.</h2>
+          </div>
+          <p class="section-header__intro" data-i18n="eng.s5.intro">Ener-Co considère que la qualité durable des prestations dépend directement des compétences, des conditions de travail et du niveau d'implication des équipes.</p>
+        </header>
+
+        <div class="engage-two-col">
+          <div class="engage-two-col__text">
+            <p data-i18n="eng.s5.p1">L'organisation du travail est adaptée aux contraintes réelles des chantiers, la transmission des pratiques encouragée et la remontée d'informations terrain favorisée.</p>
+            <p data-i18n="eng.s5.p2">Chaque intervention est l'occasion de faire progresser les savoir-faire collectifs : retours d'expérience formalisés, habilitations suivies, montée en compétence accompagnée.</p>
+          </div>
+
+          <div class="engage-checklist-wrap">
+            <ul class="engage-checklist">
+              <li data-i18n="eng.s5.cl1">Maintenir à jour les habilitations et qualifications nécessaires.</li>
+              <li data-i18n="eng.s5.cl2">Organiser les formations réglementaires et techniques utiles.</li>
+              <li data-i18n="eng.s5.cl3">Développer les savoir-faire liés aux métiers de la distribution d'énergie.</li>
+              <li data-i18n="eng.s5.cl4">Favoriser la transmission des pratiques et des retours d'expérience.</li>
+              <li data-i18n="eng.s5.cl5">Limiter les situations de pénibilité lorsque cela est possible.</li>
+              <li data-i18n="eng.s5.cl6">Encourager la participation des collaborateurs à l'amélioration des pratiques.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="engage-callout" data-i18n="eng.s5.callout"><strong>Chaque collaborateur</strong> est acteur de la sécurité, de la qualité et de la progression collective.</div>
+      </div>
+    </section>
+
+    <!-- 06 + 07 · ENVIRONNEMENT & ÉTHIQUE -->
+    <section class="section" id="s-environnement">
+      <span class="engage-anchor"></span>
+      <div class="container">
+        <header class="section-header">
+          <div class="section-header__title">
+            <span class="eyebrow" data-i18n="eng.s67.eyebrow">06 + 07 · Responsabilités</span>
+            <h2 data-i18n="eng.s67.title">Environnement &amp; éthique de conduite.</h2>
+          </div>
+          <p class="section-header__intro" data-i18n="eng.s67.intro">Deux socles parallèles de la démarche Ener-Co&nbsp;: la maîtrise des impacts environnementaux et la loyauté professionnelle dans les relations avec les clients, fournisseurs et tiers.</p>
+        </header>
+
+        <div class="engage-split">
+          <article class="engage-split__col" id="s-environnement-col">
+            <span class="engage-split__eyebrow" data-i18n="eng.s6.eyebrow">06 · Environnement</span>
+            <h3 class="engage-split__title" data-i18n="eng.s6.title">Responsabilité environnementale.</h3>
+            <p class="engage-split__text" data-i18n="eng.s6.text">Consciente des impacts liés à ses activités, Ener-Co intègre la dimension environnementale dans la préparation, la réalisation et le suivi de ses interventions.</p>
+            <ul>
+              <li data-i18n="eng.s6.l1">Prévenir les pollutions et limiter les impacts environnementaux.</li>
+              <li data-i18n="eng.s6.l2">Trier les déchets de chantier et les orienter vers des filières adaptées.</li>
+              <li data-i18n="eng.s6.l3">Maîtriser l'utilisation, le stockage et la manutention des produits à risque.</li>
+              <li data-i18n="eng.s6.l4">Réduire l'impact des déplacements par une organisation adaptée.</li>
+              <li data-i18n="eng.s6.l5">Suivre les indicateurs pertinents (déplacements, consommations).</li>
+              <li data-i18n="eng.s6.l6">Sensibiliser les équipes aux bonnes pratiques environnementales.</li>
+            </ul>
+          </article>
+
+          <article class="engage-split__col" id="s-ethique">
+            <span class="engage-split__eyebrow" data-i18n="eng.s7.eyebrow">07 · Éthique &amp; conformité</span>
+            <h3 class="engage-split__title" data-i18n="eng.s7.title">Conduite professionnelle et achats responsables.</h3>
+            <p class="engage-split__text" data-i18n="eng.s7.text">Ener-Co conduit ses activités dans le respect des réglementations applicables, des exigences contractuelles et des principes de loyauté professionnelle.</p>
+            <ul>
+              <li data-i18n="eng.s7.l1">Respecter le cadre réglementaire applicable aux activités.</li>
+              <li data-i18n="eng.s7.l2">Assurer une veille sur les exigences pertinentes pour l'entreprise.</li>
+              <li data-i18n="eng.s7.l3">Adopter une conduite éthique dans les relations commerciales et opérationnelles.</li>
+              <li data-i18n="eng.s7.l4">Protéger la confidentialité des informations, notamment sur sites sensibles.</li>
+              <li data-i18n="eng.s7.l5">Intégrer des critères de conformité et de fiabilité dans le choix des fournisseurs.</li>
+              <li data-i18n="eng.s7.l6">Promouvoir des relations de travail claires, responsables et durables.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 · ANCRAGE TERRITORIAL — 4 compact tiles -->
+    <section class="section section--alt" id="s-territoire">
+      <span class="engage-anchor"></span>
+      <div class="container">
+        <header class="section-header">
+          <div class="section-header__title">
+            <span class="eyebrow" data-i18n="eng.s8.eyebrow">08 · Territoire</span>
+            <h2 data-i18n="eng.s8.title">Ancrage territorial et responsabilité économique.</h2>
+          </div>
+          <p class="section-header__intro" data-i18n="eng.s8.intro">Ener-Co contribue, à son niveau, au développement économique des territoires dans lesquels elle intervient.</p>
+        </header>
+
+        <div class="engage-tiles">
+          <article class="engage-tile">
+            <span class="engage-tile__badge">01</span>
+            <h3 data-i18n="eng.s8.t1.h">Emploi local</h3>
+            <p data-i18n="eng.s8.t1.p">Maintien et développement de l'emploi dans nos régions d'intervention.</p>
+          </article>
+          <article class="engage-tile">
+            <span class="engage-tile__badge">02</span>
+            <h3 data-i18n="eng.s8.t2.h">Partenaires locaux</h3>
+            <p data-i18n="eng.s8.t2.p">Recours à des fournisseurs et partenaires locaux lorsque cela est pertinent.</p>
+          </article>
+          <article class="engage-tile">
+            <span class="engage-tile__badge">03</span>
+            <h3 data-i18n="eng.s8.t3.h">Tissu économique</h3>
+            <p data-i18n="eng.s8.t3.p">Inscription durable de l'entreprise dans son environnement économique.</p>
+          </article>
+          <article class="engage-tile">
+            <span class="engage-tile__badge">04</span>
+            <h3 data-i18n="eng.s8.t4.h">Équilibre durable</h3>
+            <p data-i18n="eng.s8.t4.p">Recherche d'un équilibre entre performance, responsabilité et pérennité.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09 · PILOTAGE — process flow -->
+    <section class="section" id="s-pilotage">
+      <span class="engage-anchor"></span>
+      <div class="container">
+        <header class="section-header">
+          <div class="section-header__title">
+            <span class="eyebrow" data-i18n="eng.s9.eyebrow">09 · Pilotage</span>
+            <h2 data-i18n="eng.s9.title">Indicateurs, revues et amélioration continue.</h2>
+          </div>
+          <p class="section-header__intro" data-i18n="eng.s9.intro">Les engagements de l'entreprise sont suivis dans une logique de pilotage et d'amélioration continue. Mesurer, analyser, décider, vérifier.</p>
+        </header>
+
+        <div class="engage-process">
+          <div class="engage-process__pills">
+            <article class="engage-process__pill">
+              <h4 data-i18n="eng.s9.p1.h">Sécurité</h4>
+              <p data-i18n="eng.s9.p1.p">Accidents, incidents, situations dangereuses, actions de prévention.</p>
+            </article>
+            <article class="engage-process__pill">
+              <h4 data-i18n="eng.s9.p2.h">Compétences</h4>
+              <p data-i18n="eng.s9.p2.p">Formations réalisées, habilitations suivies, besoins identifiés.</p>
+            </article>
+            <article class="engage-process__pill">
+              <h4 data-i18n="eng.s9.p3.h">Qualité</h4>
+              <p data-i18n="eng.s9.p3.p">Retours d'expérience, écarts, actions correctives.</p>
+            </article>
+            <article class="engage-process__pill">
+              <h4 data-i18n="eng.s9.p4.h">Environnement</h4>
+              <p data-i18n="eng.s9.p4.p">Déplacements, consommations, gestion des déchets.</p>
+            </article>
+            <article class="engage-process__pill">
+              <h4 data-i18n="eng.s9.p5.h">Performance</h4>
+              <p data-i18n="eng.s9.p5.p">Efficacité globale des dispositifs mis en place.</p>
+            </article>
+          </div>
+
+          <div class="engage-process__divider" aria-hidden="true" data-i18n="eng.s9.divider">Alimentent</div>
+
+          <div class="engage-process__flow">
+            <div class="engage-process__step"><span>A</span><span data-i18n="eng.s9.f1">Revues internes</span></div>
+            <div class="engage-process__step"><span>B</span><span data-i18n="eng.s9.f2">Audits et vérifications</span></div>
+            <div class="engage-process__step"><span>C</span><span data-i18n="eng.s9.f3">REX chantier</span></div>
+            <div class="engage-process__step"><span>D</span><span data-i18n="eng.s9.f4">Plans d'actions</span></div>
+            <div class="engage-process__step"><span>E</span><span data-i18n="eng.s9.f5">Actualisation des priorités</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 · DÉPLOIEMENT -->
+    <section class="section section--alt" id="s-deploiement">
+      <span class="engage-anchor"></span>
+      <div class="container">
+        <header class="section-header">
+          <div class="section-header__title">
+            <span class="eyebrow" data-i18n="eng.s10.eyebrow">10 · Déploiement</span>
+            <h2 data-i18n="eng.s10.title">Une politique portée par la direction, vécue sur les chantiers.</h2>
+          </div>
+          <p class="section-header__intro" data-i18n="eng.s10.intro">La politique d'engagements s'applique à l'ensemble des activités d'Ener-Co&nbsp;: elle est relayée dans l'organisation quotidienne des chantiers et déclinée dans les pratiques de préparation, d'exécution, de contrôle et de retour d'expérience.</p>
+        </header>
+
+        <div class="engage-manifesto">
+          <p class="engage-manifesto__lead" data-i18n="eng.s10.lead">Son efficacité repose sur cinq principes&nbsp;: la compréhension des enjeux, la cohérence des responsabilités, l'appropriation par les équipes, la constance dans l'application, et la capacité de l'entreprise à progresser dans le temps.</p>
+
+          <div class="engage-manifesto__pillars">
+            <div class="engage-manifesto__pillar">
+              <span>01</span>
+              <p data-i18n="eng.s10.p1">Compréhension des enjeux</p>
+            </div>
+            <div class="engage-manifesto__pillar">
+              <span>02</span>
+              <p data-i18n="eng.s10.p2">Cohérence des responsabilités</p>
+            </div>
+            <div class="engage-manifesto__pillar">
+              <span>03</span>
+              <p data-i18n="eng.s10.p3">Appropriation par les équipes</p>
+            </div>
+            <div class="engage-manifesto__pillar">
+              <span>04</span>
+              <p data-i18n="eng.s10.p4">Constance dans l'application</p>
+            </div>
+            <div class="engage-manifesto__pillar">
+              <span>05</span>
+              <p data-i18n="eng.s10.p5">Capacité à progresser dans le temps</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final">
+      <div class="container">
+        <div class="cta-final__inner">
+          <div>
+            <span class="eyebrow" data-i18n="eng.cta.eyebrow">Contact</span>
+            <h2 data-i18n="eng.cta.h2">Échangeons sur nos engagements et vos exigences de site.</h2>
+            <p data-i18n="eng.cta.p">Ener-Co intervient dans des environnements où sécurité, maîtrise technique, qualité d'exécution et responsabilité ne peuvent pas être dissociées.</p>
+          </div>
+          <div class="cta-final__actions">
+            <div class="cta-final__actions-row">
+              <a href="contact.html" class="button button--accent"><span data-i18n="eng.cta.btn1">Nous contacter</span> <span class="arrow" aria-hidden="true">→</span></a>
+              <a href="realisations.html" class="button button--ghost-dark" data-i18n="eng.cta.btn2">Voir les réalisations</a>
+            </div>
+            <div class="cta-final__contact">
+              <span data-i18n="eng.cta.label">Direction commerciale</span>
+              <span>+33 (0)4 26 07 67 79 · contact@ener-co.fr</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/enerco-logo.png" alt="Ener-Co">
+          <p data-i18n="footer.brand">Ener-Co est une société française spécialisée dans la distribution d'énergie industrielle : HTA, TGBT, tableaux, gaines à barres et raccordements puissance sur sites techniques sensibles.</p>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.nav.title">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="expertise.html" data-i18n="nav.expertise">Expertise</a></li>
+            <li><a href="realisations.html" data-i18n="nav.realisations">Réalisations</a></li>
+            <li><a href="secteurs.html" data-i18n="nav.secteurs">Secteurs</a></li>
+            <li><a href="engagements.html" data-i18n="nav.engagements">Engagements</a></li>
+            <li><a href="references.html" data-i18n="nav.references">Références</a></li>
+            <li><a href="recrutement.html" data-i18n="nav.recrutement">Recrutement</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.office.title">Siège social</h4>
+          <address>
+            Ener-Co SAS<br>
+            11 rue Sigmund Freud<br>
+            69120 Vaulx-en-Velin · France<br>
+            <a href="tel:+33426076779">+33 (0)4 26 07 67 79</a><br>
+            <a href="mailto:contact@ener-co.fr">contact@ener-co.fr</a>
+          </address>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.company.title">Société</h4>
+          <ul>
+            <li>Certification MASE</li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__legal">
+        <h4 data-i18n="footer.legal.title">Mentions légales</h4>
+        <ul class="footer__legal-grid">
+          <li><span data-i18n="footer.legal.company">Ener-Co SAS · Société par actions simplifiée</span></li>
+          <li><span data-i18n="footer.legal.capital">Capital social : 45 000 €</span></li>
+          <li><span data-i18n="footer.legal.rcs">RCS Lyon 809 073 992</span></li>
+          <li><span data-i18n="footer.legal.siret">SIRET : 809 073 992 00012</span></li>
+          <li><span data-i18n="footer.legal.tva">TVA intracom. : FR09 809073992</span></li>
+          <li><span data-i18n="footer.legal.ape">Code APE : 43.21A</span></li>
+          <li><span data-i18n="footer.legal.director">Responsable de la publication : Direction Ener-Co</span></li>
+        </ul>
+        <p class="footer__trademarks" data-i18n="footer.trademarks">Les marques et logos affichés sont la propriété de leurs titulaires respectifs.</p>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> Ener-Co SAS · <span data-i18n="footer.rights">Tous droits réservés.</span></span>
+        <div class="footer__links">
+          <a href="#" data-i18n="footer.legal1">Mentions légales</a>
+          <a href="#" data-i18n="footer.legal2">Politique de confidentialité</a>
+          <a href="#" data-i18n="footer.legal3">CGV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
