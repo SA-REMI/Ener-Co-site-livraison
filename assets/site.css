@@ -1542,12 +1542,16 @@ p { font-size: 1rem; color: var(--muted); }
 }
 .case-frame:hover img { transform: scale(1.03); }
 
-/* Gallery 6 photos légendées — case Poste HTA */
+/* Gallery 6 photos légendées — case Poste HTA
+   4 colonnes pour aligner la taille sur les autres cases (mosaic--4) ;
+   si 6 photos, les 2 dernières sont centrées dans la rangée du bas */
 .case-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 14px;
 }
+/* Centre les 2 dernières si gallery a exactement 6 enfants */
+.case-gallery > :nth-child(5):nth-last-child(2) { grid-column-start: 2; }
 .case-frame--captioned {
   display: flex;
   flex-direction: column;
