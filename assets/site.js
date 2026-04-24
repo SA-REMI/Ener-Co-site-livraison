@@ -355,11 +355,14 @@ const I18N = {
     "real.lbl.works": "Travaux",
     "real.lbl.site": "Site",
     "real.lbl.exec": "Exécution",
+    "real.lbl.equipment": "Équipement",
+    "real.lbl.objective": "Objectif",
+    "real.lbl.reading": "Lecture",
     "real.c1.eyebrow": "Chantier publié · Beto-Bar IP68",
     "real.c1.h": "Saint-Gaudens · ligne neuve Beto-Bar IP68 LB16EA",
     "real.c1.p": "Installation d'une nouvelle ligne de gaine à barres basse tension Beto-Bar IP68 LB16EA sur le site Fibre Excellence de Saint-Gaudens, dans un environnement demandant précision, coordination et qualité de finition.",
     "real.c1.f1": "Fibre Excellence · Saint-Gaudens",
-    "real.c1.f2": "Beto-Bar IP68 LB16EA basse tension",
+    "real.c1.f2": "Eta-com",
     "real.c1.f3": "Supportage, raccordement et finition des jonctions",
     "real.c1.f4": "Site industriel actif · coordination serrée",
     "real.c2.eyebrow": "Chantier publié · Dalkia / KiloAmps",
@@ -376,6 +379,25 @@ const I18N = {
     "real.c3.f2": "Eta-com",
     "real.c3.f3": "Environnement industriel actif · coordination serrée",
     "real.c3.f4": "Supportage et finition des jonctions livrés dans les temps",
+    "real.c4.eyebrow": "Installation poste HTA",
+    "real.c4.h": "Une installation lisible depuis l'implantation jusqu'aux liaisons de puissance.",
+    "real.c4.p": "Cette séquence montre la mise en place d'un poste HTA en local technique, avec cellules Schneider Electric, remontées de câbles, traversées en caniveau et préparation des raccordements de puissance et de contrôle. L'ensemble met en avant la propreté d'implantation et la clarté des interfaces avant fermeture définitive.",
+    "real.c4.f1": "Poste HTA avec cellules Schneider Electric",
+    "real.c4.f2": "Vue d'ensemble, cheminements, réservations et préparation des arrivées",
+    "real.c4.f3": "Local béton avec caniveaux techniques et remontées verticales protégées",
+    "real.c4.f4": "Montrer une installation propre, prête pour les raccordements et finitions finales",
+    "real.c4.g1.h": "Vue d'ensemble",
+    "real.c4.g1.p": "Implantation générale des cellules HTA sur structure, avec lecture du caniveau technique et des câbles en attente sous les équipements.",
+    "real.c4.g2.h": "Cheminement mural",
+    "real.c4.g2.p": "Passage des liaisons auxiliaires en partie haute, avec coffret mural et pose soignée des câbles sur cheminement métallique.",
+    "real.c4.g3.h": "Façade complète",
+    "real.c4.g3.p": "Vue frontale de l'alignement des cellules permettant d'identifier l'organisation du poste et la répartition des différents compartiments.",
+    "real.c4.g4.h": "Remontées de câbles",
+    "real.c4.g4.p": "Courbure et guidage des câbles de puissance vers le haut du local, avec maintien régulier et cheminement lisible jusqu'aux points d'entrée.",
+    "real.c4.g5.h": "Caniveau technique",
+    "real.c4.g5.p": "Lecture des traversées sous cellules, avec réservations accessibles pour les liaisons de puissance et les départs en attente de raccordement.",
+    "real.c4.g6.h": "Vue latérale",
+    "real.c4.g6.p": "Perspective complémentaire sur les cellules HTA, utile pour montrer l'implantation, les accès de maintenance et la préparation des interfaces câbles.",
     "real.li.eyebrow": "Publications LinkedIn",
     "real.li.h2": "Retrouvez nos chantiers en publication.",
     "real.li.intro": "Chaque opération significative fait l'objet d'une publication illustrée sur la page LinkedIn Ener-Co. Deux publications récentes liées aux chantiers présentés ci-dessus.",
@@ -399,6 +421,13 @@ const I18N = {
     "refs.partners.h2": "Ils nous font confiance.",
     "refs.partners.intro": "Sélection de partenaires, clients industriels et donneurs d'ordre pour lesquels Ener-Co intervient en distribution d'énergie industrielle. Liste non exhaustive.",
     "refs.disclaimer": "Les marques et logos affichés sont la propriété exclusive de leurs titulaires respectifs. Leur mention illustre des chantiers réalisés par Ener-Co et ne constitue ni un partenariat commercial ni un endossement.",
+    "refs.chantiers.eyebrow": "Sur le terrain",
+    "refs.chantiers.h2": "Quelques chantiers en images.",
+    "refs.chantiers.intro": "Un aperçu d'opérations récentes. Sélection actualisée à chaque visite — parmi les chantiers Saint-Gaudens, Chaufferie Est lyonnais, Fibre Excellence et Poste HTA.",
+    "refs.chantier.sg": "Saint-Gaudens · Eta-com",
+    "refs.chantier.fe": "Fibre Excellence · Eta-com",
+    "refs.chantier.cg": "Chaufferie gaz · Est lyonnais",
+    "refs.chantier.hta": "Poste HTA · Schneider Electric",
     "refs.map.eyebrow": "Implantations",
     "refs.map.h2": "France, Europe et à l'international.",
     "refs.map.intro": "Base en Auvergne-Rhône-Alpes, interventions récurrentes sur six pays européens et projets ouverts à l'international. Équipes terrain mobilisables selon le périmètre et la zone d'intervention du chantier.",
@@ -869,11 +898,14 @@ const I18N = {
     "real.lbl.works": "Works",
     "real.lbl.site": "Site",
     "real.lbl.exec": "Execution",
+    "real.lbl.equipment": "Equipment",
+    "real.lbl.objective": "Objective",
+    "real.lbl.reading": "Reading",
     "real.c1.eyebrow": "Published project · Beto-Bar IP68",
     "real.c1.h": "Saint-Gaudens · new Beto-Bar IP68 LB16EA line",
     "real.c1.p": "Installation of a new Beto-Bar IP68 LB16EA low-voltage busway line at the Fibre Excellence site in Saint-Gaudens, in an environment demanding precision, coordination and finishing quality.",
     "real.c1.f1": "Fibre Excellence · Saint-Gaudens",
-    "real.c1.f2": "Beto-Bar IP68 LB16EA low voltage",
+    "real.c1.f2": "Eta-com",
     "real.c1.f3": "Supporting, connection and junction finishing",
     "real.c1.f4": "Active industrial site · tight coordination",
     "real.c2.eyebrow": "Published project · Dalkia / KiloAmps",
@@ -890,6 +922,25 @@ const I18N = {
     "real.c3.f2": "Eta-com",
     "real.c3.f3": "Active industrial environment · tight coordination",
     "real.c3.f4": "Supporting and junction finishing delivered on time",
+    "real.c4.eyebrow": "MV substation installation",
+    "real.c4.h": "A readable installation from layout to power connections.",
+    "real.c4.p": "This sequence shows the installation of an MV substation in a technical room, with Schneider Electric switchgear, cable risers, trench crossings and preparation of power and control connections. The whole highlights clean layout and clarity of interfaces before final closing.",
+    "real.c4.f1": "MV substation with Schneider Electric switchgear",
+    "real.c4.f2": "Overall view, routing, reservations and preparation of incoming connections",
+    "real.c4.f3": "Concrete room with technical trenches and protected vertical risers",
+    "real.c4.f4": "Show a clean installation, ready for final connections and finishing",
+    "real.c4.g1.h": "Overall view",
+    "real.c4.g1.p": "General layout of the MV switchgear on structure, with reading of the technical trench and cables waiting under the equipment.",
+    "real.c4.g2.h": "Wall-mounted routing",
+    "real.c4.g2.p": "Upper routing of auxiliary connections, with wall cabinet and careful installation of cables on metallic trays.",
+    "real.c4.g3.h": "Full façade",
+    "real.c4.g3.p": "Front view of the aligned switchgear units, making it possible to identify the substation's organisation and the distribution of compartments.",
+    "real.c4.g4.h": "Cable risers",
+    "real.c4.g4.p": "Bending and guiding of power cables towards the upper part of the room, with steady support and a readable path up to the entry points.",
+    "real.c4.g5.h": "Technical trench",
+    "real.c4.g5.p": "Reading of the crossings under the switchgear, with accessible reservations for power connections and outgoing feeders awaiting connection.",
+    "real.c4.g6.h": "Side view",
+    "real.c4.g6.p": "Additional perspective on the MV switchgear, useful to show the layout, maintenance access and preparation of cable interfaces.",
     "real.li.eyebrow": "LinkedIn posts",
     "real.li.h2": "Find our projects in our posts.",
     "real.li.intro": "Every significant operation is the subject of an illustrated post on Ener-Co's LinkedIn page. Two recent posts related to the projects shown above.",
@@ -913,6 +964,13 @@ const I18N = {
     "refs.partners.h2": "They trust us.",
     "refs.partners.intro": "Selection of partners, industrial clients and principals for whom Ener-Co operates in industrial power distribution. Non-exhaustive list.",
     "refs.disclaimer": "Trademarks and logos shown are the exclusive property of their respective owners. Their mention illustrates projects delivered by Ener-Co and does not constitute a commercial partnership or endorsement.",
+    "refs.chantiers.eyebrow": "In the field",
+    "refs.chantiers.h2": "A few projects in images.",
+    "refs.chantiers.intro": "A glimpse of recent operations. Selection refreshed on every visit — drawn from the Saint-Gaudens, East Lyon gas boiler, Fibre Excellence and MV substation projects.",
+    "refs.chantier.sg": "Saint-Gaudens · Eta-com",
+    "refs.chantier.fe": "Fibre Excellence · Eta-com",
+    "refs.chantier.cg": "Gas boiler · East Lyon",
+    "refs.chantier.hta": "MV substation · Schneider Electric",
     "refs.map.eyebrow": "Locations",
     "refs.map.h2": "France, Europe and internationally.",
     "refs.map.intro": "Based in Auvergne-Rhône-Alpes, recurring interventions across six European countries and projects open internationally. Field teams mobilisable according to the scope and zone of the project.",
@@ -1383,11 +1441,14 @@ const I18N = {
     "real.lbl.works": "Lavori",
     "real.lbl.site": "Sito",
     "real.lbl.exec": "Esecuzione",
+    "real.lbl.equipment": "Apparecchiatura",
+    "real.lbl.objective": "Obiettivo",
+    "real.lbl.reading": "Lettura",
     "real.c1.eyebrow": "Cantiere pubblicato · Beto-Bar IP68",
     "real.c1.h": "Saint-Gaudens · nuova linea Beto-Bar IP68 LB16EA",
     "real.c1.p": "Installazione di una nuova linea di condotto sbarre bassa tensione Beto-Bar IP68 LB16EA sul sito Fibre Excellence di Saint-Gaudens, in un ambiente che richiede precisione, coordinamento e qualità di finitura.",
     "real.c1.f1": "Fibre Excellence · Saint-Gaudens",
-    "real.c1.f2": "Beto-Bar IP68 LB16EA bassa tensione",
+    "real.c1.f2": "Eta-com",
     "real.c1.f3": "Supportaggio, collegamento e finitura delle giunzioni",
     "real.c1.f4": "Sito industriale attivo · coordinamento serrato",
     "real.c2.eyebrow": "Cantiere pubblicato · Dalkia / KiloAmps",
@@ -1404,6 +1465,25 @@ const I18N = {
     "real.c3.f2": "Eta-com",
     "real.c3.f3": "Ambiente industriale attivo · coordinamento serrato",
     "real.c3.f4": "Supportaggio e finitura delle giunzioni consegnati nei tempi",
+    "real.c4.eyebrow": "Installazione cabina MT",
+    "real.c4.h": "Un'installazione leggibile dalla posa fino ai collegamenti di potenza.",
+    "real.c4.p": "Questa sequenza mostra la messa in opera di una cabina MT in locale tecnico, con celle Schneider Electric, risalite di cavi, attraversamenti in canaletta e preparazione dei collegamenti di potenza e di controllo. L'insieme evidenzia la pulizia di posa e la chiarezza delle interfacce prima della chiusura definitiva.",
+    "real.c4.f1": "Cabina MT con celle Schneider Electric",
+    "real.c4.f2": "Vista d'insieme, percorsi, riservazioni e preparazione delle arrivate",
+    "real.c4.f3": "Locale in cemento con canalette tecniche e risalite verticali protette",
+    "real.c4.f4": "Mostrare un'installazione pulita, pronta per i collegamenti e le finiture finali",
+    "real.c4.g1.h": "Vista d'insieme",
+    "real.c4.g1.p": "Posa generale delle celle MT su struttura, con lettura della canaletta tecnica e dei cavi in attesa sotto le apparecchiature.",
+    "real.c4.g2.h": "Percorso a parete",
+    "real.c4.g2.p": "Passaggio dei collegamenti ausiliari in parte alta, con cofanetto a parete e posa curata dei cavi su percorso metallico.",
+    "real.c4.g3.h": "Facciata completa",
+    "real.c4.g3.p": "Vista frontale dell'allineamento delle celle che permette di identificare l'organizzazione della cabina e la ripartizione dei diversi scomparti.",
+    "real.c4.g4.h": "Risalite di cavi",
+    "real.c4.g4.p": "Curvatura e guida dei cavi di potenza verso l'alto del locale, con mantenimento regolare e percorso leggibile fino ai punti di ingresso.",
+    "real.c4.g5.h": "Canaletta tecnica",
+    "real.c4.g5.p": "Lettura degli attraversamenti sotto le celle, con riservazioni accessibili per i collegamenti di potenza e le partenze in attesa di collegamento.",
+    "real.c4.g6.h": "Vista laterale",
+    "real.c4.g6.p": "Prospettiva complementare sulle celle MT, utile per mostrare la posa, gli accessi di manutenzione e la preparazione delle interfacce cavi.",
     "real.li.eyebrow": "Pubblicazioni LinkedIn",
     "real.li.h2": "Ritrovate i nostri cantieri nelle pubblicazioni.",
     "real.li.intro": "Ogni operazione significativa è oggetto di una pubblicazione illustrata sulla pagina LinkedIn di Ener-Co. Due pubblicazioni recenti legate ai cantieri presentati sopra.",
@@ -1427,6 +1507,13 @@ const I18N = {
     "refs.partners.h2": "Si affidano a noi.",
     "refs.partners.intro": "Selezione di partner, clienti industriali e committenti per i quali Ener-Co interviene nella distribuzione di energia industriale. Elenco non esaustivo.",
     "refs.disclaimer": "I marchi e i loghi mostrati sono di proprietà esclusiva dei rispettivi titolari. La loro menzione illustra cantieri realizzati da Ener-Co e non costituisce né una partnership commerciale né un'approvazione.",
+    "refs.chantiers.eyebrow": "Sul campo",
+    "refs.chantiers.h2": "Alcuni cantieri in immagini.",
+    "refs.chantiers.intro": "Uno sguardo su operazioni recenti. Selezione aggiornata a ogni visita — tra i cantieri Saint-Gaudens, Caldaia gas Est Lione, Fibre Excellence e Cabina MT.",
+    "refs.chantier.sg": "Saint-Gaudens · Eta-com",
+    "refs.chantier.fe": "Fibre Excellence · Eta-com",
+    "refs.chantier.cg": "Caldaia gas · Est Lione",
+    "refs.chantier.hta": "Cabina MT · Schneider Electric",
     "refs.map.eyebrow": "Sedi",
     "refs.map.h2": "Francia, Europa e livello internazionale.",
     "refs.map.intro": "Base in Auvergne-Rhône-Alpes, interventi ricorrenti in sei paesi europei e progetti aperti a livello internazionale. Squadre sul campo mobilitabili in base al perimetro e alla zona di intervento del cantiere.",
@@ -1659,6 +1746,75 @@ function initBurger() {
   });
 }
 
+/* ---- STRIP PHOTOS ALÉATOIRES (page Références) ---- */
+function initRefsPhotoStrip() {
+  const strip = document.getElementById("refs-photo-strip");
+  if (!strip) return;
+
+  const chantiers = [
+    {
+      key: "refs.chantier.sg",
+      fallback: "Saint-Gaudens · Eta-com",
+      photos: [
+        "assets/images/sg-hd-main.png",
+        "assets/images/st-gaudens-2.jpg",
+        "assets/images/st-gaudens-3.jpg",
+        "assets/images/st-gaudens-4.jpg",
+      ],
+    },
+    {
+      key: "refs.chantier.fe",
+      fallback: "Fibre Excellence · Eta-com",
+      photos: [
+        "assets/images/sg-hd-2.png",
+        "assets/images/st-gaudens-5.jpg",
+        "assets/images/st-gaudens-6.jpg",
+        "assets/images/st-gaudens-7.jpg",
+      ],
+    },
+    {
+      key: "refs.chantier.cg",
+      fallback: "Chaufferie gaz · Est lyonnais",
+      photos: [
+        "assets/images/chaufferie-gaz-1.jpg",
+        "assets/images/chaufferie-gaz-2.jpg",
+        "assets/images/chaufferie-gaz-3.jpg",
+        "assets/images/chaufferie-gaz-4.jpg",
+      ],
+    },
+    {
+      key: "refs.chantier.hta",
+      fallback: "Poste HTA · Schneider Electric",
+      photos: [
+        "assets/images/poste-hta/poste-hta-1.jpg",
+        "assets/images/poste-hta/poste-hta-3.jpg",
+        "assets/images/poste-hta/poste-hta-4.jpg",
+        "assets/images/poste-hta/poste-hta-6.jpg",
+      ],
+    },
+  ];
+
+  // Shuffle chantiers order (Fisher-Yates) and pick 1 random photo per chantier
+  const shuffled = [...chantiers];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  const slots = strip.querySelectorAll("figure");
+  shuffled.forEach((chantier, idx) => {
+    if (!slots[idx]) return;
+    const photo = chantier.photos[Math.floor(Math.random() * chantier.photos.length)];
+    slots[idx].innerHTML =
+      '<img src="' + photo + '" alt="" loading="lazy">' +
+      '<figcaption data-i18n="' + chantier.key + '">' + chantier.fallback + '</figcaption>';
+  });
+
+  // Re-apply translations so the injected figcaptions match current lang
+  const currentLang = document.documentElement.lang || "fr";
+  applyLang(currentLang);
+}
+
 /* ---- ACTIVE NAV LINK BASED ON CURRENT FILE ---- */
 function initActiveNav() {
   const currentFile = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
@@ -1682,6 +1838,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initHeaderScroll();
   initActiveNav();
   initBurger();
+  initRefsPhotoStrip();
 
   const yearNode = document.getElementById("year");
   if (yearNode) yearNode.textContent = new Date().getFullYear();

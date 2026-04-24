@@ -420,6 +420,20 @@ p { font-size: 1rem; color: var(--muted); }
   border: 1px solid var(--line);
   isolation: isolate;
 }
+/* Strip de 4 photos aléatoires (page Références) */
+.refs-photo-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.refs-photo-strip .page-hero__figure--sm {
+  aspect-ratio: 4 / 3;
+  max-width: none;
+  margin: 0;
+}
+@media (max-width: 900px) { .refs-photo-strip { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .refs-photo-strip { grid-template-columns: 1fr; } }
+
 /* Variante : deux photos empilées dans la colonne droite du hero */
 .page-hero__figures {
   display: grid;
@@ -923,11 +937,11 @@ p { font-size: 1rem; color: var(--muted); }
   top: 100px;
 }
 .engage-intro-band__text p {
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.7;
-  color: var(--ink-2);
+  color: var(--muted);
 }
-.engage-intro-band__text p + p { margin-top: 16px; color: var(--muted); font-size: 0.98rem; }
+.engage-intro-band__text p + p { margin-top: 16px; }
 
 /* ===== Sommaire pills (ancres) ===== */
 .engage-toc {
@@ -1496,6 +1510,54 @@ p { font-size: 1rem; color: var(--muted); }
   transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 .case-frame:hover img { transform: scale(1.03); }
+
+/* Gallery 6 photos légendées — case Poste HTA */
+.case-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.case-frame--captioned {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(15,20,25,0.04), 0 6px 16px rgba(15,20,25,0.05);
+}
+.case-frame--captioned img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.case-frame--captioned:hover img { transform: scale(1.03); }
+.case-frame--captioned figcaption {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+.case-frame--captioned figcaption strong {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+.case-frame--captioned figcaption span {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+@media (max-width: 960px) {
+  .case-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .case-gallery { grid-template-columns: 1fr; }
+}
 
 .case-facts {
   display: grid;
