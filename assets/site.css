@@ -420,6 +420,30 @@ p { font-size: 1rem; color: var(--muted); }
   border: 1px solid var(--line);
   isolation: isolate;
 }
+/* Grille carrée 2×2 de 4 photos aléatoires (hero page Accueil) */
+.page-hero__figures-square {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  aspect-ratio: 1 / 1;
+  align-self: end;
+  width: 100%;
+}
+.page-hero__figure--square {
+  aspect-ratio: auto;
+  min-height: 0;
+}
+.page-hero__figure--square figcaption {
+  font-size: 0.72rem;
+  padding: 5px 9px;
+  left: 10px;
+  bottom: 10px;
+}
+@media (max-width: 720px) {
+  .page-hero__figures-square { aspect-ratio: auto; grid-template-rows: 1fr 1fr; }
+}
+
 /* Strip de 4 photos aléatoires (page Références) */
 .refs-photo-strip {
   display: grid;

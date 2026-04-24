@@ -1746,62 +1746,65 @@ function initBurger() {
   });
 }
 
-/* ---- STRIP PHOTOS ALÉATOIRES (page Références) ---- */
-function initRefsPhotoStrip() {
-  const strip = document.getElementById("refs-photo-strip");
-  if (!strip) return;
+/* ---- POOL DE CHANTIERS (partagé entre page Accueil et page Références) ---- */
+const CHANTIERS_POOL = [
+  {
+    key: "refs.chantier.sg",
+    fallback: "Saint-Gaudens · Eta-com",
+    photos: [
+      "assets/images/sg-hd-main.png",
+      "assets/images/st-gaudens-2.jpg",
+      "assets/images/st-gaudens-3.jpg",
+      "assets/images/st-gaudens-4.jpg",
+    ],
+  },
+  {
+    key: "refs.chantier.fe",
+    fallback: "Fibre Excellence · Eta-com",
+    photos: [
+      "assets/images/sg-hd-2.png",
+      "assets/images/st-gaudens-5.jpg",
+      "assets/images/st-gaudens-6.jpg",
+      "assets/images/st-gaudens-7.jpg",
+    ],
+  },
+  {
+    key: "refs.chantier.cg",
+    fallback: "Chaufferie gaz · Est lyonnais",
+    photos: [
+      "assets/images/chaufferie-gaz-1.jpg",
+      "assets/images/chaufferie-gaz-2.jpg",
+      "assets/images/chaufferie-gaz-3.jpg",
+      "assets/images/chaufferie-gaz-4.jpg",
+    ],
+  },
+  {
+    key: "refs.chantier.hta",
+    fallback: "Poste HTA · Schneider Electric",
+    photos: [
+      "assets/images/poste-hta/poste-hta-1.jpg",
+      "assets/images/poste-hta/poste-hta-3.jpg",
+      "assets/images/poste-hta/poste-hta-4.jpg",
+      "assets/images/poste-hta/poste-hta-6.jpg",
+    ],
+  },
+];
 
-  const chantiers = [
-    {
-      key: "refs.chantier.sg",
-      fallback: "Saint-Gaudens · Eta-com",
-      photos: [
-        "assets/images/sg-hd-main.png",
-        "assets/images/st-gaudens-2.jpg",
-        "assets/images/st-gaudens-3.jpg",
-        "assets/images/st-gaudens-4.jpg",
-      ],
-    },
-    {
-      key: "refs.chantier.fe",
-      fallback: "Fibre Excellence · Eta-com",
-      photos: [
-        "assets/images/sg-hd-2.png",
-        "assets/images/st-gaudens-5.jpg",
-        "assets/images/st-gaudens-6.jpg",
-        "assets/images/st-gaudens-7.jpg",
-      ],
-    },
-    {
-      key: "refs.chantier.cg",
-      fallback: "Chaufferie gaz · Est lyonnais",
-      photos: [
-        "assets/images/chaufferie-gaz-1.jpg",
-        "assets/images/chaufferie-gaz-2.jpg",
-        "assets/images/chaufferie-gaz-3.jpg",
-        "assets/images/chaufferie-gaz-4.jpg",
-      ],
-    },
-    {
-      key: "refs.chantier.hta",
-      fallback: "Poste HTA · Schneider Electric",
-      photos: [
-        "assets/images/poste-hta/poste-hta-1.jpg",
-        "assets/images/poste-hta/poste-hta-3.jpg",
-        "assets/images/poste-hta/poste-hta-4.jpg",
-        "assets/images/poste-hta/poste-hta-6.jpg",
-      ],
-    },
-  ];
-
-  // Shuffle chantiers order (Fisher-Yates) and pick 1 random photo per chantier
-  const shuffled = [...chantiers];
+/* Shuffle Fisher-Yates — ordre des chantiers aléatoire à chaque visite */
+function shuffleChantiers() {
+  const shuffled = [...CHANTIERS_POOL];
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
+  return shuffled;
+}
 
-  const slots = strip.querySelectorAll("figure");
+/* Injecte 1 photo + caption par slot dans un container donné */
+function populateChantierSlots(container) {
+  if (!container) return;
+  const slots = container.querySelectorAll("figure");
+  const shuffled = shuffleChantiers();
   shuffled.forEach((chantier, idx) => {
     if (!slots[idx]) return;
     const photo = chantier.photos[Math.floor(Math.random() * chantier.photos.length)];
@@ -1809,10 +1812,19 @@ function initRefsPhotoStrip() {
       '<img src="' + photo + '" alt="" loading="lazy">' +
       '<figcaption data-i18n="' + chantier.key + '">' + chantier.fallback + '</figcaption>';
   });
-
   // Re-apply translations so the injected figcaptions match current lang
   const currentLang = document.documentElement.lang || "fr";
   applyLang(currentLang);
+}
+
+/* ---- STRIP PHOTOS ALÉATOIRES (page Références) ---- */
+function initRefsPhotoStrip() {
+  populateChantierSlots(document.getElementById("refs-photo-strip"));
+}
+
+/* ---- CARRÉ 2×2 PHOTOS ALÉATOIRES (page Accueil · hero) ---- */
+function initHomeHeroSquare() {
+  populateChantierSlots(document.getElementById("home-hero-square"));
 }
 
 /* ---- ACTIVE NAV LINK BASED ON CURRENT FILE ---- */
@@ -1839,6 +1851,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initActiveNav();
   initBurger();
   initRefsPhotoStrip();
+  initHomeHeroSquare();
 
   const yearNode = document.getElementById("year");
   if (yearNode) yearNode.textContent = new Date().getFullYear();
