@@ -1,4 +1,4 @@
-/* Ener-Co — UI partagé (nav, lang FR/EN/IT, header scroll, année) */
+/* Ener-Co, UI partagé (nav, lang FR/EN/IT, header scroll, année) */
 
 const I18N = {
   fr: {
@@ -38,7 +38,7 @@ const I18N = {
 
     "eng.hero.eyebrow": "Politique de direction",
     "eng.hero.h1": "Qualité, prévention, responsabilité et amélioration continue.",
-    "eng.hero.lede": "La direction d'Ener-Co inscrit ses engagements dans une logique de qualité, de prévention SSE, de maîtrise opérationnelle, de responsabilité environnementale et d'amélioration continue — adaptée à la réalité de nos interventions sur sites techniques et industriels sensibles.",
+    "eng.hero.lede": "La direction d'Ener-Co inscrit ses engagements dans une logique de qualité, de prévention SSE, de maîtrise opérationnelle, de responsabilité environnementale et d'amélioration continue, adaptée à la réalité de nos interventions sur sites techniques et industriels sensibles.",
 
     "eng.intro.label": "En résumé",
     "eng.intro.p1": "Dans le cadre de ses activités en distribution d'énergie industrielle, Ener-Co structure son fonctionnement autour d'exigences claires : sécurité des personnes, qualité d'exécution, conformité réglementaire, satisfaction client, développement des compétences et suivi de la performance.",
@@ -99,7 +99,7 @@ const I18N = {
 
     "eng.s4.eyebrow": "04 · Technique",
     "eng.s4.title": "Maîtrise des interventions techniques.",
-    "eng.s4.intro": "Les interventions d'Ener-Co — HTA, TGBT, tableaux, gaines à barres et raccordements de puissance — sont réalisées dans un cadre de maîtrise technique exigeant, adossé à la préparation, l'expérience terrain et le retour d'expérience systématique.",
+    "eng.s4.intro": "Les interventions d'Ener-Co, HTA, TGBT, tableaux, gaines à barres et raccordements de puissance, sont réalisées dans un cadre de maîtrise technique exigeant, adossé à la préparation, l'expérience terrain et le retour d'expérience systématique.",
     "eng.s4.cl1": "Définir les méthodes d'intervention adaptées au contexte du chantier.",
     "eng.s4.cl2": "Vérifier l'adéquation des équipements, outillages et moyens de levage ou de manutention.",
     "eng.s4.cl3": "Maîtriser les travaux en hauteur, les manutentions et les interfaces avec les installations existantes.",
@@ -107,7 +107,7 @@ const I18N = {
     "eng.s4.cl5": "Sécuriser les phases de raccordement, de contrôle et de mise sous tension.",
     "eng.s4.cl6": "Garantir une exécution lisible, fiable et conforme aux attentes du client.",
     "eng.s4.p1": "Chaque chantier fait l'objet d'une préparation dédiée : analyse du contexte, définition des méthodes, vérification des moyens, validation des interfaces avec les installations existantes.",
-    "eng.s4.p2": "Les phases critiques — raccordement, contrôle et mise sous tension — sont conduites dans un cadre formalisé, en lien direct avec les équipes d'exploitation du site.",
+    "eng.s4.p2": "Les phases critiques, raccordement, contrôle et mise sous tension, sont conduites dans un cadre formalisé, en lien direct avec les équipes d'exploitation du site.",
 
     "eng.s5.eyebrow": "05 · Équipes",
     "eng.s5.title": "Compétences, conditions de travail et implication.",
@@ -215,7 +215,7 @@ const I18N = {
 
     "home.sig.h2": "La distribution d'énergie, <em>du début à la fin</em>, sans sous-traitance, en interne.",
     "home.sig.p1": "Ener-Co n'externalise pas son exécution chantier. Pas de cascade de sous-traitance, pas de dilution de responsabilité : une seule entité, une seule lecture technique, du premier câble HTA à la mise sous tension finale.",
-    "home.sig.p2": "Cette continuité est notre signature industrielle — et la garantie que le chantier livré ressemble à celui que nous avons vendu.",
+    "home.sig.p2": "Cette continuité est notre signature industrielle, et la garantie que le chantier livré ressemble à celui que nous avons vendu.",
 
     "home.exp.eyebrow": "Expertise",
     "home.exp.h2": "Une chaîne complète de distribution d'énergie.",
@@ -291,7 +291,7 @@ const I18N = {
     "contact.c2.strong": "Standard commercial",
     "contact.c3.eyebrow": "Horaires",
     "contact.c3.strong": "Heures d'ouverture",
-    "contact.c3.hours": "Lundi au jeudi · 08h – 17h<br>Vendredi · 08h – 12h<br><span style=\"font-size:0.82rem; color:var(--muted-2);\">Interventions chantier ajustables selon les contraintes site.</span>",
+    "contact.c3.hours": "Lundi au jeudi · 08h, 17h<br>Vendredi · 08h, 12h<br><span style=\"font-size:0.82rem; color:var(--muted-2);\">Interventions chantier ajustables selon les contraintes site.</span>",
     "contact.c4.eyebrow": "Qualification",
     "contact.c4.strong": "Certification MASE",
     "contact.c4.p": "Référentiel SSE · Rhône-Alpes<br>Audit triennal, procédures HSE formalisées<br>Renouvellement prévu 2026",
@@ -430,7 +430,7 @@ const I18N = {
     "refs.disclaimer": "Les marques et logos affichés sont la propriété exclusive de leurs titulaires respectifs. Leur mention illustre des chantiers réalisés par Ener-Co et ne constitue ni un partenariat commercial ni un endossement.",
     "refs.chantiers.eyebrow": "Sur le terrain",
     "refs.chantiers.h2": "Quelques chantiers en images.",
-    "refs.chantiers.intro": "Un aperçu d'opérations récentes. Sélection actualisée à chaque visite — parmi les chantiers Saint-Gaudens, Chaufferie Est lyonnais, Fibre Excellence, Poste HTA et Panattoni Colombier-Saugnieu.",
+    "refs.chantiers.intro": "Un aperçu d'opérations récentes. Sélection actualisée à chaque visite, parmi les chantiers Saint-Gaudens, Chaufferie Est lyonnais, Fibre Excellence, Poste HTA et Panattoni Colombier-Saugnieu.",
     "refs.chantier.sg": "Saint-Gaudens · Eta-com",
     "refs.chantier.fe": "Fibre Excellence · Eta-com",
     "refs.chantier.cg": "Chaufferie gaz · Est lyonnais",
@@ -438,7 +438,7 @@ const I18N = {
     "refs.chantier.panattoni": "Poste HTA · Panattoni, Colombier-Saugnieu",
     "refs.map.eyebrow": "Implantations",
     "refs.map.h2": "Partout où le chantier l'exige.",
-    "refs.map.intro": "Basée à Lyon (Auvergne-Rhône-Alpes), Ener-Co intervient partout en France — métropole et Martinique — ainsi qu'en Europe (Italie, Allemagne, Pologne, Belgique, Espagne) et à l'international (Sénégal). Équipes terrain mobilisables sans contrainte de zone.",
+    "refs.map.intro": "Basée à Lyon (Auvergne-Rhône-Alpes), Ener-Co intervient partout en France, métropole et Martinique, ainsi qu'en Europe (Italie, Allemagne, Pologne, Belgique, Espagne) et à l'international (Sénégal). Équipes terrain mobilisables sans contrainte de zone.",
     "refs.country.fr": "France",
     "refs.country.fr.p": "Siège Rhône-Alpes · équipes résidentes · couverture nationale",
     "refs.country.fr.chip": "Base principale",
@@ -549,7 +549,7 @@ const I18N = {
     "recrut.offer.5": "Déplacements France et Europe",
     "recrut.cta.eyebrow": "Contact RH",
     "recrut.cta.h2": "Une question sur nos postes ou sur Ener-Co ?",
-    "recrut.cta.p": "L'équipe RH revient vers chaque candidat sous 7 jours ouvrés. Joignez un CV et quelques lignes sur ce que vous cherchez — technique, zone géographique, type de mission.",
+    "recrut.cta.p": "L'équipe RH revient vers chaque candidat sous 7 jours ouvrés. Joignez un CV et quelques lignes sur ce que vous cherchez, technique, zone géographique, type de mission.",
     "recrut.cta.btn1": "Écrire à l'équipe RH",
     "recrut.cta.btn2": "Découvrir nos métiers",
     "recrut.cta.label": "Équipe RH Ener-Co",
@@ -592,7 +592,7 @@ const I18N = {
 
     "eng.hero.eyebrow": "Management policy",
     "eng.hero.h1": "Quality, prevention, responsibility and continuous improvement.",
-    "eng.hero.lede": "Ener-Co's management frames its commitments within a logic of quality, HSE prevention, operational control, environmental responsibility and continuous improvement — tailored to the reality of our interventions on sensitive technical and industrial sites.",
+    "eng.hero.lede": "Ener-Co's management frames its commitments within a logic of quality, HSE prevention, operational control, environmental responsibility and continuous improvement, tailored to the reality of our interventions on sensitive technical and industrial sites.",
 
     "eng.intro.label": "In brief",
     "eng.intro.p1": "In the course of its industrial energy distribution activities, Ener-Co structures its operations around clear requirements: personal safety, quality of execution, regulatory compliance, customer satisfaction, skills development and performance monitoring.",
@@ -653,7 +653,7 @@ const I18N = {
 
     "eng.s4.eyebrow": "04 · Technical",
     "eng.s4.title": "Control of technical interventions.",
-    "eng.s4.intro": "Ener-Co's interventions — MV, LV switchboards, distribution panels, busways and power connections — are carried out within a demanding technical control framework, supported by preparation, field experience and systematic feedback.",
+    "eng.s4.intro": "Ener-Co's interventions, MV, LV switchboards, distribution panels, busways and power connections, are carried out within a demanding technical control framework, supported by preparation, field experience and systematic feedback.",
     "eng.s4.cl1": "Define intervention methods suited to each site context.",
     "eng.s4.cl2": "Verify the adequacy of equipment, tooling and lifting or handling means.",
     "eng.s4.cl3": "Control work at height, handling and interfaces with existing installations.",
@@ -661,7 +661,7 @@ const I18N = {
     "eng.s4.cl5": "Secure connection, testing and energisation phases.",
     "eng.s4.cl6": "Deliver readable, reliable execution aligned with client expectations.",
     "eng.s4.p1": "Each project is the subject of dedicated preparation: context analysis, method definition, resource verification, interface validation with existing installations.",
-    "eng.s4.p2": "Critical phases — connection, testing and energisation — are conducted within a formalised framework, in direct coordination with the site's operations teams.",
+    "eng.s4.p2": "Critical phases, connection, testing and energisation, are conducted within a formalised framework, in direct coordination with the site's operations teams.",
 
     "eng.s5.eyebrow": "05 · Teams",
     "eng.s5.title": "Skills, working conditions and commitment.",
@@ -769,7 +769,7 @@ const I18N = {
 
     "home.sig.h2": "Power distribution, <em>from start to finish</em>, without subcontracting, in-house.",
     "home.sig.p1": "Ener-Co does not outsource site execution. No cascading subcontracting, no diluted responsibility: one entity, one technical reading, from the first MV cable to the final energisation.",
-    "home.sig.p2": "This continuity is our industrial signature — and the guarantee that the project delivered matches the one we sold.",
+    "home.sig.p2": "This continuity is our industrial signature, and the guarantee that the project delivered matches the one we sold.",
 
     "home.exp.eyebrow": "Expertise",
     "home.exp.h2": "A complete power distribution chain.",
@@ -845,7 +845,7 @@ const I18N = {
     "contact.c2.strong": "Sales desk",
     "contact.c3.eyebrow": "Opening hours",
     "contact.c3.strong": "Business hours",
-    "contact.c3.hours": "Monday to Thursday · 8 am – 5 pm<br>Friday · 8 am – 12 pm<br><span style=\"font-size:0.82rem; color:var(--muted-2);\">Site interventions adjustable to site constraints.</span>",
+    "contact.c3.hours": "Monday to Thursday · 8 am, 5 pm<br>Friday · 8 am, 12 pm<br><span style=\"font-size:0.82rem; color:var(--muted-2);\">Site interventions adjustable to site constraints.</span>",
     "contact.c4.eyebrow": "Qualification",
     "contact.c4.strong": "MASE certification",
     "contact.c4.p": "HSE framework · Rhône-Alpes<br>Triennial audit, formalised HSE procedures<br>Renewal planned for 2026",
@@ -984,7 +984,7 @@ const I18N = {
     "refs.disclaimer": "Trademarks and logos shown are the exclusive property of their respective owners. Their mention illustrates projects delivered by Ener-Co and does not constitute a commercial partnership or endorsement.",
     "refs.chantiers.eyebrow": "In the field",
     "refs.chantiers.h2": "A few projects in images.",
-    "refs.chantiers.intro": "A glimpse of recent operations. Selection refreshed on every visit — drawn from the Saint-Gaudens, East Lyon gas boiler, Fibre Excellence, MV substation and Panattoni Colombier-Saugnieu projects.",
+    "refs.chantiers.intro": "A glimpse of recent operations. Selection refreshed on every visit, drawn from the Saint-Gaudens, East Lyon gas boiler, Fibre Excellence, MV substation and Panattoni Colombier-Saugnieu projects.",
     "refs.chantier.sg": "Saint-Gaudens · Eta-com",
     "refs.chantier.fe": "Fibre Excellence · Eta-com",
     "refs.chantier.cg": "Gas boiler · East Lyon",
@@ -992,7 +992,7 @@ const I18N = {
     "refs.chantier.panattoni": "MV substation · Panattoni, Colombier-Saugnieu",
     "refs.map.eyebrow": "Locations",
     "refs.map.h2": "Wherever the project requires.",
-    "refs.map.intro": "Based in Lyon (Auvergne-Rhône-Alpes), Ener-Co operates anywhere in France — mainland and Martinique — as well as across Europe (Italy, Germany, Poland, Belgium, Spain) and internationally (Senegal). Field teams mobilisable without geographic constraint.",
+    "refs.map.intro": "Based in Lyon (Auvergne-Rhône-Alpes), Ener-Co operates anywhere in France, mainland and Martinique, as well as across Europe (Italy, Germany, Poland, Belgium, Spain) and internationally (Senegal). Field teams mobilisable without geographic constraint.",
     "refs.country.fr": "France",
     "refs.country.fr.p": "Rhône-Alpes head office · in-house teams · nationwide coverage",
     "refs.country.fr.chip": "Main base",
@@ -1076,7 +1076,7 @@ const I18N = {
     "recrut.lbl.quals": "Qualifications",
     "recrut.job1.tag": "Permanent",
     "recrut.job1.loc": "Auvergne-Rhône-Alpes",
-    "recrut.job1.h": "Mechanical Assembly Team Leader – Electrician (M/F)",
+    "recrut.job1.h": "Mechanical Assembly Team Leader, Electrician (M/F)",
     "recrut.job1.p": "Team leadership on industrial power distribution projects. Installation of busways, LV connections, energisation. Autonomy, coordination and HSE rigour expected.",
     "recrut.job1.f1": "Permanent, full-time",
     "recrut.job1.f2": "Auvergne-Rhône-Alpes · travel within France",
@@ -1103,7 +1103,7 @@ const I18N = {
     "recrut.offer.5": "Travel in France and Europe",
     "recrut.cta.eyebrow": "HR contact",
     "recrut.cta.h2": "A question about our positions or Ener-Co?",
-    "recrut.cta.p": "The HR team gets back to each candidate within 7 working days. Attach a CV and a few lines about what you are looking for — technical scope, geographical zone, type of mission.",
+    "recrut.cta.p": "The HR team gets back to each candidate within 7 working days. Attach a CV and a few lines about what you are looking for, technical scope, geographical zone, type of mission.",
     "recrut.cta.btn1": "Write to the HR team",
     "recrut.cta.btn2": "Discover our trades",
     "recrut.cta.label": "Ener-Co HR team",
@@ -1146,7 +1146,7 @@ const I18N = {
 
     "eng.hero.eyebrow": "Politica della direzione",
     "eng.hero.h1": "Qualità, prevenzione, responsabilità e miglioramento continuo.",
-    "eng.hero.lede": "La direzione di Ener-Co inserisce i propri impegni in una logica di qualità, prevenzione SSA, controllo operativo, responsabilità ambientale e miglioramento continuo — adattata alla realtà dei nostri interventi su siti tecnici e industriali sensibili.",
+    "eng.hero.lede": "La direzione di Ener-Co inserisce i propri impegni in una logica di qualità, prevenzione SSA, controllo operativo, responsabilità ambientale e miglioramento continuo, adattata alla realtà dei nostri interventi su siti tecnici e industriali sensibili.",
 
     "eng.intro.label": "In sintesi",
     "eng.intro.p1": "Nell'ambito delle sue attività di distribuzione di energia industriale, Ener-Co struttura il proprio funzionamento attorno a requisiti chiari: sicurezza delle persone, qualità di esecuzione, conformità normativa, soddisfazione del cliente, sviluppo delle competenze e monitoraggio delle prestazioni.",
@@ -1207,7 +1207,7 @@ const I18N = {
 
     "eng.s4.eyebrow": "04 · Tecnica",
     "eng.s4.title": "Controllo degli interventi tecnici.",
-    "eng.s4.intro": "Gli interventi di Ener-Co — MT, BT, quadri, condotti sbarre e collegamenti di potenza — sono realizzati in un quadro di controllo tecnico esigente, basato sulla preparazione, l'esperienza sul campo e il feedback sistematico.",
+    "eng.s4.intro": "Gli interventi di Ener-Co, MT, BT, quadri, condotti sbarre e collegamenti di potenza, sono realizzati in un quadro di controllo tecnico esigente, basato sulla preparazione, l'esperienza sul campo e il feedback sistematico.",
     "eng.s4.cl1": "Definire i metodi di intervento adeguati al contesto del cantiere.",
     "eng.s4.cl2": "Verificare l'adeguatezza di attrezzature, utensili e mezzi di sollevamento o movimentazione.",
     "eng.s4.cl3": "Controllare i lavori in quota, le movimentazioni e le interfacce con gli impianti esistenti.",
@@ -1215,7 +1215,7 @@ const I18N = {
     "eng.s4.cl5": "Mettere in sicurezza le fasi di collegamento, controllo e messa in tensione.",
     "eng.s4.cl6": "Garantire un'esecuzione leggibile, affidabile e conforme alle aspettative del cliente.",
     "eng.s4.p1": "Ogni cantiere è oggetto di una preparazione dedicata: analisi del contesto, definizione dei metodi, verifica dei mezzi, validazione delle interfacce con gli impianti esistenti.",
-    "eng.s4.p2": "Le fasi critiche — collegamento, controllo e messa in tensione — sono condotte in un quadro formalizzato, in collaborazione diretta con i team di esercizio del sito.",
+    "eng.s4.p2": "Le fasi critiche, collegamento, controllo e messa in tensione, sono condotte in un quadro formalizzato, in collaborazione diretta con i team di esercizio del sito.",
 
     "eng.s5.eyebrow": "05 · Squadre",
     "eng.s5.title": "Competenze, condizioni di lavoro e coinvolgimento.",
@@ -1323,7 +1323,7 @@ const I18N = {
 
     "home.sig.h2": "La distribuzione di energia, <em>dall'inizio alla fine</em>, senza subappalto, internamente.",
     "home.sig.p1": "Ener-Co non esternalizza l'esecuzione in cantiere. Nessuna cascata di subappalti, nessuna diluizione di responsabilità: un'unica entità, un'unica lettura tecnica, dal primo cavo MT alla messa in tensione finale.",
-    "home.sig.p2": "Questa continuità è la nostra firma industriale — e la garanzia che il cantiere consegnato corrisponda a quello venduto.",
+    "home.sig.p2": "Questa continuità è la nostra firma industriale, e la garanzia che il cantiere consegnato corrisponda a quello venduto.",
 
     "home.exp.eyebrow": "Competenze",
     "home.exp.h2": "Una catena completa di distribuzione di energia.",
@@ -1399,7 +1399,7 @@ const I18N = {
     "contact.c2.strong": "Centralino commerciale",
     "contact.c3.eyebrow": "Orari",
     "contact.c3.strong": "Orari di apertura",
-    "contact.c3.hours": "Da lunedì a giovedì · 08:00 – 17:00<br>Venerdì · 08:00 – 12:00<br><span style=\"font-size:0.82rem; color:var(--muted-2);\">Interventi in cantiere adattabili ai vincoli del sito.</span>",
+    "contact.c3.hours": "Da lunedì a giovedì · 08:00, 17:00<br>Venerdì · 08:00, 12:00<br><span style=\"font-size:0.82rem; color:var(--muted-2);\">Interventi in cantiere adattabili ai vincoli del sito.</span>",
     "contact.c4.eyebrow": "Qualifica",
     "contact.c4.strong": "Certificazione MASE",
     "contact.c4.p": "Riferimento SSA · Rhône-Alpes<br>Audit triennale, procedure HSE formalizzate<br>Rinnovo previsto per il 2026",
@@ -1538,7 +1538,7 @@ const I18N = {
     "refs.disclaimer": "I marchi e i loghi mostrati sono di proprietà esclusiva dei rispettivi titolari. La loro menzione illustra cantieri realizzati da Ener-Co e non costituisce né una partnership commerciale né un'approvazione.",
     "refs.chantiers.eyebrow": "Sul campo",
     "refs.chantiers.h2": "Alcuni cantieri in immagini.",
-    "refs.chantiers.intro": "Uno sguardo su operazioni recenti. Selezione aggiornata a ogni visita — tra i cantieri Saint-Gaudens, Caldaia gas Est Lione, Fibre Excellence, Cabina MT e Panattoni Colombier-Saugnieu.",
+    "refs.chantiers.intro": "Uno sguardo su operazioni recenti. Selezione aggiornata a ogni visita, tra i cantieri Saint-Gaudens, Caldaia gas Est Lione, Fibre Excellence, Cabina MT e Panattoni Colombier-Saugnieu.",
     "refs.chantier.sg": "Saint-Gaudens · Eta-com",
     "refs.chantier.fe": "Fibre Excellence · Eta-com",
     "refs.chantier.cg": "Caldaia gas · Est Lione",
@@ -1546,7 +1546,7 @@ const I18N = {
     "refs.chantier.panattoni": "Cabina MT · Panattoni, Colombier-Saugnieu",
     "refs.map.eyebrow": "Sedi",
     "refs.map.h2": "Ovunque il cantiere lo richieda.",
-    "refs.map.intro": "Con sede a Lione (Auvergne-Rhône-Alpes), Ener-Co interviene ovunque in Francia — metropoli e Martinica — oltre che in Europa (Italia, Germania, Polonia, Belgio, Spagna) e a livello internazionale (Senegal). Squadre sul campo mobilitabili senza vincoli geografici.",
+    "refs.map.intro": "Con sede a Lione (Auvergne-Rhône-Alpes), Ener-Co interviene ovunque in Francia, metropoli e Martinica, oltre che in Europa (Italia, Germania, Polonia, Belgio, Spagna) e a livello internazionale (Senegal). Squadre sul campo mobilitabili senza vincoli geografici.",
     "refs.country.fr": "Francia",
     "refs.country.fr.p": "Sede Rhône-Alpes · squadre residenti · copertura nazionale",
     "refs.country.fr.chip": "Base principale",
@@ -1657,7 +1657,7 @@ const I18N = {
     "recrut.offer.5": "Trasferte in Francia e in Europa",
     "recrut.cta.eyebrow": "Contatto HR",
     "recrut.cta.h2": "Una domanda sulle nostre posizioni o su Ener-Co ?",
-    "recrut.cta.p": "Il team HR risponde a ogni candidato entro 7 giorni lavorativi. Allegate un CV e qualche riga su ciò che cercate — area tecnica, zona geografica, tipo di missione.",
+    "recrut.cta.p": "Il team HR risponde a ogni candidato entro 7 giorni lavorativi. Allegate un CV e qualche riga su ciò che cercate, area tecnica, zona geografica, tipo di missione.",
     "recrut.cta.btn1": "Scrivere al team HR",
     "recrut.cta.btn2": "Scoprire i nostri mestieri",
     "recrut.cta.label": "Team HR Ener-Co",
@@ -1834,7 +1834,7 @@ const CHANTIERS_POOL = [
   },
 ];
 
-/* Shuffle Fisher-Yates — ordre des chantiers aléatoire à chaque visite */
+/* Shuffle Fisher-Yates, ordre des chantiers aléatoire à chaque visite */
 function shuffleChantiers() {
   const shuffled = [...CHANTIERS_POOL];
   for (let i = shuffled.length - 1; i > 0; i--) {

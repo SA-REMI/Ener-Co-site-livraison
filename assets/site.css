@@ -1,4 +1,4 @@
-/* Ener-Co — feuille de style industrielle premium (FR / EN) */
+/* Ener-Co, feuille de style industrielle premium (FR / EN) */
 
 :root {
   --bg: #f3f4f6;
@@ -65,7 +65,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
-  /* Réserve toujours la gouttière de scrollbar — évite que les pages courtes/longues
+  /* Réserve toujours la gouttière de scrollbar, évite que les pages courtes/longues
      décalent le contenu (et donc la nav centrée) de ~15px au passage d'un onglet à l'autre. */
   scrollbar-gutter: stable;
 }
@@ -228,7 +228,7 @@ p { font-size: 1rem; color: var(--muted); }
   justify-content: center;
   padding: 9px 16px;
   /* Largeur fixe pour empêcher le bouton (et donc la colonne droite du header)
-     de changer de taille entre "Nous consulter" (FR) et "Contact us" (EN) —
+     de changer de taille entre "Nous consulter" (FR) et "Contact us" (EN) ,
      sinon la nav centrée se décale visuellement. */
   min-width: 130px;
   border-radius: var(--r-md);
@@ -421,7 +421,7 @@ p { font-size: 1rem; color: var(--muted); }
   isolation: isolate;
 }
 /* Grille carrée 2×2 de 4 photos aléatoires (hero page Accueil)
-   — capée à 460px pour ne pas diluer la qualité et équilibrer le hero */
+  , capée à 460px pour ne pas diluer la qualité et équilibrer le hero */
 .page-hero__figures-square {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1542,7 +1542,7 @@ p { font-size: 1rem; color: var(--muted); }
 }
 .case-frame:hover img { transform: scale(1.03); }
 
-/* Gallery 6 photos légendées — case Poste HTA
+/* Gallery 6 photos légendées, case Poste HTA
    4 colonnes pour aligner la taille sur les autres cases (mosaic--4) ;
    si 6 photos, les 2 dernières sont centrées dans la rangée du bas */
 .case-gallery {
@@ -2489,7 +2489,7 @@ p { font-size: 1rem; color: var(--muted); }
 }
 
 /* ============================================================
-   BURGER MENU MOBILE — drawer caché par défaut (desktop)
+   BURGER MENU MOBILE, drawer caché par défaut (desktop)
    ============================================================ */
 .mobile-drawer { display: none; }
 .backdrop { display: none; }
