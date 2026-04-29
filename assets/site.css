@@ -1755,8 +1755,11 @@ p { font-size: 1rem; color: var(--muted); }
 
 .country-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+}
+@media (max-width: 720px) {
+  .country-grid { grid-template-columns: repeat(2, 1fr); }
 }
 .country-card {
   padding: 16px 14px;
@@ -1780,10 +1783,12 @@ p { font-size: 1rem; color: var(--muted); }
 }
 .country-fr { color: #0b1e6f; }
 .country-it { color: #008c45; }
-.country-de { color: #1b1b1b; }
-.country-pl { color: #dc143c; }
-.country-be { color: #1b1b1b; }
+.country-de { color: #b8860b; }
+.country-pl { color: #b91c2c; }
+.country-be { color: #6b3fa0; }
 .country-es { color: #aa151b; }
+.country-sn { color: #14a098; }
+.country-mq { color: #14a098; }
 .country-card h3 {
   margin: 0;
   font-size: 0.92rem;
