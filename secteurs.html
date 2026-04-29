@@ -113,133 +113,223 @@
         <div class="sectors-grid">
 
           <article class="sector-card">
-            <div class="sector-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><line x1="7" y1="7" x2="7.01" y2="7"/><line x1="7" y1="17" x2="7.01" y2="17"/></svg>
-            </div>
-            <div>
+            <header class="sector-card__head">
+              <span class="sector-card__num" aria-hidden="true">01</span>
               <h3 data-i18n="sect.s1.h">Data centers</h3>
-              <p data-i18n="sect.s1.p">Alimentation TGBT redondante, gaines à barres haute densité, raccordements puissance et mise sous tension coordonnée avec l'exploitation.</p>
-              <ul class="sector-card__tags">
-                <li data-i18n="sect.s1.t1">Redondance A+B</li><li data-i18n="sect.s1.t2">Gaines haute densité</li><li data-i18n="sect.s1.t3">Tier III / IV</li>
-              </ul>
-            </div>
+            </header>
+            <p class="sector-card__desc" data-i18n="sect.s1.p">Infrastructures critiques nécessitant une distribution électrique fiable, lisible et maintenable.</p>
+            <dl class="sector-card__lines">
+              <div class="sector-line">
+                <dt data-i18n="sect.l.interventions">Interventions</dt>
+                <dd data-i18n="sect.s1.l1">Distribution principale et tableaux de puissance</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.execution">Exécution</dt>
+                <dd data-i18n="sect.s1.l2">Cheminements, raccordements et mise en service</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.coordination">Coordination</dt>
+                <dd data-i18n="sect.s1.l3">Adaptée aux contraintes d'exploitation</dd>
+              </div>
+            </dl>
           </article>
 
           <article class="sector-card">
-            <div class="sector-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V7l6-4 6 4v14"/><path d="M15 21V11l6 4v6"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="9" y1="13" x2="9.01" y2="13"/><line x1="9" y1="17" x2="9.01" y2="17"/></svg>
-            </div>
-            <div>
+            <header class="sector-card__head">
+              <span class="sector-card__num" aria-hidden="true">02</span>
               <h3 data-i18n="sect.s2.h">Industrie lourde</h3>
-              <p data-i18n="sect.s2.p">Sidérurgie, métallurgie, fonderie et sites à forte puissance installée. Interventions sur process actifs et environnements contraints.</p>
-              <ul class="sector-card__tags">
-                <li data-i18n="sect.s2.t1">HTA 20 kV</li><li data-i18n="sect.s2.t2">Fonderie · sidérurgie</li><li data-i18n="sect.s2.t3">Site actif</li>
-              </ul>
-            </div>
+            </header>
+            <p class="sector-card__desc" data-i18n="sect.s2.p">Sites de production à forte puissance installée, avec contraintes d'accès, de continuité et de sécurité.</p>
+            <dl class="sector-card__lines">
+              <div class="sector-line">
+                <dt data-i18n="sect.l.interventions">Interventions</dt>
+                <dd data-i18n="sect.s2.l1">Alimentation d'équipements industriels</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.contexte">Contexte</dt>
+                <dd data-i18n="sect.s2.l2">Travaux en environnement de production</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.coordination">Coordination</dt>
+                <dd data-i18n="sect.s2.l3">Avec les équipes site</dd>
+              </div>
+            </dl>
           </article>
 
           <article class="sector-card">
-            <div class="sector-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.5a3 3 0 1 0 4 0V2"/><line x1="8" y1="2" x2="16" y2="2"/><path d="M10 13.5c-.7 1.8-1.5 2.5-2.5 3.5"/><path d="M14 13.5c.7 1.8 1.5 2.5 2.5 3.5"/></svg>
-            </div>
-            <div>
+            <header class="sector-card__head">
+              <span class="sector-card__num" aria-hidden="true">03</span>
               <h3 data-i18n="sect.s3.h">Pharma &amp; biotech</h3>
-              <p data-i18n="sect.s3.p">Sites de production pharmaceutique et laboratoires biotech. Exigences de traçabilité, contrôles renforcés et environnements réglementés.</p>
-              <ul class="sector-card__tags">
-                <li data-i18n="sect.s3.t1">GMP</li><li data-i18n="sect.s3.t2">Zones contrôlées</li><li data-i18n="sect.s3.t3">Process réglementé</li>
-              </ul>
-            </div>
+            </header>
+            <p class="sector-card__desc" data-i18n="sect.s3.p">Environnements exigeants où la qualité d'exécution, la traçabilité et la maîtrise documentaire sont essentielles.</p>
+            <dl class="sector-card__lines">
+              <div class="sector-line">
+                <dt data-i18n="sect.l.interventions">Interventions</dt>
+                <dd data-i18n="sect.s3.l1">Distribution électrique de zones techniques</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.contexte">Contexte</dt>
+                <dd data-i18n="sect.s3.l2">Interventions en environnement contrôlé</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.suivi">Suivi</dt>
+                <dd data-i18n="sect.s3.l3">Dossiers, contrôles et suivi d'exécution</dd>
+              </div>
+            </dl>
           </article>
 
           <article class="sector-card">
-            <div class="sector-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-            </div>
-            <div>
+            <header class="sector-card__head">
+              <span class="sector-card__num" aria-hidden="true">04</span>
               <h3 data-i18n="sect.s4.h">Énergie</h3>
-              <p data-i18n="sect.s4.p">Production électrique, chaufferies, cogénération et sites de transformation. Alimentations principales et raccordements puissance critiques.</p>
-              <ul class="sector-card__tags">
-                <li data-i18n="sect.s4.t1">Cogénération</li><li data-i18n="sect.s4.t2">Chaufferies gaz</li><li data-i18n="sect.s4.t3">Raccordement réseau</li>
-              </ul>
-            </div>
+            </header>
+            <p class="sector-card__desc" data-i18n="sect.s4.p">Installations de production, transformation ou distribution d'énergie nécessitant des raccordements fiables.</p>
+            <dl class="sector-card__lines">
+              <div class="sector-line">
+                <dt data-i18n="sect.l.alimentations">Alimentations</dt>
+                <dd data-i18n="sect.s4.l1">Principales et secondaires</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.raccordements">Raccordements</dt>
+                <dd data-i18n="sect.s4.l2">Puissance et interfaces process</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.interfaces">Interfaces</dt>
+                <dd data-i18n="sect.s4.l3">Avec exploitants et lots techniques</dd>
+              </div>
+            </dl>
           </article>
 
           <article class="sector-card">
-            <div class="sector-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="9" opacity="0.3"/><path d="M12 2a10 10 0 0 1 8.66 15"/><path d="M12 22a10 10 0 0 1-8.66-15"/></svg>
-            </div>
-            <div>
+            <header class="sector-card__head">
+              <span class="sector-card__num" aria-hidden="true">05</span>
               <h3 data-i18n="sect.s5.h">Nucléaire</h3>
-              <p data-i18n="sect.s5.p">Sites de production et de recherche nucléaires. Chantiers à exigences élevées sur la sécurité, la qualité documentaire et la traçabilité.</p>
-              <ul class="sector-card__tags">
-                <li data-i18n="sect.s5.t1">Qualifications K</li><li data-i18n="sect.s5.t2">SSE renforcé</li><li data-i18n="sect.s5.t3">Documentaire strict</li>
-              </ul>
-            </div>
+            </header>
+            <p class="sector-card__desc" data-i18n="sect.s5.p">Sites à haut niveau d'exigence en matière de sécurité, de préparation et de suivi documentaire.</p>
+            <dl class="sector-card__lines">
+              <div class="sector-line">
+                <dt data-i18n="sect.l.preparation">Préparation</dt>
+                <dd data-i18n="sect.s5.l1">Méthodique des interventions</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.procedures">Procédures</dt>
+                <dd data-i18n="sect.s5.l2">Respect du référentiel site</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.tracabilite">Traçabilité</dt>
+                <dd data-i18n="sect.s5.l3">Documentaire et qualité d'exécution</dd>
+              </div>
+            </dl>
           </article>
 
           <article class="sector-card">
-            <div class="sector-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg>
-            </div>
-            <div>
+            <header class="sector-card__head">
+              <span class="sector-card__num" aria-hidden="true">06</span>
               <h3 data-i18n="sect.s6.h">Utilités</h3>
-              <p data-i18n="sect.s6.p">Distribution d'énergie sur infrastructures d'utilités : eau, air comprimé, vapeur, froid industriel. Continuité de service maintenue.</p>
-              <ul class="sector-card__tags">
-                <li data-i18n="sect.s6.t1">Continuité 24/7</li><li data-i18n="sect.s6.t2">Interfaces process</li><li data-i18n="sect.s6.t3">Fluides</li>
-              </ul>
-            </div>
+            </header>
+            <p class="sector-card__desc" data-i18n="sect.s6.p">Infrastructures support indispensables au fonctionnement des sites industriels.</p>
+            <dl class="sector-card__lines">
+              <div class="sector-line">
+                <dt data-i18n="sect.l.alimentations">Alimentations</dt>
+                <dd data-i18n="sect.s6.l1">Des équipements techniques</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.continuite">Continuité</dt>
+                <dd data-i18n="sect.s6.l2">De service maintenue</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.interfaces">Interfaces</dt>
+                <dd data-i18n="sect.s6.l3">Réseaux fluides et process</dd>
+              </div>
+            </dl>
           </article>
 
           <article class="sector-card">
-            <div class="sector-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2v12a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V2"/><line x1="6" y1="2" x2="18" y2="2"/><line x1="8" y1="22" x2="16" y2="22"/><line x1="12" y1="18" x2="12" y2="22"/></svg>
-            </div>
-            <div>
+            <header class="sector-card__head">
+              <span class="sector-card__num" aria-hidden="true">07</span>
               <h3 data-i18n="sect.s7.h">Agroalimentaire</h3>
-              <p data-i18n="sect.s7.p">Sites de production alimentaire, lignes de conditionnement et chaînes du froid. Interventions sur process 24/7 avec contraintes d'hygiène.</p>
-              <ul class="sector-card__tags">
-                <li data-i18n="sect.s7.t1">HACCP</li><li data-i18n="sect.s7.t2">Froid industriel</li><li data-i18n="sect.s7.t3">Conditionnement 24/7</li>
-              </ul>
-            </div>
+            </header>
+            <p class="sector-card__desc" data-i18n="sect.s7.p">Sites de production où les interventions doivent s'adapter aux cadences, aux zones sensibles et aux contraintes d'hygiène.</p>
+            <dl class="sector-card__lines">
+              <div class="sector-line">
+                <dt data-i18n="sect.l.interventions">Interventions</dt>
+                <dd data-i18n="sect.s7.l1">Sur lignes et zones techniques</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.continuite">Continuité</dt>
+                <dd data-i18n="sect.s7.l2">Maintien de l'activité</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.execution">Exécution</dt>
+                <dd data-i18n="sect.s7.l3">Propre et organisée</dd>
+              </div>
+            </dl>
           </article>
 
           <article class="sector-card">
-            <div class="sector-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="1"/><line x1="4" y1="10" x2="20" y2="10"/><line x1="10" y1="4" x2="10" y2="20"/></svg>
-            </div>
-            <div>
+            <header class="sector-card__head">
+              <span class="sector-card__num" aria-hidden="true">08</span>
               <h3 data-i18n="sect.s8.h">Sites techniques</h3>
-              <p data-i18n="sect.s8.p">Infrastructures multitechniques, hubs logistiques et installations stratégiques. Coordination serrée et lecture client unique.</p>
-              <ul class="sector-card__tags">
-                <li data-i18n="sect.s8.t1">Multitechnique</li><li data-i18n="sect.s8.t2">Hubs logistiques</li><li data-i18n="sect.s8.t3">Infrastructures critiques</li>
-              </ul>
-            </div>
+            </header>
+            <p class="sector-card__desc" data-i18n="sect.s8.p">Bâtiments et infrastructures multitechniques nécessitant une lecture globale des interfaces.</p>
+            <dl class="sector-card__lines">
+              <div class="sector-line">
+                <dt data-i18n="sect.l.distribution">Distribution</dt>
+                <dd data-i18n="sect.s8.l1">Électrique générale</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.coordination">Coordination</dt>
+                <dd data-i18n="sect.s8.l2">Multi-lots</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.exploitation">Exploitation</dt>
+                <dd data-i18n="sect.s8.l3">Et maintenance facilitées</dd>
+              </div>
+            </dl>
           </article>
 
           <article class="sector-card">
-            <div class="sector-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="6" width="18" height="15" rx="2"/><path d="M3 10h18"/><path d="M12 14v4"/><path d="M10 16h4"/></svg>
-            </div>
-            <div>
+            <header class="sector-card__head">
+              <span class="sector-card__num" aria-hidden="true">09</span>
               <h3 data-i18n="sect.s9.h">Chimie</h3>
-              <p data-i18n="sect.s9.p">Sites chimiques et pétrochimiques. Exigences réglementaires, protocole d'accès strict et interface avec les équipes de sécurité site.</p>
-              <ul class="sector-card__tags">
-                <li data-i18n="sect.s9.t1">Zones ATEX</li><li data-i18n="sect.s9.t2">Seveso</li><li data-i18n="sect.s9.t3">Process continu</li>
-              </ul>
-            </div>
+            </header>
+            <p class="sector-card__desc" data-i18n="sect.s9.p">Environnements industriels réglementés nécessitant anticipation, rigueur et coordination avec les équipes sécurité.</p>
+            <dl class="sector-card__lines">
+              <div class="sector-line">
+                <dt data-i18n="sect.l.preparation">Préparation</dt>
+                <dd data-i18n="sect.s9.l1">Accès et modes opératoires</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.interventions">Interventions</dt>
+                <dd data-i18n="sect.s9.l2">Sur installations techniques</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.conformite">Conformité</dt>
+                <dd data-i18n="sect.s9.l3">Respect des règles site</dd>
+              </div>
+            </dl>
           </article>
 
           <article class="sector-card">
-            <div class="sector-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M5 8l-3 4 3 4"/><path d="M19 8l3 4-3 4"/><path d="M12 4v16"/></svg>
-            </div>
-            <div>
+            <header class="sector-card__head">
+              <span class="sector-card__num" aria-hidden="true">10</span>
               <h3 data-i18n="sect.s10.h">Aéronautique</h3>
-              <p data-i18n="sect.s10.p">Sites de production aéronautique et bancs d'essais. Interventions sur lignes d'assemblage, traitements de surface et utilités associées.</p>
-              <ul class="sector-card__tags">
-                <li data-i18n="sect.s10.t1">Bancs d'essais</li><li data-i18n="sect.s10.t2">Salles blanches</li><li data-i18n="sect.s10.t3">Utilités aéro</li>
-              </ul>
-            </div>
+            </header>
+            <p class="sector-card__desc" data-i18n="sect.s10.p">Sites de production, d'essais ou d'assemblage avec exigences fortes de continuité, précision et coordination.</p>
+            <dl class="sector-card__lines">
+              <div class="sector-line">
+                <dt data-i18n="sect.l.alimentations">Alimentations</dt>
+                <dd data-i18n="sect.s10.l1">Équipements et bancs techniques</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.interventions">Interventions</dt>
+                <dd data-i18n="sect.s10.l2">Sur zones de production</dd>
+              </div>
+              <div class="sector-line">
+                <dt data-i18n="sect.l.coordination">Coordination</dt>
+                <dd data-i18n="sect.s10.l3">Avec exploitation et maintenance</dd>
+              </div>
+            </dl>
           </article>
 
         </div>

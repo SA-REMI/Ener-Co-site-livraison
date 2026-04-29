@@ -1860,68 +1860,100 @@ p { font-size: 1rem; color: var(--muted); }
   line-height: 1.5;
 }
 
-/* -------- SECTEURS -------- */
+/* -------- SECTEURS (refonte premium) -------- */
 .sectors-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 24px;
+}
+@media (max-width: 860px) {
+  .sectors-grid { grid-template-columns: 1fr; gap: 16px; }
 }
 .sector-card {
-  display: grid;
-  grid-template-columns: 64px 1fr;
-  gap: 22px;
-  padding: 26px 28px;
-  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  padding: 36px 36px 32px;
+  background: #fdfdfc;
   border: 1px solid var(--line);
   border-radius: var(--r-md);
-  box-shadow: var(--shadow-sm);
-  transition: border-color 0.18s ease, transform 0.18s ease;
+  box-shadow: 0 1px 2px rgba(15, 20, 25, 0.03);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 .sector-card:hover {
-  border-color: rgba(216, 84, 26, 0.25);
-  transform: translateY(-2px);
+  border-color: rgba(15, 20, 25, 0.18);
+  box-shadow: 0 1px 2px rgba(15, 20, 25, 0.04), 0 12px 28px rgba(15, 20, 25, 0.06);
+  transform: translateY(-1px);
 }
-.sector-card__icon {
-  width: 54px;
-  height: 54px;
-  display: grid;
-  place-items: center;
-  border-radius: var(--r-md);
-  background: rgba(216, 84, 26, 0.08);
-  color: var(--accent-ink);
+@media (max-width: 480px) {
+  .sector-card { padding: 26px 22px 22px; }
 }
-.sector-card__icon svg { width: 28px; height: 28px; }
-
-/* 10 secteurs : chaque icône en couleur dédiée */
-.sectors-grid .sector-card:nth-child(1) .sector-card__icon { background: rgba(46, 91, 161, 0.10); color: var(--accent-2-ink); }
-.sectors-grid .sector-card:nth-child(2) .sector-card__icon { background: rgba(90, 100, 112, 0.12); color: #2a323d; }
-.sectors-grid .sector-card:nth-child(3) .sector-card__icon { background: rgba(10, 138, 70, 0.10); color: var(--accent-3-ink); }
-.sectors-grid .sector-card:nth-child(4) .sector-card__icon { background: rgba(216, 154, 26, 0.12); color: var(--accent-5-ink); }
-.sectors-grid .sector-card:nth-child(5) .sector-card__icon { background: rgba(107, 79, 187, 0.10); color: var(--accent-4-ink); }
-.sectors-grid .sector-card:nth-child(6) .sector-card__icon { background: rgba(14, 166, 160, 0.10); color: #0a6e6a; }
-.sectors-grid .sector-card:nth-child(7) .sector-card__icon { background: rgba(75, 150, 60, 0.10); color: #3a7830; }
-.sectors-grid .sector-card:nth-child(8) .sector-card__icon { background: rgba(90, 100, 112, 0.12); color: var(--ink-3); }
-.sectors-grid .sector-card:nth-child(9) .sector-card__icon { background: rgba(198, 77, 77, 0.10); color: #8c2e2e; }
-.sectors-grid .sector-card:nth-child(10) .sector-card__icon { background: rgba(30, 66, 128, 0.10); color: #1e4280; }
-.sector-card h3 { font-size: 1.1rem; margin-bottom: 6px; }
-.sector-card p {
-  font-size: 0.9rem;
-  line-height: 1.55;
-  color: var(--muted);
-}
-.sector-card__tags {
+.sector-card__head {
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 12px;
+  align-items: baseline;
+  gap: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--line);
 }
-.sector-card__tags li {
-  padding: 4px 9px;
-  background: rgba(15, 20, 25, 0.04);
-  border-radius: var(--r-sm);
-  color: var(--ink-3);
-  font-size: 0.72rem;
+.sector-card__num {
+  font-size: 0.78rem;
   font-weight: 500;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+  min-width: 26px;
+}
+.sector-card__head h3 {
+  font-size: 1.22rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.25;
+}
+.sector-card__desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink-2);
+  margin: 0 0 22px;
+}
+.sector-card__lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  margin-top: auto;
+}
+.sector-line {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  align-items: baseline;
+  gap: 18px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(15, 20, 25, 0.06);
+}
+.sector-line:first-child { border-top: 0; }
+.sector-line dt {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  margin: 0;
+}
+.sector-line dd {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+  margin: 0;
+}
+@media (max-width: 540px) {
+  .sector-line {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 10px 0;
+  }
 }
 
 /* -------- SECTORS BLOCK + MASE CARD (refs page) -------- */
