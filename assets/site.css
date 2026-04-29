@@ -1706,6 +1706,24 @@ p { font-size: 1rem; color: var(--muted); }
   width: 100%;
   height: auto;
   object-fit: contain;
+  display: block;
+}
+.map-figure-wrap {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+.map-figure-wrap > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.map-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 .map-showcase__aside { display: grid; gap: 12px; }
 
