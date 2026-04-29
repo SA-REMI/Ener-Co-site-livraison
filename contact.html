@@ -113,12 +113,19 @@
         <div class="contact-grid">
 
           <!-- FORMULAIRE -->
-          <form class="contact-form" action="#" method="POST" aria-label="Formulaire de contact">
+          <form class="contact-form" action="contact.php" method="POST" aria-label="Formulaire de contact">
             <header>
               <span class="eyebrow" data-i18n="contact.form.eyebrow">Demande d'étude</span>
               <h2 style="margin-top:14px; margin-bottom:8px; font-size:1.5rem;" data-i18n="contact.form.h2">Décrivez votre besoin.</h2>
               <p style="font-size:0.9rem; color:var(--muted);" data-i18n="contact.form.p">Nous vous recontactons pour préciser le périmètre technique et les prochaines étapes.</p>
+              <p id="form-erreur" class="form-erreur" hidden role="alert"></p>
             </header>
+
+            <!-- Anti-spam : honeypot caché et timestamp d'ouverture -->
+            <div class="hp-field" aria-hidden="true">
+              <label>Ne pas remplir ce champ <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+            </div>
+            <input type="hidden" name="started_at" value="">
 
             <div class="contact-form__row">
               <div class="field">
@@ -164,7 +171,7 @@
             <div class="field field--full">
               <button type="submit" class="button button--accent" style="justify-self:flex-start;"><span data-i18n="contact.form.btn">Envoyer la demande</span> <span class="arrow" aria-hidden="true">→</span></button>
             </div>
-            <p style="font-size:0.75rem; color:var(--muted); line-height:1.55; margin-top:4px;" data-i18n="contact.form.legal">Vos données sont utilisées exclusivement pour le traitement de votre demande et ne sont transmises à aucun tiers. Voir notre <a href="#" style="color:var(--accent-ink); text-decoration:underline;">politique de confidentialité</a>.</p>
+            <p style="font-size:0.75rem; color:var(--muted); line-height:1.55; margin-top:4px;" data-i18n="contact.form.legal">Vos données sont utilisées exclusivement pour le traitement de votre demande et ne sont transmises à aucun tiers. Voir notre <a href="politique-de-confidentialite.html" style="color:var(--accent-ink); text-decoration:underline;">politique de confidentialité</a>.</p>
           </form>
 
           <!-- COORDONNÉES -->
@@ -282,5 +289,34 @@
   </footer>
 
   <script src="assets/site.js"></script>
+  <script>
+    // Anti-spam : timestamp d'ouverture du formulaire (validé côté PHP)
+    (function () {
+      var startedField = document.querySelector('input[name="started_at"]');
+      if (startedField) startedField.value = String(Math.floor(Date.now() / 1000));
+
+      // Affichage des erreurs au retour de contact.php
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('erreur') === '1') {
+        var box = document.getElementById('form-erreur');
+        if (box) {
+          var champs = (params.get('champs') || '').split(',').filter(Boolean);
+          var labels = { name: 'le nom', email: 'l’email', message: 'le message', envoi: 'l’envoi' };
+          var msg;
+          if (champs.indexOf('envoi') !== -1) {
+            msg = 'L’envoi a échoué. Merci de réessayer ou de nous écrire directement à contact@ener-co.fr.';
+          } else if (champs.length) {
+            var human = champs.map(function (c) { return labels[c] || c; }).join(', ');
+            msg = 'Merci de vérifier ' + human + '.';
+          } else {
+            msg = 'Une erreur est survenue. Merci de réessayer.';
+          }
+          box.textContent = msg;
+          box.hidden = false;
+          box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+    })();
+  </script>
 </body>
 </html>

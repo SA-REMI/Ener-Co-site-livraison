@@ -1,0 +1,127 @@
+# =============================================================================
+# Ener-Co — site HTML statique
+# Configuration Apache (OVH mutualisé)
+# =============================================================================
+
+# --- Encodage --------------------------------------------------------------
+AddDefaultCharset UTF-8
+AddType "text/html; charset=UTF-8" .html
+
+# --- Page d'erreur 404 -----------------------------------------------------
+ErrorDocument 404 /404.html
+
+# --- Désactiver l'indexation des dossiers ----------------------------------
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# --- 1) Forcer HTTPS -------------------------------------------------------
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} !^localhost [NC]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# --- 2) Forcer www (au choix) ---------------------------------------------
+# Décommentez la version voulue, garder une seule des deux.
+
+# Forcer www :
+# RewriteCond %{HTTP_HOST} ^ener-co\.fr$ [NC]
+# RewriteRule ^(.*)$ https://www.ener-co.fr/$1 [R=301,L]
+
+# Ou forcer sans www :
+# RewriteCond %{HTTP_HOST} ^www\.ener-co\.fr$ [NC]
+# RewriteRule ^(.*)$ https://ener-co.fr/$1 [R=301,L]
+
+# --- 3) Bloquer / 410 sur les anciens points d'accès WordPress ------------
+# Ces URLs n'existent plus, on coupe pour éviter scans et faux 404.
+RewriteRule ^wp-admin/?$        - [G,L]
+RewriteRule ^wp-login\.php$     - [G,L]
+RewriteRule ^xmlrpc\.php$       - [G,L]
+RewriteRule ^wp-config\.php$    - [G,L]
+RewriteRule ^wp-content/.*$     - [G,L]
+RewriteRule ^wp-includes/.*$    - [G,L]
+RewriteRule ^wp-json/.*$        - [G,L]
+RewriteRule ^.*\.php\.suspected$ - [F,L]
+
+# --- 4) Redirections 301 anciens slugs WP probables -----------------------
+# À ajuster selon les vraies URLs présentes dans Search Console.
+# Ajoutez ici les anciennes URLs WP que Google indexait, vers les nouvelles pages.
+RewriteRule ^accueil/?$              /                           [R=301,L]
+RewriteRule ^home/?$                 /                           [R=301,L]
+RewriteRule ^services/?$             /expertise.html             [R=301,L]
+RewriteRule ^nos-services/?$         /expertise.html             [R=301,L]
+RewriteRule ^prestations/?$          /expertise.html             [R=301,L]
+RewriteRule ^chantiers/?$            /realisations.html          [R=301,L]
+RewriteRule ^projets/?$              /realisations.html          [R=301,L]
+RewriteRule ^equipe/?$               /engagements.html           [R=301,L]
+RewriteRule ^entreprise/?$           /engagements.html           [R=301,L]
+RewriteRule ^a-propos/?$             /engagements.html           [R=301,L]
+RewriteRule ^clients/?$              /references.html            [R=301,L]
+RewriteRule ^partenaires/?$          /references.html            [R=301,L]
+RewriteRule ^carrieres?/?$           /recrutement.html           [R=301,L]
+RewriteRule ^emploi/?$               /recrutement.html           [R=301,L]
+RewriteRule ^nous-contacter/?$       /contact.html               [R=301,L]
+RewriteRule ^demande-de-devis/?$     /contact.html               [R=301,L]
+RewriteRule ^mentions/?$             /mentions-legales.html      [R=301,L]
+RewriteRule ^confidentialite/?$      /politique-de-confidentialite.html [R=301,L]
+RewriteRule ^rgpd/?$                 /politique-de-confidentialite.html [R=301,L]
+
+# --- 5) URLs propres : permettre /expertise au lieu de /expertise.html ----
+# Si l'utilisateur demande /expertise et que /expertise.html existe, on sert le .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+?)/?$ $1.html [L]
+
+# --- 6) Si l'utilisateur demande /expertise.html, on redirige vers /expertise
+RewriteCond %{THE_REQUEST} \s/+([^?\s]+)\.html[?\s] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+</IfModule>
+
+# --- 7) Compression gzip --------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json application/rss+xml image/svg+xml application/xml+rss application/xhtml+xml
+</IfModule>
+
+# --- 8) Cache navigateur --------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault                          "access plus 1 month"
+  ExpiresByType text/html                 "access plus 0 seconds"
+  ExpiresByType text/css                  "access plus 1 month"
+  ExpiresByType application/javascript    "access plus 1 month"
+  ExpiresByType image/jpeg                "access plus 6 months"
+  ExpiresByType image/png                 "access plus 6 months"
+  ExpiresByType image/webp                "access plus 6 months"
+  ExpiresByType image/svg+xml             "access plus 6 months"
+  ExpiresByType image/x-icon              "access plus 1 year"
+  ExpiresByType font/woff2                "access plus 1 year"
+  ExpiresByType application/pdf           "access plus 1 month"
+</IfModule>
+
+# --- 9) En-têtes de sécurité ----------------------------------------------
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+  # Empêche le cache des HTML pour que les MAJ soient visibles immédiatement
+  <FilesMatch "\.(html)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# --- 10) Bloquer les fichiers sensibles -----------------------------------
+<FilesMatch "(^\.|\.(bak|config|dist|fla|inc|ini|log|md|psd|sh|sql|swp|sublime-project|sublime-workspace)$|~$)">
+  Require all denied
+</FilesMatch>
+<Files ".htaccess">
+  Require all denied
+</Files>
+<Files ".gitattributes">
+  Require all denied
+</Files>
+<Files "BRIEF-INTEGRATION.md">
+  Require all denied
+</Files>

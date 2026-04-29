@@ -1782,6 +1782,26 @@ p { font-size: 1rem; color: var(--muted); }
   line-height: 1;
   letter-spacing: -0.02em;
 }
+/* ---- Formulaire de contact : anti-spam et erreurs ---- */
+.hp-field {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.form-erreur {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: rgba(216, 84, 26, 0.08);
+  border: 1px solid rgba(216, 84, 26, 0.25);
+  border-radius: var(--r-sm);
+  color: var(--accent-ink);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
 /* ---- Pages légales ---- */
 .container--narrow { width: min(100% - 32px, 820px); }
 .legal-article {
