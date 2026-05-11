@@ -151,16 +151,11 @@
 
             <div class="field field--full">
               <label for="subject" data-i18n="contact.form.label.subject">Type de demande</label>
-              <select id="subject" name="subject">
-                <option data-i18n="contact.form.opt.1">Étude technique préliminaire</option>
-                <option data-i18n="contact.form.opt.2">Chiffrage · devis</option>
-                <option data-i18n="contact.form.opt.3">Alimentation principale · raccordement puissance</option>
-                <option data-i18n="contact.form.opt.4">Extension / remplacement de ligne</option>
-                <option data-i18n="contact.form.opt.5">Gaines à barres · implantation</option>
-                <option data-i18n="contact.form.opt.6">Demande partenariat</option>
-                <option data-i18n="contact.form.opt.7">Candidature · recrutement</option>
-                <option data-i18n="contact.form.opt.8">Autre</option>
-              </select>
+              <input type="text" id="subject" name="subject" list="subject-suggestions" autocomplete="off" placeholder="Précisez l'objet de votre demande" data-i18n-attr="placeholder:contact.form.subject.ph">
+              <datalist id="subject-suggestions">
+                <option value="Chiffrage · Devis"></option>
+                <option value="Candidature · Recrutement"></option>
+              </datalist>
             </div>
 
             <div class="field field--full">
