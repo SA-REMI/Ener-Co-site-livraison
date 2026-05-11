@@ -1647,8 +1647,8 @@ p { font-size: 1rem; color: var(--muted); }
   gap: 14px;
 }
 .logo-tile {
-  min-height: 120px;
-  padding: 18px 22px;
+  min-height: 134px;
+  padding: 16px 18px;
   display: grid;
   place-items: center;
   text-align: center;
@@ -1667,16 +1667,18 @@ p { font-size: 1rem; color: var(--muted); }
   max-width: 100%;
   width: auto;
   height: auto;
-  max-height: 56px;
+  max-height: 78px;
   object-fit: contain;
-  opacity: 0.88;
+  opacity: 0.9;
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 .logo-tile:hover img { opacity: 1; transform: scale(1.04); }
 
-.logo-mark { max-width: 180px; max-height: 56px; }
-.logo-mark--wide { max-width: 210px; max-height: 52px; }
-.logo-mark--small { max-width: 160px; max-height: 44px; }
+/* Variantes par format de logo (à appliquer selon la forme du fichier) */
+.logo-mark         { max-width: 190px; max-height: 78px; }   /* défaut, format paysage modéré */
+.logo-mark--wide   { max-width: 220px; max-height: 64px; }   /* format très allongé (texte horizontal long) */
+.logo-mark--tall   { max-width: 140px; max-height: 100px; }  /* format carré ou vertical (logo + texte en pile) */
+.logo-mark--small  { max-width: 160px; max-height: 56px; }   /* logo qui ne doit pas trop grossir */
 
 .logo-wall__disclaimer {
   margin-top: 28px;
