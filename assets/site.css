@@ -123,35 +123,18 @@ p { font-size: 1rem; color: var(--muted); }
   text-transform: uppercase;
   border-radius: var(--r-sm);
 }
-.eyebrow::before {
-  content: "";
-  width: 14px;
-  height: 2px;
-  background: var(--accent);
-  border-radius: 2px;
-}
+/* Trait décoratif retiré (ressemblait visuellement à un double tiret) */
 .eyebrow--muted { color: var(--muted); background: rgba(15, 20, 25, 0.06); }
-.eyebrow--muted::before { background: var(--muted); }
-
 .eyebrow--blue { color: var(--accent-2-ink); background: rgba(46, 91, 161, 0.10); }
-.eyebrow--blue::before { background: var(--accent-2); }
-
 .eyebrow--green { color: var(--accent-3-ink); background: rgba(10, 138, 70, 0.10); }
-.eyebrow--green::before { background: var(--accent-3); }
-
 .eyebrow--purple { color: var(--accent-4-ink); background: rgba(107, 79, 187, 0.10); }
-.eyebrow--purple::before { background: var(--accent-4); }
-
 .eyebrow--amber { color: var(--accent-5-ink); background: rgba(216, 154, 26, 0.10); }
-.eyebrow--amber::before { background: var(--accent-5); }
 
 .section--dark .eyebrow,
 .cta-final .eyebrow {
   background: rgba(232, 129, 71, 0.16);
   color: #ffa874;
 }
-.section--dark .eyebrow::before,
-.cta-final .eyebrow::before { background: #e88147; }
 
 /* -------- HEADER -------- */
 .site-header {
@@ -2652,7 +2635,6 @@ p { font-size: 1rem; color: var(--muted); }
   background: rgba(216, 84, 26, 0.18);
   color: #ffb079;
 }
-.section--signature .eyebrow::before { background: var(--accent); }
 
 .signature-lead {
   display: grid;
