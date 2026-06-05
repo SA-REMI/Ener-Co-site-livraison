@@ -311,6 +311,8 @@ const I18N = {
     "exp.hero.btn2": "Nous consulter",
     "exp.hero.cap1": "Saint-Gaudens · Fibre Excellence",
     "exp.hero.cap2": "Chaufferie gaz · Est lyonnais",
+    "exp.hero.cap3": "Poste HTA · Schneider Electric",
+    "exp.hero.cap4": "Eta-com · jonctions GAB",
     "exp.scope.eyebrow": "Six expertises",
     "exp.scope.h2": "Six expertises techniques intégrées.",
     "exp.scope.intro": "Chaque maillon de la distribution d'énergie est pris en charge en interne, sans sous-traitance. De la préparation HTA à la mise sous tension, la même continuité de responsabilité couvre l'ensemble du chantier.",
@@ -868,6 +870,8 @@ const I18N = {
     "exp.hero.btn2": "Contact us",
     "exp.hero.cap1": "Saint-Gaudens · Fibre Excellence",
     "exp.hero.cap2": "Gas boiler · East Lyon",
+    "exp.hero.cap3": "MV substation · Schneider Electric",
+    "exp.hero.cap4": "Eta-com · busbar joints",
     "exp.scope.eyebrow": "Six expertises",
     "exp.scope.h2": "Six integrated technical expertises.",
     "exp.scope.intro": "Each link of power distribution is handled in-house, without subcontracting. From MV preparation to energisation, the same continuity of responsibility covers the entire project.",
@@ -1425,6 +1429,8 @@ const I18N = {
     "exp.hero.btn2": "Contattaci",
     "exp.hero.cap1": "Saint-Gaudens · Fibre Excellence",
     "exp.hero.cap2": "Caldaia gas · Est Lione",
+    "exp.hero.cap3": "Cabina MT · Schneider Electric",
+    "exp.hero.cap4": "Eta-com · giunzioni condotti sbarre",
     "exp.scope.eyebrow": "Sei competenze",
     "exp.scope.h2": "Sei competenze tecniche integrate.",
     "exp.scope.intro": "Ogni anello della distribuzione di energia è gestito internamente, senza subappalto. Dalla preparazione MT alla messa in tensione, la stessa continuità di responsabilità copre l'intero cantiere.",
@@ -1877,7 +1883,11 @@ function initRefsPhotoStrip() {
 
 /* ---- CARRÉ 2×2 PHOTOS ALÉATOIRES (page Accueil · hero) ---- */
 function initHomeHeroSquare() {
-  populateChantierSlots(document.getElementById("home-hero-square"));
+  // Compatibilite ancien ID + nouveau ID
+  populateChantierSlots(
+    document.getElementById("home-hero-edit") ||
+    document.getElementById("home-hero-square")
+  );
 }
 
 /* ---- ACTIVE NAV LINK BASED ON CURRENT FILE ---- */

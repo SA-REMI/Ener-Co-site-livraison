@@ -459,6 +459,74 @@ p { font-size: 1rem; color: var(--muted); }
   .page-hero__figures-square { max-width: 320px; }
 }
 
+/* === HERO MOSAIC EXPERTISE · 2x2 equilibre (V5.3) === */
+.page-hero__figures-mosaic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  align-self: end;
+  width: 100%;
+  max-width: 520px;
+  margin-left: auto;
+  aspect-ratio: 1 / 1;
+}
+.page-hero__figures-mosaic .page-hero__figure {
+  aspect-ratio: auto;
+  min-height: 0;
+  border-radius: var(--r-md);
+}
+.page-hero__figures-mosaic .page-hero__figure figcaption {
+  font-size: 0.7rem;
+  padding: 5px 9px;
+  left: 10px;
+  bottom: 10px;
+}
+@media (max-width: 900px) {
+  .page-hero__figures-mosaic { max-width: 420px; margin: 0 auto; }
+}
+@media (max-width: 520px) {
+  .page-hero__figures-mosaic { max-width: 340px; }
+}
+
+/* === HERO EDITORIAL · grande photo + 2 verticales (V5.3) ===
+   Composition asymetrique : la grande tient le poids visuel, les deux
+   verticales empilees a droite contextualisent. Ratio narratif maitrise. */
+.page-hero__figures-edit {
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  align-self: end;
+  width: 100%;
+  max-width: 580px;
+  margin-left: auto;
+  aspect-ratio: 1.2 / 1;
+}
+.page-hero__figure--main {
+  grid-row: 1 / span 2;        /* prend les 2 lignes a gauche */
+  aspect-ratio: auto;
+  border-radius: var(--r-md);
+  min-height: 0;
+}
+.page-hero__figure--tall {
+  aspect-ratio: auto;
+  min-height: 0;
+  border-radius: var(--r-md);
+}
+.page-hero__figures-edit .page-hero__figure figcaption {
+  font-size: 0.72rem;
+  padding: 5px 9px;
+  left: 10px;
+  bottom: 10px;
+}
+@media (max-width: 900px) {
+  .page-hero__figures-edit { max-width: 480px; margin: 0 auto; aspect-ratio: 1.25 / 1; }
+}
+@media (max-width: 520px) {
+  .page-hero__figures-edit { max-width: 360px; }
+}
+
 /* Strip de 4 photos aléatoires (page Références) */
 .refs-photo-strip {
   display: grid;
@@ -1939,94 +2007,169 @@ p { font-size: 1rem; color: var(--muted); }
 }
 
 /* -------- SECTEURS (refonte premium) -------- */
-.sectors-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
-@media (max-width: 860px) {
-  .sectors-grid { grid-template-columns: 1fr; gap: 16px; }
-}
-.sector-card {
+/* ----- DIRECTION 2 · LISTE EDITORIALE LONGUE (V5.3) -----
+   Chaque secteur prend une bande pleine largeur, avec gros numero a gauche,
+   contenu structure au centre, photo signature a droite. Filets de separation
+   forts, filet orange anime au hover · rythme narratif. */
+
+.sectors-grid,
+.sectors-editorial {
   display: flex;
   flex-direction: column;
-  padding: 36px 36px 32px;
-  background: #fdfdfc;
-  border: 1px solid var(--line);
-  border-radius: var(--r-md);
-  box-shadow: 0 1px 2px rgba(15, 20, 25, 0.03);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  gap: 0;
+  border-top: 1px solid var(--rule, var(--line));
+}
+.sector-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 96px 1.6fr 320px;
+  gap: 56px;
+  align-items: start;
+  padding: 56px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--rule, var(--line));
+  border-radius: 0;
+  box-shadow: none;
+  transition: background 0.25s ease;
+}
+.sector-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--signal, var(--accent));
+  transition: width 0.5s cubic-bezier(.2,.8,.2,1);
 }
 .sector-card:hover {
-  border-color: rgba(15, 20, 25, 0.18);
-  box-shadow: 0 1px 2px rgba(15, 20, 25, 0.04), 0 12px 28px rgba(15, 20, 25, 0.06);
-  transform: translateY(-1px);
+  background: rgba(242, 100, 25, 0.025);
+  transform: none;
+  border-color: var(--rule, var(--line));
+  box-shadow: none;
 }
-@media (max-width: 480px) {
-  .sector-card { padding: 26px 22px 22px; }
-}
+.sector-card:hover::before { width: 120px; }
+
+/* display: contents · libere num et h3 du wrapper .sector-card__head
+   pour les positionner directement dans le grid de .sector-card */
 .sector-card__head {
-  display: flex;
-  align-items: baseline;
-  gap: 16px;
-  padding-bottom: 16px;
-  margin-bottom: 18px;
-  border-bottom: 1px solid var(--line);
+  display: contents;
 }
 .sector-card__num {
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  color: var(--muted);
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 4.6rem;
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  color: var(--ink);
+  line-height: 0.95;
   font-variant-numeric: tabular-nums;
-  flex-shrink: 0;
-  min-width: 26px;
+  margin: 0;
+  align-self: start;
+  padding-top: 6px;
 }
 .sector-card__head h3 {
-  font-size: 1.22rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.028em;
   color: var(--ink);
+  line-height: 1.05;
   margin: 0;
-  line-height: 1.25;
+  align-self: start;
+  padding-top: 12px;
 }
+
 .sector-card__desc {
-  font-size: 0.95rem;
-  line-height: 1.6;
+  grid-column: 2;
+  grid-row: 2;
+  margin: 18px 0 28px;
+  font-size: 1.02rem;
+  line-height: 1.65;
   color: var(--ink-2);
-  margin: 0 0 22px;
+}
+.sector-card__lines {
+  grid-column: 2;
+  grid-row: 3;
+}
+.sector-card__visual {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  align-self: start;
 }
 .sector-card__lines {
   display: flex;
   flex-direction: column;
   gap: 0;
   margin: 0;
-  margin-top: auto;
 }
 .sector-line {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 140px 1fr;
   align-items: baseline;
-  gap: 18px;
+  gap: 24px;
   padding: 12px 0;
-  border-top: 1px solid rgba(15, 20, 25, 0.06);
+  border-top: 1px solid rgba(14, 15, 18, 0.07);
 }
-.sector-line:first-child { border-top: 0; }
+.sector-line:first-child { border-top: 0; padding-top: 0; }
 .sector-line dt {
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent-ink);
   margin: 0;
 }
 .sector-line dd {
-  font-size: 0.92rem;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.55;
   color: var(--ink-2);
   margin: 0;
 }
+
+/* Colonne 3 : photo signature */
+.sector-card__visual {
+  margin: 0;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--dark);
+  position: relative;
+  isolation: isolate;
+  border-radius: var(--r-md);
+}
+.sector-card__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.94) sepia(0.18) contrast(1.06) brightness(0.97);
+  transition: transform 0.5s cubic-bezier(.2,.8,.2,1);
+}
+.sector-card:hover .sector-card__visual img {
+  transform: scale(1.04);
+}
+
+/* Responsive · tablette : photo dessus, contenu en dessous */
+@media (max-width: 1000px) {
+  .sector-card {
+    grid-template-columns: 80px 1fr;
+    gap: 32px;
+    padding: 40px 0;
+  }
+  .sector-card__visual {
+    grid-column: 1 / -1;
+    aspect-ratio: 16 / 9;
+    margin-top: 16px;
+  }
+  .sector-card__num { font-size: 3.4rem; }
+  .sector-card__desc::before { font-size: 1.55rem; }
+}
 @media (max-width: 540px) {
+  .sector-card { grid-template-columns: 1fr; gap: 16px; padding: 32px 0; }
+  .sector-card__num { font-size: 2.4rem; }
+  .sector-card__desc::before { font-size: 1.35rem; }
   .sector-line {
     grid-template-columns: 1fr;
     gap: 4px;
