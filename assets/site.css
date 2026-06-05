@@ -23,11 +23,11 @@
   --accent-5: #d89a1a;
   --accent-5-ink: #a67514;
 
-  /* Anthracite (jamais de noir pur · plus chaleureux, plus contemporain) */
-  --dark: #20242B;
-  --dark-2: #262A32;
-  --dark-3: #2D323B;
-  --dark-line: rgba(255, 255, 255, 0.09);
+  /* Anthracite (gris fonce joli, jamais de noir pur) */
+  --dark: #2D333D;
+  --dark-2: #353B47;
+  --dark-3: #3F4654;
+  --dark-line: rgba(255, 255, 255, 0.10);
 
   --r-sm: 4px;
   --r-md: 8px;
@@ -1763,11 +1763,19 @@ p { font-size: 1rem; color: var(--muted); }
 }
 .logo-tile:hover img { opacity: 1; }
 
-/* Logos a fond coloure integre (TotalEnergies, Solvay, DHL, Lynred, ...) qui
-   ressortent mal sur fond blanc. Multiply blend + brightness leger pour les
-   integrer harmonieusement sans toucher le fichier source. */
-.logo-tile[data-bg="colored"] img {
+/* Logos a fond coloure integre (Solvay rectangle vert, KiloAmps rond noir,
+   TotalEnergies bloc rouge) qui ressortent mal sur fond blanc.
+   Selecteur :has() · cible directement par alt de l'img. */
+.logo-tile:has(img[alt="Solvay"]) img,
+.logo-tile:has(img[alt="KiloAmps"]) img,
+.logo-tile:has(img[alt="TotalEnergies"]) img {
   mix-blend-mode: multiply;
+}
+/* Pour les logos avec fond fonce/noir integre, on inverse la logique :
+   on assombrit legerement la zone autour pour mieux integrer.
+   KiloAmps a un rond noir, on lui donne plus de padding pour aerer. */
+.logo-tile:has(img[alt="KiloAmps"]) {
+  padding: 32px 36px;
 }
 
 /* Variantes neutralisees · le systeme uniforme object-fit:contain + padding
