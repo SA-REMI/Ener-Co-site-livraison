@@ -2372,7 +2372,7 @@ p { font-size: 1rem; color: var(--muted); }
 /* -------- CTA FINAL -------- */
 .cta-final {
   padding: 96px 0;
-  background: linear-gradient(180deg, var(--dark) 0%, #0b0d10 100%);
+  background: linear-gradient(180deg, var(--dark) 0%, var(--dark-2) 100%);
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -2595,8 +2595,9 @@ p { font-size: 1rem; color: var(--muted); }
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 .footer__brand img {
-  width: 140px;
-  filter: brightness(0) invert(1);
+  width: 160px;
+  /* Vrai logo Ener-Co conserve (orange + vert), pas de filter qui le blanchit.
+     Le logo a son propre fond transparent et reste lisible sur le gris fonce. */
   margin-bottom: 20px;
 }
 .footer__brand p {
@@ -2812,9 +2813,9 @@ p { font-size: 1rem; color: var(--muted); }
   position: relative;
   padding: 96px 0;
   background:
-    radial-gradient(ellipse 70% 90% at 10% 0%, rgba(216, 84, 26, 0.14), transparent 50%),
-    radial-gradient(ellipse 60% 70% at 90% 100%, rgba(46, 91, 161, 0.10), transparent 55%),
-    linear-gradient(180deg, var(--dark) 0%, #0e1217 100%);
+    radial-gradient(ellipse 70% 90% at 10% 0%, rgba(242, 100, 25, 0.10), transparent 50%),
+    radial-gradient(ellipse 60% 70% at 90% 100%, rgba(255, 255, 255, 0.04), transparent 55%),
+    linear-gradient(180deg, var(--dark) 0%, var(--dark-2) 100%);
   color: #fff;
   overflow: hidden;
   border-bottom: 0;
