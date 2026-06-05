@@ -3698,11 +3698,15 @@ p { font-size: 1rem; color: var(--muted); }
   font-weight: inherit;
 }
 .brand-name__dash {
-  color: var(--brand-orange);
+  color: var(--brand-green);   /* tiret groupe avec "Co" pour clarte visuelle */
   font-style: normal;
   font-weight: inherit;
   margin: 0 0.02em;
 }
+.section--dark .brand-name__dash,
+.cta-final .brand-name__dash,
+.section--signature .brand-name__dash,
+.footer .brand-name__dash { color: #2CD17B; }
 /* Sur fond sombre, on garde les memes couleurs (assez vives pour rester lisibles) */
 .section--dark .brand-name__orange,
 .cta-final .brand-name__orange,
