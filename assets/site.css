@@ -3636,8 +3636,25 @@ p { font-size: 1rem; color: var(--muted); }
   position: relative;
   overflow: hidden;
   /* Fondus latéraux pour estomper les bords */
-  mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  /* Fondu lateral plus doux · evite que les logos soient coupes net en entree/sortie */
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent 2%,
+    #000 12%,
+    #000 88%,
+    transparent 98%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent 2%,
+    #000 12%,
+    #000 88%,
+    transparent 98%,
+    transparent 100%
+  );
 }
 .client-strip__track {
   display: flex;
