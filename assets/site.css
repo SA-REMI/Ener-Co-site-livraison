@@ -3681,41 +3681,18 @@ p { font-size: 1rem; color: var(--muted); }
    V5.7 · NOM 'Ener-Co' COLORISE + MOTS-CLES ACCENTUES
    ============================================================================= */
 
-/* Nom de marque · 'Ener' orange + 'Co' vert (couleurs logo).
-   Hydrate automatiquement via initBrandName() dans site.js. */
-.brand-name {
-  font-weight: inherit;
+/* Nom de marque · 'Ener-Co' juste en gras, meme couleur que le texte courant.
+   On garde la structure en 3 spans (hydratee par JS) pour pouvoir revenir
+   en arriere plus tard, mais aucune couleur n'est appliquee. */
+.brand-name,
+.brand-name__orange,
+.brand-name__green,
+.brand-name__dash {
+  color: inherit;
+  font-style: normal;
+  font-weight: 700;
   white-space: nowrap;
 }
-.brand-name__orange {
-  color: var(--brand-orange);
-  font-style: normal;
-  font-weight: inherit;
-}
-.brand-name__green {
-  color: var(--brand-green);
-  font-style: normal;
-  font-weight: inherit;
-}
-.brand-name__dash {
-  color: var(--brand-green);   /* tiret groupe avec "Co" pour clarte visuelle */
-  font-style: normal;
-  font-weight: inherit;
-  margin: 0 0.02em;
-}
-.section--dark .brand-name__dash,
-.cta-final .brand-name__dash,
-.section--signature .brand-name__dash,
-.footer .brand-name__dash { color: #2CD17B; }
-/* Sur fond sombre, on garde les memes couleurs (assez vives pour rester lisibles) */
-.section--dark .brand-name__orange,
-.cta-final .brand-name__orange,
-.section--signature .brand-name__orange,
-.footer .brand-name__orange { color: var(--signal-hot, var(--brand-orange)); }
-.section--dark .brand-name__green,
-.cta-final .brand-name__green,
-.section--signature .brand-name__green,
-.footer .brand-name__green { color: #2CD17B; }
 
 /* Mots-cles colorises · sobre, juste les forts (continuite, MASE, etc.) */
 .kw-orange {
