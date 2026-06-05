@@ -25,7 +25,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
 
   <script type="application/ld+json">
@@ -47,7 +47,7 @@
       "addressCountry": "FR",
       "addressRegion": "Auvergne-Rhône-Alpes"
     },
-    "areaServed": ["FR", "IT", "DE", "PL", "BE", "ES"],
+    "areaServed": ["FR", "IT", "DE", "PL", "BE", "ES", "SN", "MQ"],
     "knowsAbout": ["HTA", "TGBT", "Gaines à barres", "Distribution d'énergie industrielle", "Mise sous tension", "Raccordements puissance"]
   }
   </script>
@@ -170,14 +170,25 @@
       </div>
     </section>
 
+    <!-- BANDEAU CLIENTS · marquee infinie, source unique CLIENTS_DATA (site.js) -->
+    <section class="client-strip" aria-label="Clients et partenaires">
+      <div class="client-strip__intro">
+        <h2 data-i18n="home.clients.h2">Ils nous font confiance</h2>
+        <a href="references.html" data-i18n="home.clients.link">Voir toutes nos références →</a>
+      </div>
+      <div class="client-strip__rail">
+        <div class="client-strip__track"><!-- généré par initClientStrip() --></div>
+      </div>
+    </section>
+
     <!-- SECTION SIGNATURE -->
     <section class="section--signature">
       <div class="container">
         <div class="signature-lead">
-          <h2 class="signature-lead__big" data-i18n="home.sig.h2">La distribution d'énergie, <em>du début à la fin</em>, sans sous-traitance, en interne.</h2>
+          <h2 class="signature-lead__big" data-i18n="home.sig.h2">La distribution d'énergie, du premier câble à la mise sous tension. <em>En interne.</em></h2>
           <div class="signature-lead__body">
-            <p data-i18n="home.sig.p1">Ener-Co n'externalise pas son exécution chantier. Pas de cascade de sous-traitance, pas de dilution de responsabilité : une seule entité, une seule lecture technique, du premier câble HTA à la mise sous tension finale.</p>
-            <p data-i18n="home.sig.p2">Cette continuité est notre signature industrielle, et la garantie que le chantier livré ressemble à celui que nous avons vendu.</p>
+            <p data-i18n="home.sig.p1">Ener-Co n'externalise pas son exécution chantier. Pas de cascade de sous-traitants, pas de dilution de responsabilité : une seule entité, une seule lecture technique, du premier câble HTA à la mise sous tension. Cette continuité est notre signature industrielle, et votre garantie d'un seul interlocuteur responsable de bout en bout.</p>
+            <p class="signature-lead__claim" data-i18n="home.sig.claim">Ener-Co intervient là où la continuité de service ne se négocie pas.</p>
           </div>
         </div>
       </div>

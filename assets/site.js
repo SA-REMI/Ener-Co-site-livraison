@@ -213,9 +213,11 @@ const I18N = {
     "home.stats.s4.dt": "<span>100%</span> interne",
     "home.stats.s4.dd": "Équipes dédiées · exécution sans sous-traitance",
 
-    "home.sig.h2": "La distribution d'énergie, <em>du début à la fin</em>, sans sous-traitance, en interne.",
-    "home.sig.p1": "Ener-Co n'externalise pas son exécution chantier. Pas de cascade de sous-traitance, pas de dilution de responsabilité : une seule entité, une seule lecture technique, du premier câble HTA à la mise sous tension finale.",
-    "home.sig.p2": "Cette continuité est notre signature industrielle, et la garantie que le chantier livré ressemble à celui que nous avons vendu.",
+    "home.sig.h2": "La distribution d'énergie, du premier câble à la mise sous tension. <em>En interne.</em>",
+    "home.sig.p1": "Ener-Co n'externalise pas son exécution chantier. Pas de cascade de sous-traitants, pas de dilution de responsabilité : une seule entité, une seule lecture technique, du premier câble HTA à la mise sous tension. Cette continuité est notre signature industrielle, et votre garantie d'un seul interlocuteur responsable de bout en bout.",
+    "home.sig.claim": "Ener-Co intervient là où la continuité de service ne se négocie pas.",
+    "home.clients.h2": "Ils nous font confiance",
+    "home.clients.link": "Voir toutes nos références →",
 
     "home.exp.eyebrow": "Expertise",
     "home.exp.h2": "Une chaîne complète de distribution d'énergie.",
@@ -767,9 +769,11 @@ const I18N = {
     "home.stats.s4.dt": "<span>100%</span> in-house",
     "home.stats.s4.dd": "Dedicated teams · execution without subcontracting",
 
-    "home.sig.h2": "Power distribution, <em>from start to finish</em>, without subcontracting, in-house.",
-    "home.sig.p1": "Ener-Co does not outsource site execution. No cascading subcontracting, no diluted responsibility: one entity, one technical reading, from the first MV cable to the final energisation.",
-    "home.sig.p2": "This continuity is our industrial signature, and the guarantee that the project delivered matches the one we sold.",
+    "home.sig.h2": "Power distribution, from the first cable to final energisation. <em>In-house.</em>",
+    "home.sig.p1": "Ener-Co does not outsource site execution. No cascade of subcontractors, no diluted responsibility: one entity, one technical reading, from the first MV cable to final energisation. This continuity is our industrial signature, and your guarantee of a single accountable interlocutor end-to-end.",
+    "home.sig.claim": "Ener-Co operates where service continuity is non-negotiable.",
+    "home.clients.h2": "They trust us",
+    "home.clients.link": "See all references →",
 
     "home.exp.eyebrow": "Expertise",
     "home.exp.h2": "A complete power distribution chain.",
@@ -1321,9 +1325,11 @@ const I18N = {
     "home.stats.s4.dt": "<span>100%</span> interno",
     "home.stats.s4.dd": "Team dedicati · esecuzione senza subappalto",
 
-    "home.sig.h2": "La distribuzione di energia, <em>dall'inizio alla fine</em>, senza subappalto, internamente.",
-    "home.sig.p1": "Ener-Co non esternalizza l'esecuzione in cantiere. Nessuna cascata di subappalti, nessuna diluizione di responsabilità: un'unica entità, un'unica lettura tecnica, dal primo cavo MT alla messa in tensione finale.",
-    "home.sig.p2": "Questa continuità è la nostra firma industriale, e la garanzia che il cantiere consegnato corrisponda a quello venduto.",
+    "home.sig.h2": "La distribuzione di energia, dal primo cavo alla messa in tensione. <em>Internamente.</em>",
+    "home.sig.p1": "Ener-Co non esternalizza l'esecuzione in cantiere. Nessuna cascata di subappaltatori, nessuna diluizione di responsabilità: un'unica entità, un'unica lettura tecnica, dal primo cavo MT alla messa in tensione. Questa continuità è la nostra firma industriale, la vostra garanzia di un unico interlocutore responsabile dall'inizio alla fine.",
+    "home.sig.claim": "Ener-Co interviene laddove la continuità del servizio non è negoziabile.",
+    "home.clients.h2": "Si fidano di noi",
+    "home.clients.link": "Vedere tutte le referenze →",
 
     "home.exp.eyebrow": "Competenze",
     "home.exp.h2": "Una catena completa di distribuzione di energia.",
@@ -1883,6 +1889,76 @@ function initActiveNav() {
   });
 }
 
+/* =============================================================================
+   SOURCE UNIQUE · LOGOS CLIENTS / PARTENAIRES
+   Pour ajouter ou retirer un client : éditer CE tableau, point.
+   Consommé par : (1) le bandeau marquee de la home, (2) la grille Références.
+   Pour ajout côté grille Références (rendu côté serveur pour SEO),
+   penser à compléter aussi le mur HTML dans references.html.
+   ============================================================================= */
+var CLIENTS_DATA = [
+  { name: "TotalEnergies",       file: "totalenergies.png",        format: "tall"  },
+  { name: "Framatome",           file: "framatome.png",            format: "wide"  },
+  { name: "Air Liquide",         file: "air-liquide.jpeg",         format: "tall"  },
+  { name: "Saint-Gobain",        file: "saint-gobain.png",         format: "wide"  },
+  { name: "ArcelorMittal",       file: "arcelormittal.png",        format: "wide"  },
+  { name: "Airbus",              file: "airbus.png",               format: "wide"  },
+  { name: "CEA",                 file: "cea.png",                  format: "tall"  },
+  { name: "Eviden",              file: "eviden.png",               format: "wide"  },
+  { name: "Novo Nordisk",        file: "novo-nordisk.png",         format: "tall"  },
+  { name: "Solvay",              file: "solvay.png",               format: "wide"  },
+  { name: "Vantage Data Centers",file: "vantage.jpeg",             format: "wide"  },
+  { name: "Data4",               file: "data4.png",                format: "wide"  },
+  { name: "Data One",            file: "data-one.png",             format: "tall"  },
+  { name: "Fibre Excellence",    file: "fibre-excellence.png",     format: "wide"  },
+  { name: "Adisseo",             file: "adisseo.jpeg",             format: "wide"  },
+  { name: "PetroIneos",          file: "petroineos.jpeg",          format: "wide"  },
+  { name: "AGC",                 file: "agc.jpeg",                 format: "wide"  },
+  { name: "CNR",                 file: "cnr.jpeg",                 format: "wide"  },
+  { name: "Aubert & Duval",      file: "aubert-duval.png",         format: "tall"  },
+  { name: "Ugitech",             file: "ugitech.png",              format: "wide"  },
+  { name: "Hazemeyer",           file: "hazemeyer.png",            format: "wide"  },
+  { name: "Lynred",              file: "lynred.jpeg",              format: "wide"  },
+  { name: "DHL",                 file: "dhl.png",                  format: "wide"  },
+  { name: "Norske Skog",         file: "norske-skog.jpeg",         format: "tall"  },
+  { name: "Eiffage",             file: "eiffage.png",              format: "wide"  },
+  { name: "Schneider Electric",  file: "schneider-electric.png",   format: "wide"  },
+  { name: "SPIE",                file: "spie.png",                 format: "wide"  },
+  { name: "Ineo",                file: "ineo.jpeg",                format: "wide"  },
+  { name: "Actemium",            file: "actemium.png",             format: "wide"  },
+  { name: "Cegelec",             file: "cegelec.png",              format: "wide"  },
+  { name: "Eta-com",             file: "eta-com.png",              format: "wide"  },
+  { name: "KiloAmps",            file: "kiloamps.png",             format: "tall"  },
+  { name: "Santerne",            file: "santerne.png",             format: "tall"  },
+  { name: "Solstyce",            file: "solstyce.png",             format: "wide"  },
+  { name: "EGA",                 file: "ega.png",                  format: "wide"  },
+  { name: "Clemessy",            file: "clemessy.png",             format: "tall"  }
+];
+
+/* ---- BANDEAU CLIENTS MARQUEE (home) ----
+   Lit CLIENTS_DATA et génère une piste dupliquée pour boucle infinie.
+   ----------------------------------------------------------------- */
+function initClientStrip() {
+  var rail = document.querySelector(".client-strip__track");
+  if (!rail) return;
+
+  // Construit le contenu : deux passes consécutives du tableau pour la boucle
+  var html = "";
+  function renderPass() {
+    var pass = "";
+    for (var i = 0; i < CLIENTS_DATA.length; i++) {
+      var c = CLIENTS_DATA[i];
+      pass +=
+        '<div class="client-strip__item">' +
+          '<img src="assets/logos/' + c.file + '" alt="' + c.name + '" loading="lazy">' +
+        '</div>';
+    }
+    return pass;
+  }
+  html = renderPass() + renderPass(); // dupliqué pour translate -50% en boucle
+  rail.innerHTML = html;
+}
+
 /* ---- INIT ---- */
 document.addEventListener("DOMContentLoaded", () => {
   let saved = "fr";
@@ -1896,6 +1972,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initBurger();
   initRefsPhotoStrip();
   initHomeHeroSquare();
+  initClientStrip();
 
   const yearNode = document.getElementById("year");
   if (yearNode) yearNode.textContent = new Date().getFullYear();
