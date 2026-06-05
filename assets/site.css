@@ -23,8 +23,10 @@
   --accent-5: #d89a1a;
   --accent-5-ink: #a67514;
 
-  --dark: #14181d;
-  --dark-2: #1b2129;
+  /* Anthracite (jamais de noir pur · plus chaleureux, plus contemporain) */
+  --dark: #20242B;
+  --dark-2: #262A32;
+  --dark-3: #2D323B;
   --dark-line: rgba(255, 255, 255, 0.09);
 
   --r-sm: 4px;
@@ -47,7 +49,7 @@
   left: -9999px;
   top: 0;
   padding: 10px 14px;
-  background: var(--ink);
+  background: var(--dark);
   color: #fff;
   font-size: 0.85rem;
   font-weight: 500;
@@ -238,14 +240,14 @@ p { font-size: 1rem; color: var(--muted); }
      sinon la nav centrée se décale visuellement. */
   min-width: 130px;
   border-radius: var(--r-md);
-  background: var(--ink);
+  background: var(--dark);
   color: #fff;
   font-size: 0.82rem;
   font-weight: 500;
   transition: background 0.15s ease;
   white-space: nowrap;
 }
-.header-cta:hover { background: var(--ink-2); }
+.header-cta:hover { background: var(--dark-2); }
 
 /* -------- LANG SWITCH (FR/EN) -------- */
 .lang-switch { position: relative; }
@@ -338,8 +340,8 @@ p { font-size: 1rem; color: var(--muted); }
   cursor: pointer;
   transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
-.button--primary { background: var(--ink); color: #fff; }
-.button--primary:hover { background: var(--ink-2); }
+.button--primary { background: var(--dark); color: #fff; }
+.button--primary:hover { background: var(--dark-2); }
 .button--accent { background: var(--accent); color: #fff; }
 .button--accent:hover { background: var(--accent-ink); }
 .button--ghost {
@@ -551,7 +553,7 @@ p { font-size: 1rem; color: var(--muted); }
 .stats-band {
   position: relative;
   padding: 0;
-  background: var(--ink);
+  background: var(--dark);
   color: #fff;
   overflow: hidden;
 }
@@ -804,7 +806,7 @@ p { font-size: 1rem; color: var(--muted); }
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--ink);
+  background: var(--dark);
   color: #fff;
   font-size: 0.78rem;
   font-weight: 600;
@@ -849,7 +851,7 @@ p { font-size: 1rem; color: var(--muted); }
 .engage-aside { display: grid; gap: 14px; }
 .engage-aside-card {
   padding: 26px 28px;
-  background: var(--ink);
+  background: var(--dark);
   color: #fff;
   border-radius: var(--r-md);
 }
@@ -892,7 +894,7 @@ p { font-size: 1rem; color: var(--muted); }
   width: 10px; height: 2px; background: var(--accent);
 }
 .engage-card--dark {
-  background: var(--ink); color: #fff; border-color: rgba(255, 255, 255, 0.1);
+  background: var(--dark); color: #fff; border-color: rgba(255, 255, 255, 0.1);
 }
 .engage-card--dark h3 { color: #fff; }
 .engage-card--dark p { color: rgba(255, 255, 255, 0.82); }
@@ -946,7 +948,7 @@ p { font-size: 1rem; color: var(--muted); }
 .engage-doc a {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 12px 18px;
-  background: var(--ink); color: #fff;
+  background: var(--dark); color: #fff;
   font-size: 0.88rem; font-weight: 500;
   border-radius: var(--r-sm);
   transition: background 0.15s ease;
@@ -1145,7 +1147,7 @@ p { font-size: 1rem; color: var(--muted); }
 
 /* ===== Dark section for santé & sécurité (grille 4×2) ===== */
 .engage-dark {
-  background: var(--ink);
+  background: var(--dark);
   color: #fff;
 }
 .engage-dark .section-header__title h2,
@@ -1163,7 +1165,7 @@ p { font-size: 1rem; color: var(--muted); }
 }
 .engage-dark-tile {
   padding: 26px 24px;
-  background: var(--ink);
+  background: var(--dark);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1378,7 +1380,7 @@ p { font-size: 1rem; color: var(--muted); }
 .engage-manifesto {
   position: relative;
   padding: 64px 60px 56px;
-  background: var(--ink);
+  background: var(--dark);
   color: #fff;
   border-radius: var(--r-lg);
   overflow: hidden;
@@ -1664,14 +1666,15 @@ p { font-size: 1rem; color: var(--muted); }
 }
 .logo-tile {
   min-height: 168px;
-  padding: 20px 22px;
+  padding: 24px 28px;          /* marge interieure constante, evite le mordant */
   display: grid;
   place-items: center;
   text-align: center;
-  background: var(--surface);
+  background: #ffffff;          /* fond blanc uniforme pour TOUTES les tuiles */
   border: 1px solid var(--line);
   border-radius: var(--r-md);
   box-shadow: var(--shadow-sm);
+  overflow: hidden;             /* aucun logo ne deborde, jamais */
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 .logo-tile:hover {
@@ -1680,21 +1683,35 @@ p { font-size: 1rem; color: var(--muted); }
   border-color: var(--line-strong);
 }
 .logo-tile img {
+  display: block;
+  width: 100%;                  /* prend toute la zone utile dispo */
+  height: 100%;
   max-width: 100%;
-  width: auto;
-  height: auto;
-  max-height: 78px;
-  object-fit: contain;
+  max-height: 100%;
+  object-fit: contain;          /* contient l'image dans le cadre, jamais de coupe */
+  object-position: center;
   opacity: 0.9;
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  transition: opacity 0.25s ease, filter 0.25s ease;
 }
-.logo-tile:hover img { opacity: 1; transform: scale(1.04); }
+.logo-tile:hover img { opacity: 1; }
 
-/* Variantes par format de logo (spécificité .logo-tile pour battre la règle générique de l'img) */
-.logo-tile .logo-mark         { max-width: 200px; max-height: 90px; }   /* défaut, format paysage modéré */
-.logo-tile .logo-mark--wide   { max-width: 240px; max-height: 100px; }  /* format très allongé */
-.logo-tile .logo-mark--tall   { max-width: 190px; max-height: 130px; }  /* format carré ou vertical */
-.logo-tile .logo-mark--small  { max-width: 160px; max-height: 60px; }   /* logo qui ne doit pas trop grossir */
+/* Logos a fond coloure integre (TotalEnergies, Solvay, DHL, Lynred, ...) qui
+   ressortent mal sur fond blanc. Multiply blend + brightness leger pour les
+   integrer harmonieusement sans toucher le fichier source. */
+.logo-tile[data-bg="colored"] img {
+  mix-blend-mode: multiply;
+}
+
+/* Variantes neutralisees · le systeme uniforme object-fit:contain + padding
+   constant rend ces variantes inutiles. On les garde declarees mais sans
+   contrainte pour ne pas casser le HTML existant. */
+.logo-tile .logo-mark,
+.logo-tile .logo-mark--wide,
+.logo-tile .logo-mark--tall,
+.logo-tile .logo-mark--small {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 .logo-wall__disclaimer {
   margin-top: 28px;
@@ -2612,7 +2629,7 @@ p { font-size: 1rem; color: var(--muted); }
   left: 0;
   width: 100%;
   height: 2px;
-  background: var(--ink);
+  background: var(--dark);
   border-radius: 2px;
   transition: transform 0.25s ease, opacity 0.25s ease, top 0.25s ease;
 }
@@ -2633,7 +2650,7 @@ p { font-size: 1rem; color: var(--muted); }
   border: 1px solid var(--line-strong);
   border-radius: var(--r-sm);
 }
-.header-mobile-tel:hover { background: var(--ink); color: #fff; }
+.header-mobile-tel:hover { background: var(--dark); color: #fff; }
 .header-mobile-tel svg { width: 20px; height: 20px; }
 
 /* ============================================================
@@ -2876,7 +2893,7 @@ p { font-size: 1rem; color: var(--muted); }
     color: var(--muted);
     cursor: pointer;
   }
-  .mobile-drawer__lang button.is-active { background: var(--ink); color: #fff; }
+  .mobile-drawer__lang button.is-active { background: var(--dark); color: #fff; }
   .mobile-drawer__cta {
     display: flex;
     justify-content: center;
@@ -3029,7 +3046,7 @@ p { font-size: 1rem; color: var(--muted); }
 .job-card__tag {
   display: inline-flex;
   padding: 5px 11px;
-  background: var(--ink);
+  background: var(--dark);
   color: #fff;
   font-size: 0.7rem;
   font-weight: 600;
@@ -3116,6 +3133,33 @@ p { font-size: 1rem; color: var(--muted); }
   height: 2px;
   background: var(--accent);
   border-radius: 2px;
+}
+
+/* Variante enrichie : titre + sous-titre par item (page Recrutement) */
+.profile-list--rich {
+  gap: 18px;
+  margin-top: 10px;
+}
+.profile-list--rich li {
+  padding-left: 22px;
+}
+.profile-list--rich li::before {
+  top: 11px;
+  width: 12px;
+  height: 2px;
+}
+.profile-list--rich li strong {
+  display: block;
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.profile-list--rich li span {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-3);
 }
 
 /* -------- LINKEDIN POSTS GRID -------- */
