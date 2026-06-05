@@ -1717,6 +1717,10 @@ function applyLang(lang) {
   if (currentLangLabel) currentLangLabel.textContent = lang.toUpperCase();
 
   try { localStorage.setItem("enerco.lang", lang); } catch (e) {}
+
+  // Re-applique la colorisation du nom Ener-Co · les data-i18n viennent de
+  // remplacer du texte brut, on doit re-hydrater les spans.
+  if (typeof colorizeBrandName === "function") colorizeBrandName();
 }
 
 /* ---- LANG SWITCHER ---- */
@@ -1972,6 +1976,53 @@ function initClientStrip() {
   rail.innerHTML = html;
 }
 
+/* ---- COLORISATION 'Ener-Co' aux couleurs du logo (Ener orange · Co vert) ----
+   Parcourt tous les noeuds texte du body, wrappe chaque 'Ener-Co' dans un span
+   stylise. Ignore script, style, brand-name deja stylise, et les inputs.
+   Re-execute apres chaque changement de langue (initLangSwitch reapelle ça).
+   --------------------------------------------------------------------------- */
+function colorizeBrandName(root) {
+  root = root || document.body;
+  var SKIP_TAGS = { SCRIPT: 1, STYLE: 1, TEXTAREA: 1, INPUT: 1, OPTION: 1, SELECT: 1, CODE: 1, PRE: 1 };
+  var SKIP_CLASS = "brand-name";
+  var rx = /Ener‑?-?‑?Co/g; // tolerant aux tirets fins / insecables
+
+  var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode: function (node) {
+      var p = node.parentNode;
+      if (!p) return NodeFilter.FILTER_REJECT;
+      if (SKIP_TAGS[p.tagName]) return NodeFilter.FILTER_REJECT;
+      if (p.closest && p.closest("." + SKIP_CLASS)) return NodeFilter.FILTER_REJECT;
+      return rx.test(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+    }
+  });
+
+  var matched = [];
+  var n;
+  while ((n = walker.nextNode())) { matched.push(n); }
+
+  matched.forEach(function (node) {
+    var parts = node.nodeValue.split(/(Ener-Co)/g);
+    if (parts.length < 2) return;
+    var frag = document.createDocumentFragment();
+    parts.forEach(function (p) {
+      if (p === "Ener-Co") {
+        var span = document.createElement("span");
+        span.className = "brand-name";
+        span.setAttribute("aria-label", "Ener-Co");
+        span.innerHTML =
+          '<span class="brand-name__orange">Ener</span>' +
+          '<span class="brand-name__dash">-</span>' +
+          '<span class="brand-name__green">Co</span>';
+        frag.appendChild(span);
+      } else if (p.length) {
+        frag.appendChild(document.createTextNode(p));
+      }
+    });
+    if (node.parentNode) node.parentNode.replaceChild(frag, node);
+  });
+}
+
 /* ---- INIT ---- */
 document.addEventListener("DOMContentLoaded", () => {
   let saved = "fr";
@@ -1979,6 +2030,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!I18N[saved]) saved = "fr";
 
   applyLang(saved);
+  colorizeBrandName(); // colorise 'Ener-Co' apres premier applyLang
   initLangSwitch();
   initHeaderScroll();
   initActiveNav();

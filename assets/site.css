@@ -24,6 +24,10 @@
   --accent-5: #d89a1a;
   --accent-5-ink: #a67514;
 
+  /* Couleurs marque Ener-Co (issues du logo) · pour stylisation du nom partout */
+  --brand-orange: #F26419;
+  --brand-green:  #1FB85F;
+
   /* Gris fonce reconnaissable · jamais de noir, vraiment percu comme "gris" */
   --dark: #3D4452;         /* fonds sombres principaux (boutons, footer, stats, CTA) */
   --dark-2: #474E5D;       /* gris medium · second layer */
@@ -1764,20 +1768,8 @@ p { font-size: 1rem; color: var(--muted); }
 }
 .logo-tile:hover img { opacity: 1; }
 
-/* Logos a fond coloure integre (Solvay rectangle vert, KiloAmps rond noir,
-   TotalEnergies bloc rouge) qui ressortent mal sur fond blanc.
-   Selecteur :has() · cible directement par alt de l'img. */
-.logo-tile:has(img[alt="Solvay"]) img,
-.logo-tile:has(img[alt="KiloAmps"]) img,
-.logo-tile:has(img[alt="TotalEnergies"]) img {
-  mix-blend-mode: multiply;
-}
-/* Pour les logos avec fond fonce/noir integre, on inverse la logique :
-   on assombrit legerement la zone autour pour mieux integrer.
-   KiloAmps a un rond noir, on lui donne plus de padding pour aerer. */
-.logo-tile:has(img[alt="KiloAmps"]) {
-  padding: 32px 36px;
-}
+/* Hack mix-blend-mode supprime : les fichiers Solvay, KiloAmps et TotalEnergies
+   ont desormais une vraie transparence RGBA donc s'integrent naturellement. */
 
 /* Variantes neutralisees · le systeme uniforme object-fit:contain + padding
    constant rend ces variantes inutiles. On les garde declarees mais sans
@@ -3684,3 +3676,55 @@ p { font-size: 1rem; color: var(--muted); }
   .client-strip__track { animation: none; flex-wrap: wrap; gap: 32px; justify-content: center; }
   .client-strip__rail { mask-image: none; -webkit-mask-image: none; }
 }
+
+/* =============================================================================
+   V5.7 · NOM 'Ener-Co' COLORISE + MOTS-CLES ACCENTUES
+   ============================================================================= */
+
+/* Nom de marque · 'Ener' orange + 'Co' vert (couleurs logo).
+   Hydrate automatiquement via initBrandName() dans site.js. */
+.brand-name {
+  font-weight: inherit;
+  white-space: nowrap;
+}
+.brand-name__orange {
+  color: var(--brand-orange);
+  font-style: normal;
+  font-weight: inherit;
+}
+.brand-name__green {
+  color: var(--brand-green);
+  font-style: normal;
+  font-weight: inherit;
+}
+.brand-name__dash {
+  color: var(--brand-orange);
+  font-style: normal;
+  font-weight: inherit;
+  margin: 0 0.02em;
+}
+/* Sur fond sombre, on garde les memes couleurs (assez vives pour rester lisibles) */
+.section--dark .brand-name__orange,
+.cta-final .brand-name__orange,
+.section--signature .brand-name__orange,
+.footer .brand-name__orange { color: var(--signal-hot, var(--brand-orange)); }
+.section--dark .brand-name__green,
+.cta-final .brand-name__green,
+.section--signature .brand-name__green,
+.footer .brand-name__green { color: #2CD17B; }
+
+/* Mots-cles colorises · sobre, juste les forts (continuite, MASE, etc.) */
+.kw-orange {
+  color: var(--signal);
+  font-weight: 600;
+}
+.kw-green {
+  color: var(--brand-green);
+  font-weight: 600;
+}
+.section--dark .kw-orange,
+.cta-final .kw-orange,
+.section--signature .kw-orange { color: var(--signal-hot); }
+.section--dark .kw-green,
+.cta-final .kw-green,
+.section--signature .kw-green { color: #2CD17B; }
