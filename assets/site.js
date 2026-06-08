@@ -206,8 +206,8 @@ const I18N = {
 
     "home.stats.s1.dt": "Depuis <span>2015</span>",
     "home.stats.s1.dd": "Ener-Co SAS · entreprise française spécialisée",
-    "home.stats.s2.dt": "<span>6</span> pays",
-    "home.stats.s2.dd": "France · Italie · Allemagne · Pologne · Belgique · Espagne",
+    "home.stats.s2.dt": "<span>7</span> pays",
+    "home.stats.s2.dd": "France · Italie · Allemagne · Pologne · Belgique · Espagne · Sénégal",
     "home.stats.s3.dt": "MASE",
     "home.stats.s3.dd": "Certification SSE · Rhône-Alpes",
     "home.stats.s4.dt": "<span>100%</span> interne",
@@ -827,8 +827,8 @@ const I18N = {
 
     "home.stats.s1.dt": "Since <span>2015</span>",
     "home.stats.s1.dd": "Ener-Co SAS · specialised French company",
-    "home.stats.s2.dt": "<span>6</span> countries",
-    "home.stats.s2.dd": "France · Italy · Germany · Poland · Belgium · Spain",
+    "home.stats.s2.dt": "<span>7</span> countries",
+    "home.stats.s2.dd": "France · Italy · Germany · Poland · Belgium · Spain · Senegal",
     "home.stats.s3.dt": "MASE",
     "home.stats.s3.dd": "HSE certification · Rhône-Alpes",
     "home.stats.s4.dt": "<span>100%</span> in-house",
@@ -1448,8 +1448,8 @@ const I18N = {
 
     "home.stats.s1.dt": "Dal <span>2015</span>",
     "home.stats.s1.dd": "Ener-Co SAS · azienda francese specializzata",
-    "home.stats.s2.dt": "<span>6</span> paesi",
-    "home.stats.s2.dd": "Francia · Italia · Germania · Polonia · Belgio · Spagna",
+    "home.stats.s2.dt": "<span>7</span> paesi",
+    "home.stats.s2.dd": "Francia · Italia · Germania · Polonia · Belgio · Spagna · Senegal",
     "home.stats.s3.dt": "MASE",
     "home.stats.s3.dd": "Certificazione SSA · Rhône-Alpes",
     "home.stats.s4.dt": "<span>100%</span> interno",
