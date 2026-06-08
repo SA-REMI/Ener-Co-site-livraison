@@ -2049,7 +2049,13 @@ function shuffleChantiers() {
   return shuffled;
 }
 
-/* Injecte 1 photo + caption par slot dans un container donné */
+/* Renvoie le chemin .webp equivalent d'une image .jpg/.jpeg/.png */
+function toWebp(path) {
+  return path.replace(/\.(jpe?g|png)$/i, ".webp");
+}
+
+/* Injecte 1 photo + caption par slot dans un container donné.
+   Utilise <picture> : WebP en priorite (72% plus leger), fallback original. */
 function populateChantierSlots(container) {
   if (!container) return;
   const slots = container.querySelectorAll("figure");
@@ -2058,7 +2064,10 @@ function populateChantierSlots(container) {
     if (!slots[idx]) return;
     const photo = chantier.photos[Math.floor(Math.random() * chantier.photos.length)];
     slots[idx].innerHTML =
-      '<img src="' + photo + '" alt="" loading="lazy">' +
+      '<picture>' +
+        '<source srcset="' + toWebp(photo) + '" type="image/webp">' +
+        '<img src="' + photo + '" alt="" loading="lazy">' +
+      '</picture>' +
       '<figcaption data-i18n="' + chantier.key + '">' + chantier.fallback + '</figcaption>';
   });
   // Re-apply translations so the injected figcaptions match current lang
