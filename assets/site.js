@@ -252,7 +252,7 @@ const I18N = {
     "home.cta.eyebrow": "Contact",
     "home.cta.h2": "Parlons du périmètre de votre projet.",
     "home.cta.p": "Étude technique, alimentation principale, raccordement de puissance, extension de site ou remplacement de ligne : échangeons sur votre périmètre, vos contraintes d'exploitation et vos délais.",
-    "home.cta.btn1": "Demander une étude",
+    "home.cta.btn1": "Contactez-nous",
     "home.cta.btn2": "Voir les réalisations",
     "home.cta.label": "Direction commerciale",
 
@@ -420,7 +420,7 @@ const I18N = {
     "real.cta.eyebrow": "Contact",
     "real.cta.h2": "Un chantier similaire à nous confier ?",
     "real.cta.p": "Alimentation principale, raccordement de puissance, extension de site ou remplacement de ligne : échangeons sur votre périmètre, vos contraintes d'exploitation et vos délais.",
-    "real.cta.btn1": "Demander une étude",
+    "real.cta.btn1": "Contactez-nous",
     "real.cta.btn2": "Voir le périmètre",
     "real.cta.label": "Direction commerciale",
 
@@ -873,7 +873,7 @@ const I18N = {
     "home.cta.eyebrow": "Contact",
     "home.cta.h2": "Let's talk about the scope of your project.",
     "home.cta.p": "Technical study, main supply, power connection, site extension or line replacement: let's discuss your scope, your operational constraints and your deadlines.",
-    "home.cta.btn1": "Request a study",
+    "home.cta.btn1": "Contact us",
     "home.cta.btn2": "See projects",
     "home.cta.label": "Sales management",
 
@@ -1041,7 +1041,7 @@ const I18N = {
     "real.cta.eyebrow": "Contact",
     "real.cta.h2": "A similar project to entrust us with?",
     "real.cta.p": "Main supply, power connection, site extension or line replacement: let's discuss your scope, your operational constraints and your deadlines.",
-    "real.cta.btn1": "Request a study",
+    "real.cta.btn1": "Contact us",
     "real.cta.btn2": "See the scope",
     "real.cta.label": "Sales management",
 
@@ -1494,7 +1494,7 @@ const I18N = {
     "home.cta.eyebrow": "Contatti",
     "home.cta.h2": "Parliamo del perimetro del vostro progetto.",
     "home.cta.p": "Studio tecnico, alimentazione principale, collegamento di potenza, ampliamento di sito o sostituzione di linea: parliamo del vostro perimetro, dei vostri vincoli di esercizio e delle vostre scadenze.",
-    "home.cta.btn1": "Richiedere uno studio",
+    "home.cta.btn1": "Contattaci",
     "home.cta.btn2": "Vedere i progetti",
     "home.cta.label": "Direzione commerciale",
 
@@ -1662,7 +1662,7 @@ const I18N = {
     "real.cta.eyebrow": "Contatti",
     "real.cta.h2": "Un cantiere simile da affidarci ?",
     "real.cta.p": "Alimentazione principale, collegamento di potenza, ampliamento di sito o sostituzione di linea: parliamo del vostro perimetro, dei vostri vincoli di esercizio e delle vostre scadenze.",
-    "real.cta.btn1": "Richiedere uno studio",
+    "real.cta.btn1": "Contattaci",
     "real.cta.btn2": "Vedere il perimetro",
     "real.cta.label": "Direzione commerciale",
 
