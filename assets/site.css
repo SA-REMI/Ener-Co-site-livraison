@@ -3300,7 +3300,7 @@ p { font-size: 1rem; color: var(--muted); }
   color: var(--ink);
   margin-bottom: 4px;
 }
-.profile-list--rich li span {
+.profile-list--rich li > span {
   display: block;
   font-size: 0.9rem;
   line-height: 1.6;
@@ -3700,15 +3700,27 @@ p { font-size: 1rem; color: var(--muted); }
 
 /* Nom de marque · 'Ener-Co' juste en gras, meme couleur que le texte courant.
    On garde la structure en 3 spans (hydratee par JS) pour pouvoir revenir
-   en arriere plus tard, mais aucune couleur n'est appliquee. */
-.brand-name,
+   en arriere plus tard, mais aucune couleur n'est appliquee.
+   !important + display:inline blindent contre toute regle descendante
+   (ex .profile-list span, .sector-line dd span...) qui mettrait les
+   sous-spans en block et casserait la ligne. */
+.brand-name {
+  display: inline !important;
+  white-space: nowrap;
+  font-weight: 700;
+}
 .brand-name__orange,
 .brand-name__green,
 .brand-name__dash {
-  color: inherit;
-  font-style: normal;
-  font-weight: 700;
-  white-space: nowrap;
+  display: inline !important;
+  color: inherit !important;
+  font-style: normal !important;
+  font-weight: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  letter-spacing: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Mots-cles colorises · sobre, juste les forts (continuite, MASE, etc.) */
