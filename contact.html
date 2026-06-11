@@ -112,8 +112,11 @@
       <div class="container">
         <div class="contact-grid">
 
-          <!-- FORMULAIRE -->
-          <form class="contact-form" action="contact.php" method="POST" aria-label="Formulaire de contact">
+          <!-- FORMULAIRE · Netlify Forms (detection au deploiement via data-netlify).
+               Le champ form-name est obligatoire pour que Netlify route la soumission.
+               Honeypot : champ "website" cache, Netlify rejette toute soumission qui le remplit. -->
+          <form class="contact-form" name="contact" method="POST" action="/merci.html" data-netlify="true" netlify-honeypot="website" aria-label="Formulaire de contact">
+            <input type="hidden" name="form-name" value="contact">
             <header>
               <span class="eyebrow" data-i18n="contact.form.eyebrow">Demande d'étude</span>
               <h2 style="margin-top:14px; margin-bottom:8px; font-size:1.5rem;" data-i18n="contact.form.h2">Décrivez votre besoin.</h2>
@@ -121,11 +124,10 @@
               <p id="form-erreur" class="form-erreur" hidden role="alert"></p>
             </header>
 
-            <!-- Anti-spam : honeypot caché et timestamp d'ouverture -->
+            <!-- Anti-spam : honeypot cache (gere nativement par Netlify) -->
             <div class="hp-field" aria-hidden="true">
               <label>Ne pas remplir ce champ <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
             </div>
-            <input type="hidden" name="started_at" value="">
 
             <div class="contact-form__row">
               <div class="field">
@@ -284,34 +286,9 @@
   </footer>
 
   <script src="assets/site.js"></script>
-  <script>
-    // Anti-spam : timestamp d'ouverture du formulaire (validé côté PHP)
-    (function () {
-      var startedField = document.querySelector('input[name="started_at"]');
-      if (startedField) startedField.value = String(Math.floor(Date.now() / 1000));
+  <!-- Le formulaire est gere par Netlify Forms : validation navigateur (required),
+       honeypot anti-spam natif, redirection vers /merci.html apres envoi.
+       Plus aucun script de traitement necessaire cote page. -->
 
-      // Affichage des erreurs au retour de contact.php
-      var params = new URLSearchParams(window.location.search);
-      if (params.get('erreur') === '1') {
-        var box = document.getElementById('form-erreur');
-        if (box) {
-          var champs = (params.get('champs') || '').split(',').filter(Boolean);
-          var labels = { name: 'le nom', email: 'l’email', message: 'le message', envoi: 'l’envoi' };
-          var msg;
-          if (champs.indexOf('envoi') !== -1) {
-            msg = 'L’envoi a échoué. Merci de réessayer ou de nous écrire directement à contact@ener-co.fr.';
-          } else if (champs.length) {
-            var human = champs.map(function (c) { return labels[c] || c; }).join(', ');
-            msg = 'Merci de vérifier ' + human + '.';
-          } else {
-            msg = 'Une erreur est survenue. Merci de réessayer.';
-          }
-          box.textContent = msg;
-          box.hidden = false;
-          box.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-      }
-    })();
-  </script>
 </body>
 </html>

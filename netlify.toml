@@ -23,3 +23,16 @@
   for = "/content/*"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+# Le dossier legacy (ancien contact.php conserve pour archive) n'est pas servi.
+# Netlify n'execute pas le PHP : sans cette regle le code source serait visible.
+[[redirects]]
+  from = "/legacy/*"
+  to = "/404.html"
+  status = 404
+
+# Les anciennes URL du traitement PHP redirigent vers la page contact
+[[redirects]]
+  from = "/contact.php"
+  to = "/contact.html"
+  status = 301
