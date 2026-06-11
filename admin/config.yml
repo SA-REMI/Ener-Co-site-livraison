@@ -1,0 +1,124 @@
+# ============================================================================
+# Ener-Co · Configuration de l'espace d'edition (Sveltia CMS)
+# Compatible Decap CMS. Chaque "collection" = un type de contenu editable.
+# Les editeurs ne voient QUE ce qui est declare ici · le design et la
+# structure des pages restent intouchables.
+# ============================================================================
+
+backend:
+  name: github
+  repo: SA-REMI/Ener-Co-site-livraison
+  branch: main
+  # Authentification par compte GitHub des editeurs (voir guide Netlify).
+
+# Dossier ou sont televersees les images depuis le CMS
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+# Langue de l'interface d'edition
+locale: "fr"
+
+collections:
+
+  # ------------------------------------------------------------------------
+  # 1 · ACCROCHE DE LA PAGE D'ACCUEIL (titre + paragraphe, 3 langues)
+  # ------------------------------------------------------------------------
+  - name: "accueil"
+    label: "Page d'accueil · accroche"
+    delete: false
+    files:
+      - name: "accroche"
+        label: "Texte d'accroche"
+        file: "content/home.json"
+        description: "Le grand titre et le paragraphe d'introduction de la page d'accueil, dans les trois langues."
+        fields:
+          - { name: "titre_fr", label: "Titre (français)", widget: "string", hint: "Le grand titre affiché en haut de l'accueil." }
+          - { name: "titre_en", label: "Titre (anglais)", widget: "string" }
+          - { name: "titre_it", label: "Titre (italien)", widget: "string" }
+          - { name: "paragraphe_fr", label: "Paragraphe (français)", widget: "text", hint: "Le texte d'introduction sous le titre." }
+          - { name: "paragraphe_en", label: "Paragraphe (anglais)", widget: "text" }
+          - { name: "paragraphe_it", label: "Paragraphe (italien)", widget: "text" }
+
+  # ------------------------------------------------------------------------
+  # 2 · COORDONNEES (telephone + email)
+  # ------------------------------------------------------------------------
+  - name: "coordonnees"
+    label: "Coordonnées de contact"
+    delete: false
+    files:
+      - name: "contact"
+        label: "Téléphone et email"
+        file: "content/coordonnees.json"
+        description: "Le numéro de téléphone et l'adresse email affichés sur tout le site."
+        fields:
+          - { name: "telephone", label: "Téléphone", widget: "string", hint: "Format affiché, ex : +33 (0)4 26 07 67 79" }
+          - { name: "telephone_lien", label: "Téléphone (format lien)", widget: "string", hint: "Sans espaces ni parenthèses, ex : +33426076779. Sert au clic-pour-appeler." }
+          - { name: "email", label: "Adresse email", widget: "string", hint: "ex : contact@ener-co.fr" }
+
+  # ------------------------------------------------------------------------
+  # 3 · REFERENCES CLIENTS (liste de logos)
+  # ------------------------------------------------------------------------
+  - name: "references"
+    label: "Références clients"
+    delete: false
+    files:
+      - name: "clients"
+        label: "Liste des clients / partenaires"
+        file: "content/references.json"
+        description: "Les logos affichés dans le bandeau défilant de l'accueil et sur la page Références. Ajoutez ou retirez un client ici."
+        fields:
+          - name: "clients"
+            label: "Clients"
+            label_singular: "Client"
+            widget: "list"
+            summary: "{{fields.nom}}"
+            fields:
+              - { name: "nom", label: "Nom du client", widget: "string", hint: "Le nom de l'entreprise (sert aussi de texte alternatif pour le logo)." }
+              - { name: "logo", label: "Logo", widget: "image", hint: "Téléversez le logo (PNG transparent de préférence)." }
+              - name: "format"
+                label: "Format du logo"
+                widget: "select"
+                options: ["paysage", "carré", "très allongé"]
+                default: "paysage"
+                hint: "Aide à bien cadrer le logo dans sa case."
+
+  # ------------------------------------------------------------------------
+  # 4 · OFFRES D'EMPLOI (page Recrutement)
+  # ------------------------------------------------------------------------
+  - name: "emplois"
+    label: "Offres d'emploi"
+    label_singular: "Offre d'emploi"
+    folder: "content/emplois"
+    create: true
+    delete: true
+    format: "json"
+    slug: "{{slug}}"
+    summary: "{{titre}}"
+    description: "Les offres d'emploi affichées sur la page Recrutement. Créez, modifiez ou supprimez une offre."
+    fields:
+      - { name: "titre", label: "Intitulé du poste", widget: "string", hint: "ex : Chef d'Équipe Montage Mécanique Électricien H/F" }
+      - { name: "description", label: "Description", widget: "text", hint: "Quelques lignes sur le poste et les missions." }
+      - { name: "contrat", label: "Type de contrat", widget: "string", default: "CDI temps plein" }
+      - { name: "lieu", label: "Localisation", widget: "string", hint: "ex : Auvergne-Rhône-Alpes · déplacements France" }
+      - { name: "experience", label: "Expérience requise", widget: "string", hint: "ex : 3 ans minimum en montage électrique industriel" }
+      - { name: "habilitations", label: "Habilitations", widget: "string", hint: "ex : B2V, BR, BC souhaitées" }
+      - { name: "email_candidature", label: "Email de candidature", widget: "string", default: "contact@ener-co.fr", hint: "L'adresse qui reçoit les candidatures pour ce poste." }
+      - { name: "actif", label: "Offre visible sur le site", widget: "boolean", default: true, hint: "Décochez pour masquer l'offre sans la supprimer." }
+
+  # ------------------------------------------------------------------------
+  # 5 · PHOTOS DE REALISATIONS (image + legende)
+  # ------------------------------------------------------------------------
+  - name: "realisations"
+    label: "Photos de réalisations"
+    label_singular: "Photo de chantier"
+    folder: "content/realisations"
+    create: true
+    delete: true
+    format: "json"
+    slug: "{{slug}}"
+    summary: "{{legende}}"
+    description: "Les photos de chantiers affichées dans le bandeau d'illustrations. Ajoutez une photo avec sa légende."
+    fields:
+      - { name: "image", label: "Photo", widget: "image", hint: "Téléversez la photo du chantier." }
+      - { name: "legende", label: "Légende", widget: "string", hint: "ex : Saint-Gaudens · Eta-com" }
+      - { name: "ordre", label: "Ordre d'affichage", widget: "number", default: 1, value_type: "int", hint: "Plus le nombre est petit, plus la photo apparaît tôt." }

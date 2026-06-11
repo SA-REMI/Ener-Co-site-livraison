@@ -1,0 +1,25 @@
+# ============================================================================
+# Ener-Co · Configuration Netlify
+# Site statique : aucun build, on publie directement les fichiers du depot.
+# Chaque modification validee dans /admin ecrit dans Git, ce qui declenche
+# automatiquement un nouveau deploiement Netlify.
+# ============================================================================
+
+[build]
+  # Pas d'etape de build (site HTML statique pur)
+  publish = "."
+  command = ""
+
+# En-tetes de securite (equivalents du .htaccess OVH)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Les fichiers de contenu JSON ne sont pas mis en cache agressif
+[[headers]]
+  for = "/content/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

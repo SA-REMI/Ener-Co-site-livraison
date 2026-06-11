@@ -2148,27 +2148,48 @@ var CLIENTS_DATA = [
 ];
 
 /* ---- BANDEAU CLIENTS MARQUEE (home) ----
-   Lit CLIENTS_DATA et génère une piste dupliquée pour boucle infinie.
+   Source du contenu : content/references.json (edite via le CMS /admin).
+   Si le fetch echoue (ouverture locale en file://, fichier absent),
+   on retombe sur CLIENTS_DATA en dur · le site fonctionne toujours.
    ----------------------------------------------------------------- */
-function initClientStrip() {
-  var rail = document.querySelector(".client-strip__track");
-  if (!rail) return;
-
-  // Construit le contenu : deux passes consécutives du tableau pour la boucle
-  var html = "";
+function renderClientStrip(rail, clients) {
   function renderPass() {
     var pass = "";
-    for (var i = 0; i < CLIENTS_DATA.length; i++) {
-      var c = CLIENTS_DATA[i];
+    for (var i = 0; i < clients.length; i++) {
+      var c = clients[i];
+      // Compat : objet CMS {nom, logo} OU ancien format {name, file}
+      var src = c.logo ? c.logo : ("assets/logos/" + c.file);
+      var alt = c.nom ? c.nom : c.name;
       pass +=
         '<div class="client-strip__item">' +
-          '<img src="assets/logos/' + c.file + '" alt="' + c.name + '" loading="lazy">' +
+          '<img src="' + src + '" alt="' + alt + '" loading="lazy">' +
         '</div>';
     }
     return pass;
   }
-  html = renderPass() + renderPass(); // dupliqué pour translate -50% en boucle
-  rail.innerHTML = html;
+  rail.innerHTML = renderPass() + renderPass(); // dupliquee pour boucle -50%
+}
+
+function initClientStrip() {
+  var rail = document.querySelector(".client-strip__track");
+  if (!rail) return;
+
+  // 1) On tente de lire la source unique editable par le CMS
+  if (window.fetch && location.protocol.indexOf("http") === 0) {
+    fetch("content/references.json", { cache: "no-cache" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (data && Array.isArray(data.clients) && data.clients.length) {
+          renderClientStrip(rail, data.clients);
+        } else {
+          renderClientStrip(rail, CLIENTS_DATA);
+        }
+      })
+      .catch(function () { renderClientStrip(rail, CLIENTS_DATA); });
+  } else {
+    // 2) Fallback (ouverture en double-clic, hors serveur)
+    renderClientStrip(rail, CLIENTS_DATA);
+  }
 }
 
 /* ---- COLORISATION 'Ener-Co' aux couleurs du logo (Ener orange · Co vert) ----
