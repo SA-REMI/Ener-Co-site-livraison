@@ -75,7 +75,7 @@ collections:
             summary: "{{fields.nom}}"
             fields:
               - { name: "nom", label: "Nom du client", widget: "string", hint: "Le nom de l'entreprise (sert aussi de texte alternatif pour le logo)." }
-              - { name: "logo", label: "Logo", widget: "image", hint: "Téléversez le logo (PNG transparent de préférence)." }
+              - { name: "logo", label: "Logo", widget: "image", media_folder: "/assets/logos", public_folder: "/assets/logos", hint: "Téléversez le logo (PNG transparent de préférence)." }
               - name: "format"
                 label: "Format du logo"
                 widget: "select"
