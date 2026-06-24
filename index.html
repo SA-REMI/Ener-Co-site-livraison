@@ -420,5 +420,20 @@
   </footer>
 
   <script src="assets/site.js"></script>
+
+  <!-- Netlify Identity : redirige un editeur invite vers la console /admin
+       apres creation de son mot de passe. N'affecte pas les visiteurs. -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function (user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function () {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>

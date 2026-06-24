@@ -6,10 +6,11 @@
 # ============================================================================
 
 backend:
-  name: github
-  repo: SA-REMI/Ener-Co-site-livraison
+  name: git-gateway
   branch: main
-  # Authentification par compte GitHub des editeurs (voir guide Netlify).
+  # Authentification par email + mot de passe via Netlify Identity.
+  # Git Gateway ecrit les modifications dans le depot a la place de l'editeur,
+  # qui n'a donc pas besoin de compte GitHub.
 
 # Dossier ou sont televersees les images depuis le CMS
 media_folder: "assets/uploads"

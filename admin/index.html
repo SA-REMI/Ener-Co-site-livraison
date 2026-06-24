@@ -7,8 +7,11 @@
   <title>Ener-Co · Espace d'édition</title>
 </head>
 <body>
-  <!-- Sveltia CMS · interface d'édition. Charge la config depuis config.yml.
+  <!-- Widget de connexion Netlify Identity (email + mot de passe) -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  <!-- Decap CMS · interface d'édition. Charge la config depuis config.yml.
        Aucune donnée n'est stockée ici : tout est écrit dans le dépôt Git. -->
-  <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
+  <script src="https://unpkg.com/decap-cms@^3.6.0/dist/decap-cms.js"></script>
 </body>
 </html>
