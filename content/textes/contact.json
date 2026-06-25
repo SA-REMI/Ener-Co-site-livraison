@@ -1,0 +1,238 @@
+{
+  "textes": [
+    {
+      "cle": "contact.hero.eyebrow",
+      "fr": "Contact",
+      "en": "Contact",
+      "it": "Contatti"
+    },
+    {
+      "cle": "contact.hero.h1",
+      "fr": "Parlons du périmètre de votre projet.",
+      "en": "Let's talk about the scope of your project.",
+      "it": "Parliamo del perimetro del vostro progetto."
+    },
+    {
+      "cle": "contact.hero.lede",
+      "fr": "Étude technique, alimentation principale, raccordement de puissance, extension de site ou remplacement de ligne : échangeons sur votre périmètre, vos contraintes d'exploitation et vos délais.",
+      "en": "Technical study, main supply, power connection, site extension or line replacement: let's discuss your scope, your operational constraints and your deadlines.",
+      "it": "Studio tecnico, alimentazione principale, collegamento di potenza, ampliamento di sito o sostituzione di linea: parliamo del vostro perimetro, dei vostri vincoli di esercizio e delle vostre scadenze."
+    },
+    {
+      "cle": "contact.form.eyebrow",
+      "fr": "Demande d'étude",
+      "en": "Study request",
+      "it": "Richiesta di studio"
+    },
+    {
+      "cle": "contact.form.h2",
+      "fr": "Décrivez votre besoin.",
+      "en": "Describe your need.",
+      "it": "Descrivete il vostro bisogno."
+    },
+    {
+      "cle": "contact.form.p",
+      "fr": "Nous vous recontactons pour préciser le périmètre technique et les prochaines étapes.",
+      "en": "We will get back to you to clarify the technical scope and the next steps.",
+      "it": "Vi ricontatteremo per precisare il perimetro tecnico e le tappe successive."
+    },
+    {
+      "cle": "contact.form.label.name",
+      "fr": "Nom",
+      "en": "Name",
+      "it": "Nome"
+    },
+    {
+      "cle": "contact.form.label.company",
+      "fr": "Société",
+      "en": "Company",
+      "it": "Azienda"
+    },
+    {
+      "cle": "contact.form.label.email",
+      "fr": "Email professionnel",
+      "en": "Business email",
+      "it": "Email professionale"
+    },
+    {
+      "cle": "contact.form.label.phone",
+      "fr": "Téléphone",
+      "en": "Phone",
+      "it": "Telefono"
+    },
+    {
+      "cle": "contact.form.label.subject",
+      "fr": "Type de demande",
+      "en": "Request type",
+      "it": "Tipo di richiesta"
+    },
+    {
+      "cle": "contact.form.label.message",
+      "fr": "Message",
+      "en": "Message",
+      "it": "Messaggio"
+    },
+    {
+      "cle": "contact.form.opt.1",
+      "fr": "Étude technique préliminaire",
+      "en": "Preliminary technical study",
+      "it": "Studio tecnico preliminare"
+    },
+    {
+      "cle": "contact.form.opt.2",
+      "fr": "Chiffrage · devis",
+      "en": "Costing · quote",
+      "it": "Preventivo · offerta"
+    },
+    {
+      "cle": "contact.form.opt.3",
+      "fr": "Alimentation principale · raccordement puissance",
+      "en": "Main supply · power connection",
+      "it": "Alimentazione principale · collegamento di potenza"
+    },
+    {
+      "cle": "contact.form.opt.4",
+      "fr": "Extension / remplacement de ligne",
+      "en": "Extension / line replacement",
+      "it": "Ampliamento / sostituzione di linea"
+    },
+    {
+      "cle": "contact.form.opt.5",
+      "fr": "Gaines à barres · implantation",
+      "en": "Busways · layout",
+      "it": "Condotti sbarre · posa"
+    },
+    {
+      "cle": "contact.form.opt.6",
+      "fr": "Demande partenariat",
+      "en": "Partnership enquiry",
+      "it": "Richiesta partnership"
+    },
+    {
+      "cle": "contact.form.opt.7",
+      "fr": "Candidature · recrutement",
+      "en": "Application · recruitment",
+      "it": "Candidatura · lavora con noi"
+    },
+    {
+      "cle": "contact.form.opt.8",
+      "fr": "Autre",
+      "en": "Other",
+      "it": "Altro"
+    },
+    {
+      "cle": "contact.form.ph",
+      "fr": "Décrivez brièvement votre site, le périmètre envisagé et les contraintes d'exploitation.",
+      "en": "Briefly describe your site, the intended scope and the operational constraints.",
+      "it": "Descrivete brevemente il vostro sito, il perimetro previsto e i vincoli di esercizio."
+    },
+    {
+      "cle": "contact.form.btn",
+      "fr": "Envoyer la demande",
+      "en": "Send request",
+      "it": "Invia richiesta"
+    },
+    {
+      "cle": "contact.form.legal",
+      "fr": "Vos données sont utilisées exclusivement pour le traitement de votre demande et ne sont transmises à aucun tiers. Voir notre <a href=\"#\" style=\"color:var(--accent-ink); text-decoration:underline;\">politique de confidentialité</a>.",
+      "en": "Your data is used exclusively for processing your request and is not shared with any third party. See our <a href=\"#\" style=\"color:var(--accent-ink); text-decoration:underline;\">privacy policy</a>.",
+      "it": "I vostri dati sono utilizzati esclusivamente per il trattamento della vostra richiesta e non sono trasmessi ad alcuna terza parte. Consultate la nostra <a href=\"#\" style=\"color:var(--accent-ink); text-decoration:underline;\">informativa sulla privacy</a>."
+    },
+    {
+      "cle": "contact.c1.eyebrow",
+      "fr": "Siège social",
+      "en": "Head office",
+      "it": "Sede legale"
+    },
+    {
+      "cle": "contact.c1.addr",
+      "fr": "11 rue Sigmund Freud<br>69120 Vaulx-en-Velin · France",
+      "en": "11 rue Sigmund Freud<br>69120 Vaulx-en-Velin · France",
+      "it": "11 rue Sigmund Freud<br>69120 Vaulx-en-Velin · Francia"
+    },
+    {
+      "cle": "contact.c2.eyebrow",
+      "fr": "Direction commerciale",
+      "en": "Sales management",
+      "it": "Direzione commerciale"
+    },
+    {
+      "cle": "contact.c2.strong",
+      "fr": "Standard commercial",
+      "en": "Sales desk",
+      "it": "Centralino commerciale"
+    },
+    {
+      "cle": "contact.c3.eyebrow",
+      "fr": "Horaires",
+      "en": "Opening hours",
+      "it": "Orari"
+    },
+    {
+      "cle": "contact.c3.strong",
+      "fr": "Heures d'ouverture",
+      "en": "Business hours",
+      "it": "Orari di apertura"
+    },
+    {
+      "cle": "contact.c3.hours",
+      "fr": "Lundi au jeudi · 08h, 17h<br>Vendredi · 08h, 12h<br><span style=\"font-size:0.82rem; color:var(--muted-2);\">Interventions chantier ajustables selon les contraintes site.</span>",
+      "en": "Monday to Thursday · 8 am, 5 pm<br>Friday · 8 am, 12 pm<br><span style=\"font-size:0.82rem; color:var(--muted-2);\">Site interventions adjustable to site constraints.</span>",
+      "it": "Da lunedì a giovedì · 08:00, 17:00<br>Venerdì · 08:00, 12:00<br><span style=\"font-size:0.82rem; color:var(--muted-2);\">Interventi in cantiere adattabili ai vincoli del sito.</span>"
+    },
+    {
+      "cle": "contact.c4.eyebrow",
+      "fr": "Qualification",
+      "en": "Qualification",
+      "it": "Qualifica"
+    },
+    {
+      "cle": "contact.c4.strong",
+      "fr": "Certification MASE",
+      "en": "MASE certification",
+      "it": "Certificazione MASE"
+    },
+    {
+      "cle": "contact.c4.p",
+      "fr": "Référentiel SSE · Rhône-Alpes<br>Audit triennal, procédures HSE formalisées<br>Certification valide jusqu'au 4 septembre 2028",
+      "en": "HSE framework · Rhône-Alpes<br>Triennial audit, formalised HSE procedures<br>Certification valid until 4 September 2028",
+      "it": "Riferimento SSA · Rhône-Alpes<br>Audit triennale, procedure HSE formalizzate<br>Certificazione valida fino al 4 settembre 2028"
+    },
+    {
+      "cle": "contact.cta.eyebrow",
+      "fr": "En attendant",
+      "en": "In the meantime",
+      "it": "Nel frattempo"
+    },
+    {
+      "cle": "contact.cta.h2",
+      "fr": "Consultez nos chantiers documentés.",
+      "en": "Explore our documented projects.",
+      "it": "Consultate i nostri cantieri documentati."
+    },
+    {
+      "cle": "contact.cta.p",
+      "fr": "Trois opérations publiées avec photos chantier natives : Saint-Gaudens, Chaufferie gaz 2000 A et Fibre Excellence. Une lecture directe du niveau d'exécution Ener-Co.",
+      "en": "Three operations published with native site photos: Saint-Gaudens, 2000 A gas boiler and Fibre Excellence. A direct read of Ener-Co's execution level.",
+      "it": "Tre operazioni pubblicate con foto di cantiere originali: Saint-Gaudens, Caldaia gas 2000 A e Fibre Excellence. Una lettura diretta del livello di esecuzione di Ener-Co."
+    },
+    {
+      "cle": "contact.cta.btn1",
+      "fr": "Voir les réalisations",
+      "en": "See projects",
+      "it": "Vedere i progetti"
+    },
+    {
+      "cle": "contact.cta.btn2",
+      "fr": "Voir le périmètre",
+      "en": "See the scope",
+      "it": "Vedere il perimetro"
+    },
+    {
+      "cle": "contact.form.subject.ph",
+      "fr": "Précisez l'objet de votre demande",
+      "en": "Specify the subject of your request",
+      "it": "Specificare l'oggetto della richiesta"
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Ener-Co · Guide de la console d'édition</title>
+<style>
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    color: #1E2530;
+    background: #EEF1F4;
+    line-height: 1.6;
+  }
+  .page { max-width: 880px; margin: 0 auto; padding: 0 22px 80px; }
+
+  /* ---------- En-tete ---------- */
+  .cover {
+    background: linear-gradient(135deg, #3D4452 0%, #2A3140 100%);
+    color: #fff;
+    padding: 54px 22px 48px;
+    text-align: center;
+  }
+  .cover-logo { font-size: 30px; font-weight: 800; letter-spacing: .5px; }
+  .cover-logo .o { color: #F26419; }
+  .cover-logo .c { color: #1FB85F; }
+  .cover h1 { font-size: 30px; margin: 18px 0 8px; font-weight: 800; }
+  .cover p { font-size: 17px; opacity: .85; margin: 0 auto; max-width: 560px; }
+  .cover .sub { margin-top: 18px; font-size: 14px; opacity: .7; }
+
+  /* ---------- Blocs ---------- */
+  h2 {
+    font-size: 23px; margin: 48px 0 6px; color: #1E2530;
+    display: flex; align-items: center; gap: 12px;
+  }
+  h2 .num {
+    flex: 0 0 36px; width: 36px; height: 36px; border-radius: 50%;
+    background: #F26419; color: #fff; font-size: 18px; font-weight: 800;
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  h3 { font-size: 17px; margin: 26px 0 8px; color: #2A3140; }
+  .lead { color: #5A6473; font-size: 16px; margin: 4px 0 18px; }
+  p { margin: 10px 0; }
+  a { color: #b23f0d; }
+
+  .card {
+    background: #fff; border: 1px solid #DCE1E7; border-radius: 14px;
+    padding: 22px 24px; margin: 16px 0;
+    box-shadow: 0 1px 2px rgba(20,30,45,.04);
+  }
+
+  /* ---------- Encadres ---------- */
+  .note { border-radius: 12px; padding: 14px 18px; margin: 16px 0; font-size: 15px; }
+  .note b { display: block; margin-bottom: 2px; }
+  .ok   { background: #E7F7EE; border: 1px solid #9FE0BC; }
+  .ok b { color: #0a6e3a; }
+  .warn { background: #FFF3E6; border: 1px solid #FACB95; }
+  .warn b { color: #9a4d00; }
+  .info { background: #EAF1FB; border: 1px solid #B9D0F0; }
+  .info b { color: #1e4280; }
+
+  /* ---------- Etapes ---------- */
+  .step { display: flex; gap: 16px; margin: 18px 0; align-items: flex-start; }
+  .step .badge {
+    flex: 0 0 30px; width: 30px; height: 30px; border-radius: 50%;
+    background: #3D4452; color: #fff; font-weight: 700; font-size: 15px;
+    display: inline-flex; align-items: center; justify-content: center; margin-top: 2px;
+  }
+  .step .body { flex: 1; }
+  .step .body b { color: #1E2530; }
+
+  /* ---------- Maquettes d'ecran ---------- */
+  .shot { margin: 14px 0 6px; border-radius: 12px; overflow: hidden;
+          border: 1px solid #C9D0D8; box-shadow: 0 8px 24px rgba(20,30,45,.12); background:#fff; }
+  .browser-bar {
+    background: #E4E8ED; padding: 9px 14px; display: flex; align-items: center; gap: 10px;
+    border-bottom: 1px solid #CfD5DC;
+  }
+  .dots { display: flex; gap: 6px; }
+  .dots i { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+  .dots .r{background:#ff5f57}.dots .y{background:#febc2e}.dots .g{background:#28c840}
+  .url {
+    flex: 1; background: #fff; border-radius: 6px; padding: 4px 12px; font-size: 12.5px;
+    color: #5A6473; border: 1px solid #D4DAE0; font-family: ui-monospace, Consolas, monospace;
+  }
+  .caption { font-size: 13px; color: #5A6473; text-align: center; margin: 6px 0 22px; font-style: italic; }
+
+  /* Interface Decap reconstituee */
+  .cms { display: flex; min-height: 230px; font-size: 14px; }
+  .cms-top {
+    display:flex; align-items:center; gap:20px; padding:10px 16px; border-bottom:1px solid #E2E6EB;
+    background:#fff; font-weight:600; color:#3D4452;
+  }
+  .cms-top .right { margin-left:auto; display:flex; gap:8px; align-items:center; }
+  .btn-pub { background:#1FB85F; color:#fff; border:none; border-radius:7px; padding:7px 16px; font-weight:700; font-size:13.5px; }
+  .btn-save { background:#eef1f4; color:#3D4452; border:1px solid #D4DAE0; border-radius:7px; padding:7px 14px; font-weight:600; font-size:13.5px; }
+  .cms-side { flex:0 0 240px; background:#F6F8FA; border-right:1px solid #E2E6EB; padding:16px; }
+  .cms-side h4 { margin:0 0 12px; font-size:13px; text-transform:uppercase; letter-spacing:.4px; color:#8A93A0; }
+  .cms-side ul { list-style:none; margin:0; padding:0; }
+  .cms-side li { padding:8px 12px; border-radius:8px; color:#3D4452; margin-bottom:2px; }
+  .cms-side li.act { background:#FFE6D5; color:#b23f0d; font-weight:700; }
+  .cms-side li .ic { display:inline-block; width:15px; opacity:.6; margin-right:7px; }
+  .cms-main { flex:1; padding:18px 20px; }
+  .cms-row {
+    border:1px solid #E2E6EB; border-radius:9px; padding:12px 14px; margin-bottom:9px;
+    display:flex; align-items:center; gap:10px; background:#fff;
+  }
+  .cms-row .chev { color:#9AA3B0; font-weight:700; }
+  .cms-row .txt { color:#2A3140; }
+  .cms-row .muted { color:#8A93A0; }
+
+  .field { margin:14px 0; }
+  .field label { display:block; font-weight:700; color:#3D4452; font-size:13.5px; margin-bottom:5px; }
+  .field .flag { font-size:12px; color:#fff; border-radius:5px; padding:1px 7px; margin-right:7px; font-weight:700; }
+  .flag-fr{background:#3D4452}.flag-en{background:#2e5ba1}.flag-it{background:#0a8a46}
+  .field .inp {
+    border:1px solid #CfD5DC; border-radius:8px; padding:9px 12px; background:#fff; color:#1E2530;
+    font-size:14px;
+  }
+  .field .inp.area { min-height:30px; }
+
+  /* Pastilles d'annotation */
+  .pin {
+    display:inline-flex; align-items:center; justify-content:center;
+    width:22px; height:22px; border-radius:50%; background:#F26419; color:#fff;
+    font-weight:800; font-size:13px; margin-right:8px; flex:0 0 22px;
+  }
+  .annot { display:flex; gap:0; align-items:flex-start; margin:10px 0; }
+  .annot .pin { margin-top:1px; }
+
+  /* Carte des zones */
+  .zones { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:16px 0; }
+  .zone { background:#fff; border:1px solid #DCE1E7; border-radius:11px; padding:14px 16px; }
+  .zone .zt { font-weight:700; color:#1E2530; margin-bottom:3px; }
+  .zone .zd { font-size:14px; color:#5A6473; }
+
+  table { width:100%; border-collapse:collapse; margin:14px 0; font-size:14.5px; }
+  th,td { text-align:left; padding:10px 12px; border-bottom:1px solid #E2E6EB; vertical-align:top; }
+  th { color:#8A93A0; font-size:12.5px; text-transform:uppercase; letter-spacing:.4px; }
+
+  .kbd { font-family:ui-monospace,Consolas,monospace; background:#EEF1F4; border:1px solid #D4DAE0;
+         border-radius:5px; padding:1px 7px; font-size:13px; }
+
+  .toc { columns:2; gap:24px; font-size:15px; }
+  .toc a { display:block; padding:3px 0; text-decoration:none; color:#2A3140; }
+  .toc a:hover { color:#b23f0d; }
+
+  footer { text-align:center; color:#8A93A0; font-size:13px; margin-top:50px; }
+
+  @media (max-width:680px){ .zones{grid-template-columns:1fr} .toc{columns:1} .cms-side{display:none} }
+  @media print {
+    body{background:#fff} .cover{padding:30px 0}
+    .shot,.card{box-shadow:none} h2{break-after:avoid} .step,.shot,.zone{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="cover-logo">Ener<span class="o">-</span>Co</div>
+  <h1>Guide de la console d'édition</h1>
+  <p>Comment modifier vous-même le texte et les logos du site, en toute sécurité, sans aucune connaissance technique.</p>
+  <div class="sub">Document à conserver · imprimable · valable pour tous les collègues autorisés</div>
+</div>
+
+<div class="page">
+
+  <div class="card" style="margin-top:28px">
+    <h3 style="margin-top:0">En 30 secondes</h3>
+    <p>La <b>console</b> est une page privée où vous modifiez les textes et les logos du site. Vous vous connectez avec votre <b>email et un mot de passe</b> (pas besoin de compte technique). Vous changez ce que vous voulez, vous cliquez <b>Publier</b>, et le site se met à jour tout seul en une à deux minutes.</p>
+    <div class="note ok">
+      <b>Vous ne pouvez rien casser.</b>
+      Vous ne touchez jamais au design ni à la structure du site, uniquement aux textes et aux logos. Et si vous effacez un texte par erreur, le site remet automatiquement la version d'origine.
+    </div>
+  </div>
+
+  <h3>Sommaire</h3>
+  <div class="toc">
+    <a href="#c1">1 · Se connecter à la console</a>
+    <a href="#c2">2 · La carte des zones modifiables</a>
+    <a href="#c3">3 · Modifier un texte (pas à pas)</a>
+    <a href="#c4">4 · Les trois langues (FR / EN / IT)</a>
+    <a href="#c5">5 · Changer ou ajouter un logo client</a>
+    <a href="#c6">6 · Publier et voir le résultat</a>
+    <a href="#c7">7 · Règles d'or et questions fréquentes</a>
+  </div>
+
+  <!-- ============ 1 ============ -->
+  <h2 id="c1"><span class="num">1</span> Se connecter à la console</h2>
+  <p class="lead">L'adresse de la console est l'adresse de votre site suivie de <span class="kbd">/admin</span>.</p>
+
+  <div class="shot">
+    <div class="browser-bar">
+      <div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+      <div class="url">rococo-sawine-57adcf.netlify.app/admin</div>
+    </div>
+    <div style="padding:46px 20px; text-align:center; background:#F6F8FA;">
+      <div style="font-weight:800; font-size:20px; color:#3D4452; margin-bottom:6px;">Ener<span style="color:#F26419">-</span>Co</div>
+      <div style="color:#5A6473; margin-bottom:22px;">Espace d'édition</div>
+      <button style="background:#3D4452;color:#fff;border:none;border-radius:9px;padding:12px 26px;font-size:15px;font-weight:700;">Se connecter avec Netlify Identity</button>
+    </div>
+  </div>
+  <div class="caption">L'écran d'accueil de la console.</div>
+
+  <div class="step"><span class="badge">1</span><div class="body">Ouvrez votre navigateur et tapez l'adresse de la console : <span class="kbd">rococo-sawine-57adcf.netlify.app/admin</span> <i>(ou votre nouvelle adresse si le site a été renommé)</i>. <b>Astuce : mettez-la en favori</b> pour y revenir d'un clic.</div></div>
+  <div class="step"><span class="badge">2</span><div class="body">Cliquez sur <b>« Se connecter »</b>, saisissez votre <b>email</b> et votre <b>mot de passe</b>.</div></div>
+  <div class="step"><span class="badge">3</span><div class="body">La console s'ouvre. Vous y êtes.</div></div>
+
+  <div class="note info">
+    <b>Première fois ? Vous avez reçu un email d'invitation.</b>
+    Ouvrez-le, cliquez sur « Accept the invite » et choisissez votre mot de passe. Si vous l'avez oublié plus tard, cliquez « Forgot password ? » sur l'écran de connexion : un email vous permet d'en remettre un.
+  </div>
+
+  <!-- ============ 2 ============ -->
+  <h2 id="c2"><span class="num">2</span> La carte des zones modifiables</h2>
+  <p class="lead">À gauche de la console, la colonne <b>« Collections »</b> liste tout ce que vous pouvez modifier. Une ligne = une page du site.</p>
+
+  <div class="shot">
+    <div class="browser-bar">
+      <div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+      <div class="url">rococo-sawine-57adcf.netlify.app/admin/#/</div>
+    </div>
+    <div class="cms-top">Contenus <span style="color:#9AA3B0">Media</span> <span class="right"></span></div>
+    <div class="cms">
+      <div class="cms-side">
+        <h4>Collections</h4>
+        <ul>
+          <li class="act"><span class="ic">✎</span>Accueil · textes</li>
+          <li><span class="ic">✎</span>Expertise · textes</li>
+          <li><span class="ic">✎</span>Réalisations · textes</li>
+          <li><span class="ic">✎</span>Secteurs · textes</li>
+          <li><span class="ic">✎</span>Engagements · textes</li>
+          <li><span class="ic">✎</span>Recrutement · textes</li>
+          <li><span class="ic">✎</span>Références · textes</li>
+          <li><span class="ic">✎</span>Contact · textes</li>
+          <li><span class="ic">▦</span>Commun (menu, pied de page)</li>
+          <li><span class="ic">▢</span>Références · logos clients</li>
+        </ul>
+      </div>
+      <div class="cms-main">
+        <div style="font-weight:700;color:#1E2530;margin-bottom:10px;">Accueil · textes</div>
+        <div class="cms-row"><span class="chev">›</span><span class="txt">Textes de la page d'accueil</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="caption">La colonne de gauche : chaque page du site a sa propre entrée.</div>
+
+  <div class="zones">
+    <div class="zone"><div class="zt">Accueil · textes</div><div class="zd">Tous les textes de la page d'accueil (titre, accroche, chiffres, sections).</div></div>
+    <div class="zone"><div class="zt">Expertise · textes</div><div class="zd">Les textes de la page Expertise.</div></div>
+    <div class="zone"><div class="zt">Réalisations · textes</div><div class="zd">Les textes de la page Réalisations.</div></div>
+    <div class="zone"><div class="zt">Secteurs · textes</div><div class="zd">Les textes de la page Secteurs.</div></div>
+    <div class="zone"><div class="zt">Engagements · textes</div><div class="zd">Les textes de la page Engagements.</div></div>
+    <div class="zone"><div class="zt">Recrutement · textes</div><div class="zd">Les textes de la page Recrutement (dont les offres).</div></div>
+    <div class="zone"><div class="zt">Références · textes</div><div class="zd">Les textes de la page Références (hors logos).</div></div>
+    <div class="zone"><div class="zt">Contact · textes</div><div class="zd">Les textes de la page Contact.</div></div>
+    <div class="zone"><div class="zt">Commun</div><div class="zd">Le menu, le pied de page et les messages d'erreur, présents sur toutes les pages.</div></div>
+    <div class="zone"><div class="zt">Références · logos</div><div class="zd">Les logos clients du bandeau défilant et de la page Références.</div></div>
+  </div>
+
+  <!-- ============ 3 ============ -->
+  <h2 id="c3"><span class="num">3</span> Modifier un texte, pas à pas</h2>
+  <p class="lead">Exemple : changer l'accroche de la page d'accueil. La méthode est la même pour <b>n'importe quel</b> texte de <b>n'importe quelle</b> page.</p>
+
+  <div class="step"><span class="badge">1</span><div class="body">Dans la colonne de gauche, cliquez sur la page voulue, par exemple <b>« Accueil · textes »</b>, puis sur <b>« Textes de la page d'accueil »</b>.</div></div>
+  <div class="step"><span class="badge">2</span><div class="body">Vous voyez la <b>liste de tous les textes</b> de la page. Chaque ligne affiche le texte tel qu'il apparaît sur le site, ce qui vous aide à le reconnaître.</div></div>
+
+  <div class="shot">
+    <div class="browser-bar">
+      <div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+      <div class="url">.../admin/#/collections/txt_accueil/entries/textes</div>
+    </div>
+    <div class="cms-top">Contenus <span class="right"><button class="btn-save">Enregistrer</button><button class="btn-pub">Publier ▾</button></span></div>
+    <div style="padding:18px 22px;">
+      <div style="font-weight:700;color:#1E2530;margin-bottom:12px;">Textes de la page</div>
+      <div class="cms-row"><span class="chev">›</span><span class="txt">Distribution d'énergie industrielle</span></div>
+      <div class="cms-row" style="border-color:#F26419;background:#FFF7F2;"><span class="chev" style="color:#F26419">›</span><span class="txt"><span class="pin">A</span>Distribution d'énergie sur sites techniques et industriels sensibles.</span></div>
+      <div class="cms-row"><span class="chev">›</span><span class="txt muted">Ener-Co intervient sur l'ensemble de la chaîne de distribution...</span></div>
+    </div>
+  </div>
+  <div class="caption">La liste des textes. La pastille <b>A</b> repère le texte qu'on va modifier.</div>
+
+  <div class="step"><span class="badge">3</span><div class="body">Cliquez sur la ligne du texte à modifier <i>(la pastille <b>A</b> ci-dessus)</i>. Elle se <b>déplie</b> et montre trois cases : Français, Anglais, Italien.</div></div>
+
+  <div class="shot">
+    <div class="browser-bar">
+      <div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+      <div class="url">.../admin/#/collections/txt_accueil/entries/textes</div>
+    </div>
+    <div class="cms-top">Contenus <span class="right"><button class="btn-save">Enregistrer</button><button class="btn-pub">Publier ▾</button></span></div>
+    <div style="padding:18px 22px;">
+      <div class="field">
+        <label><span class="flag flag-fr">FR</span>Français</label>
+        <div class="inp area">Distribution d'énergie sur sites techniques et industriels sensibles.</div>
+      </div>
+      <div class="field">
+        <label><span class="flag flag-en">EN</span>Anglais</label>
+        <div class="inp area">Power distribution on sensitive technical and industrial sites.</div>
+      </div>
+      <div class="field">
+        <label><span class="flag flag-it">IT</span>Italien</label>
+        <div class="inp area">Distribuzione di energia su siti tecnici e industriali sensibili.</div>
+      </div>
+    </div>
+  </div>
+  <div class="caption">Le texte déplié, avec ses trois langues. Modifiez la ou les cases voulues.</div>
+
+  <div class="step"><span class="badge">4</span><div class="body">Cliquez dans la case et <b>tapez votre nouveau texte</b>. Pensez à adapter aussi l'<b>anglais</b> et l'<b>italien</b> (voir le chapitre 4).</div></div>
+  <div class="step"><span class="badge">5</span><div class="body">En haut à droite, cliquez sur <b>« Publier »</b> puis <b>« Publish now »</b>. C'est terminé.</div></div>
+
+  <div class="note warn">
+    <b>Ne touchez pas à la « Référence technique ».</b>
+    Certains textes ont un petit code masqué qui permet au site de savoir quel texte remplacer. Vous ne le voyez normalement pas, et il ne faut surtout pas le modifier. Contentez-vous des cases Français / Anglais / Italien.
+  </div>
+
+  <!-- ============ 4 ============ -->
+  <h2 id="c4"><span class="num">4</span> Les trois langues (FR / EN / IT)</h2>
+  <p class="lead">Le site existe en français, anglais et italien. Chaque texte a donc trois cases.</p>
+
+  <div class="card">
+    <div class="annot"><span class="pin">1</span><div><b>La traduction n'est pas automatique.</b> Si vous changez le texte français, l'anglais et l'italien ne changent pas tout seuls. Pensez à adapter les trois si la modification concerne le sens.</div></div>
+    <div class="annot"><span class="pin">2</span><div><b>Une case laissée vide reprend la version d'origine.</b> Si vous ne savez pas traduire tout de suite, laissez la case telle quelle : le site gardera l'ancienne version, jamais du vide.</div></div>
+    <div class="annot"><span class="pin">3</span><div><b>Besoin d'aide pour traduire ?</b> Demandez, on peut préparer les versions anglaise et italienne pour vous.</div></div>
+  </div>
+
+  <!-- ============ 5 ============ -->
+  <h2 id="c5"><span class="num">5</span> Changer ou ajouter un logo client</h2>
+  <p class="lead">Les logos clients se gèrent dans <b>« Références · logos clients »</b>.</p>
+
+  <div class="shot">
+    <div class="browser-bar">
+      <div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+      <div class="url">.../admin/#/collections/references/entries/clients</div>
+    </div>
+    <div class="cms-top">Contenus <span class="right"><button class="btn-save">Enregistrer</button><button class="btn-pub">Publier ▾</button></span></div>
+    <div style="padding:18px 22px;">
+      <div class="cms-row"><span class="chev">›</span><span class="txt">TotalEnergies</span></div>
+      <div class="cms-row"><span class="chev">›</span><span class="txt">Framatome</span></div>
+      <div class="cms-row"><span class="chev">›</span><span class="txt">Air Liquide</span></div>
+      <div style="margin-top:10px;"><button class="btn-save">Ajouter client +</button></div>
+    </div>
+  </div>
+  <div class="caption">La liste des clients. Chaque ligne = un logo.</div>
+
+  <div class="step"><span class="badge">1</span><div class="body"><b>Modifier un client existant :</b> cliquez sur sa ligne. Vous pouvez changer son <b>nom</b>, remplacer son <b>logo</b> (bouton de téléversement), ou ajuster son <b>format</b> (paysage, carré, très allongé) pour qu'il soit bien cadré.</div></div>
+  <div class="step"><span class="badge">2</span><div class="body"><b>Ajouter un client :</b> cliquez sur <b>« Ajouter client + »</b>, remplissez le nom, téléversez le logo, choisissez le format.</div></div>
+  <div class="step"><span class="badge">3</span><div class="body">Cliquez sur <b>« Publier »</b>.</div></div>
+
+  <div class="note info">
+    <b>Quel fichier de logo utiliser ?</b>
+    De préférence un PNG au fond transparent. Si vous n'avez que la version sur fond blanc ou coloré, envoyez-la quand même : on peut la nettoyer pour vous.
+  </div>
+
+  <!-- ============ 6 ============ -->
+  <h2 id="c6"><span class="num">6</span> Publier et voir le résultat</h2>
+  <p class="lead">Tant que vous n'avez pas cliqué « Publier », rien ne change sur le site public.</p>
+
+  <div class="step"><span class="badge">1</span><div class="body">Cliquez sur <b>« Publier »</b> (bouton vert en haut à droite) puis <b>« Publish now »</b>.</div></div>
+  <div class="step"><span class="badge">2</span><div class="body"><b>Patientez une à deux minutes.</b> Le site se reconstruit tout seul en coulisses.</div></div>
+  <div class="step"><span class="badge">3</span><div class="body">Ouvrez le site public et <b>rafraîchissez la page</b> <span class="kbd">Ctrl + F5</span>. Votre modification est en ligne.</div></div>
+
+  <div class="note ok">
+    <b>Vous ne voyez pas le changement tout de suite ?</b>
+    C'est presque toujours le cache du navigateur. Forcez le rafraîchissement avec <span class="kbd">Ctrl + F5</span> (ou <span class="kbd">Cmd + Maj + R</span> sur Mac). Patientez encore une minute si besoin.
+  </div>
+
+  <!-- ============ 7 ============ -->
+  <h2 id="c7"><span class="num">7</span> Règles d'or et questions fréquentes</h2>
+
+  <div class="card">
+    <div class="annot"><span class="pin">✓</span><div><b>Vous ne pouvez pas casser le site.</b> Vous ne touchez qu'aux textes et aux logos, jamais à la mise en page.</div></div>
+    <div class="annot"><span class="pin">✓</span><div><b>Une case vide = version d'origine.</b> Impossible de « vider » le site par accident.</div></div>
+    <div class="annot"><span class="pin">✓</span><div><b>Tout est enregistré et réversible.</b> Chaque publication est historisée. En cas de doute, on peut revenir en arrière.</div></div>
+    <div class="annot"><span class="pin">✓</span><div><b>Ne modifiez jamais la « Référence technique ».</b> C'est le seul champ à ne pas toucher.</div></div>
+  </div>
+
+  <h3>Questions fréquentes</h3>
+  <table>
+    <tr><th>Question</th><th>Réponse</th></tr>
+    <tr><td>J'ai modifié un texte mais je ne le vois pas sur le site.</td><td>Avez-vous cliqué « Publier » ? Ensuite, attendez une à deux minutes et faites <span class="kbd">Ctrl + F5</span>.</td></tr>
+    <tr><td>J'ai effacé un texte par erreur.</td><td>Laissez la case vide et publiez : le site remet la version d'origine. Aucun dégât.</td></tr>
+    <tr><td>Je ne sais pas traduire en anglais ou italien.</td><td>Laissez la case telle quelle (l'ancienne version reste) ou demandez de l'aide.</td></tr>
+    <tr><td>J'ai oublié mon mot de passe.</td><td>Sur l'écran de connexion, cliquez « Forgot password ? ». Un email vous permet d'en choisir un nouveau.</td></tr>
+    <tr><td>Puis-je travailler depuis chez moi ?</td><td>Oui, la console est accessible depuis n'importe quel navigateur, avec votre email et mot de passe.</td></tr>
+    <tr><td>Est-ce que je peux supprimer une ligne de texte ?</td><td>Inutile : pour annuler une modification, videz simplement les cases. Le site reprendra la version d'origine.</td></tr>
+  </table>
+
+  <div class="note info" style="margin-top:26px">
+    <b>Un doute, un blocage, une idée ?</b>
+    Notez ce que vous vouliez faire et à quel écran vous étiez, et transmettez-le. On vous débloque rapidement.
+  </div>
+
+  <footer>
+    Ener-Co · Guide de la console d'édition · document interne
+  </footer>
+
+</div>
+</body>
+</html>

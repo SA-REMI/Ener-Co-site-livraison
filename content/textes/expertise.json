@@ -1,0 +1,250 @@
+{
+  "textes": [
+    {
+      "cle": "exp.hero.eyebrow",
+      "fr": "Périmètre d'intervention",
+      "en": "Scope of intervention",
+      "it": "Perimetro di intervento"
+    },
+    {
+      "cle": "exp.hero.h1",
+      "fr": "HTA, TGBT, tableaux et gaines à barres sur sites techniques sensibles.",
+      "en": "MV, LV, switchboards and busways on sensitive technical sites.",
+      "it": "MT, BT, quadri e condotti sbarre su siti tecnici sensibili."
+    },
+    {
+      "cle": "exp.hero.lede",
+      "fr": "Ener-Co prend en charge l'ensemble de la chaîne de distribution d'énergie industrielle sans sous-traitance, de la préparation haute tension à la mise sous tension finale.",
+      "en": "Ener-Co covers the entire industrial power distribution chain without subcontracting, from MV preparation to final energisation.",
+      "it": "Ener-Co copre l'intera catena di distribuzione di energia industriale senza subappalto, dalla preparazione alta tensione alla messa in tensione finale."
+    },
+    {
+      "cle": "exp.hero.btn1",
+      "fr": "Voir nos réalisations",
+      "en": "See our projects",
+      "it": "Vedere i nostri progetti"
+    },
+    {
+      "cle": "exp.hero.btn2",
+      "fr": "Nous consulter",
+      "en": "Contact us",
+      "it": "Contattaci"
+    },
+    {
+      "cle": "exp.hero.cap1",
+      "fr": "Saint-Gaudens · Fibre Excellence",
+      "en": "Saint-Gaudens · Fibre Excellence",
+      "it": "Saint-Gaudens · Fibre Excellence"
+    },
+    {
+      "cle": "exp.hero.cap2",
+      "fr": "Chaufferie gaz · Est lyonnais",
+      "en": "Gas boiler · East Lyon",
+      "it": "Caldaia gas · Est Lione"
+    },
+    {
+      "cle": "exp.hero.cap3",
+      "fr": "Poste HTA · Schneider Electric",
+      "en": "MV substation · Schneider Electric",
+      "it": "Cabina MT · Schneider Electric"
+    },
+    {
+      "cle": "exp.hero.cap4",
+      "fr": "Eta-com · jonctions GAB",
+      "en": "Eta-com · busbar joints",
+      "it": "Eta-com · giunzioni condotti sbarre"
+    },
+    {
+      "cle": "exp.scope.eyebrow",
+      "fr": "Six expertises",
+      "en": "Six expertises",
+      "it": "Sei competenze"
+    },
+    {
+      "cle": "exp.scope.h2",
+      "fr": "Six expertises techniques intégrées.",
+      "en": "Six integrated technical expertises.",
+      "it": "Sei competenze tecniche integrate."
+    },
+    {
+      "cle": "exp.scope.intro",
+      "fr": "Chaque maillon de la distribution d'énergie est pris en charge en interne, sans sous-traitance. De la préparation HTA à la mise sous tension, la même continuité de responsabilité couvre l'ensemble du chantier.",
+      "en": "Each link of power distribution is handled in-house, without subcontracting. From MV preparation to energisation, the same continuity of responsibility covers the entire project.",
+      "it": "Ogni anello della distribuzione di energia è gestito internamente, senza subappalto. Dalla preparazione MT alla messa in tensione, la stessa continuità di responsabilità copre l'intero cantiere."
+    },
+    {
+      "cle": "exp.s1.h",
+      "fr": "Haute tension",
+      "en": "Medium voltage",
+      "it": "Media tensione"
+    },
+    {
+      "cle": "exp.s1.p",
+      "fr": "Préparation des séquences d'intervention, gestion des interfaces et organisation des travaux sur infrastructures électriques structurées.",
+      "en": "Preparation of intervention sequences, interface management and organisation of works on structured electrical infrastructure.",
+      "it": "Preparazione delle sequenze di intervento, gestione delle interfacce e organizzazione dei lavori su infrastrutture elettriche strutturate."
+    },
+    {
+      "cle": "exp.s2.h",
+      "fr": "Alimentations TGBT",
+      "en": "LV feeders",
+      "it": "Alimentazioni BT"
+    },
+    {
+      "cle": "exp.s2.p",
+      "fr": "Tirage, adaptation de lignes, raccordement puissance et interface avec tableaux généraux basse tension.",
+      "en": "Cable pulling, line adaptation, power connection and interface with low-voltage main distribution boards.",
+      "it": "Tiraggio, adattamento di linee, collegamento di potenza e interfaccia con quadri generali di bassa tensione."
+    },
+    {
+      "cle": "exp.s3.h",
+      "fr": "Tableaux &amp; départs",
+      "en": "Switchboards &amp; outlets",
+      "it": "Quadri &amp; partenze"
+    },
+    {
+      "cle": "exp.s3.p",
+      "fr": "Alimentation de tableaux, reprises sur existant, gestion des contraintes de site et continuité d'exploitation.",
+      "en": "Switchboard supply, tie-ins to existing equipment, management of site constraints and operational continuity.",
+      "it": "Alimentazione di quadri, riprese su impianti esistenti, gestione dei vincoli di sito e continuità di esercizio."
+    },
+    {
+      "cle": "exp.s4.h",
+      "fr": "Gaines à barres",
+      "en": "Busways",
+      "it": "Condotti sbarre"
+    },
+    {
+      "cle": "exp.s4.p",
+      "fr": "Implantation, supportage, jonctions, remplacement de lignes et adaptation de réseaux rigides sur sites techniques.",
+      "en": "Layout, supporting, junctions, line replacement and adaptation of rigid networks on technical sites.",
+      "it": "Posa, supportaggio, giunzioni, sostituzione di linee e adattamento di reti rigide su siti tecnici."
+    },
+    {
+      "cle": "exp.s5.h",
+      "fr": "Raccordements puissance",
+      "en": "Power connections",
+      "it": "Collegamenti di potenza"
+    },
+    {
+      "cle": "exp.s5.p",
+      "fr": "Interfaces avec transformateurs, TGBT, tableaux existants et équipements industriels de process ou d'utilités.",
+      "en": "Interfaces with transformers, LV boards, existing switchboards and industrial process or utility equipment.",
+      "it": "Interfacce con trasformatori, quadri BT, quadri esistenti e apparecchiature industriali di processo o utility."
+    },
+    {
+      "cle": "exp.s6.h",
+      "fr": "Mise sous tension",
+      "en": "Energisation",
+      "it": "Messa in tensione"
+    },
+    {
+      "cle": "exp.s6.p",
+      "fr": "Contrôles finaux, coordination de fin de chantier et remise en service selon le périmètre confié.",
+      "en": "Final checks, end-of-project coordination and return to service according to the assigned scope.",
+      "it": "Controlli finali, coordinamento di fine cantiere e rimessa in servizio secondo il perimetro affidato."
+    },
+    {
+      "cle": "exp.app.eyebrow",
+      "fr": "Approche",
+      "en": "Approach",
+      "it": "Approccio"
+    },
+    {
+      "cle": "exp.app.h2",
+      "fr": "Une entreprise de terrain, structurée pour les projets exigeants.",
+      "en": "A field company, structured for demanding projects.",
+      "it": "Un'impresa di campo, strutturata per progetti esigenti."
+    },
+    {
+      "cle": "exp.app.p",
+      "fr": "Ener-Co intervient sans sous-traitance sur des opérations qui demandent rigueur, coordination et capacité d'adaptation. L'enjeu ne se limite pas à tirer une ligne : il s'agit de raccorder, intégrer, sécuriser et remettre en service dans des environnements où la qualité d'exécution conditionne l'exploitation.",
+      "en": "Ener-Co operates without subcontracting on operations requiring rigour, coordination and adaptability. The challenge is not limited to pulling a line: it means connecting, integrating, securing and returning to service in environments where execution quality conditions operations.",
+      "it": "Ener-Co interviene senza subappalto su operazioni che richiedono rigore, coordinamento e capacità di adattamento. La sfida non si limita al tiro di una linea: si tratta di collegare, integrare, mettere in sicurezza e riattivare in ambienti in cui la qualità di esecuzione condiziona l'esercizio."
+    },
+    {
+      "cle": "exp.d1.h",
+      "fr": "Sans sous-traitance, responsabilité directe",
+      "en": "No subcontracting, direct responsibility",
+      "it": "Senza subappalto, responsabilità diretta"
+    },
+    {
+      "cle": "exp.d1.p",
+      "fr": "Exécution directe, coordination chantier et maîtrise des interfaces sans dilution de responsabilité ni cascade de sous-traitance d'intervention.",
+      "en": "Direct execution, site coordination and interface management, with no diluted responsibility or cascading subcontracting.",
+      "it": "Esecuzione diretta, coordinamento cantiere e controllo delle interfacce senza diluizione di responsabilità né cascata di subappalti."
+    },
+    {
+      "cle": "exp.d2.h",
+      "fr": "Sites sensibles &amp; process actifs",
+      "en": "Sensitive sites &amp; live processes",
+      "it": "Siti sensibili &amp; processi attivi"
+    },
+    {
+      "cle": "exp.d2.p",
+      "fr": "Data centers, industrie lourde, infrastructures critiques, utilités et environnements techniques réglementés. Interventions sur sites en exploitation.",
+      "en": "Data centres, heavy industry, critical infrastructure, utilities and regulated technical environments. Interventions on operational sites.",
+      "it": "Data center, industria pesante, infrastrutture critiche, utility e ambienti tecnici regolamentati. Interventi su siti in esercizio."
+    },
+    {
+      "cle": "exp.d3.h",
+      "fr": "Cadre SSE structuré",
+      "en": "Structured HSE framework",
+      "it": "Quadro SSA strutturato"
+    },
+    {
+      "cle": "exp.d3.p",
+      "fr": "Certification MASE Rhône-Alpes, procédures éprouvées et méthodes adaptées aux environnements sensibles et réglementés.",
+      "en": "MASE Rhône-Alpes certification, proven procedures and methods adapted to sensitive and regulated environments.",
+      "it": "Certificazione MASE Rhône-Alpes, procedure collaudate e metodi adattati agli ambienti sensibili e regolamentati."
+    },
+    {
+      "cle": "exp.d4.h",
+      "fr": "Lecture client lisible",
+      "en": "Clear client reading",
+      "it": "Lettura cliente chiara"
+    },
+    {
+      "cle": "exp.d4.p",
+      "fr": "Un interlocuteur unique, un périmètre clair, un engagement mesurable. Une réponse crédible pour les donneurs d'ordre industriels et les grands groupes.",
+      "en": "A single point of contact, a clear scope, a measurable commitment. A credible answer for industrial principals and large groups.",
+      "it": "Un unico interlocutore, un perimetro chiaro, un impegno misurabile. Una risposta credibile per i committenti industriali e i grandi gruppi."
+    },
+    {
+      "cle": "exp.cta.eyebrow",
+      "fr": "Contact",
+      "en": "Contact",
+      "it": "Contatti"
+    },
+    {
+      "cle": "exp.cta.h2",
+      "fr": "Discutons du périmètre technique de votre projet.",
+      "en": "Let's discuss the technical scope of your project.",
+      "it": "Parliamo del perimetro tecnico del vostro progetto."
+    },
+    {
+      "cle": "exp.cta.p",
+      "fr": "Étude technique, alimentation principale, raccordement de puissance, extension de site ou remplacement de ligne : échangeons sur votre périmètre, vos contraintes d'exploitation et vos délais.",
+      "en": "Technical study, main supply, power connection, site extension or line replacement: let's discuss your scope, your operational constraints and your deadlines.",
+      "it": "Studio tecnico, alimentazione principale, collegamento di potenza, ampliamento di sito o sostituzione di linea: parliamo del vostro perimetro, dei vostri vincoli di esercizio e delle vostre scadenze."
+    },
+    {
+      "cle": "exp.cta.btn1",
+      "fr": "Nous consulter",
+      "en": "Contact us",
+      "it": "Contattaci"
+    },
+    {
+      "cle": "exp.cta.btn2",
+      "fr": "Voir les réalisations",
+      "en": "See projects",
+      "it": "Vedere i progetti"
+    },
+    {
+      "cle": "exp.cta.label",
+      "fr": "Direction commerciale",
+      "en": "Sales management",
+      "it": "Direzione commerciale"
+    }
+  ]
+}

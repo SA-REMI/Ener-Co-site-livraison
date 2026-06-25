@@ -1,8 +1,13 @@
 # ============================================================================
-# Ener-Co · Configuration de l'espace d'edition (Sveltia CMS)
-# Compatible Decap CMS. Chaque "collection" = un type de contenu editable.
+# Ener-Co · Configuration de l'espace d'edition (Decap CMS)
+# Chaque "collection" = un type de contenu editable.
 # Les editeurs ne voient QUE ce qui est declare ici · le design et la
 # structure des pages restent intouchables.
+#
+# Les textes sont stockes dans /content/textes/*.json (un fichier par page).
+# Le site lit ces fichiers au chargement et applique leurs valeurs par-dessus
+# les textes d'origine. Un texte laisse vide reprend automatiquement sa
+# valeur d'origine · on ne peut donc jamais "vider" le site par accident.
 # ============================================================================
 
 backend:
@@ -19,48 +24,123 @@ public_folder: "/assets/uploads"
 # Langue de l'interface d'edition
 locale: "fr"
 
+# Modele de champ reutilise pour chaque page de textes (FR / EN / IT).
+# YAML "ancre" : defini une fois ici, reutilise via <<: *champs_texte plus bas.
+_champs_texte: &champs_texte
+  - name: "textes"
+    label: "Textes de la page"
+    label_singular: "Texte"
+    widget: "list"
+    collapsed: true
+    summary: "{{fields.fr}}"
+    fields:
+      - { name: "fr", label: "Français", widget: "text" }
+      - { name: "en", label: "Anglais", widget: "text" }
+      - { name: "it", label: "Italien", widget: "text" }
+      # Reference technique du texte · ne pas modifier, sert au site a savoir
+      # quel texte remplacer. Masquee a l'editeur.
+      - { name: "cle", label: "Référence technique", widget: "hidden" }
+
 collections:
 
   # ------------------------------------------------------------------------
-  # 1 · ACCROCHE DE LA PAGE D'ACCUEIL (titre + paragraphe, 3 langues)
+  # PAGES DE TEXTES (un fichier par page, 3 langues)
   # ------------------------------------------------------------------------
-  - name: "accueil"
-    label: "Page d'accueil · accroche"
+  - name: "txt_accueil"
+    label: "Accueil · textes"
     delete: false
     files:
-      - name: "accroche"
-        label: "Texte d'accroche"
-        file: "content/home.json"
-        description: "Le grand titre et le paragraphe d'introduction de la page d'accueil, dans les trois langues."
-        fields:
-          - { name: "titre_fr", label: "Titre (français)", widget: "string", hint: "Le grand titre affiché en haut de l'accueil." }
-          - { name: "titre_en", label: "Titre (anglais)", widget: "string" }
-          - { name: "titre_it", label: "Titre (italien)", widget: "string" }
-          - { name: "paragraphe_fr", label: "Paragraphe (français)", widget: "text", hint: "Le texte d'introduction sous le titre." }
-          - { name: "paragraphe_en", label: "Paragraphe (anglais)", widget: "text" }
-          - { name: "paragraphe_it", label: "Paragraphe (italien)", widget: "text" }
+      - name: "textes"
+        label: "Textes de la page d'accueil"
+        file: "content/textes/accueil.json"
+        description: "Tous les textes de la page d'accueil. Cliquez un texte pour le déplier et modifier le français, l'anglais et l'italien."
+        fields: *champs_texte
 
-  # ------------------------------------------------------------------------
-  # 2 · COORDONNEES (telephone + email)
-  # ------------------------------------------------------------------------
-  - name: "coordonnees"
-    label: "Coordonnées de contact"
+  - name: "txt_expertise"
+    label: "Expertise · textes"
     delete: false
     files:
-      - name: "contact"
-        label: "Téléphone et email"
-        file: "content/coordonnees.json"
-        description: "Le numéro de téléphone et l'adresse email affichés sur tout le site."
-        fields:
-          - { name: "telephone", label: "Téléphone", widget: "string", hint: "Format affiché, ex : +33 (0)4 26 07 67 79" }
-          - { name: "telephone_lien", label: "Téléphone (format lien)", widget: "string", hint: "Sans espaces ni parenthèses, ex : +33426076779. Sert au clic-pour-appeler." }
-          - { name: "email", label: "Adresse email", widget: "string", hint: "ex : contact@ener-co.fr" }
+      - name: "textes"
+        label: "Textes de la page Expertise"
+        file: "content/textes/expertise.json"
+        description: "Tous les textes de la page Expertise, dans les trois langues."
+        fields: *champs_texte
+
+  - name: "txt_realisations"
+    label: "Réalisations · textes"
+    delete: false
+    files:
+      - name: "textes"
+        label: "Textes de la page Réalisations"
+        file: "content/textes/realisations.json"
+        description: "Tous les textes de la page Réalisations, dans les trois langues."
+        fields: *champs_texte
+
+  - name: "txt_secteurs"
+    label: "Secteurs · textes"
+    delete: false
+    files:
+      - name: "textes"
+        label: "Textes de la page Secteurs"
+        file: "content/textes/secteurs.json"
+        description: "Tous les textes de la page Secteurs, dans les trois langues."
+        fields: *champs_texte
+
+  - name: "txt_engagements"
+    label: "Engagements · textes"
+    delete: false
+    files:
+      - name: "textes"
+        label: "Textes de la page Engagements"
+        file: "content/textes/engagements.json"
+        description: "Tous les textes de la page Engagements, dans les trois langues."
+        fields: *champs_texte
+
+  - name: "txt_recrutement"
+    label: "Recrutement · textes"
+    delete: false
+    files:
+      - name: "textes"
+        label: "Textes de la page Recrutement"
+        file: "content/textes/recrutement.json"
+        description: "Tous les textes de la page Recrutement, dans les trois langues."
+        fields: *champs_texte
+
+  - name: "txt_references"
+    label: "Références · textes"
+    delete: false
+    files:
+      - name: "textes"
+        label: "Textes de la page Références"
+        file: "content/textes/references.json"
+        description: "Tous les textes de la page Références (hors logos), dans les trois langues."
+        fields: *champs_texte
+
+  - name: "txt_contact"
+    label: "Contact · textes"
+    delete: false
+    files:
+      - name: "textes"
+        label: "Textes de la page Contact"
+        file: "content/textes/contact.json"
+        description: "Tous les textes de la page Contact, dans les trois langues."
+        fields: *champs_texte
+
+  - name: "txt_commun"
+    label: "Commun (menu, pied de page)"
+    delete: false
+    files:
+      - name: "textes"
+        label: "Textes communs à toutes les pages"
+        file: "content/textes/commun.json"
+        description: "Menu de navigation, pied de page et messages d'erreur · ces textes apparaissent sur toutes les pages."
+        fields: *champs_texte
 
   # ------------------------------------------------------------------------
-  # 3 · REFERENCES CLIENTS (liste de logos)
+  # REFERENCES CLIENTS · logos (liste d'images)
   # ------------------------------------------------------------------------
   - name: "references"
-    label: "Références clients"
+    label: "Références · logos clients"
     delete: false
     files:
       - name: "clients"
@@ -72,6 +152,7 @@ collections:
             label: "Clients"
             label_singular: "Client"
             widget: "list"
+            collapsed: true
             summary: "{{fields.nom}}"
             fields:
               - { name: "nom", label: "Nom du client", widget: "string", hint: "Le nom de l'entreprise (sert aussi de texte alternatif pour le logo)." }
@@ -82,44 +163,3 @@ collections:
                 options: ["paysage", "carré", "très allongé"]
                 default: "paysage"
                 hint: "Aide à bien cadrer le logo dans sa case."
-
-  # ------------------------------------------------------------------------
-  # 4 · OFFRES D'EMPLOI (page Recrutement)
-  # ------------------------------------------------------------------------
-  - name: "emplois"
-    label: "Offres d'emploi"
-    label_singular: "Offre d'emploi"
-    folder: "content/emplois"
-    create: true
-    delete: true
-    format: "json"
-    slug: "{{slug}}"
-    summary: "{{titre}}"
-    description: "Les offres d'emploi affichées sur la page Recrutement. Créez, modifiez ou supprimez une offre."
-    fields:
-      - { name: "titre", label: "Intitulé du poste", widget: "string", hint: "ex : Chef d'Équipe Montage Mécanique Électricien H/F" }
-      - { name: "description", label: "Description", widget: "text", hint: "Quelques lignes sur le poste et les missions." }
-      - { name: "contrat", label: "Type de contrat", widget: "string", default: "CDI temps plein" }
-      - { name: "lieu", label: "Localisation", widget: "string", hint: "ex : Auvergne-Rhône-Alpes · déplacements France" }
-      - { name: "experience", label: "Expérience requise", widget: "string", hint: "ex : 3 ans minimum en montage électrique industriel" }
-      - { name: "habilitations", label: "Habilitations", widget: "string", hint: "ex : B2V, BR, BC souhaitées" }
-      - { name: "email_candidature", label: "Email de candidature", widget: "string", default: "contact@ener-co.fr", hint: "L'adresse qui reçoit les candidatures pour ce poste." }
-      - { name: "actif", label: "Offre visible sur le site", widget: "boolean", default: true, hint: "Décochez pour masquer l'offre sans la supprimer." }
-
-  # ------------------------------------------------------------------------
-  # 5 · PHOTOS DE REALISATIONS (image + legende)
-  # ------------------------------------------------------------------------
-  - name: "realisations"
-    label: "Photos de réalisations"
-    label_singular: "Photo de chantier"
-    folder: "content/realisations"
-    create: true
-    delete: true
-    format: "json"
-    slug: "{{slug}}"
-    summary: "{{legende}}"
-    description: "Les photos de chantiers affichées dans le bandeau d'illustrations. Ajoutez une photo avec sa légende."
-    fields:
-      - { name: "image", label: "Photo", widget: "image", hint: "Téléversez la photo du chantier." }
-      - { name: "legende", label: "Légende", widget: "string", hint: "ex : Saint-Gaudens · Eta-com" }
-      - { name: "ordre", label: "Ordre d'affichage", widget: "number", default: 1, value_type: "int", hint: "Plus le nombre est petit, plus la photo apparaît tôt." }

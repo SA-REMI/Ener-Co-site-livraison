@@ -1,0 +1,880 @@
+{
+  "textes": [
+    {
+      "cle": "eng.bc.home",
+      "fr": "Accueil",
+      "en": "Home",
+      "it": "Home"
+    },
+    {
+      "cle": "eng.bc.current",
+      "fr": "Engagements",
+      "en": "Commitments",
+      "it": "Impegni"
+    },
+    {
+      "cle": "eng.hero.eyebrow",
+      "fr": "Politique de direction",
+      "en": "Management policy",
+      "it": "Politica della direzione"
+    },
+    {
+      "cle": "eng.hero.h1",
+      "fr": "Qualité, prévention, responsabilité et amélioration continue.",
+      "en": "Quality, prevention, responsibility and continuous improvement.",
+      "it": "Qualità, prevenzione, responsabilità e miglioramento continuo."
+    },
+    {
+      "cle": "eng.hero.lede",
+      "fr": "La direction d'Ener-Co inscrit ses engagements dans une logique de qualité, de prévention SSE, de maîtrise opérationnelle, de responsabilité environnementale et d'amélioration continue, adaptée à la réalité de nos interventions sur sites techniques et industriels sensibles.",
+      "en": "Ener-Co's management frames its commitments within a logic of quality, HSE prevention, operational control, environmental responsibility and continuous improvement, tailored to the reality of our interventions on sensitive technical and industrial sites.",
+      "it": "La direzione di Ener-Co inserisce i propri impegni in una logica di qualità, prevenzione SSA, controllo operativo, responsabilità ambientale e miglioramento continuo, adattata alla realtà dei nostri interventi su siti tecnici e industriali sensibili."
+    },
+    {
+      "cle": "eng.intro.label",
+      "fr": "En résumé",
+      "en": "In brief",
+      "it": "In sintesi"
+    },
+    {
+      "cle": "eng.intro.p1",
+      "fr": "Dans le cadre de ses activités en distribution d'énergie industrielle, Ener-Co structure son fonctionnement autour d'exigences claires : sécurité des personnes, qualité d'exécution, conformité réglementaire, satisfaction client, développement des compétences et suivi de la performance.",
+      "en": "In the course of its industrial energy distribution activities, Ener-Co structures its operations around clear requirements: personal safety, quality of execution, regulatory compliance, customer satisfaction, skills development and performance monitoring.",
+      "it": "Nell'ambito delle sue attività di distribuzione di energia industriale, Ener-Co struttura il proprio funzionamento attorno a requisiti chiari: sicurezza delle persone, qualità di esecuzione, conformità normativa, soddisfazione del cliente, sviluppo delle competenze e monitoraggio delle prestazioni."
+    },
+    {
+      "cle": "eng.intro.p2",
+      "fr": "Cette démarche s'appuie sur des principes cohérents avec les exigences d'un management structuré de la qualité et de la prévention SSE, adaptés à la réalité de nos interventions sur sites techniques et industriels sensibles.",
+      "en": "This approach is built on principles consistent with the requirements of structured quality and HSE prevention management, tailored to the reality of our interventions on sensitive technical and industrial sites.",
+      "it": "Questo approccio si fonda su principi coerenti con le esigenze di un management strutturato della qualità e della prevenzione SSA, adattati alla realtà dei nostri interventi su siti tecnici e industriali sensibili."
+    },
+    {
+      "cle": "eng.toc.01",
+      "fr": "Engagement direction",
+      "en": "Management commitment",
+      "it": "Impegno direzione"
+    },
+    {
+      "cle": "eng.toc.02",
+      "fr": "Qualité",
+      "en": "Quality",
+      "it": "Qualità"
+    },
+    {
+      "cle": "eng.toc.03",
+      "fr": "Santé & sécurité",
+      "en": "Health & safety",
+      "it": "Salute e sicurezza"
+    },
+    {
+      "cle": "eng.toc.04",
+      "fr": "Maîtrise technique",
+      "en": "Technical control",
+      "it": "Controllo tecnico"
+    },
+    {
+      "cle": "eng.toc.05",
+      "fr": "Compétences",
+      "en": "Skills",
+      "it": "Competenze"
+    },
+    {
+      "cle": "eng.toc.06",
+      "fr": "Environnement",
+      "en": "Environment",
+      "it": "Ambiente"
+    },
+    {
+      "cle": "eng.toc.07",
+      "fr": "Éthique",
+      "en": "Ethics",
+      "it": "Etica"
+    },
+    {
+      "cle": "eng.toc.08",
+      "fr": "Territoire",
+      "en": "Territory",
+      "it": "Territorio"
+    },
+    {
+      "cle": "eng.toc.09",
+      "fr": "Pilotage",
+      "en": "Steering",
+      "it": "Monitoraggio"
+    },
+    {
+      "cle": "eng.toc.10",
+      "fr": "Déploiement",
+      "en": "Deployment",
+      "it": "Attuazione"
+    },
+    {
+      "cle": "eng.s1.eyebrow",
+      "fr": "01 · Direction",
+      "en": "01 · Management",
+      "it": "01 · Direzione"
+    },
+    {
+      "cle": "eng.s1.title",
+      "fr": "Engagement de la direction.",
+      "en": "Commitment of the management.",
+      "it": "Impegno della direzione."
+    },
+    {
+      "cle": "eng.s1.intro",
+      "fr": "La direction définit, porte et revoit régulièrement les engagements de l'entreprise afin de garantir la cohérence entre les objectifs fixés, les moyens engagés et les résultats attendus.",
+      "en": "The management defines, supports and regularly reviews the company's commitments to ensure consistency between the objectives set, the resources deployed and the expected results.",
+      "it": "La direzione definisce, sostiene e rivede regolarmente gli impegni dell'azienda per garantire la coerenza tra gli obiettivi fissati, i mezzi impiegati e i risultati attesi."
+    },
+    {
+      "cle": "eng.s1.c1.h",
+      "fr": "Sécurité des personnes",
+      "en": "Personal safety",
+      "it": "Sicurezza delle persone"
+    },
+    {
+      "cle": "eng.s1.c1.p",
+      "fr": "Assurer la sécurité et préserver la santé des collaborateurs, des intervenants et des tiers.",
+      "en": "Ensure the safety and preserve the health of employees, contractors and third parties.",
+      "it": "Garantire la sicurezza e preservare la salute dei collaboratori, degli intervenenti e dei terzi."
+    },
+    {
+      "cle": "eng.s1.c2.h",
+      "fr": "Conformité et fiabilité",
+      "en": "Compliance and reliability",
+      "it": "Conformità e affidabilità"
+    },
+    {
+      "cle": "eng.s1.c2.p",
+      "fr": "Garantir la conformité, la qualité et la fiabilité des prestations réalisées.",
+      "en": "Guarantee the compliance, quality and reliability of the services delivered.",
+      "it": "Assicurare la conformità, la qualità e l'affidabilità delle prestazioni realizzate."
+    },
+    {
+      "cle": "eng.s1.c3.h",
+      "fr": "Moyens adaptés",
+      "en": "Fit-for-purpose resources",
+      "it": "Mezzi adeguati"
+    },
+    {
+      "cle": "eng.s1.c3.p",
+      "fr": "Mettre à disposition les moyens humains, techniques et organisationnels adaptés aux interventions.",
+      "en": "Provide the human, technical and organisational resources required by each intervention.",
+      "it": "Mettere a disposizione i mezzi umani, tecnici e organizzativi adeguati agli interventi."
+    },
+    {
+      "cle": "eng.s1.c4.h",
+      "fr": "Prévention intégrée",
+      "en": "Integrated prevention",
+      "it": "Prevenzione integrata"
+    },
+    {
+      "cle": "eng.s1.c4.p",
+      "fr": "Intégrer la prévention des risques, la protection de l'environnement et la maîtrise des impacts dans les activités.",
+      "en": "Embed risk prevention, environmental protection and impact control in the company's activities.",
+      "it": "Integrare la prevenzione dei rischi, la tutela dell'ambiente e il controllo degli impatti nelle attività."
+    },
+    {
+      "cle": "eng.s1.c5.h",
+      "fr": "Compétences et implication",
+      "en": "Skills and commitment",
+      "it": "Competenze e coinvolgimento"
+    },
+    {
+      "cle": "eng.s1.c5.p",
+      "fr": "Développer les compétences, l'implication et la responsabilisation des équipes.",
+      "en": "Develop the skills, involvement and accountability of the teams.",
+      "it": "Sviluppare le competenze, il coinvolgimento e la responsabilizzazione dei team."
+    },
+    {
+      "cle": "eng.s1.c6.h",
+      "fr": "Amélioration continue",
+      "en": "Continuous improvement",
+      "it": "Miglioramento continuo"
+    },
+    {
+      "cle": "eng.s1.c6.p",
+      "fr": "Retour d'expérience, suivi d'indicateurs et pilotage des actions structurent la progression de l'entreprise.",
+      "en": "Feedback, indicator monitoring and action steering drive the company's progress.",
+      "it": "Esperienza di cantiere, monitoraggio degli indicatori e gestione delle azioni guidano il progresso dell'azienda."
+    },
+    {
+      "cle": "eng.s2.eyebrow",
+      "fr": "02 · Qualité",
+      "en": "02 · Quality",
+      "it": "02 · Qualità"
+    },
+    {
+      "cle": "eng.s2.title",
+      "fr": "Qualité des prestations et satisfaction client.",
+      "en": "Quality of services and customer satisfaction.",
+      "it": "Qualità delle prestazioni e soddisfazione del cliente."
+    },
+    {
+      "cle": "eng.s2.intro",
+      "fr": "Ener-Co s'engage à fournir des prestations conformes aux exigences de ses clients, aux normes applicables, aux contraintes techniques des sites et aux règles internes de l'entreprise.",
+      "en": "Ener-Co commits to delivering services that comply with client requirements, applicable standards, the technical constraints of each site and the company's internal rules.",
+      "it": "Ener-Co si impegna a fornire prestazioni conformi ai requisiti dei clienti, alle norme applicabili, ai vincoli tecnici dei siti e alle regole interne dell'azienda."
+    },
+    {
+      "cle": "eng.s2.p1",
+      "fr": "Cette exigence repose sur la préparation, la maîtrise des interfaces, l'adaptation des moyens et le contrôle de l'exécution tout au long du chantier.",
+      "en": "This requirement relies on preparation, interface control, resource matching and execution oversight throughout the project.",
+      "it": "Questa esigenza poggia sulla preparazione, il controllo delle interfacce, l'adattamento dei mezzi e il controllo dell'esecuzione per tutta la durata del cantiere."
+    },
+    {
+      "cle": "eng.s2.p2",
+      "fr": "Les retours clients et les constats terrain sont intégrés à la démarche pour alimenter l'amélioration continue des pratiques.",
+      "en": "Customer feedback and field observations are integrated into the process to fuel continuous improvement of practices.",
+      "it": "I feedback dei clienti e le osservazioni sul campo sono integrati nel processo per alimentare il miglioramento continuo delle pratiche."
+    },
+    {
+      "cle": "eng.s2.cl1",
+      "fr": "Clarification du besoin et du périmètre d'intervention.",
+      "en": "Clarification of the need and scope of intervention.",
+      "it": "Chiarimento del bisogno e del perimetro di intervento."
+    },
+    {
+      "cle": "eng.s2.cl2",
+      "fr": "Préparation des opérations en amont du chantier.",
+      "en": "Preparation of operations ahead of on-site work.",
+      "it": "Preparazione delle operazioni a monte del cantiere."
+    },
+    {
+      "cle": "eng.s2.cl3",
+      "fr": "Maîtrise des interfaces techniques et organisationnelles.",
+      "en": "Control of technical and organisational interfaces.",
+      "it": "Controllo delle interfacce tecniche e organizzative."
+    },
+    {
+      "cle": "eng.s2.cl4",
+      "fr": "Adaptation des moyens aux travaux réalisés.",
+      "en": "Matching resources to the actual work carried out.",
+      "it": "Adattamento dei mezzi ai lavori realizzati."
+    },
+    {
+      "cle": "eng.s2.cl5",
+      "fr": "Contrôle de l'exécution et vérification des points sensibles.",
+      "en": "Execution oversight and verification of sensitive points.",
+      "it": "Controllo dell'esecuzione e verifica dei punti critici."
+    },
+    {
+      "cle": "eng.s2.cl6",
+      "fr": "Prise en compte des retours clients et des constats terrain.",
+      "en": "Integration of customer feedback and field observations.",
+      "it": "Integrazione dei feedback clienti e delle osservazioni sul campo."
+    },
+    {
+      "cle": "eng.s2.callout",
+      "fr": "<strong>La satisfaction client</strong> constitue un indicateur essentiel de la performance de l'entreprise et alimente l'amélioration continue de ses pratiques.",
+      "en": "<strong>Customer satisfaction</strong> is an essential performance indicator of the company and drives the continuous improvement of its practices.",
+      "it": "<strong>La soddisfazione del cliente</strong> costituisce un indicatore essenziale della performance dell'azienda e alimenta il miglioramento continuo delle sue pratiche."
+    },
+    {
+      "cle": "eng.s3.eyebrow",
+      "fr": "03 · Santé & sécurité",
+      "en": "03 · Health & safety",
+      "it": "03 · Salute e sicurezza"
+    },
+    {
+      "cle": "eng.s3.title",
+      "fr": "Prévention et maîtrise des risques.",
+      "en": "Risk prevention and control.",
+      "it": "Prevenzione e controllo dei rischi."
+    },
+    {
+      "cle": "eng.s3.intro",
+      "fr": "La prévention des risques constitue une priorité absolue au regard de la nature des activités de l'entreprise, notamment sur des environnements techniques, industriels ou sensibles.",
+      "en": "Risk prevention is an absolute priority, given the nature of the company's activities, especially on technical, industrial and sensitive environments.",
+      "it": "La prevenzione dei rischi costituisce una priorità assoluta, dato il tipo di attività dell'azienda, in particolare su ambienti tecnici, industriali o sensibili."
+    },
+    {
+      "cle": "eng.s3.t1",
+      "fr": "Identification, évaluation et mise à jour continue des risques.",
+      "en": "Identification, assessment and continuous updating of risks.",
+      "it": "Identificazione, valutazione e aggiornamento continuo dei rischi."
+    },
+    {
+      "cle": "eng.s3.t2",
+      "fr": "Préparation des interventions et analyse préalable des conditions de travail.",
+      "en": "Preparation of interventions and prior analysis of working conditions.",
+      "it": "Preparazione degli interventi e analisi preliminare delle condizioni di lavoro."
+    },
+    {
+      "cle": "eng.s3.t3",
+      "fr": "Plans de prévention, PPSPS et documents applicables à chaque chantier.",
+      "en": "Prevention plans, PPSPS and documents applicable to each site.",
+      "it": "Piani di prevenzione, PPSPS e documenti applicabili a ogni cantiere."
+    },
+    {
+      "cle": "eng.s3.t4",
+      "fr": "Procédures de consignation, vérification d'absence de tension et sécurisation des interventions.",
+      "en": "Lockout/tagout procedures, voltage absence verification and intervention securing.",
+      "it": "Procedure di messa in sicurezza, verifica di assenza di tensione e protezione degli interventi."
+    },
+    {
+      "cle": "eng.s3.t5",
+      "fr": "Suivi des habilitations, autorisations et formations obligatoires.",
+      "en": "Monitoring of authorisations, permits and mandatory training.",
+      "it": "Monitoraggio delle abilitazioni, autorizzazioni e formazioni obbligatorie."
+    },
+    {
+      "cle": "eng.s3.t6",
+      "fr": "Organisation des causeries sécurité et des temps de mise au travail.",
+      "en": "Organisation of safety briefings and pre-task stand-ups.",
+      "it": "Organizzazione dei briefing di sicurezza e dei momenti di avvio lavori."
+    },
+    {
+      "cle": "eng.s3.t7",
+      "fr": "Analyse des incidents, situations dangereuses et presqu'accidents.",
+      "en": "Analysis of incidents, dangerous situations and near-misses.",
+      "it": "Analisi di incidenti, situazioni pericolose e quasi-incidenti."
+    },
+    {
+      "cle": "eng.s3.t8",
+      "fr": "Déploiement d'actions correctives et préventives adaptées.",
+      "en": "Deployment of suitable corrective and preventive actions.",
+      "it": "Attuazione di azioni correttive e preventive adeguate."
+    },
+    {
+      "cle": "eng.s3.footer",
+      "fr": "L'entreprise veille également à intégrer les facteurs organisationnels et humains dans l'analyse des situations de travail, afin de renforcer la maîtrise réelle des risques sur le terrain.",
+      "en": "The company also ensures that organisational and human factors are considered when analysing work situations, in order to strengthen real risk control on site.",
+      "it": "L'azienda si impegna anche a integrare i fattori organizzativi e umani nell'analisi delle situazioni di lavoro, per rafforzare il controllo reale dei rischi sul campo."
+    },
+    {
+      "cle": "eng.s4.eyebrow",
+      "fr": "04 · Technique",
+      "en": "04 · Technical",
+      "it": "04 · Tecnica"
+    },
+    {
+      "cle": "eng.s4.title",
+      "fr": "Maîtrise des interventions techniques.",
+      "en": "Control of technical interventions.",
+      "it": "Controllo degli interventi tecnici."
+    },
+    {
+      "cle": "eng.s4.intro",
+      "fr": "Les interventions d'Ener-Co, HTA, TGBT, tableaux, gaines à barres et raccordements de puissance, sont réalisées dans un cadre de maîtrise technique exigeant, adossé à la préparation, l'expérience terrain et le retour d'expérience systématique.",
+      "en": "Ener-Co's interventions, MV, LV switchboards, distribution panels, busways and power connections, are carried out within a demanding technical control framework, supported by preparation, field experience and systematic feedback.",
+      "it": "Gli interventi di Ener-Co, MT, BT, quadri, condotti sbarre e collegamenti di potenza, sono realizzati in un quadro di controllo tecnico esigente, basato sulla preparazione, l'esperienza sul campo e il feedback sistematico."
+    },
+    {
+      "cle": "eng.s4.cl1",
+      "fr": "Définir les méthodes d'intervention adaptées au contexte du chantier.",
+      "en": "Define intervention methods suited to each site context.",
+      "it": "Definire i metodi di intervento adeguati al contesto del cantiere."
+    },
+    {
+      "cle": "eng.s4.cl2",
+      "fr": "Vérifier l'adéquation des équipements, outillages et moyens de levage ou de manutention.",
+      "en": "Verify the adequacy of equipment, tooling and lifting or handling means.",
+      "it": "Verificare l'adeguatezza di attrezzature, utensili e mezzi di sollevamento o movimentazione."
+    },
+    {
+      "cle": "eng.s4.cl3",
+      "fr": "Maîtriser les travaux en hauteur, les manutentions et les interfaces avec les installations existantes.",
+      "en": "Control work at height, handling and interfaces with existing installations.",
+      "it": "Controllare i lavori in quota, le movimentazioni e le interfacce con gli impianti esistenti."
+    },
+    {
+      "cle": "eng.s4.cl4",
+      "fr": "Prendre en compte les exigences spécifiques des sites en exploitation ou réglementés.",
+      "en": "Account for the specific requirements of live or regulated sites.",
+      "it": "Tenere conto delle esigenze specifiche dei siti in esercizio o regolamentati."
+    },
+    {
+      "cle": "eng.s4.cl5",
+      "fr": "Sécuriser les phases de raccordement, de contrôle et de mise sous tension.",
+      "en": "Secure connection, testing and energisation phases.",
+      "it": "Mettere in sicurezza le fasi di collegamento, controllo e messa in tensione."
+    },
+    {
+      "cle": "eng.s4.cl6",
+      "fr": "Garantir une exécution lisible, fiable et conforme aux attentes du client.",
+      "en": "Deliver readable, reliable execution aligned with client expectations.",
+      "it": "Garantire un'esecuzione leggibile, affidabile e conforme alle aspettative del cliente."
+    },
+    {
+      "cle": "eng.s4.p1",
+      "fr": "Chaque chantier fait l'objet d'une préparation dédiée : analyse du contexte, définition des méthodes, vérification des moyens, validation des interfaces avec les installations existantes.",
+      "en": "Each project is the subject of dedicated preparation: context analysis, method definition, resource verification, interface validation with existing installations.",
+      "it": "Ogni cantiere è oggetto di una preparazione dedicata: analisi del contesto, definizione dei metodi, verifica dei mezzi, validazione delle interfacce con gli impianti esistenti."
+    },
+    {
+      "cle": "eng.s4.p2",
+      "fr": "Les phases critiques, raccordement, contrôle et mise sous tension, sont conduites dans un cadre formalisé, en lien direct avec les équipes d'exploitation du site.",
+      "en": "Critical phases, connection, testing and energisation, are conducted within a formalised framework, in direct coordination with the site's operations teams.",
+      "it": "Le fasi critiche, collegamento, controllo e messa in tensione, sono condotte in un quadro formalizzato, in collaborazione diretta con i team di esercizio del sito."
+    },
+    {
+      "cle": "eng.s5.eyebrow",
+      "fr": "05 · Équipes",
+      "en": "05 · Teams",
+      "it": "05 · Squadre"
+    },
+    {
+      "cle": "eng.s5.title",
+      "fr": "Compétences, conditions de travail et implication.",
+      "en": "Skills, working conditions and commitment.",
+      "it": "Competenze, condizioni di lavoro e coinvolgimento."
+    },
+    {
+      "cle": "eng.s5.intro",
+      "fr": "Ener-Co considère que la qualité durable des prestations dépend directement des compétences, des conditions de travail et du niveau d'implication des équipes.",
+      "en": "Ener-Co considers that the lasting quality of services depends directly on the skills, working conditions and level of commitment of the teams.",
+      "it": "Ener-Co ritiene che la qualità duratura delle prestazioni dipenda direttamente dalle competenze, dalle condizioni di lavoro e dal livello di coinvolgimento delle squadre."
+    },
+    {
+      "cle": "eng.s5.p1",
+      "fr": "L'organisation du travail est adaptée aux contraintes réelles des chantiers, la transmission des pratiques encouragée et la remontée d'informations terrain favorisée.",
+      "en": "Work organisation is adapted to the real constraints of each site, sharing of practices is encouraged and field feedback is actively supported.",
+      "it": "L'organizzazione del lavoro è adattata ai vincoli reali dei cantieri, la trasmissione delle pratiche è incoraggiata e la raccolta di informazioni sul campo è favorita."
+    },
+    {
+      "cle": "eng.s5.p2",
+      "fr": "Chaque intervention est l'occasion de faire progresser les savoir-faire collectifs : retours d'expérience formalisés, habilitations suivies, montée en compétence accompagnée.",
+      "en": "Every intervention is an opportunity to grow collective know-how: formalised feedback, tracked authorisations, guided skills growth.",
+      "it": "Ogni intervento è l'occasione per far progredire il know-how collettivo: feedback formalizzati, abilitazioni seguite, crescita delle competenze accompagnata."
+    },
+    {
+      "cle": "eng.s5.cl1",
+      "fr": "Maintenir à jour les habilitations et qualifications nécessaires.",
+      "en": "Keep the required authorisations and qualifications up to date.",
+      "it": "Mantenere aggiornate le abilitazioni e qualifiche necessarie."
+    },
+    {
+      "cle": "eng.s5.cl2",
+      "fr": "Organiser les formations réglementaires et techniques utiles.",
+      "en": "Organise regulatory and useful technical training.",
+      "it": "Organizzare le formazioni normative e tecniche utili."
+    },
+    {
+      "cle": "eng.s5.cl3",
+      "fr": "Développer les savoir-faire liés aux métiers de la distribution d'énergie.",
+      "en": "Develop the know-how tied to the trades of energy distribution.",
+      "it": "Sviluppare il know-how legato ai mestieri della distribuzione di energia."
+    },
+    {
+      "cle": "eng.s5.cl4",
+      "fr": "Favoriser la transmission des pratiques et des retours d'expérience.",
+      "en": "Foster the transmission of practices and feedback.",
+      "it": "Favorire la trasmissione delle pratiche e dei feedback."
+    },
+    {
+      "cle": "eng.s5.cl5",
+      "fr": "Limiter les situations de pénibilité lorsque cela est possible.",
+      "en": "Limit physically demanding situations whenever possible.",
+      "it": "Limitare le situazioni di gravosità quando possibile."
+    },
+    {
+      "cle": "eng.s5.cl6",
+      "fr": "Encourager la participation des collaborateurs à l'amélioration des pratiques.",
+      "en": "Encourage staff participation in improving practices.",
+      "it": "Incoraggiare la partecipazione dei collaboratori al miglioramento delle pratiche."
+    },
+    {
+      "cle": "eng.s5.callout",
+      "fr": "<strong>Chaque collaborateur</strong> est acteur de la sécurité, de la qualité et de la progression collective.",
+      "en": "<strong>Every team member</strong> is an actor of safety, quality and collective progress.",
+      "it": "<strong>Ogni collaboratore</strong> è attore della sicurezza, della qualità e del progresso collettivo."
+    },
+    {
+      "cle": "eng.s67.eyebrow",
+      "fr": "06 + 07 · Responsabilités",
+      "en": "06 + 07 · Responsibilities",
+      "it": "06 + 07 · Responsabilità"
+    },
+    {
+      "cle": "eng.s67.title",
+      "fr": "Environnement & éthique de conduite.",
+      "en": "Environment & ethical conduct.",
+      "it": "Ambiente ed etica di condotta."
+    },
+    {
+      "cle": "eng.s67.intro",
+      "fr": "Deux socles parallèles de la démarche Ener-Co : la maîtrise des impacts environnementaux et la loyauté professionnelle dans les relations avec les clients, fournisseurs et tiers.",
+      "en": "Two parallel pillars of Ener-Co's approach: the control of environmental impacts and professional loyalty in relationships with clients, suppliers and third parties.",
+      "it": "Due pilastri paralleli dell'approccio Ener-Co: il controllo degli impatti ambientali e la lealtà professionale nei rapporti con clienti, fornitori e terzi."
+    },
+    {
+      "cle": "eng.s6.eyebrow",
+      "fr": "06 · Environnement",
+      "en": "06 · Environment",
+      "it": "06 · Ambiente"
+    },
+    {
+      "cle": "eng.s6.title",
+      "fr": "Responsabilité environnementale.",
+      "en": "Environmental responsibility.",
+      "it": "Responsabilità ambientale."
+    },
+    {
+      "cle": "eng.s6.text",
+      "fr": "Consciente des impacts liés à ses activités, Ener-Co intègre la dimension environnementale dans la préparation, la réalisation et le suivi de ses interventions.",
+      "en": "Aware of the impacts of its activities, Ener-Co integrates the environmental dimension into the preparation, execution and monitoring of its interventions.",
+      "it": "Consapevole degli impatti legati alle sue attività, Ener-Co integra la dimensione ambientale nella preparazione, realizzazione e monitoraggio dei suoi interventi."
+    },
+    {
+      "cle": "eng.s6.l1",
+      "fr": "Prévenir les pollutions et limiter les impacts environnementaux.",
+      "en": "Prevent pollution and limit the environmental impacts of activities.",
+      "it": "Prevenire l'inquinamento e limitare gli impatti ambientali delle attività."
+    },
+    {
+      "cle": "eng.s6.l2",
+      "fr": "Trier les déchets de chantier et les orienter vers des filières adaptées.",
+      "en": "Sort site waste and direct it to appropriate channels.",
+      "it": "Smistare i rifiuti di cantiere e indirizzarli verso filiere adeguate."
+    },
+    {
+      "cle": "eng.s6.l3",
+      "fr": "Maîtriser l'utilisation, le stockage et la manutention des produits à risque.",
+      "en": "Control the use, storage and handling of hazardous products.",
+      "it": "Controllare l'uso, lo stoccaggio e la movimentazione dei prodotti a rischio."
+    },
+    {
+      "cle": "eng.s6.l4",
+      "fr": "Réduire l'impact des déplacements par une organisation adaptée.",
+      "en": "Reduce the impact of travel through adapted organisation.",
+      "it": "Ridurre l'impatto degli spostamenti tramite un'organizzazione adeguata."
+    },
+    {
+      "cle": "eng.s6.l5",
+      "fr": "Suivre les indicateurs pertinents (déplacements, consommations).",
+      "en": "Monitor relevant indicators (travel, consumption).",
+      "it": "Monitorare gli indicatori pertinenti (spostamenti, consumi)."
+    },
+    {
+      "cle": "eng.s6.l6",
+      "fr": "Sensibiliser les équipes aux bonnes pratiques environnementales.",
+      "en": "Raise team awareness of good environmental practices.",
+      "it": "Sensibilizzare le squadre alle buone pratiche ambientali."
+    },
+    {
+      "cle": "eng.s7.eyebrow",
+      "fr": "07 · Éthique & conformité",
+      "en": "07 · Ethics & compliance",
+      "it": "07 · Etica e conformità"
+    },
+    {
+      "cle": "eng.s7.title",
+      "fr": "Conduite professionnelle et achats responsables.",
+      "en": "Professional conduct and responsible purchasing.",
+      "it": "Condotta professionale e acquisti responsabili."
+    },
+    {
+      "cle": "eng.s7.text",
+      "fr": "Ener-Co conduit ses activités dans le respect des réglementations applicables, des exigences contractuelles et des principes de loyauté professionnelle.",
+      "en": "Ener-Co conducts its activities in compliance with applicable regulations, contractual requirements and the principles of professional loyalty.",
+      "it": "Ener-Co conduce le sue attività nel rispetto delle normative applicabili, delle esigenze contrattuali e dei principi di lealtà professionale."
+    },
+    {
+      "cle": "eng.s7.l1",
+      "fr": "Respecter le cadre réglementaire applicable aux activités.",
+      "en": "Comply with the regulatory framework applicable to activities.",
+      "it": "Rispettare il quadro normativo applicabile alle attività."
+    },
+    {
+      "cle": "eng.s7.l2",
+      "fr": "Assurer une veille sur les exigences pertinentes pour l'entreprise.",
+      "en": "Keep a watch on requirements relevant to the company.",
+      "it": "Assicurare un monitoraggio delle esigenze rilevanti per l'azienda."
+    },
+    {
+      "cle": "eng.s7.l3",
+      "fr": "Adopter une conduite éthique dans les relations commerciales et opérationnelles.",
+      "en": "Adopt ethical conduct in commercial and operational relationships.",
+      "it": "Adottare una condotta etica nei rapporti commerciali e operativi."
+    },
+    {
+      "cle": "eng.s7.l4",
+      "fr": "Protéger la confidentialité des informations, notamment sur sites sensibles.",
+      "en": "Protect the confidentiality of information, particularly on sensitive sites.",
+      "it": "Proteggere la riservatezza delle informazioni, in particolare sui siti sensibili."
+    },
+    {
+      "cle": "eng.s7.l5",
+      "fr": "Intégrer des critères de conformité et de fiabilité dans le choix des fournisseurs.",
+      "en": "Factor compliance and reliability criteria into supplier selection.",
+      "it": "Integrare criteri di conformità e affidabilità nella selezione dei fornitori."
+    },
+    {
+      "cle": "eng.s7.l6",
+      "fr": "Promouvoir des relations de travail claires, responsables et durables.",
+      "en": "Promote clear, responsible and lasting working relationships.",
+      "it": "Promuovere rapporti di lavoro chiari, responsabili e duraturi."
+    },
+    {
+      "cle": "eng.s8.eyebrow",
+      "fr": "08 · Territoire",
+      "en": "08 · Territory",
+      "it": "08 · Territorio"
+    },
+    {
+      "cle": "eng.s8.title",
+      "fr": "Ancrage territorial et responsabilité économique.",
+      "en": "Local footprint and economic responsibility.",
+      "it": "Ancoraggio territoriale e responsabilità economica."
+    },
+    {
+      "cle": "eng.s8.intro",
+      "fr": "Ener-Co contribue, à son niveau, au développement économique des territoires dans lesquels elle intervient.",
+      "en": "Ener-Co contributes, at its level, to the economic development of the territories in which it operates.",
+      "it": "Ener-Co contribuisce, al suo livello, allo sviluppo economico dei territori in cui opera."
+    },
+    {
+      "cle": "eng.s8.t1.h",
+      "fr": "Emploi local",
+      "en": "Local employment",
+      "it": "Occupazione locale"
+    },
+    {
+      "cle": "eng.s8.t1.p",
+      "fr": "Maintien et développement de l'emploi dans nos régions d'intervention.",
+      "en": "Maintaining and growing employment in our regions of intervention.",
+      "it": "Mantenimento e crescita dell'occupazione nelle nostre regioni di intervento."
+    },
+    {
+      "cle": "eng.s8.t2.h",
+      "fr": "Partenaires locaux",
+      "en": "Local partners",
+      "it": "Partner locali"
+    },
+    {
+      "cle": "eng.s8.t2.p",
+      "fr": "Recours à des fournisseurs et partenaires locaux lorsque cela est pertinent.",
+      "en": "Use of local suppliers and partners where relevant.",
+      "it": "Ricorso a fornitori e partner locali quando pertinente."
+    },
+    {
+      "cle": "eng.s8.t3.h",
+      "fr": "Tissu économique",
+      "en": "Economic fabric",
+      "it": "Tessuto economico"
+    },
+    {
+      "cle": "eng.s8.t3.p",
+      "fr": "Inscription durable de l'entreprise dans son environnement économique.",
+      "en": "Lasting presence of the company in its economic environment.",
+      "it": "Presenza duratura dell'azienda nel suo contesto economico."
+    },
+    {
+      "cle": "eng.s8.t4.h",
+      "fr": "Équilibre durable",
+      "en": "Sustainable balance",
+      "it": "Equilibrio sostenibile"
+    },
+    {
+      "cle": "eng.s8.t4.p",
+      "fr": "Recherche d'un équilibre entre performance, responsabilité et pérennité.",
+      "en": "Pursuing a balance between performance, responsibility and longevity.",
+      "it": "Ricerca di un equilibrio tra performance, responsabilità e durata."
+    },
+    {
+      "cle": "eng.s9.eyebrow",
+      "fr": "09 · Pilotage",
+      "en": "09 · Steering",
+      "it": "09 · Monitoraggio"
+    },
+    {
+      "cle": "eng.s9.title",
+      "fr": "Indicateurs, revues et amélioration continue.",
+      "en": "Indicators, reviews and continuous improvement.",
+      "it": "Indicatori, revisioni e miglioramento continuo."
+    },
+    {
+      "cle": "eng.s9.intro",
+      "fr": "Les engagements de l'entreprise sont suivis dans une logique de pilotage et d'amélioration continue. Mesurer, analyser, décider, vérifier.",
+      "en": "The company's commitments are monitored through a steering and continuous improvement approach. Measure, analyse, decide, verify.",
+      "it": "Gli impegni dell'azienda sono monitorati in una logica di gestione e miglioramento continuo. Misurare, analizzare, decidere, verificare."
+    },
+    {
+      "cle": "eng.s9.p1.h",
+      "fr": "Sécurité",
+      "en": "Safety",
+      "it": "Sicurezza"
+    },
+    {
+      "cle": "eng.s9.p1.p",
+      "fr": "Accidents, incidents, situations dangereuses, actions de prévention.",
+      "en": "Accidents, incidents, dangerous situations, prevention actions.",
+      "it": "Incidenti, quasi-incidenti, situazioni pericolose, azioni di prevenzione."
+    },
+    {
+      "cle": "eng.s9.p2.h",
+      "fr": "Compétences",
+      "en": "Skills",
+      "it": "Competenze"
+    },
+    {
+      "cle": "eng.s9.p2.p",
+      "fr": "Formations réalisées, habilitations suivies, besoins identifiés.",
+      "en": "Training completed, authorisations tracked, needs identified.",
+      "it": "Formazioni realizzate, abilitazioni seguite, bisogni identificati."
+    },
+    {
+      "cle": "eng.s9.p3.h",
+      "fr": "Qualité",
+      "en": "Quality",
+      "it": "Qualità"
+    },
+    {
+      "cle": "eng.s9.p3.p",
+      "fr": "Retours d'expérience, écarts, actions correctives.",
+      "en": "Feedback, deviations, corrective actions.",
+      "it": "Feedback, scostamenti, azioni correttive."
+    },
+    {
+      "cle": "eng.s9.p4.h",
+      "fr": "Environnement",
+      "en": "Environment",
+      "it": "Ambiente"
+    },
+    {
+      "cle": "eng.s9.p4.p",
+      "fr": "Déplacements, consommations, gestion des déchets.",
+      "en": "Travel, consumption, waste management.",
+      "it": "Spostamenti, consumi, gestione dei rifiuti."
+    },
+    {
+      "cle": "eng.s9.p5.h",
+      "fr": "Performance",
+      "en": "Performance",
+      "it": "Performance"
+    },
+    {
+      "cle": "eng.s9.p5.p",
+      "fr": "Efficacité globale des dispositifs mis en place.",
+      "en": "Overall effectiveness of the mechanisms in place.",
+      "it": "Efficacia globale dei dispositivi attuati."
+    },
+    {
+      "cle": "eng.s9.divider",
+      "fr": "Alimentent",
+      "en": "Feed",
+      "it": "Alimentano"
+    },
+    {
+      "cle": "eng.s9.f1",
+      "fr": "Revues internes",
+      "en": "Internal reviews",
+      "it": "Revisioni interne"
+    },
+    {
+      "cle": "eng.s9.f2",
+      "fr": "Audits et vérifications",
+      "en": "Audits and verifications",
+      "it": "Audit e verifiche"
+    },
+    {
+      "cle": "eng.s9.f3",
+      "fr": "REX chantier",
+      "en": "Site feedback",
+      "it": "Feedback di cantiere"
+    },
+    {
+      "cle": "eng.s9.f4",
+      "fr": "Plans d'actions",
+      "en": "Action plans",
+      "it": "Piani d'azione"
+    },
+    {
+      "cle": "eng.s9.f5",
+      "fr": "Actualisation des priorités",
+      "en": "Updating priorities",
+      "it": "Aggiornamento delle priorità"
+    },
+    {
+      "cle": "eng.s10.eyebrow",
+      "fr": "10 · Déploiement",
+      "en": "10 · Deployment",
+      "it": "10 · Attuazione"
+    },
+    {
+      "cle": "eng.s10.title",
+      "fr": "Une politique portée par la direction, vécue sur les chantiers.",
+      "en": "A policy upheld by the management, lived on site.",
+      "it": "Una politica sostenuta dalla direzione, vissuta sui cantieri."
+    },
+    {
+      "cle": "eng.s10.intro",
+      "fr": "La politique d'engagements s'applique à l'ensemble des activités d'Ener-Co : elle est relayée dans l'organisation quotidienne des chantiers et déclinée dans les pratiques de préparation, d'exécution, de contrôle et de retour d'expérience.",
+      "en": "The commitments policy applies to all Ener-Co activities: it is relayed in the daily organisation of projects and reflected in the practices of preparation, execution, control and feedback.",
+      "it": "La politica degli impegni si applica a tutte le attività di Ener-Co: è trasmessa nell'organizzazione quotidiana dei cantieri e declinata nelle pratiche di preparazione, esecuzione, controllo e feedback."
+    },
+    {
+      "cle": "eng.s10.lead",
+      "fr": "Son efficacité repose sur cinq principes : la compréhension des enjeux, la cohérence des responsabilités, l'appropriation par les équipes, la constance dans l'application, et la capacité de l'entreprise à progresser dans le temps.",
+      "en": "Its effectiveness rests on five principles: the understanding of stakes, the consistency of responsibilities, ownership by the teams, consistency in application, and the company's ability to progress over time.",
+      "it": "La sua efficacia poggia su cinque principi: la comprensione delle sfide, la coerenza delle responsabilità, l'appropriazione da parte delle squadre, la costanza nell'applicazione e la capacità dell'azienda di progredire nel tempo."
+    },
+    {
+      "cle": "eng.s10.p1",
+      "fr": "Compréhension des enjeux",
+      "en": "Understanding of stakes",
+      "it": "Comprensione delle sfide"
+    },
+    {
+      "cle": "eng.s10.p2",
+      "fr": "Cohérence des responsabilités",
+      "en": "Consistency of responsibilities",
+      "it": "Coerenza delle responsabilità"
+    },
+    {
+      "cle": "eng.s10.p3",
+      "fr": "Appropriation par les équipes",
+      "en": "Team ownership",
+      "it": "Appropriazione delle squadre"
+    },
+    {
+      "cle": "eng.s10.p4",
+      "fr": "Constance dans l'application",
+      "en": "Consistency in application",
+      "it": "Costanza nell'applicazione"
+    },
+    {
+      "cle": "eng.s10.p5",
+      "fr": "Capacité à progresser dans le temps",
+      "en": "Ability to progress over time",
+      "it": "Capacità di progredire nel tempo"
+    },
+    {
+      "cle": "eng.cta.eyebrow",
+      "fr": "Contact",
+      "en": "Contact",
+      "it": "Contatti"
+    },
+    {
+      "cle": "eng.cta.h2",
+      "fr": "Échangeons sur nos engagements et vos exigences de site.",
+      "en": "Let's talk about our commitments and your site requirements.",
+      "it": "Parliamo dei nostri impegni e dei vostri requisiti di sito."
+    },
+    {
+      "cle": "eng.cta.p",
+      "fr": "Ener-Co intervient dans des environnements où sécurité, maîtrise technique, qualité d'exécution et responsabilité ne peuvent pas être dissociées.",
+      "en": "Ener-Co operates in environments where safety, technical mastery, quality of execution and responsibility cannot be separated.",
+      "it": "Ener-Co interviene in ambienti in cui sicurezza, controllo tecnico, qualità di esecuzione e responsabilità non possono essere dissociati."
+    },
+    {
+      "cle": "eng.cta.btn1",
+      "fr": "Nous contacter",
+      "en": "Contact us",
+      "it": "Contattaci"
+    },
+    {
+      "cle": "eng.cta.btn2",
+      "fr": "Voir les réalisations",
+      "en": "See projects",
+      "it": "Vedere i progetti"
+    },
+    {
+      "cle": "eng.cta.label",
+      "fr": "Direction commerciale",
+      "en": "Sales management",
+      "it": "Direzione commerciale"
+    }
+  ]
+}

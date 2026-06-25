@@ -1,0 +1,190 @@
+{
+  "textes": [
+    {
+      "cle": "nav.home",
+      "fr": "Accueil",
+      "en": "Home",
+      "it": "Home"
+    },
+    {
+      "cle": "nav.expertise",
+      "fr": "Expertise",
+      "en": "Expertise",
+      "it": "Competenze"
+    },
+    {
+      "cle": "nav.realisations",
+      "fr": "Réalisations",
+      "en": "Projects",
+      "it": "Progetti"
+    },
+    {
+      "cle": "nav.references",
+      "fr": "Références",
+      "en": "References",
+      "it": "Referenze"
+    },
+    {
+      "cle": "nav.secteurs",
+      "fr": "Secteurs",
+      "en": "Sectors",
+      "it": "Settori"
+    },
+    {
+      "cle": "nav.engagements",
+      "fr": "Engagements",
+      "en": "Commitments",
+      "it": "Impegni"
+    },
+    {
+      "cle": "nav.recrutement",
+      "fr": "Recrutement",
+      "en": "Careers",
+      "it": "Lavora con noi"
+    },
+    {
+      "cle": "nav.contact",
+      "fr": "Contact",
+      "en": "Contact",
+      "it": "Contatti"
+    },
+    {
+      "cle": "nav.cta",
+      "fr": "Nous consulter",
+      "en": "Contact us",
+      "it": "Contattaci"
+    },
+    {
+      "cle": "footer.brand",
+      "fr": "Ener-Co est une société française spécialisée dans la distribution d'énergie industrielle : HTA, TGBT, tableaux, gaines à barres et raccordements puissance sur sites techniques sensibles.",
+      "en": "Ener-Co is a French company specialising in industrial power distribution: MV, LV, switchboards, busways and power connections on sensitive technical sites.",
+      "it": "Ener-Co è una società francese specializzata nella distribuzione di energia industriale: MT, BT, quadri, condotti sbarre e collegamenti di potenza su siti tecnici sensibili."
+    },
+    {
+      "cle": "footer.nav.title",
+      "fr": "Navigation",
+      "en": "Navigation",
+      "it": "Navigazione"
+    },
+    {
+      "cle": "footer.office.title",
+      "fr": "Siège social",
+      "en": "Head office",
+      "it": "Sede legale"
+    },
+    {
+      "cle": "footer.company.title",
+      "fr": "Société",
+      "en": "Company",
+      "it": "Società"
+    },
+    {
+      "cle": "footer.legal.title",
+      "fr": "Mentions légales",
+      "en": "Legal information",
+      "it": "Note legali"
+    },
+    {
+      "cle": "footer.legal.company",
+      "fr": "Ener-Co SAS · Société par actions simplifiée",
+      "en": "Ener-Co SAS · Simplified joint-stock company",
+      "it": "Ener-Co SAS · Società per azioni semplificata"
+    },
+    {
+      "cle": "footer.legal.capital",
+      "fr": "Capital social : 45 000 €",
+      "en": "Share capital: €45,000",
+      "it": "Capitale sociale: 45 000 €"
+    },
+    {
+      "cle": "footer.legal.rcs",
+      "fr": "RCS Lyon 809 073 992",
+      "en": "RCS Lyon 809 073 992",
+      "it": "RCS Lyon 809 073 992"
+    },
+    {
+      "cle": "footer.legal.siret",
+      "fr": "SIRET : 809 073 992 00012",
+      "en": "SIRET: 809 073 992 00012",
+      "it": "SIRET: 809 073 992 00012"
+    },
+    {
+      "cle": "footer.legal.tva",
+      "fr": "TVA intracom. : FR09 809073992",
+      "en": "EU VAT: FR09 809073992",
+      "it": "P. IVA intracomunitaria: FR09 809073992"
+    },
+    {
+      "cle": "footer.legal.ape",
+      "fr": "Code APE : 43.21A",
+      "en": "APE code: 43.21A",
+      "it": "Codice APE: 43.21A"
+    },
+    {
+      "cle": "footer.legal.director",
+      "fr": "Responsable de la publication : Direction Ener-Co",
+      "en": "Publication manager: Ener-Co Management",
+      "it": "Responsabile della pubblicazione: Direzione Ener-Co"
+    },
+    {
+      "cle": "footer.rights",
+      "fr": "Tous droits réservés.",
+      "en": "All rights reserved.",
+      "it": "Tutti i diritti riservati."
+    },
+    {
+      "cle": "footer.legal1",
+      "fr": "Mentions légales",
+      "en": "Legal notice",
+      "it": "Note legali"
+    },
+    {
+      "cle": "footer.legal2",
+      "fr": "Politique de confidentialité",
+      "en": "Privacy policy",
+      "it": "Informativa sulla privacy"
+    },
+    {
+      "cle": "footer.legal3",
+      "fr": "CGV",
+      "en": "Terms",
+      "it": "Condizioni generali"
+    },
+    {
+      "cle": "footer.trademarks",
+      "fr": "Les marques et logos affichés sont la propriété de leurs titulaires respectifs. Leur mention illustre des chantiers réalisés par Ener-Co et ne constitue ni un partenariat commercial ni un endossement.",
+      "en": "Trademarks and logos shown are the property of their respective owners. Their mention illustrates projects delivered by Ener-Co and does not constitute a commercial partnership or endorsement.",
+      "it": "I marchi e i loghi mostrati sono di proprietà dei rispettivi titolari. La loro menzione illustra cantieri realizzati da Ener-Co e non costituisce né una partnership commerciale né un'approvazione."
+    },
+    {
+      "cle": "err.eyebrow",
+      "fr": "Erreur 404",
+      "en": "Error 404",
+      "it": "Errore 404"
+    },
+    {
+      "cle": "err.h1",
+      "fr": "Page introuvable.",
+      "en": "Page not found.",
+      "it": "Pagina non trovata."
+    },
+    {
+      "cle": "err.p",
+      "fr": "La page demandée n'existe pas ou a été déplacée. Utilisez la navigation principale ou revenez à l'accueil pour continuer votre consultation.",
+      "en": "The requested page does not exist or has been moved. Use the main navigation or return to the homepage to continue browsing.",
+      "it": "La pagina richiesta non esiste o è stata spostata. Utilizzate la navigazione principale o tornate alla home per continuare la consultazione."
+    },
+    {
+      "cle": "err.btn1",
+      "fr": "Retour à l'accueil",
+      "en": "Back to home",
+      "it": "Torna alla home"
+    },
+    {
+      "cle": "err.btn2",
+      "fr": "Nous contacter",
+      "en": "Contact us",
+      "it": "Contattaci"
+    }
+  ]
+}

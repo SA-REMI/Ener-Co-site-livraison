@@ -1,0 +1,340 @@
+{
+  "textes": [
+    {
+      "cle": "refs.hero.eyebrow",
+      "fr": "Références",
+      "en": "References",
+      "it": "Referenze"
+    },
+    {
+      "cle": "refs.hero.h1",
+      "fr": "Clients, partenaires et qualification SSE.",
+      "en": "Clients, partners and HSE qualification.",
+      "it": "Clienti, partner e qualifica SSA."
+    },
+    {
+      "cle": "refs.hero.lede",
+      "fr": "Industriels, intégrateurs électriques, exploitants data centers et donneurs d'ordre énergie : Ener-Co intervient pour des acteurs qui n'acceptent aucune rupture de continuité de service. Certification MASE Rhône-Alpes.",
+      "en": "Industrial operators, electrical integrators, data centre operators and energy principals: Ener-Co works for actors who accept no break in service continuity. MASE Rhône-Alpes certification.",
+      "it": "Industriali, integratori elettrici, gestori di data center e committenti energia: Ener-Co interviene per attori che non accettano alcuna interruzione di continuità di servizio. Certificazione MASE Rhône-Alpes."
+    },
+    {
+      "cle": "refs.partners.eyebrow",
+      "fr": "Partenaires",
+      "en": "Partners",
+      "it": "Partner"
+    },
+    {
+      "cle": "refs.partners.h2",
+      "fr": "Ils nous font confiance.",
+      "en": "They trust us.",
+      "it": "Si affidano a noi."
+    },
+    {
+      "cle": "refs.partners.intro",
+      "fr": "Sélection de partenaires, clients industriels et donneurs d'ordre pour lesquels Ener-Co intervient en distribution d'énergie industrielle. Liste non exhaustive.",
+      "en": "Selection of partners, industrial clients and principals for whom Ener-Co operates in industrial power distribution. Non-exhaustive list.",
+      "it": "Selezione di partner, clienti industriali e committenti per i quali Ener-Co interviene nella distribuzione di energia industriale. Elenco non esaustivo."
+    },
+    {
+      "cle": "refs.disclaimer",
+      "fr": "Les marques et logos affichés sont la propriété exclusive de leurs titulaires respectifs. Leur mention illustre des chantiers réalisés par Ener-Co et ne constitue ni un partenariat commercial ni un endossement.",
+      "en": "Trademarks and logos shown are the exclusive property of their respective owners. Their mention illustrates projects delivered by Ener-Co and does not constitute a commercial partnership or endorsement.",
+      "it": "I marchi e i loghi mostrati sono di proprietà esclusiva dei rispettivi titolari. La loro menzione illustra cantieri realizzati da Ener-Co e non costituisce né una partnership commerciale né un'approvazione."
+    },
+    {
+      "cle": "refs.chantiers.eyebrow",
+      "fr": "Sur le terrain",
+      "en": "In the field",
+      "it": "Sul campo"
+    },
+    {
+      "cle": "refs.chantiers.h2",
+      "fr": "Quelques chantiers en images.",
+      "en": "A few projects in images.",
+      "it": "Alcuni cantieri in immagini."
+    },
+    {
+      "cle": "refs.chantiers.intro",
+      "fr": "Un aperçu d'opérations récentes. Sélection actualisée à chaque visite, parmi les chantiers Saint-Gaudens, Chaufferie Est lyonnais, Fibre Excellence, Poste HTA et Panattoni Colombier-Saugnieu.",
+      "en": "A glimpse of recent operations. Selection refreshed on every visit, drawn from the Saint-Gaudens, East Lyon gas boiler, Fibre Excellence, MV substation and Panattoni Colombier-Saugnieu projects.",
+      "it": "Uno sguardo su operazioni recenti. Selezione aggiornata a ogni visita, tra i cantieri Saint-Gaudens, Caldaia gas Est Lione, Fibre Excellence, Cabina MT e Panattoni Colombier-Saugnieu."
+    },
+    {
+      "cle": "refs.chantier.sg",
+      "fr": "Saint-Gaudens · Eta-com",
+      "en": "Saint-Gaudens · Eta-com",
+      "it": "Saint-Gaudens · Eta-com"
+    },
+    {
+      "cle": "refs.chantier.fe",
+      "fr": "Fibre Excellence · Eta-com",
+      "en": "Fibre Excellence · Eta-com",
+      "it": "Fibre Excellence · Eta-com"
+    },
+    {
+      "cle": "refs.chantier.cg",
+      "fr": "Chaufferie gaz · Est lyonnais",
+      "en": "Gas boiler · East Lyon",
+      "it": "Caldaia gas · Est Lione"
+    },
+    {
+      "cle": "refs.chantier.hta",
+      "fr": "Poste HTA · Schneider Electric",
+      "en": "MV substation · Schneider Electric",
+      "it": "Cabina MT · Schneider Electric"
+    },
+    {
+      "cle": "refs.chantier.panattoni",
+      "fr": "Poste HTA · Panattoni, Colombier-Saugnieu",
+      "en": "MV substation · Panattoni, Colombier-Saugnieu",
+      "it": "Cabina MT · Panattoni, Colombier-Saugnieu"
+    },
+    {
+      "cle": "refs.map.eyebrow",
+      "fr": "Implantations",
+      "en": "Locations",
+      "it": "Sedi"
+    },
+    {
+      "cle": "refs.map.h2",
+      "fr": "Partout où le chantier l'exige.",
+      "en": "Wherever the project requires.",
+      "it": "Ovunque il cantiere lo richieda."
+    },
+    {
+      "cle": "refs.map.intro",
+      "fr": "Basée à Lyon (Auvergne-Rhône-Alpes), Ener-Co intervient partout en France, métropole et Martinique, ainsi qu'en Europe (Italie, Allemagne, Pologne, Belgique, Espagne) et à l'international (Sénégal). Équipes terrain mobilisables sans contrainte de zone.",
+      "en": "Based in Lyon (Auvergne-Rhône-Alpes), Ener-Co operates anywhere in France, mainland and Martinique, as well as across Europe (Italy, Germany, Poland, Belgium, Spain) and internationally (Senegal). Field teams mobilisable without geographic constraint.",
+      "it": "Con sede a Lione (Auvergne-Rhône-Alpes), Ener-Co interviene ovunque in Francia, metropoli e Martinica, oltre che in Europa (Italia, Germania, Polonia, Belgio, Spagna) e a livello internazionale (Senegal). Squadre sul campo mobilitabili senza vincoli geografici."
+    },
+    {
+      "cle": "refs.country.fr",
+      "fr": "France",
+      "en": "France",
+      "it": "Francia"
+    },
+    {
+      "cle": "refs.country.fr.p",
+      "fr": "Siège Rhône-Alpes · équipes résidentes · couverture nationale",
+      "en": "Rhône-Alpes head office · in-house teams · nationwide coverage",
+      "it": "Sede Rhône-Alpes · squadre residenti · copertura nazionale"
+    },
+    {
+      "cle": "refs.country.fr.chip",
+      "fr": "Base principale",
+      "en": "Main base",
+      "it": "Base principale"
+    },
+    {
+      "cle": "refs.country.it",
+      "fr": "Italie",
+      "en": "Italy",
+      "it": "Italia"
+    },
+    {
+      "cle": "refs.country.de",
+      "fr": "Allemagne",
+      "en": "Germany",
+      "it": "Germania"
+    },
+    {
+      "cle": "refs.country.pl",
+      "fr": "Pologne",
+      "en": "Poland",
+      "it": "Polonia"
+    },
+    {
+      "cle": "refs.country.be",
+      "fr": "Belgique",
+      "en": "Belgium",
+      "it": "Belgio"
+    },
+    {
+      "cle": "refs.country.es",
+      "fr": "Espagne",
+      "en": "Spain",
+      "it": "Spagna"
+    },
+    {
+      "cle": "refs.country.sn",
+      "fr": "Sénégal",
+      "en": "Senegal",
+      "it": "Senegal"
+    },
+    {
+      "cle": "refs.country.mq",
+      "fr": "Martinique",
+      "en": "Martinique",
+      "it": "Martinica"
+    },
+    {
+      "cle": "refs.country.mq.p",
+      "fr": "Antilles françaises",
+      "en": "French West Indies",
+      "it": "Antille francesi"
+    },
+    {
+      "cle": "refs.mase.eyebrow",
+      "fr": "Qualification SSE",
+      "en": "HSE qualification",
+      "it": "Qualifica SSA"
+    },
+    {
+      "cle": "refs.mase.h2",
+      "fr": "Certification MASE Rhône-Alpes.",
+      "en": "MASE Rhône-Alpes certification.",
+      "it": "Certificazione MASE Rhône-Alpes."
+    },
+    {
+      "cle": "refs.mase.intro",
+      "fr": "Référentiel SSE structurant pour les interventions en environnement industriel, technique et sensible. Audit triennal et procédures formalisées.",
+      "en": "Structuring HSE framework for interventions in industrial, technical and sensitive environments. Triennial audit and formalised procedures.",
+      "it": "Riferimento SSA strutturante per gli interventi in ambiente industriale, tecnico e sensibile. Audit triennale e procedure formalizzate."
+    },
+    {
+      "cle": "refs.mase.label",
+      "fr": "Qualification",
+      "en": "Qualification",
+      "it": "Qualifica"
+    },
+    {
+      "cle": "refs.mase.desc",
+      "fr": "Référentiel SSE structurant pour les environnements industriels et sensibles. Certification valide jusqu'au 4 septembre 2028.",
+      "en": "Structuring HSE framework for industrial and sensitive environments. Certification valid until 4 September 2028.",
+      "it": "Riferimento SSA strutturante per gli ambienti industriali e sensibili. Certificazione valida fino al 4 settembre 2028."
+    },
+    {
+      "cle": "refs.mase.i1",
+      "fr": "Audit triennal",
+      "en": "Triennial audit",
+      "it": "Audit triennale"
+    },
+    {
+      "cle": "refs.mase.i2",
+      "fr": "Procédures HSE formalisées",
+      "en": "Formalised HSE procedures",
+      "it": "Procedure HSE formalizzate"
+    },
+    {
+      "cle": "refs.mase.i3",
+      "fr": "Analyse de risques systématique",
+      "en": "Systematic risk analysis",
+      "it": "Analisi dei rischi sistematica"
+    },
+    {
+      "cle": "refs.mase.i4",
+      "fr": "Retour d'expérience chantier",
+      "en": "Site feedback",
+      "it": "Feedback di cantiere"
+    },
+    {
+      "cle": "refs.sectors.eyebrow",
+      "fr": "Secteurs",
+      "en": "Sectors",
+      "it": "Settori"
+    },
+    {
+      "cle": "refs.sectors.h3",
+      "fr": "Environnements couverts",
+      "en": "Environments covered",
+      "it": "Ambienti coperti"
+    },
+    {
+      "cle": "refs.sect.1",
+      "fr": "Data centers",
+      "en": "Data centres",
+      "it": "Data center"
+    },
+    {
+      "cle": "refs.sect.2",
+      "fr": "Industrie lourde",
+      "en": "Heavy industry",
+      "it": "Industria pesante"
+    },
+    {
+      "cle": "refs.sect.3",
+      "fr": "Pharma &amp; biotech",
+      "en": "Pharma &amp; biotech",
+      "it": "Farmaceutica &amp; biotech"
+    },
+    {
+      "cle": "refs.sect.4",
+      "fr": "Énergie",
+      "en": "Energy",
+      "it": "Energia"
+    },
+    {
+      "cle": "refs.sect.5",
+      "fr": "Nucléaire",
+      "en": "Nuclear",
+      "it": "Nucleare"
+    },
+    {
+      "cle": "refs.sect.6",
+      "fr": "Utilités",
+      "en": "Utilities",
+      "it": "Utility"
+    },
+    {
+      "cle": "refs.sect.7",
+      "fr": "Agroalimentaire",
+      "en": "Food industry",
+      "it": "Agroalimentare"
+    },
+    {
+      "cle": "refs.sect.8",
+      "fr": "Sites techniques",
+      "en": "Technical sites",
+      "it": "Siti tecnici"
+    },
+    {
+      "cle": "refs.sect.9",
+      "fr": "Chimie",
+      "en": "Chemistry",
+      "it": "Chimica"
+    },
+    {
+      "cle": "refs.sect.10",
+      "fr": "Aéronautique",
+      "en": "Aerospace",
+      "it": "Aeronautica"
+    },
+    {
+      "cle": "refs.cta.eyebrow",
+      "fr": "Contact",
+      "en": "Contact",
+      "it": "Contatti"
+    },
+    {
+      "cle": "refs.cta.h2",
+      "fr": "Rejoignez nos donneurs d'ordre.",
+      "en": "Join our principals.",
+      "it": "Unitevi ai nostri committenti."
+    },
+    {
+      "cle": "refs.cta.p",
+      "fr": "Alimentation principale, raccordement de puissance, extension de site ou remplacement de ligne : échangeons sur votre périmètre, vos contraintes d'exploitation et vos délais.",
+      "en": "Main supply, power connection, site extension or line replacement: let's discuss your scope, your operational constraints and your deadlines.",
+      "it": "Alimentazione principale, collegamento di potenza, ampliamento di sito o sostituzione di linea: parliamo del vostro perimetro, dei vostri vincoli di esercizio e delle vostre scadenze."
+    },
+    {
+      "cle": "refs.cta.btn1",
+      "fr": "Nous consulter",
+      "en": "Contact us",
+      "it": "Contattaci"
+    },
+    {
+      "cle": "refs.cta.btn2",
+      "fr": "Voir les réalisations",
+      "en": "See projects",
+      "it": "Vedere i progetti"
+    },
+    {
+      "cle": "refs.cta.label",
+      "fr": "Direction commerciale",
+      "en": "Sales management",
+      "it": "Direzione commerciale"
+    }
+  ]
+}

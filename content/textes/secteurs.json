@@ -1,0 +1,628 @@
+{
+  "textes": [
+    {
+      "cle": "sect.hero.eyebrow",
+      "fr": "Secteurs d'intervention",
+      "en": "Sectors of intervention",
+      "it": "Settori di intervento"
+    },
+    {
+      "cle": "sect.hero.h1",
+      "fr": "Dix environnements industriels couverts.",
+      "en": "Ten industrial environments covered.",
+      "it": "Dieci ambienti industriali coperti."
+    },
+    {
+      "cle": "sect.hero.lede",
+      "fr": "Ener-Co intervient dans des environnements techniques sensibles qui exigent une continuité de service stricte, une qualité d'exécution mesurable et un cadre SSE structuré.",
+      "en": "Ener-Co operates in sensitive technical environments that require strict service continuity, measurable execution quality and a structured HSE framework.",
+      "it": "Ener-Co interviene in ambienti tecnici sensibili che richiedono una continuità di servizio rigorosa, una qualità di esecuzione misurabile e un quadro SSA strutturato."
+    },
+    {
+      "cle": "sect.s1.h",
+      "fr": "Data centers",
+      "en": "Data centres",
+      "it": "Data center"
+    },
+    {
+      "cle": "sect.s1.p",
+      "fr": "Infrastructures critiques nécessitant une distribution électrique fiable, lisible et maintenable.",
+      "en": "Critical infrastructures requiring a reliable, readable and maintainable electrical distribution.",
+      "it": "Infrastrutture critiche che richiedono una distribuzione elettrica affidabile, leggibile e manutenibile."
+    },
+    {
+      "cle": "sect.s1.t1",
+      "fr": "Redondance A+B",
+      "en": "A+B redundancy",
+      "it": "Ridondanza A+B"
+    },
+    {
+      "cle": "sect.s1.t2",
+      "fr": "Gaines haute densité",
+      "en": "High-density busways",
+      "it": "Condotti ad alta densità"
+    },
+    {
+      "cle": "sect.s1.t3",
+      "fr": "Tier III / IV",
+      "en": "Tier III / IV",
+      "it": "Tier III / IV"
+    },
+    {
+      "cle": "sect.s2.h",
+      "fr": "Industrie lourde",
+      "en": "Heavy industry",
+      "it": "Industria pesante"
+    },
+    {
+      "cle": "sect.s2.p",
+      "fr": "Sites de production à forte puissance installée, avec contraintes d'accès, de continuité et de sécurité.",
+      "en": "Production sites with high installed power, with access, continuity and safety constraints.",
+      "it": "Siti di produzione ad alta potenza installata, con vincoli di accesso, continuità e sicurezza."
+    },
+    {
+      "cle": "sect.s2.t1",
+      "fr": "HTA 20 kV",
+      "en": "MV 20 kV",
+      "it": "MT 20 kV"
+    },
+    {
+      "cle": "sect.s2.t2",
+      "fr": "Fonderie · sidérurgie",
+      "en": "Foundry · steel",
+      "it": "Fonderia · siderurgia"
+    },
+    {
+      "cle": "sect.s2.t3",
+      "fr": "Site actif",
+      "en": "Live site",
+      "it": "Sito attivo"
+    },
+    {
+      "cle": "sect.s3.h",
+      "fr": "Pharma &amp; biotech",
+      "en": "Pharma &amp; biotech",
+      "it": "Farmaceutica &amp; biotech"
+    },
+    {
+      "cle": "sect.s3.p",
+      "fr": "Environnements exigeants où la qualité d'exécution, la traçabilité et la maîtrise documentaire sont essentielles.",
+      "en": "Demanding environments where execution quality, traceability and documentary control are essential.",
+      "it": "Ambienti esigenti dove la qualità di esecuzione, la tracciabilità e la padronanza documentale sono essenziali."
+    },
+    {
+      "cle": "sect.s3.t1",
+      "fr": "GMP",
+      "en": "GMP",
+      "it": "GMP"
+    },
+    {
+      "cle": "sect.s3.t2",
+      "fr": "Zones contrôlées",
+      "en": "Controlled zones",
+      "it": "Zone controllate"
+    },
+    {
+      "cle": "sect.s3.t3",
+      "fr": "Process réglementé",
+      "en": "Regulated process",
+      "it": "Processo regolamentato"
+    },
+    {
+      "cle": "sect.s4.h",
+      "fr": "Énergie",
+      "en": "Energy",
+      "it": "Energia"
+    },
+    {
+      "cle": "sect.s4.p",
+      "fr": "Installations de production, transformation ou distribution d'énergie nécessitant des raccordements fiables.",
+      "en": "Production, transformation or distribution facilities requiring reliable connections.",
+      "it": "Installazioni di produzione, trasformazione o distribuzione di energia che richiedono allacciamenti affidabili."
+    },
+    {
+      "cle": "sect.s4.t1",
+      "fr": "Cogénération",
+      "en": "Cogeneration",
+      "it": "Cogenerazione"
+    },
+    {
+      "cle": "sect.s4.t2",
+      "fr": "Chaufferies gaz",
+      "en": "Gas boilers",
+      "it": "Caldaie a gas"
+    },
+    {
+      "cle": "sect.s4.t3",
+      "fr": "Raccordement réseau",
+      "en": "Grid connection",
+      "it": "Allaccio rete"
+    },
+    {
+      "cle": "sect.s5.h",
+      "fr": "Nucléaire",
+      "en": "Nuclear",
+      "it": "Nucleare"
+    },
+    {
+      "cle": "sect.s5.p",
+      "fr": "Sites à haut niveau d'exigence en matière de sécurité, de préparation et de suivi documentaire.",
+      "en": "Sites with the highest level of demand for safety, preparation and documentary follow-up.",
+      "it": "Siti ad alto livello di esigenza in materia di sicurezza, preparazione e monitoraggio documentale."
+    },
+    {
+      "cle": "sect.s5.t1",
+      "fr": "Qualifications K",
+      "en": "K qualifications",
+      "it": "Qualifiche K"
+    },
+    {
+      "cle": "sect.s5.t2",
+      "fr": "SSE renforcé",
+      "en": "Enhanced HSE",
+      "it": "SSA rafforzato"
+    },
+    {
+      "cle": "sect.s5.t3",
+      "fr": "Documentaire strict",
+      "en": "Strict documentation",
+      "it": "Documentazione rigorosa"
+    },
+    {
+      "cle": "sect.s6.h",
+      "fr": "Utilités",
+      "en": "Utilities",
+      "it": "Utility"
+    },
+    {
+      "cle": "sect.s6.p",
+      "fr": "Infrastructures support indispensables au fonctionnement des sites industriels.",
+      "en": "Support infrastructures essential to the operation of industrial sites.",
+      "it": "Infrastrutture di supporto indispensabili al funzionamento dei siti industriali."
+    },
+    {
+      "cle": "sect.s6.t1",
+      "fr": "Continuité 24/7",
+      "en": "24/7 continuity",
+      "it": "Continuità 24/7"
+    },
+    {
+      "cle": "sect.s6.t2",
+      "fr": "Interfaces process",
+      "en": "Process interfaces",
+      "it": "Interfacce di processo"
+    },
+    {
+      "cle": "sect.s6.t3",
+      "fr": "Fluides",
+      "en": "Fluids",
+      "it": "Fluidi"
+    },
+    {
+      "cle": "sect.s7.h",
+      "fr": "Agroalimentaire",
+      "en": "Food industry",
+      "it": "Agroalimentare"
+    },
+    {
+      "cle": "sect.s7.p",
+      "fr": "Sites de production où les interventions doivent s'adapter aux cadences, aux zones sensibles et aux contraintes d'hygiène.",
+      "en": "Production sites where interventions must adapt to production rates, sensitive zones and hygiene constraints.",
+      "it": "Siti di produzione dove gli interventi devono adattarsi ai ritmi, alle zone sensibili e ai vincoli igienici."
+    },
+    {
+      "cle": "sect.s7.t1",
+      "fr": "HACCP",
+      "en": "HACCP",
+      "it": "HACCP"
+    },
+    {
+      "cle": "sect.s7.t2",
+      "fr": "Froid industriel",
+      "en": "Industrial cooling",
+      "it": "Freddo industriale"
+    },
+    {
+      "cle": "sect.s7.t3",
+      "fr": "Conditionnement 24/7",
+      "en": "24/7 packaging",
+      "it": "Confezionamento 24/7"
+    },
+    {
+      "cle": "sect.s8.h",
+      "fr": "Sites techniques",
+      "en": "Technical sites",
+      "it": "Siti tecnici"
+    },
+    {
+      "cle": "sect.s8.p",
+      "fr": "Bâtiments et infrastructures multitechniques nécessitant une lecture globale des interfaces.",
+      "en": "Multi-technical buildings and infrastructures requiring a global reading of interfaces.",
+      "it": "Edifici e infrastrutture multitecnici che richiedono una lettura globale delle interfacce."
+    },
+    {
+      "cle": "sect.s8.t1",
+      "fr": "Multitechnique",
+      "en": "Multi-technical",
+      "it": "Multitecnico"
+    },
+    {
+      "cle": "sect.s8.t2",
+      "fr": "Hubs logistiques",
+      "en": "Logistics hubs",
+      "it": "Hub logistici"
+    },
+    {
+      "cle": "sect.s8.t3",
+      "fr": "Infrastructures critiques",
+      "en": "Critical infrastructure",
+      "it": "Infrastrutture critiche"
+    },
+    {
+      "cle": "sect.s9.h",
+      "fr": "Chimie",
+      "en": "Chemistry",
+      "it": "Chimica"
+    },
+    {
+      "cle": "sect.s9.p",
+      "fr": "Environnements industriels réglementés nécessitant anticipation, rigueur et coordination avec les équipes sécurité.",
+      "en": "Regulated industrial environments requiring anticipation, rigour and coordination with site safety teams.",
+      "it": "Ambienti industriali regolamentati che richiedono anticipazione, rigore e coordinamento con le squadre di sicurezza."
+    },
+    {
+      "cle": "sect.s9.t1",
+      "fr": "Zones ATEX",
+      "en": "ATEX zones",
+      "it": "Zone ATEX"
+    },
+    {
+      "cle": "sect.s9.t2",
+      "fr": "Seveso",
+      "en": "Seveso",
+      "it": "Seveso"
+    },
+    {
+      "cle": "sect.s9.t3",
+      "fr": "Process continu",
+      "en": "Continuous process",
+      "it": "Processo continuo"
+    },
+    {
+      "cle": "sect.s10.h",
+      "fr": "Aéronautique",
+      "en": "Aerospace",
+      "it": "Aeronautica"
+    },
+    {
+      "cle": "sect.s10.p",
+      "fr": "Sites de production, d'essais ou d'assemblage avec exigences fortes de continuité, précision et coordination.",
+      "en": "Production, testing or assembly sites with high requirements for continuity, precision and coordination.",
+      "it": "Siti di produzione, prove o assemblaggio con forti esigenze di continuità, precisione e coordinamento."
+    },
+    {
+      "cle": "sect.s10.t1",
+      "fr": "Bancs d'essais",
+      "en": "Test benches",
+      "it": "Banchi di prova"
+    },
+    {
+      "cle": "sect.s10.t2",
+      "fr": "Salles blanches",
+      "en": "Cleanrooms",
+      "it": "Camere bianche"
+    },
+    {
+      "cle": "sect.s10.t3",
+      "fr": "Utilités aéro",
+      "en": "Aerospace utilities",
+      "it": "Utility aero"
+    },
+    {
+      "cle": "sect.cta.eyebrow",
+      "fr": "Contact",
+      "en": "Contact",
+      "it": "Contatti"
+    },
+    {
+      "cle": "sect.cta.h2",
+      "fr": "Nous connaissons votre secteur.",
+      "en": "We know your sector.",
+      "it": "Conosciamo il vostro settore."
+    },
+    {
+      "cle": "sect.cta.p",
+      "fr": "Nous intervenons sur des environnements industriels exigeants. Contactez-nous pour discuter du périmètre technique, des contraintes d'exploitation et du cadre SSE applicable à votre site.",
+      "en": "We operate in demanding industrial environments. Contact us to discuss the technical scope, operational constraints and the HSE framework applicable to your site.",
+      "it": "Interveniamo su ambienti industriali esigenti. Contattateci per discutere del perimetro tecnico, dei vincoli di esercizio e del quadro SSA applicabile al vostro sito."
+    },
+    {
+      "cle": "sect.cta.btn1",
+      "fr": "Nous consulter",
+      "en": "Contact us",
+      "it": "Contattaci"
+    },
+    {
+      "cle": "sect.cta.btn2",
+      "fr": "Voir les réalisations",
+      "en": "See projects",
+      "it": "Vedere i progetti"
+    },
+    {
+      "cle": "sect.cta.label",
+      "fr": "Direction commerciale",
+      "en": "Sales management",
+      "it": "Direzione commerciale"
+    },
+    {
+      "cle": "sect.l.alimentations",
+      "fr": "Alimentations",
+      "en": "Power supplies",
+      "it": "Alimentazioni"
+    },
+    {
+      "cle": "sect.l.conformite",
+      "fr": "Conformité",
+      "en": "Compliance",
+      "it": "Conformità"
+    },
+    {
+      "cle": "sect.l.contexte",
+      "fr": "Contexte",
+      "en": "Context",
+      "it": "Contesto"
+    },
+    {
+      "cle": "sect.l.continuite",
+      "fr": "Continuité",
+      "en": "Continuity",
+      "it": "Continuità"
+    },
+    {
+      "cle": "sect.l.coordination",
+      "fr": "Coordination",
+      "en": "Coordination",
+      "it": "Coordinamento"
+    },
+    {
+      "cle": "sect.l.distribution",
+      "fr": "Distribution",
+      "en": "Distribution",
+      "it": "Distribuzione"
+    },
+    {
+      "cle": "sect.l.execution",
+      "fr": "Exécution",
+      "en": "Execution",
+      "it": "Esecuzione"
+    },
+    {
+      "cle": "sect.l.exploitation",
+      "fr": "Exploitation",
+      "en": "Operation",
+      "it": "Esercizio"
+    },
+    {
+      "cle": "sect.l.interfaces",
+      "fr": "Interfaces",
+      "en": "Interfaces",
+      "it": "Interfacce"
+    },
+    {
+      "cle": "sect.l.interventions",
+      "fr": "Interventions",
+      "en": "Interventions",
+      "it": "Interventi"
+    },
+    {
+      "cle": "sect.l.preparation",
+      "fr": "Préparation",
+      "en": "Preparation",
+      "it": "Preparazione"
+    },
+    {
+      "cle": "sect.l.procedures",
+      "fr": "Procédures",
+      "en": "Procedures",
+      "it": "Procedure"
+    },
+    {
+      "cle": "sect.l.raccordements",
+      "fr": "Raccordements",
+      "en": "Connections",
+      "it": "Allacciamenti"
+    },
+    {
+      "cle": "sect.l.suivi",
+      "fr": "Suivi",
+      "en": "Monitoring",
+      "it": "Monitoraggio"
+    },
+    {
+      "cle": "sect.l.tracabilite",
+      "fr": "Traçabilité",
+      "en": "Traceability",
+      "it": "Tracciabilità"
+    },
+    {
+      "cle": "sect.s1.l1",
+      "fr": "Distribution principale et tableaux de puissance",
+      "en": "Main distribution and power boards",
+      "it": "Distribuzione principale e quadri di potenza"
+    },
+    {
+      "cle": "sect.s1.l2",
+      "fr": "Cheminements, raccordements et mise en service",
+      "en": "Cable routing, connections and commissioning",
+      "it": "Percorsi, allacciamenti e messa in servizio"
+    },
+    {
+      "cle": "sect.s1.l3",
+      "fr": "Adaptée aux contraintes d'exploitation",
+      "en": "Adapted to operational constraints",
+      "it": "Adattata ai vincoli di esercizio"
+    },
+    {
+      "cle": "sect.s2.l1",
+      "fr": "Alimentation d'équipements industriels",
+      "en": "Industrial equipment power supply",
+      "it": "Alimentazione di apparecchiature industriali"
+    },
+    {
+      "cle": "sect.s2.l2",
+      "fr": "Travaux en environnement de production",
+      "en": "Work in active production environment",
+      "it": "Lavori in ambiente di produzione attivo"
+    },
+    {
+      "cle": "sect.s2.l3",
+      "fr": "Avec les équipes site",
+      "en": "With site teams",
+      "it": "Con le squadre del sito"
+    },
+    {
+      "cle": "sect.s3.l1",
+      "fr": "Distribution électrique de zones techniques",
+      "en": "Electrical distribution of technical zones",
+      "it": "Distribuzione elettrica di zone tecniche"
+    },
+    {
+      "cle": "sect.s3.l2",
+      "fr": "Interventions en environnement contrôlé",
+      "en": "Interventions in controlled environment",
+      "it": "Interventi in ambiente controllato"
+    },
+    {
+      "cle": "sect.s3.l3",
+      "fr": "Dossiers, contrôles et suivi d'exécution",
+      "en": "Files, controls and execution follow-up",
+      "it": "Dossier, controlli e monitoraggio dell'esecuzione"
+    },
+    {
+      "cle": "sect.s4.l1",
+      "fr": "Principales et secondaires",
+      "en": "Main and secondary",
+      "it": "Principali e secondarie"
+    },
+    {
+      "cle": "sect.s4.l2",
+      "fr": "Puissance et interfaces process",
+      "en": "Power and process interfaces",
+      "it": "Potenza e interfacce di processo"
+    },
+    {
+      "cle": "sect.s4.l3",
+      "fr": "Avec exploitants et lots techniques",
+      "en": "With operators and technical lots",
+      "it": "Con gli operatori e i lotti tecnici"
+    },
+    {
+      "cle": "sect.s5.l1",
+      "fr": "Méthodique des interventions",
+      "en": "Methodical intervention preparation",
+      "it": "Preparazione metodica degli interventi"
+    },
+    {
+      "cle": "sect.s5.l2",
+      "fr": "Respect du référentiel site",
+      "en": "Compliance with site procedures",
+      "it": "Rispetto del referenziale di sito"
+    },
+    {
+      "cle": "sect.s5.l3",
+      "fr": "Documentaire et qualité d'exécution",
+      "en": "Documentary and execution quality",
+      "it": "Documentale e qualità di esecuzione"
+    },
+    {
+      "cle": "sect.s6.l1",
+      "fr": "Des équipements techniques",
+      "en": "Technical equipment power supply",
+      "it": "Delle apparecchiature tecniche"
+    },
+    {
+      "cle": "sect.s6.l2",
+      "fr": "De service maintenue",
+      "en": "Service continuity maintained",
+      "it": "Di servizio mantenuta"
+    },
+    {
+      "cle": "sect.s6.l3",
+      "fr": "Réseaux fluides et process",
+      "en": "Fluid networks and process",
+      "it": "Reti fluidi e processo"
+    },
+    {
+      "cle": "sect.s7.l1",
+      "fr": "Sur lignes et zones techniques",
+      "en": "On production lines and technical zones",
+      "it": "Su linee e zone tecniche"
+    },
+    {
+      "cle": "sect.s7.l2",
+      "fr": "Maintien de l'activité",
+      "en": "Activity continuity maintained",
+      "it": "Mantenimento dell'attività"
+    },
+    {
+      "cle": "sect.s7.l3",
+      "fr": "Propre et organisée",
+      "en": "Clean and organised execution",
+      "it": "Pulita e organizzata"
+    },
+    {
+      "cle": "sect.s8.l1",
+      "fr": "Électrique générale",
+      "en": "General electrical distribution",
+      "it": "Elettrica generale"
+    },
+    {
+      "cle": "sect.s8.l2",
+      "fr": "Multi-lots",
+      "en": "Multi-lot coordination",
+      "it": "Multi-lotti"
+    },
+    {
+      "cle": "sect.s8.l3",
+      "fr": "Et maintenance facilitées",
+      "en": "Operation and maintenance facilitated",
+      "it": "E manutenzione facilitate"
+    },
+    {
+      "cle": "sect.s9.l1",
+      "fr": "Accès et modes opératoires",
+      "en": "Access and operating procedures",
+      "it": "Accessi e modi operativi"
+    },
+    {
+      "cle": "sect.s9.l2",
+      "fr": "Sur installations techniques",
+      "en": "On technical installations",
+      "it": "Su installazioni tecniche"
+    },
+    {
+      "cle": "sect.s9.l3",
+      "fr": "Respect des règles site",
+      "en": "Compliance with site rules",
+      "it": "Rispetto delle regole del sito"
+    },
+    {
+      "cle": "sect.s10.l1",
+      "fr": "Équipements et bancs techniques",
+      "en": "Equipment and technical test benches",
+      "it": "Apparecchiature e banchi tecnici"
+    },
+    {
+      "cle": "sect.s10.l2",
+      "fr": "Sur zones de production",
+      "en": "On production zones",
+      "it": "Su zone di produzione"
+    },
+    {
+      "cle": "sect.s10.l3",
+      "fr": "Avec exploitation et maintenance",
+      "en": "With operation and maintenance",
+      "it": "Con esercizio e manutenzione"
+    }
+  ]
+}

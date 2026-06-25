@@ -2239,6 +2239,31 @@ function colorizeBrandName(root) {
   });
 }
 
+/* ---- TEXTES EDITABLES VIA LA CONSOLE ----
+   Les valeurs par defaut sont celles de I18N ci-dessus : le site s'affiche
+   toujours, meme sans reseau. Au chargement on recupere les fichiers de
+   contenu produits par la console d'edition (/content/textes/*.json) et on
+   applique leurs valeurs par-dessus. Un texte vide ou un fichier absent =
+   on garde simplement la valeur d'origine. */
+const TEXT_FILES = ["commun", "accueil", "expertise", "realisations", "references", "secteurs", "engagements", "recrutement", "contact"];
+
+async function loadEditableTexts() {
+  await Promise.all(TEXT_FILES.map(async (name) => {
+    try {
+      const res = await fetch("/content/textes/" + name + ".json", { cache: "no-cache" });
+      if (!res.ok) return;
+      const data = await res.json();
+      if (!data || !Array.isArray(data.textes)) return;
+      data.textes.forEach((t) => {
+        if (!t || !t.cle) return;
+        ["fr", "en", "it"].forEach((l) => {
+          if (typeof t[l] === "string" && t[l] !== "" && I18N[l]) I18N[l][t.cle] = t[l];
+        });
+      });
+    } catch (e) { /* hors ligne ou fichier absent : on garde les valeurs par defaut */ }
+  }));
+}
+
 /* ---- INIT ---- */
 document.addEventListener("DOMContentLoaded", () => {
   let saved = "fr";
@@ -2257,4 +2282,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const yearNode = document.getElementById("year");
   if (yearNode) yearNode.textContent = new Date().getFullYear();
+
+  // Applique par-dessus les textes edites dans la console (sans bloquer l'affichage).
+  loadEditableTexts().then(() => {
+    applyLang(saved);
+    colorizeBrandName();
+  });
 });

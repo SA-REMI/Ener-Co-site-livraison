@@ -1,0 +1,346 @@
+{
+  "textes": [
+    {
+      "cle": "home.hero.eyebrow",
+      "fr": "Distribution d'énergie industrielle",
+      "en": "Industrial power distribution",
+      "it": "Distribuzione di energia industriale"
+    },
+    {
+      "cle": "home.hero.h1",
+      "fr": "Distribution d'énergie sur sites techniques et industriels sensibles.",
+      "en": "Power distribution on sensitive technical and industrial sites.",
+      "it": "Distribuzione di energia su siti tecnici e industriali sensibili."
+    },
+    {
+      "cle": "home.hero.lede",
+      "fr": "Ener-Co intervient sur l'ensemble de la chaîne de distribution d'énergie industrielle : préparation HTA, alimentations TGBT, tableaux et départs, gaines à barres, raccordements puissance et mise sous tension. Sans sous-traitance d'intervention, en France, en Europe et à l'international.",
+      "en": "Ener-Co covers the entire industrial power distribution chain: MV preparation, LV feeders, switchboards and outlets, busways, power connections and energisation. Without subcontracting of intervention, in France, Europe and internationally.",
+      "it": "Ener-Co copre l'intera catena di distribuzione di energia industriale: preparazione MT, alimentazioni BT, quadri e partenze, condotti sbarre, collegamenti di potenza e messa in tensione. Senza subappalto di intervento, in Francia, in Europa e a livello internazionale."
+    },
+    {
+      "cle": "home.hero.btn1",
+      "fr": "Voir nos réalisations",
+      "en": "See our projects",
+      "it": "Vedere i nostri progetti"
+    },
+    {
+      "cle": "home.hero.btn2",
+      "fr": "Nous consulter",
+      "en": "Contact us",
+      "it": "Contattaci"
+    },
+    {
+      "cle": "home.hero.badge",
+      "fr": "Chantier en service",
+      "en": "Live site",
+      "it": "Cantiere attivo"
+    },
+    {
+      "cle": "home.hero.figcap",
+      "fr": "Fibre Excellence · système Eta-com",
+      "en": "Fibre Excellence · Eta-com system",
+      "it": "Fibre Excellence · sistema Eta-com"
+    },
+    {
+      "cle": "home.stats.s1.dt",
+      "fr": "Depuis <span>2015</span>",
+      "en": "Since <span>2015</span>",
+      "it": "Dal <span>2015</span>"
+    },
+    {
+      "cle": "home.stats.s1.dd",
+      "fr": "Ener-Co SAS · entreprise française spécialisée",
+      "en": "Ener-Co SAS · specialised French company",
+      "it": "Ener-Co SAS · azienda francese specializzata"
+    },
+    {
+      "cle": "home.stats.s2.dt",
+      "fr": "<span>7</span> pays",
+      "en": "<span>7</span> countries",
+      "it": "<span>7</span> paesi"
+    },
+    {
+      "cle": "home.stats.s2.dd",
+      "fr": "France · Italie · Allemagne · Pologne · Belgique · Espagne · Sénégal",
+      "en": "France · Italy · Germany · Poland · Belgium · Spain · Senegal",
+      "it": "Francia · Italia · Germania · Polonia · Belgio · Spagna · Senegal"
+    },
+    {
+      "cle": "home.stats.s3.dt",
+      "fr": "MASE",
+      "en": "MASE",
+      "it": "MASE"
+    },
+    {
+      "cle": "home.stats.s3.dd",
+      "fr": "Certification SSE · Rhône-Alpes",
+      "en": "HSE certification · Rhône-Alpes",
+      "it": "Certificazione SSA · Rhône-Alpes"
+    },
+    {
+      "cle": "home.stats.s4.dt",
+      "fr": "<span>100%</span> interne",
+      "en": "<span>100%</span> in-house",
+      "it": "<span>100%</span> interno"
+    },
+    {
+      "cle": "home.stats.s4.dd",
+      "fr": "Équipes dédiées · exécution sans sous-traitance",
+      "en": "Dedicated teams · execution without subcontracting",
+      "it": "Team dedicati · esecuzione senza subappalto"
+    },
+    {
+      "cle": "home.sig.h2",
+      "fr": "La distribution d'énergie, du premier câble à la mise sous tension. <em>En interne.</em>",
+      "en": "Power distribution, from the first cable to final energisation. <em>In-house.</em>",
+      "it": "La distribuzione di energia, dal primo cavo alla messa in tensione. <em>Internamente.</em>"
+    },
+    {
+      "cle": "home.sig.p1",
+      "fr": "Ener-Co n'externalise pas son exécution chantier. Pas de cascade de sous-traitants, pas de dilution de responsabilité : une seule entité, une seule lecture technique, du premier câble HTA à la mise sous tension. Cette continuité est notre signature industrielle, et votre garantie d'un seul interlocuteur responsable de bout en bout.",
+      "en": "Ener-Co does not outsource site execution. No cascade of subcontractors, no diluted responsibility: one entity, one technical reading, from the first MV cable to final energisation. This continuity is our industrial signature, and your guarantee of a single accountable interlocutor end-to-end.",
+      "it": "Ener-Co non esternalizza l'esecuzione in cantiere. Nessuna cascata di subappaltatori, nessuna diluizione di responsabilità: un'unica entità, un'unica lettura tecnica, dal primo cavo MT alla messa in tensione. Questa continuità è la nostra firma industriale, la vostra garanzia di un unico interlocutore responsabile dall'inizio alla fine."
+    },
+    {
+      "cle": "home.sig.claim",
+      "fr": "Ener-Co intervient là où la continuité de service ne se négocie pas.",
+      "en": "Ener-Co operates where service continuity is non-negotiable.",
+      "it": "Ener-Co interviene laddove la continuità del servizio non è negoziabile."
+    },
+    {
+      "cle": "home.clients.h2",
+      "fr": "Ils nous font confiance",
+      "en": "They trust us",
+      "it": "Si fidano di noi"
+    },
+    {
+      "cle": "home.clients.link",
+      "fr": "Voir toutes nos références →",
+      "en": "See all references →",
+      "it": "Vedere tutte le referenze →"
+    },
+    {
+      "cle": "home.exp.eyebrow",
+      "fr": "Expertise",
+      "en": "Expertise",
+      "it": "Competenze"
+    },
+    {
+      "cle": "home.exp.h2",
+      "fr": "Une chaîne complète de distribution d'énergie.",
+      "en": "A complete power distribution chain.",
+      "it": "Una catena completa di distribuzione di energia."
+    },
+    {
+      "cle": "home.exp.intro",
+      "fr": "De la préparation HTA à la mise sous tension, Ener-Co prend en charge chaque maillon en interne, avec une continuité de responsabilité.",
+      "en": "From MV preparation to energisation, Ener-Co handles each link in-house, with unbroken responsibility.",
+      "it": "Dalla preparazione MT alla messa in tensione, Ener-Co gestisce ogni anello internamente, con una continuità di responsabilità."
+    },
+    {
+      "cle": "home.exp.c1.h",
+      "fr": "Haute tension",
+      "en": "Medium voltage",
+      "it": "Media tensione"
+    },
+    {
+      "cle": "home.exp.c1.p",
+      "fr": "Préparation des séquences d'intervention, gestion des interfaces et organisation des travaux sur infrastructures structurées.",
+      "en": "Preparation of intervention sequences, interface management and organisation of works on structured infrastructure.",
+      "it": "Preparazione delle sequenze di intervento, gestione delle interfacce e organizzazione dei lavori su infrastrutture strutturate."
+    },
+    {
+      "cle": "home.exp.c2.h",
+      "fr": "Alimentations TGBT",
+      "en": "LV feeders",
+      "it": "Alimentazioni BT"
+    },
+    {
+      "cle": "home.exp.c2.p",
+      "fr": "Tirage, adaptation de lignes, raccordement puissance et interface avec tableaux généraux basse tension.",
+      "en": "Cable pulling, line adaptation, power connection and interface with low-voltage main distribution boards.",
+      "it": "Tiraggio, adattamento di linee, collegamento di potenza e interfaccia con quadri generali di bassa tensione."
+    },
+    {
+      "cle": "home.exp.c3.h",
+      "fr": "Implantation &amp; jonctions",
+      "en": "Layout &amp; junctions",
+      "it": "Posa &amp; giunzioni"
+    },
+    {
+      "cle": "home.exp.c3.p",
+      "fr": "Implantation, supportage, jonctions, remplacement de lignes et adaptation de réseaux rigides sur sites techniques.",
+      "en": "Layout, supporting, junctions, line replacement and adaptation of rigid networks on technical sites.",
+      "it": "Posa, supportaggio, giunzioni, sostituzione di linee e adattamento di reti rigide su siti tecnici."
+    },
+    {
+      "cle": "home.exp.link",
+      "fr": "Voir tout le périmètre",
+      "en": "See the full scope",
+      "it": "Vedere l'intero perimetro"
+    },
+    {
+      "cle": "home.real.eyebrow",
+      "fr": "Réalisations",
+      "en": "Projects",
+      "it": "Progetti"
+    },
+    {
+      "cle": "home.real.h2",
+      "fr": "Trois chantiers documentés.",
+      "en": "Three documented projects.",
+      "it": "Tre cantieri documentati."
+    },
+    {
+      "cle": "home.real.intro",
+      "fr": "Saint-Gaudens, Chaufferie gaz 2000 A et Fibre Excellence : trois opérations publiées avec photos chantier natives et lecture directe du niveau d'exécution.",
+      "en": "Saint-Gaudens, 2000 A gas boiler and Fibre Excellence: three operations published with native site photos and a direct read of the execution level.",
+      "it": "Saint-Gaudens, Caldaia gas 2000 A e Fibre Excellence: tre operazioni pubblicate con foto di cantiere originali e una lettura diretta del livello di esecuzione."
+    },
+    {
+      "cle": "home.real.c1.sector",
+      "fr": "Papeterie · Saint-Gaudens",
+      "en": "Paper mill · Saint-Gaudens",
+      "it": "Cartiera · Saint-Gaudens"
+    },
+    {
+      "cle": "home.real.c1.h",
+      "fr": "Ligne neuve Beto-Bar IP68",
+      "en": "New Beto-Bar IP68 line",
+      "it": "Nuova linea Beto-Bar IP68"
+    },
+    {
+      "cle": "home.real.c1.p",
+      "fr": "Nouvelle ligne de gaine à barres basse tension Beto-Bar IP68 LB16EA sur le site Fibre Excellence.",
+      "en": "New low-voltage Beto-Bar IP68 LB16EA busway line at the Fibre Excellence site.",
+      "it": "Nuova linea di condotto sbarre bassa tensione Beto-Bar IP68 LB16EA sul sito Fibre Excellence."
+    },
+    {
+      "cle": "home.real.c2.sector",
+      "fr": "Énergie · Est lyonnais",
+      "en": "Energy · East Lyon",
+      "it": "Energia · Est Lione"
+    },
+    {
+      "cle": "home.real.c2.h",
+      "fr": "Chaufferie gaz 2000 A",
+      "en": "2000 A gas boiler",
+      "it": "Caldaia gas 2000 A"
+    },
+    {
+      "cle": "home.real.c2.p",
+      "fr": "Ligne 2000 A triphasée aluminium ~5 ml pour l'alimentation principale d'une chaufferie gaz (Dalkia / KiloAmps).",
+      "en": "2000 A three-phase aluminium line ~5 m for the main supply of a gas boiler plant (Dalkia / KiloAmps).",
+      "it": "Linea 2000 A trifase in alluminio ~5 m per l'alimentazione principale di una caldaia a gas (Dalkia / KiloAmps)."
+    },
+    {
+      "cle": "home.real.c3.sector",
+      "fr": "Papeterie · Fibre Excellence",
+      "en": "Paper mill · Fibre Excellence",
+      "it": "Cartiera · Fibre Excellence"
+    },
+    {
+      "cle": "home.real.c3.h",
+      "fr": "Installation Eta-com",
+      "en": "Eta-com installation",
+      "it": "Installazione Eta-com"
+    },
+    {
+      "cle": "home.real.c3.p",
+      "fr": "Intervention sur site industriel actif Fibre Excellence, supportage et finition des jonctions du système Eta-com.",
+      "en": "Intervention on the live industrial site Fibre Excellence, supporting and finishing of the Eta-com system junctions.",
+      "it": "Intervento su sito industriale attivo Fibre Excellence, supportaggio e finitura delle giunzioni del sistema Eta-com."
+    },
+    {
+      "cle": "home.real.link",
+      "fr": "Voir le chantier →",
+      "en": "See the project →",
+      "it": "Vedere il cantiere →"
+    },
+    {
+      "cle": "home.refs.eyebrow",
+      "fr": "Références",
+      "en": "References",
+      "it": "Referenze"
+    },
+    {
+      "cle": "home.refs.h2",
+      "fr": "Ils nous confient leurs chantiers.",
+      "en": "They entrust us with their projects.",
+      "it": "Ci affidano i loro cantieri."
+    },
+    {
+      "cle": "home.refs.intro",
+      "fr": "Industriels, intégrateurs électriques, exploitants data centers et donneurs d'ordre énergie : Ener-Co intervient pour des acteurs qui n'acceptent aucune rupture de continuité de service.",
+      "en": "Industrial operators, electrical integrators, data centre operators and energy principals: Ener-Co works for actors who accept no break in service continuity.",
+      "it": "Industriali, integratori elettrici, gestori di data center e committenti energia: Ener-Co interviene per attori che non accettano alcuna interruzione di continuità di servizio."
+    },
+    {
+      "cle": "home.refs.link",
+      "fr": "Voir toutes nos références",
+      "en": "See all references",
+      "it": "Vedere tutte le referenze"
+    },
+    {
+      "cle": "home.cta.eyebrow",
+      "fr": "Contact",
+      "en": "Contact",
+      "it": "Contatti"
+    },
+    {
+      "cle": "home.cta.h2",
+      "fr": "Parlons du périmètre de votre projet.",
+      "en": "Let's talk about the scope of your project.",
+      "it": "Parliamo del perimetro del vostro progetto."
+    },
+    {
+      "cle": "home.cta.p",
+      "fr": "Étude technique, alimentation principale, raccordement de puissance, extension de site ou remplacement de ligne : échangeons sur votre périmètre, vos contraintes d'exploitation et vos délais.",
+      "en": "Technical study, main supply, power connection, site extension or line replacement: let's discuss your scope, your operational constraints and your deadlines.",
+      "it": "Studio tecnico, alimentazione principale, collegamento di potenza, ampliamento di sito o sostituzione di linea: parliamo del vostro perimetro, dei vostri vincoli di esercizio e delle vostre scadenze."
+    },
+    {
+      "cle": "home.cta.btn1",
+      "fr": "Contactez-nous",
+      "en": "Contact us",
+      "it": "Contattaci"
+    },
+    {
+      "cle": "home.cta.btn2",
+      "fr": "Voir les réalisations",
+      "en": "See projects",
+      "it": "Vedere i progetti"
+    },
+    {
+      "cle": "home.cta.label",
+      "fr": "Direction commerciale",
+      "en": "Sales management",
+      "it": "Direzione commerciale"
+    },
+    {
+      "cle": "home.map.eyebrow",
+      "fr": "Implantations",
+      "en": "Locations",
+      "it": "Sedi"
+    },
+    {
+      "cle": "home.map.h2",
+      "fr": "Partout où le chantier l'exige.",
+      "en": "Wherever the project requires.",
+      "it": "Ovunque il cantiere lo richieda."
+    },
+    {
+      "cle": "home.map.intro",
+      "fr": "Basée à Lyon, Ener-Co intervient partout en France, métropole et Martinique, ainsi qu'en Europe (Italie, Allemagne, Pologne, Belgique, Espagne) et à l'international (Sénégal). Équipes terrain mobilisables sans contrainte de zone.",
+      "en": "Based in Lyon, Ener-Co operates anywhere in France, mainland and Martinique, as well as across Europe (Italy, Germany, Poland, Belgium, Spain) and internationally (Senegal). Field teams mobilisable without geographic constraint.",
+      "it": "Con sede a Lione, Ener-Co interviene ovunque in Francia, metropoli e Martinica, oltre che in Europa (Italia, Germania, Polonia, Belgio, Spagna) e a livello internazionale (Senegal). Squadre sul campo mobilitabili senza vincoli geografici."
+    },
+    {
+      "cle": "home.map.link",
+      "fr": "Voir le détail des implantations",
+      "en": "See all locations",
+      "it": "Vedere il dettaglio delle sedi"
+    }
+  ]
+}

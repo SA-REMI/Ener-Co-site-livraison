@@ -1,0 +1,268 @@
+{
+  "textes": [
+    {
+      "cle": "recrut.hero.eyebrow",
+      "fr": "Rejoignez Ener-Co",
+      "en": "Join Ener-Co",
+      "it": "Unitevi a Ener-Co"
+    },
+    {
+      "cle": "recrut.hero.h1",
+      "fr": "Techniciens, chefs d'équipe, chefs de chantier.",
+      "en": "Technicians, team leaders, site managers.",
+      "it": "Tecnici, capisquadra, capicantiere."
+    },
+    {
+      "cle": "recrut.hero.lede",
+      "fr": "Ener-Co recrute régulièrement des profils <strong>terrain</strong> pour renforcer ses équipes internes : montage, exécution, encadrement chantier. Postes ouverts en Auvergne-Rhône-Alpes, à Paris et en Île-de-France, avec déplacements possibles en France, en Europe et à l'international.",
+      "en": "Ener-Co regularly recruits <strong>field</strong> profiles to strengthen its in-house teams: installation, execution, site management. Positions open in Auvergne-Rhône-Alpes, Paris and Île-de-France, with possible travel in France, Europe and internationally.",
+      "it": "Ener-Co assume regolarmente profili <strong>sul campo</strong> per rafforzare le proprie squadre interne: montaggio, esecuzione, gestione di cantiere. Posizioni aperte in Auvergne-Rhône-Alpes, a Parigi e in Île-de-France, con possibili trasferte in Francia, in Europa e a livello internazionale."
+    },
+    {
+      "cle": "recrut.jobs.eyebrow",
+      "fr": "Offres d'emploi",
+      "en": "Job openings",
+      "it": "Offerte di lavoro"
+    },
+    {
+      "cle": "recrut.jobs.h2",
+      "fr": "Postes actuellement ouverts.",
+      "en": "Positions currently open.",
+      "it": "Posizioni attualmente aperte."
+    },
+    {
+      "cle": "recrut.jobs.intro",
+      "fr": "Les postes techniques publiés ci-dessous sont ouverts en continu. Vous pouvez également adresser une candidature spontanée à l'équipe RH par email.",
+      "en": "The technical positions listed below are open on a rolling basis. You can also send a spontaneous application to the HR team by email.",
+      "it": "Le posizioni tecniche pubblicate qui sotto sono aperte in continuazione. Potete anche inviare una candidatura spontanea al team HR via email."
+    },
+    {
+      "cle": "recrut.lbl.contract",
+      "fr": "Contrat",
+      "en": "Contract",
+      "it": "Contratto"
+    },
+    {
+      "cle": "recrut.lbl.location",
+      "fr": "Localisation",
+      "en": "Location",
+      "it": "Sede"
+    },
+    {
+      "cle": "recrut.lbl.experience",
+      "fr": "Expérience",
+      "en": "Experience",
+      "it": "Esperienza"
+    },
+    {
+      "cle": "recrut.lbl.quals",
+      "fr": "Habilitations",
+      "en": "Qualifications",
+      "it": "Abilitazioni"
+    },
+    {
+      "cle": "recrut.job1.tag",
+      "fr": "CDI",
+      "en": "Permanent",
+      "it": "Tempo indeterminato"
+    },
+    {
+      "cle": "recrut.job1.loc",
+      "fr": "Auvergne-Rhône-Alpes",
+      "en": "Auvergne-Rhône-Alpes",
+      "it": "Auvergne-Rhône-Alpes"
+    },
+    {
+      "cle": "recrut.job1.h",
+      "fr": "Chef d'Équipe Montage Mécanique Électricien H/F",
+      "en": "Mechanical Assembly Team Leader, Electrician (M/F)",
+      "it": "Caposquadra montaggio meccanico elettricista M/F"
+    },
+    {
+      "cle": "recrut.job1.p",
+      "fr": "Encadrement d'équipe sur chantiers industriels de distribution d'énergie. Installation de gaines à barres, raccordements TGBT, mise sous tension. Autonomie, coordination et rigueur SSE attendues.",
+      "en": "Team leadership on industrial power distribution projects. Installation of busways, LV connections, energisation. Autonomy, coordination and HSE rigour expected.",
+      "it": "Gestione della squadra su cantieri industriali di distribuzione di energia. Installazione di condotti sbarre, collegamenti BT, messa in tensione. Autonomia, coordinamento e rigore SSA richiesti."
+    },
+    {
+      "cle": "recrut.job1.f1",
+      "fr": "CDI temps plein",
+      "en": "Permanent, full-time",
+      "it": "Tempo indeterminato full-time"
+    },
+    {
+      "cle": "recrut.job1.f2",
+      "fr": "Auvergne-Rhône-Alpes · déplacements France",
+      "en": "Auvergne-Rhône-Alpes · travel within France",
+      "it": "Auvergne-Rhône-Alpes · trasferte in Francia"
+    },
+    {
+      "cle": "recrut.job1.f3",
+      "fr": "3 ans minimum en montage électrique industriel",
+      "en": "Min. 3 years in industrial electrical assembly",
+      "it": "Almeno 3 anni in montaggio elettrico industriale"
+    },
+    {
+      "cle": "recrut.job1.f4",
+      "fr": "B2V, BR, BC souhaitées",
+      "en": "B2V, BR, BC preferred",
+      "it": "B2V, BR, BC preferite"
+    },
+    {
+      "cle": "recrut.apply",
+      "fr": "Postuler",
+      "en": "Apply",
+      "it": "Candidarsi"
+    },
+    {
+      "cle": "recrut.detail",
+      "fr": "Voir le détail complet",
+      "en": "See full details",
+      "it": "Vedere il dettaglio completo"
+    },
+    {
+      "cle": "recrut.spont.eyebrow",
+      "fr": "Candidature spontanée",
+      "en": "Spontaneous application",
+      "it": "Candidatura spontanea"
+    },
+    {
+      "cle": "recrut.spont.h2",
+      "fr": "Votre profil nous intéresse.",
+      "en": "Your profile interests us.",
+      "it": "Il vostro profilo ci interessa."
+    },
+    {
+      "cle": "recrut.spont.p",
+      "fr": "Vous êtes électricien industriel, technicien HTA/BT, chef d'équipe ou chef de chantier et vous cherchez un environnement structuré, de vrais chantiers techniques et des équipes internes, sans sous-traitance ? Envoyez-nous votre CV à tout moment.",
+      "en": "You are an industrial electrician, MV/LV technician, team leader or site manager looking for a structured environment, real technical projects and in-house teams, without subcontracting? Send us your CV at any time.",
+      "it": "Siete elettricisti industriali, tecnici MT/BT, capisquadra o capicantiere e cercate un ambiente strutturato, veri cantieri tecnici e squadre interne, senza subappalto? Inviateci il vostro CV in qualsiasi momento."
+    },
+    {
+      "cle": "recrut.spont.btn",
+      "fr": "Envoyer ma candidature",
+      "en": "Send my application",
+      "it": "Inviare la mia candidatura"
+    },
+    {
+      "cle": "recrut.prof.eyebrow",
+      "fr": "Profils recherchés",
+      "en": "Profiles sought",
+      "it": "Profili ricercati"
+    },
+    {
+      "cle": "recrut.prof.1",
+      "fr": "Électriciens industriels HTA / BT",
+      "en": "MV / LV industrial electricians",
+      "it": "Elettricisti industriali MT / BT"
+    },
+    {
+      "cle": "recrut.prof.2",
+      "fr": "Chefs d'équipe montage mécanique",
+      "en": "Mechanical assembly team leaders",
+      "it": "Capisquadra montaggio meccanico"
+    },
+    {
+      "cle": "recrut.prof.3",
+      "fr": "Chefs de chantier",
+      "en": "Site managers",
+      "it": "Capicantiere"
+    },
+    {
+      "cle": "recrut.prof.4",
+      "fr": "Techniciens gaines à barres",
+      "en": "Busway technicians",
+      "it": "Tecnici condotti sbarre"
+    },
+    {
+      "cle": "recrut.prof.5",
+      "fr": "Monteurs câbleurs",
+      "en": "Cable fitters",
+      "it": "Montatori cablatori"
+    },
+    {
+      "cle": "recrut.prof.6",
+      "fr": "Alternants BTS Électrotechnique / Licence pro",
+      "en": "Electrotechnical BTS / vocational bachelor apprentices",
+      "it": "Apprendisti BTS Elettrotecnica / Laurea professionale"
+    },
+    {
+      "cle": "recrut.offer.eyebrow",
+      "fr": "Ce que nous offrons",
+      "en": "What we offer",
+      "it": "Ciò che offriamo"
+    },
+    {
+      "cle": "recrut.offer.2.t",
+      "fr": "Chantiers techniques variés, sites sensibles",
+      "en": "Varied technical projects, sensitive sites",
+      "it": "Cantieri tecnici vari, siti sensibili"
+    },
+    {
+      "cle": "recrut.offer.3.t",
+      "fr": "Cadre SSE structuré",
+      "en": "Structured HSE framework",
+      "it": "Quadro SSA strutturato"
+    },
+    {
+      "cle": "recrut.offer.3.s",
+      "fr": "Certification MASE Rhône-Alpes, audit triennal, procédures formalisées.",
+      "en": "MASE Rhône-Alpes certification, triennial audit, formalised procedures.",
+      "it": "Certificazione MASE Rhône-Alpes, audit triennale, procedure formalizzate."
+    },
+    {
+      "cle": "recrut.offer.4.t",
+      "fr": "Formation continue et montée en compétences",
+      "en": "Continuous training and skills development",
+      "it": "Formazione continua e crescita delle competenze"
+    },
+    {
+      "cle": "recrut.offer.4.s",
+      "fr": "Chez Ener-Co, chacun est formé et accompagné : habilitations électriques, qualifications métier, spécialisations techniques. Une vraie progression, quel que soit le point de départ.",
+      "en": "At Ener-Co, everyone is trained and supported: electrical authorisations, trade qualifications, technical specialisations. Real progression, whatever your starting point.",
+      "it": "In Ener-Co, ciascuno è formato e accompagnato : abilitazioni elettriche, qualifiche di mestiere, specializzazioni tecniche. Una vera progressione, da qualunque punto si parta."
+    },
+    {
+      "cle": "recrut.offer.5.t",
+      "fr": "Déplacements France et international",
+      "en": "Travel in France and internationally",
+      "it": "Trasferte in Francia e a livello internazionale"
+    },
+    {
+      "cle": "recrut.cta.eyebrow",
+      "fr": "Contact RH",
+      "en": "HR contact",
+      "it": "Contatto HR"
+    },
+    {
+      "cle": "recrut.cta.h2",
+      "fr": "Une question sur nos postes ou sur Ener-Co ?",
+      "en": "A question about our positions or Ener-Co?",
+      "it": "Una domanda sulle nostre posizioni o su Ener-Co ?"
+    },
+    {
+      "cle": "recrut.cta.p",
+      "fr": "L'équipe RH revient vers chaque candidat sous 7 jours ouvrés. Joignez un CV et quelques lignes sur ce que vous cherchez, technique, zone géographique, type de mission.",
+      "en": "The HR team gets back to each candidate within 7 working days. Attach a CV and a few lines about what you are looking for, technical scope, geographical zone, type of mission.",
+      "it": "Il team HR risponde a ogni candidato entro 7 giorni lavorativi. Allegate un CV e qualche riga su ciò che cercate, area tecnica, zona geografica, tipo di missione."
+    },
+    {
+      "cle": "recrut.cta.btn1",
+      "fr": "Écrire à l'équipe RH",
+      "en": "Write to the HR team",
+      "it": "Scrivere al team HR"
+    },
+    {
+      "cle": "recrut.cta.btn2",
+      "fr": "Découvrir nos métiers",
+      "en": "Discover our trades",
+      "it": "Scoprire i nostri mestieri"
+    },
+    {
+      "cle": "recrut.cta.label",
+      "fr": "Équipe RH Ener-Co",
+      "en": "Ener-Co HR team",
+      "it": "Team HR Ener-Co"
+    }
+  ]
+}

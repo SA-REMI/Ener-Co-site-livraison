@@ -1,0 +1,460 @@
+{
+  "textes": [
+    {
+      "cle": "real.hero.eyebrow",
+      "fr": "Réalisations",
+      "en": "Projects",
+      "it": "Progetti"
+    },
+    {
+      "cle": "real.hero.h1",
+      "fr": "Quelques chantiers parmi d'autres.",
+      "en": "A few projects among others.",
+      "it": "Alcuni cantieri tra tanti."
+    },
+    {
+      "cle": "real.hero.lede",
+      "fr": "Un aperçu d'opérations récentes publiées par Ener-Co. Nous intervenons chaque année sur d'autres chantiers non présentés ici, dans des environnements industriels variés en France, en Europe et à l'international. Vous trouverez ci-dessous trois cas détaillés avec photos chantier natives.",
+      "en": "A sample of recent operations published by Ener-Co. Every year we operate on other projects not shown here, in varied industrial environments across France, Europe and internationally. Below you will find three detailed cases with native site photos.",
+      "it": "Uno sguardo sulle operazioni recenti pubblicate da Ener-Co. Ogni anno interveniamo su altri cantieri non presentati qui, in ambienti industriali vari in Francia, in Europa e a livello internazionale. Di seguito tre casi dettagliati con foto di cantiere originali."
+    },
+    {
+      "cle": "real.lbl.client",
+      "fr": "Client",
+      "en": "Client",
+      "it": "Cliente"
+    },
+    {
+      "cle": "real.lbl.system",
+      "fr": "Système",
+      "en": "System",
+      "it": "Sistema"
+    },
+    {
+      "cle": "real.lbl.scope",
+      "fr": "Périmètre",
+      "en": "Scope",
+      "it": "Perimetro"
+    },
+    {
+      "cle": "real.lbl.ctx",
+      "fr": "Contexte",
+      "en": "Context",
+      "it": "Contesto"
+    },
+    {
+      "cle": "real.lbl.partner",
+      "fr": "Partenaire",
+      "en": "Partner",
+      "it": "Partner"
+    },
+    {
+      "cle": "real.lbl.line",
+      "fr": "Ligne",
+      "en": "Line",
+      "it": "Linea"
+    },
+    {
+      "cle": "real.lbl.works",
+      "fr": "Travaux",
+      "en": "Works",
+      "it": "Lavori"
+    },
+    {
+      "cle": "real.lbl.site",
+      "fr": "Site",
+      "en": "Site",
+      "it": "Sito"
+    },
+    {
+      "cle": "real.lbl.exec",
+      "fr": "Exécution",
+      "en": "Execution",
+      "it": "Esecuzione"
+    },
+    {
+      "cle": "real.lbl.equipment",
+      "fr": "Équipement",
+      "en": "Equipment",
+      "it": "Apparecchiatura"
+    },
+    {
+      "cle": "real.lbl.objective",
+      "fr": "Objectif",
+      "en": "Objective",
+      "it": "Obiettivo"
+    },
+    {
+      "cle": "real.lbl.reading",
+      "fr": "Lecture",
+      "en": "Reading",
+      "it": "Lettura"
+    },
+    {
+      "cle": "real.c1.eyebrow",
+      "fr": "Chantier publié · Beto-Bar IP68",
+      "en": "Published project · Beto-Bar IP68",
+      "it": "Cantiere pubblicato · Beto-Bar IP68"
+    },
+    {
+      "cle": "real.c1.h",
+      "fr": "Saint-Gaudens · ligne neuve Beto-Bar IP68 LB16EA",
+      "en": "Saint-Gaudens · new Beto-Bar IP68 LB16EA line",
+      "it": "Saint-Gaudens · nuova linea Beto-Bar IP68 LB16EA"
+    },
+    {
+      "cle": "real.c1.p",
+      "fr": "Installation d'une nouvelle ligne de gaine à barres basse tension Beto-Bar IP68 LB16EA sur le site Fibre Excellence de Saint-Gaudens, dans un environnement demandant précision, coordination et qualité de finition.",
+      "en": "Installation of a new Beto-Bar IP68 LB16EA low-voltage busway line at the Fibre Excellence site in Saint-Gaudens, in an environment demanding precision, coordination and finishing quality.",
+      "it": "Installazione di una nuova linea di condotto sbarre bassa tensione Beto-Bar IP68 LB16EA sul sito Fibre Excellence di Saint-Gaudens, in un ambiente che richiede precisione, coordinamento e qualità di finitura."
+    },
+    {
+      "cle": "real.c1.f1",
+      "fr": "Fibre Excellence · Saint-Gaudens",
+      "en": "Fibre Excellence · Saint-Gaudens",
+      "it": "Fibre Excellence · Saint-Gaudens"
+    },
+    {
+      "cle": "real.c1.f2",
+      "fr": "Eta-com",
+      "en": "Eta-com",
+      "it": "Eta-com"
+    },
+    {
+      "cle": "real.c1.f3",
+      "fr": "Supportage, raccordement et finition des jonctions",
+      "en": "Supporting, connection and junction finishing",
+      "it": "Supportaggio, collegamento e finitura delle giunzioni"
+    },
+    {
+      "cle": "real.c1.f4",
+      "fr": "Site industriel actif · coordination serrée",
+      "en": "Active industrial site · tight coordination",
+      "it": "Sito industriale attivo · coordinamento serrato"
+    },
+    {
+      "cle": "real.c2.eyebrow",
+      "fr": "Chantier publié · Dalkia / KiloAmps",
+      "en": "Published project · Dalkia / KiloAmps",
+      "it": "Cantiere pubblicato · Dalkia / KiloAmps"
+    },
+    {
+      "cle": "real.c2.h",
+      "fr": "Chaufferie gaz 2000 A · Est lyonnais",
+      "en": "2000 A gas boiler · East Lyon",
+      "it": "Caldaia gas 2000 A · Est Lione"
+    },
+    {
+      "cle": "real.c2.p",
+      "fr": "Ligne de gaine à barres 2000 A triphasée aluminium d'environ 5 ml, réalisée pour l'alimentation principale d'une chaufferie gaz dans l'Est lyonnais, avec exigence de fiabilité et de continuité de service.",
+      "en": "2000 A three-phase aluminium busway line of around 5 m, built for the main supply of a gas boiler plant in East Lyon, with a demand for reliability and service continuity.",
+      "it": "Linea di condotto sbarre 2000 A trifase in alluminio di circa 5 m, realizzata per l'alimentazione principale di una caldaia a gas nell'Est di Lione, con esigenza di affidabilità e continuità di servizio."
+    },
+    {
+      "cle": "real.c2.f1",
+      "fr": "Dalkia",
+      "en": "Dalkia",
+      "it": "Dalkia"
+    },
+    {
+      "cle": "real.c2.f2",
+      "fr": "KiloAmps",
+      "en": "KiloAmps",
+      "it": "KiloAmps"
+    },
+    {
+      "cle": "real.c2.f3",
+      "fr": "2000 A triphasée aluminium · ~5 ml",
+      "en": "2000 A three-phase aluminium · ~5 m",
+      "it": "2000 A trifase in alluminio · ~5 m"
+    },
+    {
+      "cle": "real.c2.f4",
+      "fr": "Implantation, supportage, raccordements puissance et mise sous tension",
+      "en": "Layout, supporting, power connections and energisation",
+      "it": "Posa, supportaggio, collegamenti di potenza e messa in tensione"
+    },
+    {
+      "cle": "real.c3.eyebrow",
+      "fr": "Chantier publié · Eta-com",
+      "en": "Published project · Eta-com",
+      "it": "Cantiere pubblicato · Eta-com"
+    },
+    {
+      "cle": "real.c3.h",
+      "fr": "Fibre Excellence · installation Eta-com",
+      "en": "Fibre Excellence · Eta-com installation",
+      "it": "Fibre Excellence · installazione Eta-com"
+    },
+    {
+      "cle": "real.c3.p",
+      "fr": "Intervention sur site industriel actif Fibre Excellence avec mise en place, supportage et finition des jonctions dans une logique de coordination serrée et de tenue d'exécution, de la pose à la livraison.",
+      "en": "Intervention on the active industrial site Fibre Excellence with installation, supporting and finishing of junctions, with tight coordination and steady execution from installation to delivery.",
+      "it": "Intervento su sito industriale attivo Fibre Excellence con posa, supportaggio e finitura delle giunzioni, con coordinamento serrato e tenuta di esecuzione dalla posa alla consegna."
+    },
+    {
+      "cle": "real.c3.f1",
+      "fr": "Fibre Excellence",
+      "en": "Fibre Excellence",
+      "it": "Fibre Excellence"
+    },
+    {
+      "cle": "real.c3.f2",
+      "fr": "Eta-com",
+      "en": "Eta-com",
+      "it": "Eta-com"
+    },
+    {
+      "cle": "real.c3.f3",
+      "fr": "Environnement industriel actif · coordination serrée",
+      "en": "Active industrial environment · tight coordination",
+      "it": "Ambiente industriale attivo · coordinamento serrato"
+    },
+    {
+      "cle": "real.c3.f4",
+      "fr": "Supportage et finition des jonctions livrés dans les temps",
+      "en": "Supporting and junction finishing delivered on time",
+      "it": "Supportaggio e finitura delle giunzioni consegnati nei tempi"
+    },
+    {
+      "cle": "real.c4.eyebrow",
+      "fr": "Installation poste HTA",
+      "en": "MV substation installation",
+      "it": "Installazione cabina MT"
+    },
+    {
+      "cle": "real.c4.h",
+      "fr": "Poste HTA · cellules Schneider Electric.",
+      "en": "MV substation · Schneider Electric switchgear.",
+      "it": "Cabina MT · celle Schneider Electric."
+    },
+    {
+      "cle": "real.c4.p",
+      "fr": "Mise en place d'un poste HTA en local technique, avec cellules Schneider Electric, remontées de câbles, traversées en caniveau et préparation des raccordements de puissance et de contrôle. L'ensemble met en avant la propreté d'implantation et la clarté des interfaces avant fermeture définitive.",
+      "en": "Installation of an MV substation in a technical room, with Schneider Electric switchgear, cable risers, trench crossings and preparation of power and control connections. The whole highlights clean layout and clarity of interfaces before final closing.",
+      "it": "Messa in opera di una cabina MT in locale tecnico, con celle Schneider Electric, risalite di cavi, attraversamenti in canaletta e preparazione dei collegamenti di potenza e di controllo. L'insieme evidenzia la pulizia di posa e la chiarezza delle interfacce prima della chiusura definitiva."
+    },
+    {
+      "cle": "real.c4.f1",
+      "fr": "Poste HTA avec cellules Schneider Electric",
+      "en": "MV substation with Schneider Electric switchgear",
+      "it": "Cabina MT con celle Schneider Electric"
+    },
+    {
+      "cle": "real.c4.f2",
+      "fr": "Vue d'ensemble, cheminements, réservations et préparation des arrivées",
+      "en": "Overall view, routing, reservations and preparation of incoming connections",
+      "it": "Vista d'insieme, percorsi, riservazioni e preparazione delle arrivate"
+    },
+    {
+      "cle": "real.c4.f3",
+      "fr": "Local béton avec caniveaux techniques et remontées verticales protégées",
+      "en": "Concrete room with technical trenches and protected vertical risers",
+      "it": "Locale in cemento con canalette tecniche e risalite verticali protette"
+    },
+    {
+      "cle": "real.c4.f4",
+      "fr": "Montrer une installation propre, prête pour les raccordements et finitions finales",
+      "en": "Show a clean installation, ready for final connections and finishing",
+      "it": "Mostrare un'installazione pulita, pronta per i collegamenti e le finiture finali"
+    },
+    {
+      "cle": "real.c4.g1.h",
+      "fr": "Vue d'ensemble",
+      "en": "Overall view",
+      "it": "Vista d'insieme"
+    },
+    {
+      "cle": "real.c4.g1.p",
+      "fr": "Implantation générale des cellules HTA sur structure, avec lecture du caniveau technique et des câbles en attente sous les équipements.",
+      "en": "General layout of the MV switchgear on structure, with reading of the technical trench and cables waiting under the equipment.",
+      "it": "Posa generale delle celle MT su struttura, con lettura della canaletta tecnica e dei cavi in attesa sotto le apparecchiature."
+    },
+    {
+      "cle": "real.c4.g2.h",
+      "fr": "Cheminement mural",
+      "en": "Wall-mounted routing",
+      "it": "Percorso a parete"
+    },
+    {
+      "cle": "real.c4.g2.p",
+      "fr": "Passage des liaisons auxiliaires en partie haute, avec coffret mural et pose soignée des câbles sur cheminement métallique.",
+      "en": "Upper routing of auxiliary connections, with wall cabinet and careful installation of cables on metallic trays.",
+      "it": "Passaggio dei collegamenti ausiliari in parte alta, con cofanetto a parete e posa curata dei cavi su percorso metallico."
+    },
+    {
+      "cle": "real.c4.g3.h",
+      "fr": "Façade complète",
+      "en": "Full façade",
+      "it": "Facciata completa"
+    },
+    {
+      "cle": "real.c4.g3.p",
+      "fr": "Vue frontale de l'alignement des cellules permettant d'identifier l'organisation du poste et la répartition des différents compartiments.",
+      "en": "Front view of the aligned switchgear units, making it possible to identify the substation's organisation and the distribution of compartments.",
+      "it": "Vista frontale dell'allineamento delle celle che permette di identificare l'organizzazione della cabina e la ripartizione dei diversi scomparti."
+    },
+    {
+      "cle": "real.c4.g4.h",
+      "fr": "Remontées de câbles",
+      "en": "Cable risers",
+      "it": "Risalite di cavi"
+    },
+    {
+      "cle": "real.c4.g4.p",
+      "fr": "Courbure et guidage des câbles de puissance vers le haut du local, avec maintien régulier et cheminement lisible jusqu'aux points d'entrée.",
+      "en": "Bending and guiding of power cables towards the upper part of the room, with steady support and a readable path up to the entry points.",
+      "it": "Curvatura e guida dei cavi di potenza verso l'alto del locale, con mantenimento regolare e percorso leggibile fino ai punti di ingresso."
+    },
+    {
+      "cle": "real.c4.g5.h",
+      "fr": "Caniveau technique",
+      "en": "Technical trench",
+      "it": "Canaletta tecnica"
+    },
+    {
+      "cle": "real.c4.g5.p",
+      "fr": "Lecture des traversées sous cellules, avec réservations accessibles pour les liaisons de puissance et les départs en attente de raccordement.",
+      "en": "Reading of the crossings under the switchgear, with accessible reservations for power connections and outgoing feeders awaiting connection.",
+      "it": "Lettura degli attraversamenti sotto le celle, con riservazioni accessibili per i collegamenti di potenza e le partenze in attesa di collegamento."
+    },
+    {
+      "cle": "real.c4.g6.h",
+      "fr": "Vue latérale",
+      "en": "Side view",
+      "it": "Vista laterale"
+    },
+    {
+      "cle": "real.c4.g6.p",
+      "fr": "Perspective complémentaire sur les cellules HTA, utile pour montrer l'implantation, les accès de maintenance et la préparation des interfaces câbles.",
+      "en": "Additional perspective on the MV switchgear, useful to show the layout, maintenance access and preparation of cable interfaces.",
+      "it": "Prospettiva complementare sulle celle MT, utile per mostrare la posa, gli accessi di manutenzione e la preparazione delle interfacce cavi."
+    },
+    {
+      "cle": "real.c5.eyebrow",
+      "fr": "Installation poste HTA · Panattoni",
+      "en": "MV substation installation · Panattoni",
+      "it": "Installazione cabina MT · Panattoni"
+    },
+    {
+      "cle": "real.c5.h",
+      "fr": "Poste HTA · Panattoni, Colombier-Saugnieu.",
+      "en": "MV substation · Panattoni, Colombier-Saugnieu.",
+      "it": "Cabina MT · Panattoni, Colombier-Saugnieu."
+    },
+    {
+      "cle": "real.c5.p",
+      "fr": "Installation d'un poste HTA sur le site Panattoni de Colombier-Saugnieu : mise en place des équipements, préparation des cheminements techniques, organisation des raccordements et traitement des interfaces en local dédié. L'ensemble met en avant une exécution propre, une lecture claire de l'installation et une intégration rigoureuse des liaisons de puissance et des auxiliaires.",
+      "en": "Installation of an MV substation on the Panattoni site in Colombier-Saugnieu: equipment setup, preparation of technical routings, organisation of connections and careful treatment of interfaces in a dedicated technical room. The project highlights clean execution, a clear reading of the installation and rigorous integration of power and auxiliary links.",
+      "it": "Installazione di una cabina MT presso il sito Panattoni di Colombier-Saugnieu: posa delle apparecchiature, preparazione dei percorsi tecnici, organizzazione dei collegamenti e trattamento accurato delle interfacce in un locale tecnico dedicato. L'intervento mette in evidenza un'esecuzione pulita, una lettura chiara dell'installazione e un'integrazione rigorosa dei collegamenti di potenza e ausiliari."
+    },
+    {
+      "cle": "real.c5.f1",
+      "fr": "Panattoni · Colombier-Saugnieu",
+      "en": "Panattoni · Colombier-Saugnieu",
+      "it": "Panattoni · Colombier-Saugnieu"
+    },
+    {
+      "cle": "real.c5.f2",
+      "fr": "Implantation du poste HTA, cheminements, raccordements et interfaces",
+      "en": "MV substation layout, routings, connections and interfaces",
+      "it": "Posa della cabina MT, percorsi, collegamenti e interfacce"
+    },
+    {
+      "cle": "real.c5.f3",
+      "fr": "Local technique dédié · intégration et lisibilité des équipements",
+      "en": "Dedicated technical room · integration and readability of equipment",
+      "it": "Locale tecnico dedicato · integrazione e leggibilità delle apparecchiature"
+    },
+    {
+      "cle": "real.c5.f4",
+      "fr": "Qualité de pose, clarté des cheminements et soin des détails",
+      "en": "Quality of installation, clarity of routings and attention to detail",
+      "it": "Qualità della posa, chiarezza dei percorsi e cura dei dettagli"
+    },
+    {
+      "cle": "real.li.eyebrow",
+      "fr": "Publications LinkedIn",
+      "en": "LinkedIn posts",
+      "it": "Pubblicazioni LinkedIn"
+    },
+    {
+      "cle": "real.li.h2",
+      "fr": "Retrouvez nos chantiers en publication.",
+      "en": "Find our projects in our posts.",
+      "it": "Ritrovate i nostri cantieri nelle pubblicazioni."
+    },
+    {
+      "cle": "real.li.intro",
+      "fr": "Chaque opération significative fait l'objet d'une publication illustrée sur la page LinkedIn Ener-Co. Deux publications récentes liées aux chantiers présentés ci-dessus.",
+      "en": "Every significant operation is the subject of an illustrated post on Ener-Co's LinkedIn page. Two recent posts related to the projects shown above.",
+      "it": "Ogni operazione significativa è oggetto di una pubblicazione illustrata sulla pagina LinkedIn di Ener-Co. Due pubblicazioni recenti legate ai cantieri presentati sopra."
+    },
+    {
+      "cle": "real.li.p1.label",
+      "fr": "Publication · Dalkia / KiloAmps",
+      "en": "Post · Dalkia / KiloAmps",
+      "it": "Pubblicazione · Dalkia / KiloAmps"
+    },
+    {
+      "cle": "real.li.p1.title",
+      "fr": "Chaufferie gaz 2000 A · Est lyonnais",
+      "en": "2000 A gas boiler · East Lyon",
+      "it": "Caldaia gas 2000 A · Est Lione"
+    },
+    {
+      "cle": "real.li.p2.label",
+      "fr": "Publication · Fibre Excellence",
+      "en": "Post · Fibre Excellence",
+      "it": "Pubblicazione · Fibre Excellence"
+    },
+    {
+      "cle": "real.li.p2.title",
+      "fr": "Installation Eta-com · site industriel actif",
+      "en": "Eta-com installation · active industrial site",
+      "it": "Installazione Eta-com · sito industriale attivo"
+    },
+    {
+      "cle": "real.li.link",
+      "fr": "Voir sur LinkedIn →",
+      "en": "View on LinkedIn →",
+      "it": "Vedere su LinkedIn →"
+    },
+    {
+      "cle": "real.cta.eyebrow",
+      "fr": "Contact",
+      "en": "Contact",
+      "it": "Contatti"
+    },
+    {
+      "cle": "real.cta.h2",
+      "fr": "Un chantier similaire à nous confier ?",
+      "en": "A similar project to entrust us with?",
+      "it": "Un cantiere simile da affidarci ?"
+    },
+    {
+      "cle": "real.cta.p",
+      "fr": "Alimentation principale, raccordement de puissance, extension de site ou remplacement de ligne : échangeons sur votre périmètre, vos contraintes d'exploitation et vos délais.",
+      "en": "Main supply, power connection, site extension or line replacement: let's discuss your scope, your operational constraints and your deadlines.",
+      "it": "Alimentazione principale, collegamento di potenza, ampliamento di sito o sostituzione di linea: parliamo del vostro perimetro, dei vostri vincoli di esercizio e delle vostre scadenze."
+    },
+    {
+      "cle": "real.cta.btn1",
+      "fr": "Contactez-nous",
+      "en": "Contact us",
+      "it": "Contattaci"
+    },
+    {
+      "cle": "real.cta.btn2",
+      "fr": "Voir le périmètre",
+      "en": "See the scope",
+      "it": "Vedere il perimetro"
+    },
+    {
+      "cle": "real.cta.label",
+      "fr": "Direction commerciale",
+      "en": "Sales management",
+      "it": "Direzione commerciale"
+    }
+  ]
+}
