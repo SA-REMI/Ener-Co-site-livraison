@@ -112,11 +112,13 @@
       <div class="container">
         <div class="contact-grid">
 
-          <!-- FORMULAIRE · Netlify Forms (detection au deploiement via data-netlify).
-               Le champ form-name est obligatoire pour que Netlify route la soumission.
-               Honeypot : champ "website" cache, Netlify rejette toute soumission qui le remplit. -->
-          <form class="contact-form" name="contact" method="POST" action="/merci.html" data-netlify="true" netlify-honeypot="website" aria-label="Formulaire de contact">
-            <input type="hidden" name="form-name" value="contact">
+          <!-- FORMULAIRE · Web3Forms (envoi AJAX vers api.web3forms.com).
+               access_key = cle d'acces du compte Web3Forms.
+               Anti-spam : honeypot "botcheck" (case cachee).
+               Le script en bas de page intercepte l'envoi et redirige vers
+               /merci.html en cas de succes (chemin relatif, valable sur tout domaine). -->
+          <form class="contact-form" id="contact-form" name="contact" method="POST" action="https://api.web3forms.com/submit" aria-label="Formulaire de contact">
+            <input type="hidden" name="access_key" value="8e2e7e71-165c-4e62-9c5b-a55a4f82b746">
             <header>
               <span class="eyebrow" data-i18n="contact.form.eyebrow">Demande d'étude</span>
               <h2 style="margin-top:14px; margin-bottom:8px; font-size:1.5rem;" data-i18n="contact.form.h2">Décrivez votre besoin.</h2>
@@ -124,10 +126,8 @@
               <p id="form-erreur" class="form-erreur" hidden role="alert"></p>
             </header>
 
-            <!-- Anti-spam : honeypot cache (gere nativement par Netlify) -->
-            <div class="hp-field" aria-hidden="true">
-              <label>Ne pas remplir ce champ <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
-            </div>
+            <!-- Anti-spam Web3Forms : si cette case (cachee) est cochee, la soumission est rejetee -->
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
 
             <div class="contact-form__row">
               <div class="field">
@@ -286,9 +286,43 @@
   </footer>
 
   <script src="assets/site.js"></script>
-  <!-- Le formulaire est gere par Netlify Forms : validation navigateur (required),
-       honeypot anti-spam natif, redirection vers /merci.html apres envoi.
-       Plus aucun script de traitement necessaire cote page. -->
+
+  <!-- Envoi du formulaire de contact via Web3Forms, en AJAX, puis redirection
+       vers /merci.html (chemin relatif : valable sur ener-co.netlify.app comme
+       sur ener-co.fr). En cas d'echec, message visible et bouton reactive. -->
+  <script>
+    (function () {
+      var form = document.getElementById("contact-form");
+      if (!form) return;
+      var erreur = document.getElementById("form-erreur");
+      var bouton = form.querySelector('button[type="submit"]');
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (erreur) { erreur.hidden = true; erreur.textContent = ""; }
+        if (bouton) bouton.disabled = true;
+        fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: { "Accept": "application/json" },
+          body: new FormData(form)
+        })
+          .then(function (r) { return r.json().then(function (data) { return { ok: r.ok, data: data }; }); })
+          .then(function (res) {
+            if (res.ok && res.data && res.data.success) {
+              window.location.href = "/merci.html";
+            } else {
+              throw new Error((res.data && res.data.message) || "Echec de l'envoi");
+            }
+          })
+          .catch(function () {
+            if (bouton) bouton.disabled = false;
+            if (erreur) {
+              erreur.hidden = false;
+              erreur.textContent = "L'envoi a echoue. Verifiez votre connexion et reessayez, ou contactez-nous directement par email.";
+            }
+          });
+      });
+    })();
+  </script>
 
 </body>
 </html>
