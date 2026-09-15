@@ -3310,7 +3310,9 @@ p { font-size: 1rem; color: var(--muted); }
 /* -------- LINKEDIN POSTS GRID -------- */
 .linkedin-posts {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* Adaptatif au nombre de cartes : 2 cartes = 2 colonnes, 3 = 3, etc.
+     Evite une carte orpheline sur une deuxieme ligne a chaque ajout. */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 18px;
 }
 .linkedin-post {

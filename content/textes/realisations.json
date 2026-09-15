@@ -14,9 +14,9 @@
     },
     {
       "cle": "real.hero.lede",
-      "fr": "Un aperçu d'opérations récentes publiées par Ener-Co. Nous intervenons chaque année sur d'autres chantiers non présentés ici, dans des environnements industriels variés en France, en Europe et à l'international. Vous trouverez ci-dessous trois cas détaillés avec photos chantier natives.",
-      "en": "A sample of recent operations published by Ener-Co. Every year we operate on other projects not shown here, in varied industrial environments across France, Europe and internationally. Below you will find three detailed cases with native site photos.",
-      "it": "Uno sguardo sulle operazioni recenti pubblicate da Ener-Co. Ogni anno interveniamo su altri cantieri non presentati qui, in ambienti industriali vari in Francia, in Europa e a livello internazionale. Di seguito tre casi dettagliati con foto di cantiere originali."
+      "fr": "Un aperçu d'opérations récentes publiées par Ener-Co. Nous intervenons chaque année sur d'autres chantiers non présentés ici, dans des environnements industriels variés en France, en Europe et à l'international. Vous trouverez ci-dessous plusieurs cas détaillés avec photos chantier natives.",
+      "en": "A sample of recent operations published by Ener-Co. Every year we operate on other projects not shown here, in varied industrial environments across France, Europe and internationally. Below you will find several detailed cases with native site photos.",
+      "it": "Uno sguardo sulle operazioni recenti pubblicate da Ener-Co. Ogni anno interveniamo su altri cantieri non presentati qui, in ambienti industriali vari in Francia, in Europa e a livello internazionale. Di seguito diversi casi dettagliati con foto di cantiere originali."
     },
     {
       "cle": "real.lbl.client",
@@ -373,6 +373,48 @@
       "it": "Qualità della posa, chiarezza dei percorsi e cura dei dettagli"
     },
     {
+      "cle": "real.c6.eyebrow",
+      "fr": "Chantier publié · Sidérurgie / KiloAmps",
+      "en": "Published project · Steel industry / KiloAmps",
+      "it": "Cantiere pubblicato · Siderurgia / KiloAmps"
+    },
+    {
+      "cle": "real.c6.h",
+      "fr": "Remplacement de tubes cuivre · site sidérurgique",
+      "en": "Copper tube replacement · steelworks site",
+      "it": "Sostituzione di tubi in rame · sito siderurgico"
+    },
+    {
+      "cle": "real.c6.p",
+      "fr": "Intervention estivale sur un grand site sidérurgique français : remplacement de jeux de tubes cuivre par une équipe de six salariés Ener-Co, dans un créneau d'arrêt serré. Travail le week-end, ancrage sur structure béton et manutention de pièces volumineuses en espace confiné, avec une exigence constante de sécurité et de qualité d'exécution.",
+      "en": "Summer intervention at a major French steelworks: replacement of copper tube sets by a team of six Ener-Co employees, within a tight shutdown window. Weekend work, anchoring on concrete structures and handling of bulky parts in a confined space, with a constant focus on safety and quality of execution.",
+      "it": "Intervento estivo in un grande sito siderurgico francese: sostituzione di gruppi di tubi in rame da parte di una squadra di sei dipendenti Ener-Co, in una finestra di fermata ristretta. Lavoro nel fine settimana, ancoraggio su struttura in calcestruzzo e movimentazione di pezzi voluminosi in spazio confinato, con un'attenzione costante alla sicurezza e alla qualità di esecuzione."
+    },
+    {
+      "cle": "real.c6.f1",
+      "fr": "Grand site sidérurgique français",
+      "en": "Major French steelworks",
+      "it": "Grande sito siderurgico francese"
+    },
+    {
+      "cle": "real.c6.f2",
+      "fr": "KiloAmps",
+      "en": "KiloAmps",
+      "it": "KiloAmps"
+    },
+    {
+      "cle": "real.c6.f3",
+      "fr": "Remplacement de jeux de tubes cuivre",
+      "en": "Replacement of copper tube sets",
+      "it": "Sostituzione di gruppi di tubi in rame"
+    },
+    {
+      "cle": "real.c6.f4",
+      "fr": "Arrêt serré · week-end · ancrage béton · manutention en espace confiné",
+      "en": "Tight shutdown · weekend · concrete anchoring · handling in confined space",
+      "it": "Fermata ristretta · fine settimana · ancoraggio su calcestruzzo · movimentazione in spazio confinato"
+    },
+    {
       "cle": "real.li.eyebrow",
       "fr": "Publications LinkedIn",
       "en": "LinkedIn posts",
@@ -386,9 +428,9 @@
     },
     {
       "cle": "real.li.intro",
-      "fr": "Chaque opération significative fait l'objet d'une publication illustrée sur la page LinkedIn Ener-Co. Deux publications récentes liées aux chantiers présentés ci-dessus.",
-      "en": "Every significant operation is the subject of an illustrated post on Ener-Co's LinkedIn page. Two recent posts related to the projects shown above.",
-      "it": "Ogni operazione significativa è oggetto di una pubblicazione illustrata sulla pagina LinkedIn di Ener-Co. Due pubblicazioni recenti legate ai cantieri presentati sopra."
+      "fr": "Chaque opération significative fait l'objet d'une publication illustrée sur la page LinkedIn Ener-Co. Nos publications récentes liées aux chantiers présentés ci-dessus.",
+      "en": "Every significant operation is the subject of an illustrated post on Ener-Co's LinkedIn page. Our recent posts related to the projects shown above.",
+      "it": "Ogni operazione significativa è oggetto di una pubblicazione illustrata sulla pagina LinkedIn di Ener-Co. Le nostre pubblicazioni recenti legate ai cantieri presentati sopra."
     },
     {
       "cle": "real.li.p1.label",
@@ -413,6 +455,18 @@
       "fr": "Installation Eta-com · site industriel actif",
       "en": "Eta-com installation · active industrial site",
       "it": "Installazione Eta-com · sito industriale attivo"
+    },
+    {
+      "cle": "real.li.p3.label",
+      "fr": "Publication · KiloAmps",
+      "en": "Post · KiloAmps",
+      "it": "Pubblicazione · KiloAmps"
+    },
+    {
+      "cle": "real.li.p3.title",
+      "fr": "Remplacement de tubes cuivre · site sidérurgique",
+      "en": "Copper tube replacement · steelworks site",
+      "it": "Sostituzione di tubi in rame · sito siderurgico"
     },
     {
       "cle": "real.li.link",
