@@ -55,7 +55,7 @@ admin/index.html, admin/config.yml   la console d'édition
 netlify.toml                   en-têtes de sécurité, cache, redirections
 .htaccess                      équivalent Apache, conservé si le site devait être hébergé ailleurs
 legacy/contact.php             ancien traitement PHP du formulaire, non servi sur Netlify
-GUIDE-CONSOLE.html             tutoriel des collègues (publié, non indexé)
+docs/GUIDE-CONSOLE.html        source du tutoriel des collègues (non publié ; diffusé en PDF sur le serveur interne)
 ETAT_DES_LIEUX_SITE.md         analyse détaillée du site et scénarios d'hébergement
 ```
 
@@ -207,7 +207,7 @@ console.log('absentes de la console :', [...used].filter(k => !inJson.has(k)).jo
 
 - Site : `https://ener-co.netlify.app`
 - Console : `https://ener-co.netlify.app/admin/`
-- Tutoriel des collègues : `https://ener-co.netlify.app/GUIDE-CONSOLE.html`
+- Tutoriel des collègues : PDF sur le serveur interne (source : `docs/GUIDE-CONSOLE.html`, à regénérer sans y laisser les identifiants)
 - Dépôt : `https://github.com/SA-REMI/Ener-Co-site-livraison`
 - Netlify : `https://app.netlify.com`, projet `ener-co`
 - Decap CMS (documentation de la console) : `https://decapcms.org/docs/`
