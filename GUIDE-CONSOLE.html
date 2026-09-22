@@ -19,8 +19,8 @@
 
   /* ---------- En-tete ---------- */
   .cover {
-    background: linear-gradient(135deg, #3D4452 0%, #2A3140 100%);
-    color: #fff;
+    background: #fff; border-bottom: 6px solid #F26419;
+    color: #1E2530;
     padding: 54px 22px 48px;
     text-align: center;
   }
@@ -28,8 +28,8 @@
   .cover-logo .o { color: #F26419; }
   .cover-logo .c { color: #1FB85F; }
   .cover h1 { font-size: 30px; margin: 18px 0 8px; font-weight: 800; }
-  .cover p { font-size: 17px; opacity: .85; margin: 0 auto; max-width: 560px; }
-  .cover .sub { margin-top: 18px; font-size: 14px; opacity: .7; }
+  .cover p { font-size: 17px; color: #5A6473; margin: 0 auto; max-width: 560px; }
+  .cover .sub { margin-top: 18px; font-size: 14px; color: #8A93A0; }
 
   /* ---------- Blocs ---------- */
   h2 {
@@ -66,7 +66,7 @@
   .step { display: flex; gap: 16px; margin: 18px 0; align-items: flex-start; }
   .step .badge {
     flex: 0 0 30px; width: 30px; height: 30px; border-radius: 50%;
-    background: #3D4452; color: #fff; font-weight: 700; font-size: 15px;
+    background: #F26419; color: #fff; font-weight: 700; font-size: 15px;
     display: inline-flex; align-items: center; justify-content: center; margin-top: 2px;
   }
   .step .body { flex: 1; }
@@ -115,7 +115,7 @@
   .field { margin:14px 0; }
   .field label { display:block; font-weight:700; color:#3D4452; font-size:13.5px; margin-bottom:5px; }
   .field .flag { font-size:12px; color:#fff; border-radius:5px; padding:1px 7px; margin-right:7px; font-weight:700; }
-  .flag-fr{background:#3D4452}.flag-en{background:#2e5ba1}.flag-it{background:#0a8a46}
+  .flag-fr{background:#F26419}.flag-en{background:#2e5ba1}.flag-it{background:#0a8a46}
   .field .inp {
     border:1px solid #CfD5DC; border-radius:8px; padding:9px 12px; background:#fff; color:#1E2530;
     font-size:14px;
@@ -170,12 +170,12 @@
 <div class="page">
 
   <style>
-    .part { margin: 56px 0 6px; padding: 14px 18px; border-radius: 12px; background: #3D4452; color: #fff; font-size: 15px; font-weight: 800; letter-spacing: .3px; text-transform: uppercase; }
-    .part.admin { background: #0a8a46; }
-    .part small { display:block; font-weight: 500; text-transform: none; letter-spacing: 0; opacity: .85; margin-top: 3px; font-size: 14px; }
+    .part { margin: 56px 0 6px; padding: 14px 18px; border-radius: 12px; background: #FFF3E6; color: #1E2530; border-left: 6px solid #F26419; font-size: 15px; font-weight: 800; letter-spacing: .3px; text-transform: uppercase; }
+    .part.admin { background: #E7F7EE; border-left-color: #0a8a46; }
+    .part small { display:block; font-weight: 500; text-transform: none; letter-spacing: 0; color: #5A6473; margin-top: 3px; font-size: 14px; }
     .ntl { background:#fff; }
-    .ntl-top { background:#0E1E25; color:#fff; padding:10px 16px; font-weight:700; font-size:13.5px; display:flex; gap:18px; }
-    .ntl-top span { opacity:.75; font-weight:500; }
+    .ntl-top { background:#EEF1F4; color:#1E2530; border-bottom:1px solid #DCE1E7; padding:10px 16px; font-weight:700; font-size:13.5px; display:flex; gap:18px; }
+    .ntl-top span { color:#5A6473; font-weight:500; }
     .ntl-side { flex:0 0 200px; background:#F6F8FA; border-right:1px solid #E2E6EB; padding:14px 12px; font-size:13.5px; }
     .ntl-side div { padding:6px 10px; border-radius:7px; color:#3D4452; }
     .ntl-side div.act { background:#E7F7EE; color:#0a6e3a; font-weight:700; }
@@ -226,7 +226,7 @@
     <div style="padding:46px 20px; text-align:center; background:#F6F8FA;">
       <div style="font-weight:800; font-size:20px; color:#3D4452; margin-bottom:6px;">Ener<span style="color:#F26419">-</span>Co</div>
       <div style="color:#5A6473; margin-bottom:22px;">Espace d'édition</div>
-      <button style="background:#3D4452;color:#fff;border:none;border-radius:9px;padding:12px 26px;font-size:15px;font-weight:700;">Se connecter avec Netlify Identity</button>
+      <button style="background:#F26419;color:#fff;border:none;border-radius:9px;padding:12px 26px;font-size:15px;font-weight:700;">Se connecter avec Netlify Identity</button>
     </div>
   </div>
   <div class="caption">L'écran d'accueil de la console.</div>
@@ -235,8 +235,13 @@
   <div class="step"><span class="badge">2</span><div class="body">Cliquez sur <b>« Se connecter »</b>, saisissez votre <b>email</b> et votre <b>mot de passe</b>.</div></div>
   <div class="step"><span class="badge">3</span><div class="body">La console s'ouvre. Vous y êtes.</div></div>
 
+  <div class="note ok">
+    <b>Compte commun Ener-Co.</b>
+    Un compte partagé existe pour l'équipe. Son identifiant et son mot de passe ne figurent pas dans ce document : ils sont sur la <b>fiche d'accès</b> remise séparément par la direction. Ne les recopiez ni dans un email ni dans un document partagé.
+  </div>
+
   <div class="note info">
-    <b>Première fois ? Vous avez reçu un email d'invitation.</b>
+    <b>Compte personnel ? Vous avez reçu un email d'invitation.</b>
     Ouvrez-le, cliquez sur « Accept the invite » et choisissez votre mot de passe. Vous êtes alors redirigé vers la console. Si vous oubliez ce mot de passe plus tard, cliquez « Forgot password ? » sur l'écran de connexion : un email vous permet d'en remettre un.
   </div>
 
@@ -572,7 +577,7 @@
   <h2 id="c14"><span class="num" style="background:#0a8a46">14</span> Bonnes pratiques d'administration</h2>
 
   <div class="card">
-    <div class="annot"><span class="pin" style="background:#0a8a46">✓</span><div><b>Un compte par personne</b>, avec son email professionnel. Jamais de compte partagé « communication@… » : on doit pouvoir savoir qui a publié quoi.</div></div>
+    <div class="annot"><span class="pin" style="background:#0a8a46">✓</span><div><b>Un compte par personne</b> reste la règle saine : on sait qui a publié quoi. Un compte commun existe par commodité ; si vous le gardez, changez son mot de passe à chaque départ d'un collègue qui le connaissait, et ne le diffusez que par la fiche d'accès.</div></div>
     <div class="annot"><span class="pin" style="background:#0a8a46">✓</span><div><b>Retirez les accès le jour du départ</b> d'un collègue, en même temps que sa messagerie.</div></div>
     <div class="annot"><span class="pin" style="background:#0a8a46">✓</span><div><b>Faites un tour de la liste Identity deux fois par an</b> : chaque compte doit correspondre à quelqu'un qui a encore besoin d'éditer le site.</div></div>
     <div class="annot"><span class="pin" style="background:#0a8a46">✓</span><div><b>Le compte Netlify lui-même est la clé de tout.</b> Gardez ses identifiants en lieu sûr, et assurez-vous qu'une seconde personne de confiance sait où ils sont.</div></div>
