@@ -1,0 +1,172 @@
+{
+  "textes": [
+    {
+      "cle": "legal.seo.title",
+      "fr": "Mentions légales | Ener-Co",
+      "en": "Legal notice | Ener-Co",
+      "it": "Note legali | Ener-Co"
+    },
+    {
+      "cle": "legal.seo.description",
+      "fr": "Mentions légales du site ener-co.fr, éditeur, hébergeur, propriété intellectuelle, responsable de la publication.",
+      "en": "Legal notice for ener-co.fr: publisher, hosting provider, intellectual property, publication manager.",
+      "it": "Note legali del sito ener-co.fr: editore, hosting, proprietà intellettuale, responsabile della pubblicazione."
+    },
+    {
+      "cle": "legal.b01",
+      "fr": "Mentions légales",
+      "en": "Mentions légales",
+      "it": "Mentions légales"
+    },
+    {
+      "cle": "legal.b02",
+      "fr": "Informations légales",
+      "en": "Informations légales",
+      "it": "Informations légales"
+    },
+    {
+      "cle": "legal.b03",
+      "fr": "Mentions légales.",
+      "en": "Mentions légales.",
+      "it": "Mentions légales."
+    },
+    {
+      "cle": "legal.b04",
+      "fr": "1. Éditeur du site",
+      "en": "1. Éditeur du site",
+      "it": "1. Éditeur du site"
+    },
+    {
+      "cle": "legal.b05",
+      "fr": "2. Hébergeur du site",
+      "en": "2. Hébergeur du site",
+      "it": "2. Hébergeur du site"
+    },
+    {
+      "cle": "legal.b06",
+      "fr": "3. Propriété intellectuelle",
+      "en": "3. Propriété intellectuelle",
+      "it": "3. Propriété intellectuelle"
+    },
+    {
+      "cle": "legal.b07",
+      "fr": "4. Données personnelles",
+      "en": "4. Données personnelles",
+      "it": "4. Données personnelles"
+    },
+    {
+      "cle": "legal.b08",
+      "fr": "5. Cookies",
+      "en": "5. Cookies",
+      "it": "5. Cookies"
+    },
+    {
+      "cle": "legal.b09",
+      "fr": "6. Liens externes",
+      "en": "6. Liens externes",
+      "it": "6. Liens externes"
+    },
+    {
+      "cle": "legal.b10",
+      "fr": "7. Loi applicable et juridiction",
+      "en": "7. Loi applicable et juridiction",
+      "it": "7. Loi applicable et juridiction"
+    },
+    {
+      "cle": "legal.b11",
+      "fr": "8. Contact",
+      "en": "8. Contact",
+      "it": "8. Contact"
+    },
+    {
+      "cle": "legal.b12",
+      "fr": "Informations relatives à l'éditeur du site, à son hébergeur, à la propriété intellectuelle des contenus et aux conditions générales d'utilisation.",
+      "en": "Informations relatives à l'éditeur du site, à son hébergeur, à la propriété intellectuelle des contenus et aux conditions générales d'utilisation.",
+      "it": "Informations relatives à l'éditeur du site, à son hébergeur, à la propriété intellectuelle des contenus et aux conditions générales d'utilisation."
+    },
+    {
+      "cle": "legal.b13",
+      "fr": "Le site <strong>www.ener-co.fr</strong> est édité par&nbsp;:<br> <strong>Ener-Co SAS</strong>, Société par actions simplifiée<br> Capital social&nbsp;: 45&nbsp;000&nbsp;€<br> Siège social&nbsp;: 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> SIRET&nbsp;: 809&nbsp;073&nbsp;992&nbsp;00012<br> TVA intracommunautaire&nbsp;: FR09&nbsp;809073992<br> Code APE&nbsp;: 43.21A, Travaux d'installation électrique dans tous locaux<br> Téléphone&nbsp;: <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a><br> Courriel&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>",
+      "en": "Le site <strong>www.ener-co.fr</strong> est édité par&nbsp;:<br> <strong>Ener-Co SAS</strong>, Société par actions simplifiée<br> Capital social&nbsp;: 45&nbsp;000&nbsp;€<br> Siège social&nbsp;: 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> SIRET&nbsp;: 809&nbsp;073&nbsp;992&nbsp;00012<br> TVA intracommunautaire&nbsp;: FR09&nbsp;809073992<br> Code APE&nbsp;: 43.21A, Travaux d'installation électrique dans tous locaux<br> Téléphone&nbsp;: <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a><br> Courriel&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>",
+      "it": "Le site <strong>www.ener-co.fr</strong> est édité par&nbsp;:<br> <strong>Ener-Co SAS</strong>, Société par actions simplifiée<br> Capital social&nbsp;: 45&nbsp;000&nbsp;€<br> Siège social&nbsp;: 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> SIRET&nbsp;: 809&nbsp;073&nbsp;992&nbsp;00012<br> TVA intracommunautaire&nbsp;: FR09&nbsp;809073992<br> Code APE&nbsp;: 43.21A, Travaux d'installation électrique dans tous locaux<br> Téléphone&nbsp;: <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a><br> Courriel&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>"
+    },
+    {
+      "cle": "legal.b14",
+      "fr": "<strong>Responsable de la publication&nbsp;:</strong> la Direction d'Ener-Co SAS.",
+      "en": "<strong>Responsable de la publication&nbsp;:</strong> la Direction d'Ener-Co SAS.",
+      "it": "<strong>Responsable de la publication&nbsp;:</strong> la Direction d'Ener-Co SAS."
+    },
+    {
+      "cle": "legal.b15",
+      "fr": "<strong>OVH SAS</strong><br> 2 rue Kellermann, 59100 Roubaix, France<br> Téléphone&nbsp;: <a href=\"tel:+33972101007\">+33&nbsp;(0)9&nbsp;72&nbsp;10&nbsp;10&nbsp;07</a><br> Site web&nbsp;: <a href=\"https://www.ovhcloud.com\" target=\"_blank\" rel=\"noopener\">www.ovhcloud.com</a>",
+      "en": "<strong>OVH SAS</strong><br> 2 rue Kellermann, 59100 Roubaix, France<br> Téléphone&nbsp;: <a href=\"tel:+33972101007\">+33&nbsp;(0)9&nbsp;72&nbsp;10&nbsp;10&nbsp;07</a><br> Site web&nbsp;: <a href=\"https://www.ovhcloud.com\" target=\"_blank\" rel=\"noopener\">www.ovhcloud.com</a>",
+      "it": "<strong>OVH SAS</strong><br> 2 rue Kellermann, 59100 Roubaix, France<br> Téléphone&nbsp;: <a href=\"tel:+33972101007\">+33&nbsp;(0)9&nbsp;72&nbsp;10&nbsp;10&nbsp;07</a><br> Site web&nbsp;: <a href=\"https://www.ovhcloud.com\" target=\"_blank\" rel=\"noopener\">www.ovhcloud.com</a>"
+    },
+    {
+      "cle": "legal.b16",
+      "fr": "L'ensemble du site, structure, textes, photographies, schémas, logos, code source, est la propriété exclusive d'Ener-Co SAS ou des titulaires de droits ayant autorisé leur publication.",
+      "en": "L'ensemble du site, structure, textes, photographies, schémas, logos, code source, est la propriété exclusive d'Ener-Co SAS ou des titulaires de droits ayant autorisé leur publication.",
+      "it": "L'ensemble du site, structure, textes, photographies, schémas, logos, code source, est la propriété exclusive d'Ener-Co SAS ou des titulaires de droits ayant autorisé leur publication."
+    },
+    {
+      "cle": "legal.b17",
+      "fr": "Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, des éléments du site, par quelque procédé que ce soit, est interdite sans l'autorisation écrite préalable d'Ener-Co SAS.",
+      "en": "Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, des éléments du site, par quelque procédé que ce soit, est interdite sans l'autorisation écrite préalable d'Ener-Co SAS.",
+      "it": "Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, des éléments du site, par quelque procédé que ce soit, est interdite sans l'autorisation écrite préalable d'Ener-Co SAS."
+    },
+    {
+      "cle": "legal.b18",
+      "fr": "Les marques et logos de tiers reproduits sur le site (clients, partenaires, fabricants) demeurent la propriété exclusive de leurs titulaires respectifs. Leur mention illustre des chantiers ou références d'Ener-Co et ne constitue ni un partenariat commercial ni un endossement.",
+      "en": "Les marques et logos de tiers reproduits sur le site (clients, partenaires, fabricants) demeurent la propriété exclusive de leurs titulaires respectifs. Leur mention illustre des chantiers ou références d'Ener-Co et ne constitue ni un partenariat commercial ni un endossement.",
+      "it": "Les marques et logos de tiers reproduits sur le site (clients, partenaires, fabricants) demeurent la propriété exclusive de leurs titulaires respectifs. Leur mention illustre des chantiers ou références d'Ener-Co et ne constitue ni un partenariat commercial ni un endossement."
+    },
+    {
+      "cle": "legal.b19",
+      "fr": "Les informations recueillies via le formulaire de contact ou de candidature sont strictement destinées à Ener-Co SAS pour le traitement de votre demande. Elles ne sont ni cédées ni vendues à des tiers.",
+      "en": "Les informations recueillies via le formulaire de contact ou de candidature sont strictement destinées à Ener-Co SAS pour le traitement de votre demande. Elles ne sont ni cédées ni vendues à des tiers.",
+      "it": "Les informations recueillies via le formulaire de contact ou de candidature sont strictement destinées à Ener-Co SAS pour le traitement de votre demande. Elles ne sont ni cédées ni vendues à des tiers."
+    },
+    {
+      "cle": "legal.b20",
+      "fr": "Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés modifiée, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition sur vos données personnelles. Pour exercer ces droits, contactez&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>.",
+      "en": "Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés modifiée, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition sur vos données personnelles. Pour exercer ces droits, contactez&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>.",
+      "it": "Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés modifiée, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition sur vos données personnelles. Pour exercer ces droits, contactez&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>."
+    },
+    {
+      "cle": "legal.b21",
+      "fr": "Pour le détail des traitements, consultez notre <a href=\"politique-de-confidentialite.html\">politique de confidentialité</a>.",
+      "en": "Pour le détail des traitements, consultez notre <a href=\"politique-de-confidentialite.html\">politique de confidentialité</a>.",
+      "it": "Pour le détail des traitements, consultez notre <a href=\"politique-de-confidentialite.html\">politique de confidentialité</a>."
+    },
+    {
+      "cle": "legal.b22",
+      "fr": "Le site ener-co.fr utilise uniquement des cookies techniques nécessaires à son fonctionnement (préférence de langue, etc.). Aucun cookie publicitaire ou de mesure d'audience tierce n'est déposé sans votre consentement explicite.",
+      "en": "Le site ener-co.fr utilise uniquement des cookies techniques nécessaires à son fonctionnement (préférence de langue, etc.). Aucun cookie publicitaire ou de mesure d'audience tierce n'est déposé sans votre consentement explicite.",
+      "it": "Le site ener-co.fr utilise uniquement des cookies techniques nécessaires à son fonctionnement (préférence de langue, etc.). Aucun cookie publicitaire ou de mesure d'audience tierce n'est déposé sans votre consentement explicite."
+    },
+    {
+      "cle": "legal.b23",
+      "fr": "Le site peut contenir des liens vers des sites tiers. Ener-Co SAS n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leur disponibilité ou la collecte de données qu'ils opèrent.",
+      "en": "Le site peut contenir des liens vers des sites tiers. Ener-Co SAS n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leur disponibilité ou la collecte de données qu'ils opèrent.",
+      "it": "Le site peut contenir des liens vers des sites tiers. Ener-Co SAS n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leur disponibilité ou la collecte de données qu'ils opèrent."
+    },
+    {
+      "cle": "legal.b24",
+      "fr": "Les présentes mentions légales sont régies par le droit français. En cas de litige, et après tentative de résolution amiable, les tribunaux de Lyon seront seuls compétents.",
+      "en": "Les présentes mentions légales sont régies par le droit français. En cas de litige, et après tentative de résolution amiable, les tribunaux de Lyon seront seuls compétents.",
+      "it": "Les présentes mentions légales sont régies par le droit français. En cas de litige, et après tentative de résolution amiable, les tribunaux de Lyon seront seuls compétents."
+    },
+    {
+      "cle": "legal.b25",
+      "fr": "Pour toute question relative au site ou à ces mentions légales&nbsp;:<br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>",
+      "en": "Pour toute question relative au site ou à ces mentions légales&nbsp;:<br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>",
+      "it": "Pour toute question relative au site ou à ces mentions légales&nbsp;:<br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>"
+    },
+    {
+      "cle": "legal.b26",
+      "fr": "Dernière mise à jour&nbsp;: avril 2026.",
+      "en": "Dernière mise à jour&nbsp;: avril 2026.",
+      "it": "Dernière mise à jour&nbsp;: avril 2026."
+    }
+  ]
+}

@@ -185,6 +185,30 @@
       "fr": "Nous contacter",
       "en": "Contact us",
       "it": "Contattaci"
+    },
+    {
+      "cle": "err.seo.title",
+      "fr": "Page introuvable · Ener-Co",
+      "en": "Page not found · Ener-Co",
+      "it": "Pagina non trovata · Ener-Co"
+    },
+    {
+      "cle": "nav.skip",
+      "fr": "Aller au contenu",
+      "en": "Skip to content",
+      "it": "Vai al contenuto"
+    },
+    {
+      "cle": "footer.mase",
+      "fr": "Certification MASE",
+      "en": "MASE certification",
+      "it": "Certificazione MASE"
+    },
+    {
+      "cle": "footer.linkedin",
+      "fr": "LinkedIn",
+      "en": "LinkedIn",
+      "it": "LinkedIn"
     }
   ]
 }

@@ -1,0 +1,76 @@
+{
+  "textes": [
+    {
+      "cle": "merci.seo.title",
+      "fr": "Demande envoyée | Ener-Co",
+      "en": "Request sent | Ener-Co",
+      "it": "Richiesta inviata | Ener-Co"
+    },
+    {
+      "cle": "merci.seo.description",
+      "fr": "Votre demande a bien été transmise à Ener-Co. Nous reviendrons vers vous rapidement.",
+      "en": "Your request has been sent to Ener-Co. We will get back to you shortly.",
+      "it": "La sua richiesta è stata inviata a Ener-Co. La ricontatteremo a breve."
+    },
+    {
+      "cle": "merci.b01",
+      "fr": "Demande envoyée",
+      "en": "Request sent",
+      "it": "Richiesta inviata"
+    },
+    {
+      "cle": "merci.b02",
+      "fr": "Voir les réalisations",
+      "en": "View projects",
+      "it": "Vedere i progetti"
+    },
+    {
+      "cle": "merci.b03",
+      "fr": "Voir les références",
+      "en": "View references",
+      "it": "Vedere le referenze"
+    },
+    {
+      "cle": "merci.b04",
+      "fr": "Merci, votre demande nous est parvenue.",
+      "en": "Thank you, we have received your request.",
+      "it": "Grazie, la sua richiesta ci è pervenuta."
+    },
+    {
+      "cle": "merci.b05",
+      "fr": "Pendant ce temps",
+      "en": "In the meantime",
+      "it": "Nel frattempo"
+    },
+    {
+      "cle": "merci.b06",
+      "fr": "Contact direct",
+      "en": "Direct contact",
+      "it": "Contatto diretto"
+    },
+    {
+      "cle": "merci.b07",
+      "fr": "Un membre de la direction commerciale revient vers vous rapidement pour préciser le périmètre technique et les prochaines étapes. En cas d'urgence, vous pouvez nous joindre directement par téléphone.",
+      "en": "A member of our sales management team will get back to you shortly to clarify the technical scope and next steps. In case of urgency, you can reach us directly by phone.",
+      "it": "Un membro della direzione commerciale la ricontatterà a breve per precisare il perimetro tecnico e le prossime tappe. In caso di urgenza, può contattarci direttamente per telefono."
+    },
+    {
+      "cle": "merci.b08",
+      "fr": "Vous pouvez explorer nos chantiers documentés, nos secteurs d'intervention et nos références clients.",
+      "en": "You can explore our documented projects, our sectors and our client references.",
+      "it": "Potete esplorare i nostri cantieri documentati, i nostri settori di intervento e le nostre referenze clienti."
+    },
+    {
+      "cle": "merci.b09",
+      "fr": "<strong>Standard commercial</strong><br> <a href=\"tel:+33426076779\" data-coord-href=\"tel\" data-coord=\"telephone\">+33 (0)4 26 07 67 79</a><br> <a href=\"mailto:contact@ener-co.fr\" data-coord-href=\"mailto\" data-coord=\"email\">contact@ener-co.fr</a>",
+      "en": "<strong>Sales desk</strong><br> <a href=\"tel:+33426076779\" data-coord-href=\"tel\" data-coord=\"telephone\">+33 (0)4 26 07 67 79</a><br> <a href=\"mailto:contact@ener-co.fr\" data-coord-href=\"mailto\" data-coord=\"email\">contact@ener-co.fr</a>",
+      "it": "<strong>Centralino commerciale</strong><br> <a href=\"tel:+33426076779\" data-coord-href=\"tel\" data-coord=\"telephone\">+33 (0)4 26 07 67 79</a><br> <a href=\"mailto:contact@ener-co.fr\" data-coord-href=\"mailto\" data-coord=\"email\">contact@ener-co.fr</a>"
+    },
+    {
+      "cle": "merci.b10",
+      "fr": "<strong>Siège social</strong><br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France",
+      "en": "<strong>Head office</strong><br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France",
+      "it": "<strong>Sede legale</strong><br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France"
+    }
+  ]
+}

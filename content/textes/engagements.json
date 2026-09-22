@@ -875,6 +875,18 @@
       "fr": "Direction commerciale",
       "en": "Sales management",
       "it": "Direzione commerciale"
+    },
+    {
+      "cle": "eng.seo.title",
+      "fr": "Engagements de direction · qualité, sécurité, environnement | Ener-Co",
+      "en": "Management commitments · quality, safety, environment | Ener-Co",
+      "it": "Impegni della direzione · qualità, sicurezza, ambiente | Ener-Co"
+    },
+    {
+      "cle": "eng.seo.description",
+      "fr": "Engagements de la direction Ener-Co : qualité des prestations, prévention SSE, responsabilité environnementale, éthique, compétences et amélioration continue. Cohérent MASE et ISO 9001.",
+      "en": "Ener-Co management commitments: service quality, HSE prevention, environmental responsibility, ethics, skills and continuous improvement. Consistent with MASE and ISO 9001.",
+      "it": "Impegni della direzione Ener-Co: qualità delle prestazioni, prevenzione SSA, responsabilità ambientale, etica, competenze e miglioramento continuo. Coerente con MASE e ISO 9001."
     }
   ]
 }

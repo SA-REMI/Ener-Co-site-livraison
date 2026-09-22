@@ -509,6 +509,18 @@
       "fr": "Direction commerciale",
       "en": "Sales management",
       "it": "Direzione commerciale"
+    },
+    {
+      "cle": "real.seo.title",
+      "fr": "Réalisations · chantiers Ener-Co | Saint-Gaudens, Chaufferie gaz, Fibre Excellence",
+      "en": "Projects · Ener-Co job sites | Saint-Gaudens, Gas boiler plant, Fibre Excellence",
+      "it": "Progetti · cantieri Ener-Co | Saint-Gaudens, Caldaia a gas, Fibre Excellence"
+    },
+    {
+      "cle": "real.seo.description",
+      "fr": "Chantiers Ener-Co documentés avec photos natives : gaine à barres Beto-Bar à Saint-Gaudens, ligne 2000 A chaufferie gaz, postes HTA Schneider et Panattoni, installation Eta-com Fibre Excellence.",
+      "en": "Ener-Co projects documented with native photos: Beto-Bar busway in Saint-Gaudens, 2000 A gas boiler line, Schneider and Panattoni MV substations, Eta-com installation at Fibre Excellence.",
+      "it": "Cantieri Ener-Co documentati con foto originali: condotto sbarre Beto-Bar a Saint-Gaudens, linea 2000 A caldaia a gas, cabine MT Schneider e Panattoni, installazione Eta-com Fibre Excellence."
     }
   ]
 }

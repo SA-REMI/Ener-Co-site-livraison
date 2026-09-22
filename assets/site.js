@@ -629,6 +629,129 @@ const I18N = {
     "recrut.cta.btn1": "Écrire à l'équipe RH",
     "recrut.cta.btn2": "Découvrir nos métiers",
     "recrut.cta.label": "Équipe RH Ener-Co",
+    /* ---- V7 · SEO, menu mobile, numerotations, villes, pied de page (FR) ---- */
+    "home.seo.title": "Ener-Co · Distribution d'énergie industrielle | HTA, TGBT, gaines à barres",
+    "home.seo.description": "Ener-Co · distribution d'énergie industrielle sur sites techniques sensibles. HTA, TGBT, gaines à barres. France, Europe et international. Certifié MASE.",
+    "exp.seo.title": "Expertise · HTA, TGBT, gaines à barres | Ener-Co",
+    "exp.seo.description": "Périmètre d'intervention Ener-Co : haute tension, alimentations TGBT, tableaux, gaines à barres, raccordements puissance et mise sous tension. Sans sous-traitance.",
+    "real.seo.title": "Réalisations · chantiers Ener-Co | Saint-Gaudens, Chaufferie gaz, Fibre Excellence",
+    "real.seo.description": "Chantiers Ener-Co documentés avec photos natives : gaine à barres Beto-Bar à Saint-Gaudens, ligne 2000 A chaufferie gaz, postes HTA Schneider et Panattoni, installation Eta-com Fibre Excellence.",
+    "sect.seo.title": "Secteurs d'intervention | Ener-Co",
+    "sect.seo.description": "Ener-Co intervient sur data centers, industrie lourde, pharma, énergie, nucléaire, utilités, agroalimentaire, chimie et aéronautique. Distribution d'énergie industrielle.",
+    "refs.seo.title": "Références · clients, partenaires, qualification MASE | Ener-Co",
+    "refs.seo.description": "Références clients, partenaires intégrateurs et pays d'intervention d'Ener-Co. Certification MASE Rhône-Alpes. 7 pays couverts en Europe et à l'international.",
+    "eng.seo.title": "Engagements de direction · qualité, sécurité, environnement | Ener-Co",
+    "eng.seo.description": "Engagements de la direction Ener-Co : qualité des prestations, prévention SSE, responsabilité environnementale, éthique, compétences et amélioration continue. Cohérent MASE et ISO 9001.",
+    "recrut.seo.title": "Recrutement · offres d'emploi | Ener-Co",
+    "recrut.seo.description": "Ener-Co recrute. Offres d'emploi techniques en distribution d'énergie industrielle : chef d'équipe montage, électricien HTA/BT, technicien chantier. Auvergne-Rhône-Alpes.",
+    "contact.seo.title": "Contact · demander une étude | Ener-Co",
+    "contact.seo.description": "Contactez Ener-Co pour une étude technique, un chiffrage ou un raccordement puissance. Siège social à Vaulx-en-Velin, interventions France, Europe et à l'international.",
+    "err.seo.title": "Page introuvable · Ener-Co",
+    "nav.skip": "Aller au contenu",
+    "home.teaser.n1": "01 · HTA",
+    "home.teaser.n2": "02 · TGBT",
+    "home.teaser.n3": "03 · Gaines à barres",
+    "exp.scope.n1": "01 / HTA",
+    "exp.scope.n2": "02 / TGBT",
+    "exp.scope.n3": "03 / Tableaux",
+    "exp.scope.n4": "04 / GAB",
+    "exp.scope.n5": "05 / Puissance",
+    "exp.scope.n6": "06 / MST",
+    "refs.country.it.city": "Milan · Aprilia",
+    "refs.country.de.city": "Jülich",
+    "refs.country.pl.city": "Jarosław",
+    "refs.country.be.city": "Anvers · Moustier-sur-Sambre",
+    "refs.country.es.city": "Alcobendas",
+    "refs.country.sn.city": "Dakar",
+    "refs.mase.name": "MASE Rhône-Alpes",
+    "footer.mase": "Certification MASE",
+    "footer.linkedin": "LinkedIn",
+    /* ---- V7 · pages legales et merci (FR) ---- */
+    "legal.seo.title": "Mentions légales | Ener-Co",
+    "legal.seo.description": "Mentions légales du site ener-co.fr, éditeur, hébergeur, propriété intellectuelle, responsable de la publication.",
+    "legal.b01": "Mentions légales",
+    "legal.b02": "Informations légales",
+    "legal.b03": "Mentions légales.",
+    "legal.b04": "1. Éditeur du site",
+    "legal.b05": "2. Hébergeur du site",
+    "legal.b06": "3. Propriété intellectuelle",
+    "legal.b07": "4. Données personnelles",
+    "legal.b08": "5. Cookies",
+    "legal.b09": "6. Liens externes",
+    "legal.b10": "7. Loi applicable et juridiction",
+    "legal.b11": "8. Contact",
+    "legal.b12": "Informations relatives à l'éditeur du site, à son hébergeur, à la propriété intellectuelle des contenus et aux conditions générales d'utilisation.",
+    "legal.b13": "Le site <strong>www.ener-co.fr</strong> est édité par&nbsp;:<br> <strong>Ener-Co SAS</strong>, Société par actions simplifiée<br> Capital social&nbsp;: 45&nbsp;000&nbsp;€<br> Siège social&nbsp;: 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> SIRET&nbsp;: 809&nbsp;073&nbsp;992&nbsp;00012<br> TVA intracommunautaire&nbsp;: FR09&nbsp;809073992<br> Code APE&nbsp;: 43.21A, Travaux d'installation électrique dans tous locaux<br> Téléphone&nbsp;: <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a><br> Courriel&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>",
+    "legal.b14": "<strong>Responsable de la publication&nbsp;:</strong> la Direction d'Ener-Co SAS.",
+    "legal.b15": "<strong>OVH SAS</strong><br> 2 rue Kellermann, 59100 Roubaix, France<br> Téléphone&nbsp;: <a href=\"tel:+33972101007\">+33&nbsp;(0)9&nbsp;72&nbsp;10&nbsp;10&nbsp;07</a><br> Site web&nbsp;: <a href=\"https://www.ovhcloud.com\" target=\"_blank\" rel=\"noopener\">www.ovhcloud.com</a>",
+    "legal.b16": "L'ensemble du site, structure, textes, photographies, schémas, logos, code source, est la propriété exclusive d'Ener-Co SAS ou des titulaires de droits ayant autorisé leur publication.",
+    "legal.b17": "Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, des éléments du site, par quelque procédé que ce soit, est interdite sans l'autorisation écrite préalable d'Ener-Co SAS.",
+    "legal.b18": "Les marques et logos de tiers reproduits sur le site (clients, partenaires, fabricants) demeurent la propriété exclusive de leurs titulaires respectifs. Leur mention illustre des chantiers ou références d'Ener-Co et ne constitue ni un partenariat commercial ni un endossement.",
+    "legal.b19": "Les informations recueillies via le formulaire de contact ou de candidature sont strictement destinées à Ener-Co SAS pour le traitement de votre demande. Elles ne sont ni cédées ni vendues à des tiers.",
+    "legal.b20": "Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés modifiée, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition sur vos données personnelles. Pour exercer ces droits, contactez&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>.",
+    "legal.b21": "Pour le détail des traitements, consultez notre <a href=\"politique-de-confidentialite.html\">politique de confidentialité</a>.",
+    "legal.b22": "Le site ener-co.fr utilise uniquement des cookies techniques nécessaires à son fonctionnement (préférence de langue, etc.). Aucun cookie publicitaire ou de mesure d'audience tierce n'est déposé sans votre consentement explicite.",
+    "legal.b23": "Le site peut contenir des liens vers des sites tiers. Ener-Co SAS n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leur disponibilité ou la collecte de données qu'ils opèrent.",
+    "legal.b24": "Les présentes mentions légales sont régies par le droit français. En cas de litige, et après tentative de résolution amiable, les tribunaux de Lyon seront seuls compétents.",
+    "legal.b25": "Pour toute question relative au site ou à ces mentions légales&nbsp;:<br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>",
+    "legal.b26": "Dernière mise à jour&nbsp;: avril 2026.",
+    "privacy.seo.title": "Politique de confidentialité | Ener-Co",
+    "privacy.seo.description": "Politique de confidentialité du site ener-co.fr, traitement des données personnelles, finalités, base légale, durée, droits RGPD.",
+    "privacy.b01": "Politique de confidentialité",
+    "privacy.b02": "RGPD &amp; vie privée",
+    "privacy.b03": "Politique de confidentialité.",
+    "privacy.b04": "1. Responsable du traitement",
+    "privacy.b05": "2. Données collectées et finalités",
+    "privacy.b06": "3. Base légale du traitement",
+    "privacy.b07": "4. Destinataires des données",
+    "privacy.b08": "5. Durée de conservation",
+    "privacy.b09": "6. Vos droits",
+    "privacy.b10": "7. Réclamation auprès de la CNIL",
+    "privacy.b11": "8. Cookies",
+    "privacy.b12": "9. Sécurité",
+    "privacy.b13": "10. Modifications",
+    "privacy.b14": "Quelles données personnelles Ener-Co collecte, pour quelle finalité, sur quelle base légale, combien de temps, et quels sont vos droits.",
+    "privacy.b15": "<strong>Ener-Co SAS</strong><br> 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>",
+    "privacy.b16": "Ener-Co collecte uniquement les données strictement nécessaires au traitement de vos demandes&nbsp;:",
+    "privacy.b17": "Vos données sont traitées exclusivement par Ener-Co et son personnel habilité (direction commerciale, direction technique, RH). Elles ne sont ni vendues, ni cédées, ni transférées hors de l'Union européenne.",
+    "privacy.b18": "Aucun sous-traitant externe n'a accès aux données collectées via les formulaires du site, à l'exception de l'hébergeur du site et de la messagerie professionnelle Ener-Co (stockage et acheminement technique).",
+    "privacy.b19": "Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés modifiée, vous disposez des droits suivants&nbsp;:",
+    "privacy.b20": "Pour exercer ces droits, écrivez-nous à <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> ou par courrier&nbsp;: Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin. Une preuve d'identité pourra vous être demandée.",
+    "privacy.b21": "Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL&nbsp;: <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener\">www.cnil.fr</a>.",
+    "privacy.b22": "Le site ener-co.fr utilise uniquement un cookie technique de préférence de langue. Aucun cookie publicitaire, aucune mesure d'audience tierce (Google Analytics, Meta Pixel, etc.) n'est déposé sans consentement.",
+    "privacy.b23": "Si vous souhaitez supprimer ce cookie technique, vous pouvez le faire via les paramètres de votre navigateur. Cela ne perturbera pas le bon fonctionnement du site, hormis le rétablissement de la langue par défaut à chaque visite.",
+    "privacy.b24": "Ener-Co met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre la perte, l'utilisation abusive, l'accès non autorisé, la divulgation, l'altération ou la destruction (chiffrement TLS du site, contrôles d'accès, sauvegardes).",
+    "privacy.b25": "La présente politique de confidentialité peut être modifiée pour s'adapter à l'évolution de la réglementation, des pratiques de l'entreprise ou de la jurisprudence. La date de dernière mise à jour figure ci-dessous.",
+    "privacy.b26": "Dernière mise à jour&nbsp;: avril 2026.",
+    "privacy.b27": "<strong>Formulaire de contact&nbsp;:</strong> nom, prénom, raison sociale, fonction, courriel, téléphone, message. Finalité&nbsp;: répondre à votre demande commerciale ou technique.",
+    "privacy.b28": "<strong>Candidature (recrutement)&nbsp;:</strong> nom, prénom, courriel, téléphone, CV, lettre de motivation. Finalité&nbsp;: traiter votre candidature.",
+    "privacy.b29": "<strong>Cookies techniques&nbsp;:</strong> préférence de langue (FR/EN/IT). Finalité&nbsp;: confort de navigation. Aucune donnée d'identification personnelle.",
+    "privacy.b30": "<strong>Mesures précontractuelles</strong> à votre demande (article 6.1.b RGPD), pour les demandes commerciales et techniques.",
+    "privacy.b31": "<strong>Intérêt légitime</strong> d'Ener-Co (article 6.1.f RGPD), pour le suivi des candidatures.",
+    "privacy.b32": "<strong>Consentement</strong> (article 6.1.a RGPD), uniquement pour les éventuelles communications optionnelles.",
+    "privacy.b33": "<strong>Demandes commerciales/techniques&nbsp;:</strong> 3&nbsp;ans à compter du dernier contact.",
+    "privacy.b34": "<strong>Candidatures non retenues&nbsp;:</strong> 2&nbsp;ans à compter de la dernière interaction (sauf opposition explicite du candidat).",
+    "privacy.b35": "<strong>Documents contractuels (clients, fournisseurs)&nbsp;:</strong> 10&nbsp;ans (obligation comptable et fiscale).",
+    "privacy.b36": "<strong>Cookies techniques&nbsp;:</strong> 13&nbsp;mois maximum.",
+    "privacy.b37": "<strong>Droit d'accès</strong> à vos données personnelles.",
+    "privacy.b38": "<strong>Droit de rectification</strong> en cas de données inexactes ou incomplètes.",
+    "privacy.b39": "<strong>Droit à l'effacement</strong> (« droit à l'oubli »).",
+    "privacy.b40": "<strong>Droit à la limitation</strong> du traitement.",
+    "privacy.b41": "<strong>Droit à la portabilité</strong> de vos données.",
+    "privacy.b42": "<strong>Droit d'opposition</strong> au traitement, notamment à des fins de prospection.",
+    "privacy.b43": "<strong>Droit de définir des directives</strong> relatives au sort de vos données après votre décès.",
+    "merci.seo.title": "Demande envoyée | Ener-Co",
+    "merci.seo.description": "Votre demande a bien été transmise à Ener-Co. Nous reviendrons vers vous rapidement.",
+    "merci.b01": "Demande envoyée",
+    "merci.b02": "Voir les réalisations",
+    "merci.b03": "Voir les références",
+    "merci.b04": "Merci, votre demande nous est parvenue.",
+    "merci.b05": "Pendant ce temps",
+    "merci.b06": "Contact direct",
+    "merci.b07": "Un membre de la direction commerciale revient vers vous rapidement pour préciser le périmètre technique et les prochaines étapes. En cas d'urgence, vous pouvez nous joindre directement par téléphone.",
+    "merci.b08": "Vous pouvez explorer nos chantiers documentés, nos secteurs d'intervention et nos références clients.",
+    "merci.b09": "<strong>Standard commercial</strong><br> <a href=\"tel:+33426076779\" data-coord-href=\"tel\" data-coord=\"telephone\">+33 (0)4 26 07 67 79</a><br> <a href=\"mailto:contact@ener-co.fr\" data-coord-href=\"mailto\" data-coord=\"email\">contact@ener-co.fr</a>",
+    "merci.b10": "<strong>Siège social</strong><br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France",
   },
 
   en: {
@@ -1259,6 +1382,129 @@ const I18N = {
     "recrut.cta.btn1": "Write to the HR team",
     "recrut.cta.btn2": "Discover our trades",
     "recrut.cta.label": "Ener-Co HR team",
+    /* ---- V7 · SEO, menu mobile, numerotations, villes, pied de page (EN) ---- */
+    "home.seo.title": "Ener-Co · Industrial power distribution | MV, LV, busways",
+    "home.seo.description": "Ener-Co · industrial power distribution on sensitive technical sites. MV, LV, busways. France, Europe and international. MASE certified.",
+    "exp.seo.title": "Expertise · MV, LV, busways | Ener-Co",
+    "exp.seo.description": "Ener-Co's scope of work: medium voltage, LV feeders, switchboards, busways, power connections and energisation. No subcontracting.",
+    "real.seo.title": "Projects · Ener-Co job sites | Saint-Gaudens, Gas boiler plant, Fibre Excellence",
+    "real.seo.description": "Ener-Co projects documented with native photos: Beto-Bar busway in Saint-Gaudens, 2000 A gas boiler line, Schneider and Panattoni MV substations, Eta-com installation at Fibre Excellence.",
+    "sect.seo.title": "Sectors | Ener-Co",
+    "sect.seo.description": "Ener-Co operates in data centres, heavy industry, pharma, energy, nuclear, utilities, food processing, chemicals and aerospace. Industrial power distribution.",
+    "refs.seo.title": "References · clients, partners, MASE qualification | Ener-Co",
+    "refs.seo.description": "Ener-Co client references, integrator partners and countries of operation. MASE Rhône-Alpes certification. 7 countries covered in Europe and internationally.",
+    "eng.seo.title": "Management commitments · quality, safety, environment | Ener-Co",
+    "eng.seo.description": "Ener-Co management commitments: service quality, HSE prevention, environmental responsibility, ethics, skills and continuous improvement. Consistent with MASE and ISO 9001.",
+    "recrut.seo.title": "Careers · job offers | Ener-Co",
+    "recrut.seo.description": "Ener-Co is hiring. Technical jobs in industrial power distribution: assembly team leader, MV/LV electrician, site technician. Auvergne-Rhône-Alpes.",
+    "contact.seo.title": "Contact · request a study | Ener-Co",
+    "contact.seo.description": "Contact Ener-Co for a technical study, a quotation or a power connection. Head office in Vaulx-en-Velin, operations in France, Europe and internationally.",
+    "err.seo.title": "Page not found · Ener-Co",
+    "nav.skip": "Skip to content",
+    "home.teaser.n1": "01 · MV",
+    "home.teaser.n2": "02 · LV",
+    "home.teaser.n3": "03 · Busways",
+    "exp.scope.n1": "01 / MV",
+    "exp.scope.n2": "02 / LV",
+    "exp.scope.n3": "03 / Switchboards",
+    "exp.scope.n4": "04 / Busways",
+    "exp.scope.n5": "05 / Power",
+    "exp.scope.n6": "06 / Energisation",
+    "refs.country.it.city": "Milan · Aprilia",
+    "refs.country.de.city": "Jülich",
+    "refs.country.pl.city": "Jarosław",
+    "refs.country.be.city": "Antwerp · Moustier-sur-Sambre",
+    "refs.country.es.city": "Alcobendas",
+    "refs.country.sn.city": "Dakar",
+    "refs.mase.name": "MASE Rhône-Alpes",
+    "footer.mase": "MASE certification",
+    "footer.linkedin": "LinkedIn",
+    /* ---- V7 · pages legales et merci (EN) ---- */
+    "legal.seo.title": "Legal notice | Ener-Co",
+    "legal.seo.description": "Legal notice for ener-co.fr: publisher, hosting provider, intellectual property, publication manager.",
+    "legal.b01": "Mentions légales",
+    "legal.b02": "Informations légales",
+    "legal.b03": "Mentions légales.",
+    "legal.b04": "1. Éditeur du site",
+    "legal.b05": "2. Hébergeur du site",
+    "legal.b06": "3. Propriété intellectuelle",
+    "legal.b07": "4. Données personnelles",
+    "legal.b08": "5. Cookies",
+    "legal.b09": "6. Liens externes",
+    "legal.b10": "7. Loi applicable et juridiction",
+    "legal.b11": "8. Contact",
+    "legal.b12": "Informations relatives à l'éditeur du site, à son hébergeur, à la propriété intellectuelle des contenus et aux conditions générales d'utilisation.",
+    "legal.b13": "Le site <strong>www.ener-co.fr</strong> est édité par&nbsp;:<br> <strong>Ener-Co SAS</strong>, Société par actions simplifiée<br> Capital social&nbsp;: 45&nbsp;000&nbsp;€<br> Siège social&nbsp;: 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> SIRET&nbsp;: 809&nbsp;073&nbsp;992&nbsp;00012<br> TVA intracommunautaire&nbsp;: FR09&nbsp;809073992<br> Code APE&nbsp;: 43.21A, Travaux d'installation électrique dans tous locaux<br> Téléphone&nbsp;: <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a><br> Courriel&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>",
+    "legal.b14": "<strong>Responsable de la publication&nbsp;:</strong> la Direction d'Ener-Co SAS.",
+    "legal.b15": "<strong>OVH SAS</strong><br> 2 rue Kellermann, 59100 Roubaix, France<br> Téléphone&nbsp;: <a href=\"tel:+33972101007\">+33&nbsp;(0)9&nbsp;72&nbsp;10&nbsp;10&nbsp;07</a><br> Site web&nbsp;: <a href=\"https://www.ovhcloud.com\" target=\"_blank\" rel=\"noopener\">www.ovhcloud.com</a>",
+    "legal.b16": "L'ensemble du site, structure, textes, photographies, schémas, logos, code source, est la propriété exclusive d'Ener-Co SAS ou des titulaires de droits ayant autorisé leur publication.",
+    "legal.b17": "Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, des éléments du site, par quelque procédé que ce soit, est interdite sans l'autorisation écrite préalable d'Ener-Co SAS.",
+    "legal.b18": "Les marques et logos de tiers reproduits sur le site (clients, partenaires, fabricants) demeurent la propriété exclusive de leurs titulaires respectifs. Leur mention illustre des chantiers ou références d'Ener-Co et ne constitue ni un partenariat commercial ni un endossement.",
+    "legal.b19": "Les informations recueillies via le formulaire de contact ou de candidature sont strictement destinées à Ener-Co SAS pour le traitement de votre demande. Elles ne sont ni cédées ni vendues à des tiers.",
+    "legal.b20": "Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés modifiée, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition sur vos données personnelles. Pour exercer ces droits, contactez&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>.",
+    "legal.b21": "Pour le détail des traitements, consultez notre <a href=\"politique-de-confidentialite.html\">politique de confidentialité</a>.",
+    "legal.b22": "Le site ener-co.fr utilise uniquement des cookies techniques nécessaires à son fonctionnement (préférence de langue, etc.). Aucun cookie publicitaire ou de mesure d'audience tierce n'est déposé sans votre consentement explicite.",
+    "legal.b23": "Le site peut contenir des liens vers des sites tiers. Ener-Co SAS n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leur disponibilité ou la collecte de données qu'ils opèrent.",
+    "legal.b24": "Les présentes mentions légales sont régies par le droit français. En cas de litige, et après tentative de résolution amiable, les tribunaux de Lyon seront seuls compétents.",
+    "legal.b25": "Pour toute question relative au site ou à ces mentions légales&nbsp;:<br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>",
+    "legal.b26": "Dernière mise à jour&nbsp;: avril 2026.",
+    "privacy.seo.title": "Privacy policy | Ener-Co",
+    "privacy.seo.description": "Privacy policy for ener-co.fr: personal data processing, purposes, legal basis, retention, GDPR rights.",
+    "privacy.b01": "Politique de confidentialité",
+    "privacy.b02": "RGPD &amp; vie privée",
+    "privacy.b03": "Politique de confidentialité.",
+    "privacy.b04": "1. Responsable du traitement",
+    "privacy.b05": "2. Données collectées et finalités",
+    "privacy.b06": "3. Base légale du traitement",
+    "privacy.b07": "4. Destinataires des données",
+    "privacy.b08": "5. Durée de conservation",
+    "privacy.b09": "6. Vos droits",
+    "privacy.b10": "7. Réclamation auprès de la CNIL",
+    "privacy.b11": "8. Cookies",
+    "privacy.b12": "9. Sécurité",
+    "privacy.b13": "10. Modifications",
+    "privacy.b14": "Quelles données personnelles Ener-Co collecte, pour quelle finalité, sur quelle base légale, combien de temps, et quels sont vos droits.",
+    "privacy.b15": "<strong>Ener-Co SAS</strong><br> 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>",
+    "privacy.b16": "Ener-Co collecte uniquement les données strictement nécessaires au traitement de vos demandes&nbsp;:",
+    "privacy.b17": "Vos données sont traitées exclusivement par Ener-Co et son personnel habilité (direction commerciale, direction technique, RH). Elles ne sont ni vendues, ni cédées, ni transférées hors de l'Union européenne.",
+    "privacy.b18": "Aucun sous-traitant externe n'a accès aux données collectées via les formulaires du site, à l'exception de l'hébergeur du site et de la messagerie professionnelle Ener-Co (stockage et acheminement technique).",
+    "privacy.b19": "Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés modifiée, vous disposez des droits suivants&nbsp;:",
+    "privacy.b20": "Pour exercer ces droits, écrivez-nous à <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> ou par courrier&nbsp;: Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin. Une preuve d'identité pourra vous être demandée.",
+    "privacy.b21": "Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL&nbsp;: <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener\">www.cnil.fr</a>.",
+    "privacy.b22": "Le site ener-co.fr utilise uniquement un cookie technique de préférence de langue. Aucun cookie publicitaire, aucune mesure d'audience tierce (Google Analytics, Meta Pixel, etc.) n'est déposé sans consentement.",
+    "privacy.b23": "Si vous souhaitez supprimer ce cookie technique, vous pouvez le faire via les paramètres de votre navigateur. Cela ne perturbera pas le bon fonctionnement du site, hormis le rétablissement de la langue par défaut à chaque visite.",
+    "privacy.b24": "Ener-Co met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre la perte, l'utilisation abusive, l'accès non autorisé, la divulgation, l'altération ou la destruction (chiffrement TLS du site, contrôles d'accès, sauvegardes).",
+    "privacy.b25": "La présente politique de confidentialité peut être modifiée pour s'adapter à l'évolution de la réglementation, des pratiques de l'entreprise ou de la jurisprudence. La date de dernière mise à jour figure ci-dessous.",
+    "privacy.b26": "Dernière mise à jour&nbsp;: avril 2026.",
+    "privacy.b27": "<strong>Formulaire de contact&nbsp;:</strong> nom, prénom, raison sociale, fonction, courriel, téléphone, message. Finalité&nbsp;: répondre à votre demande commerciale ou technique.",
+    "privacy.b28": "<strong>Candidature (recrutement)&nbsp;:</strong> nom, prénom, courriel, téléphone, CV, lettre de motivation. Finalité&nbsp;: traiter votre candidature.",
+    "privacy.b29": "<strong>Cookies techniques&nbsp;:</strong> préférence de langue (FR/EN/IT). Finalité&nbsp;: confort de navigation. Aucune donnée d'identification personnelle.",
+    "privacy.b30": "<strong>Mesures précontractuelles</strong> à votre demande (article 6.1.b RGPD), pour les demandes commerciales et techniques.",
+    "privacy.b31": "<strong>Intérêt légitime</strong> d'Ener-Co (article 6.1.f RGPD), pour le suivi des candidatures.",
+    "privacy.b32": "<strong>Consentement</strong> (article 6.1.a RGPD), uniquement pour les éventuelles communications optionnelles.",
+    "privacy.b33": "<strong>Demandes commerciales/techniques&nbsp;:</strong> 3&nbsp;ans à compter du dernier contact.",
+    "privacy.b34": "<strong>Candidatures non retenues&nbsp;:</strong> 2&nbsp;ans à compter de la dernière interaction (sauf opposition explicite du candidat).",
+    "privacy.b35": "<strong>Documents contractuels (clients, fournisseurs)&nbsp;:</strong> 10&nbsp;ans (obligation comptable et fiscale).",
+    "privacy.b36": "<strong>Cookies techniques&nbsp;:</strong> 13&nbsp;mois maximum.",
+    "privacy.b37": "<strong>Droit d'accès</strong> à vos données personnelles.",
+    "privacy.b38": "<strong>Droit de rectification</strong> en cas de données inexactes ou incomplètes.",
+    "privacy.b39": "<strong>Droit à l'effacement</strong> (« droit à l'oubli »).",
+    "privacy.b40": "<strong>Droit à la limitation</strong> du traitement.",
+    "privacy.b41": "<strong>Droit à la portabilité</strong> de vos données.",
+    "privacy.b42": "<strong>Droit d'opposition</strong> au traitement, notamment à des fins de prospection.",
+    "privacy.b43": "<strong>Droit de définir des directives</strong> relatives au sort de vos données après votre décès.",
+    "merci.seo.title": "Request sent | Ener-Co",
+    "merci.seo.description": "Your request has been sent to Ener-Co. We will get back to you shortly.",
+    "merci.b01": "Request sent",
+    "merci.b02": "View projects",
+    "merci.b03": "View references",
+    "merci.b04": "Thank you, we have received your request.",
+    "merci.b05": "In the meantime",
+    "merci.b06": "Direct contact",
+    "merci.b07": "A member of our sales management team will get back to you shortly to clarify the technical scope and next steps. In case of urgency, you can reach us directly by phone.",
+    "merci.b08": "You can explore our documented projects, our sectors and our client references.",
+    "merci.b09": "<strong>Sales desk</strong><br> <a href=\"tel:+33426076779\" data-coord-href=\"tel\" data-coord=\"telephone\">+33 (0)4 26 07 67 79</a><br> <a href=\"mailto:contact@ener-co.fr\" data-coord-href=\"mailto\" data-coord=\"email\">contact@ener-co.fr</a>",
+    "merci.b10": "<strong>Head office</strong><br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France",
   },
 
   it: {
@@ -1889,6 +2135,129 @@ const I18N = {
     "recrut.cta.btn1": "Scrivere al team HR",
     "recrut.cta.btn2": "Scoprire i nostri mestieri",
     "recrut.cta.label": "Team HR Ener-Co",
+    /* ---- V7 · SEO, menu mobile, numerotations, villes, pied de page (IT) ---- */
+    "home.seo.title": "Ener-Co · Distribuzione di energia industriale | MT, BT, condotti sbarre",
+    "home.seo.description": "Ener-Co · distribuzione di energia industriale su siti tecnici sensibili. MT, BT, condotti sbarre. Francia, Europa e internazionale. Certificata MASE.",
+    "exp.seo.title": "Competenze · MT, BT, condotti sbarre | Ener-Co",
+    "exp.seo.description": "Perimetro di intervento Ener-Co: media tensione, alimentazioni BT, quadri, condotti sbarre, collegamenti di potenza e messa in tensione. Senza subappalto.",
+    "real.seo.title": "Progetti · cantieri Ener-Co | Saint-Gaudens, Caldaia a gas, Fibre Excellence",
+    "real.seo.description": "Cantieri Ener-Co documentati con foto originali: condotto sbarre Beto-Bar a Saint-Gaudens, linea 2000 A caldaia a gas, cabine MT Schneider e Panattoni, installazione Eta-com Fibre Excellence.",
+    "sect.seo.title": "Settori di intervento | Ener-Co",
+    "sect.seo.description": "Ener-Co interviene in data center, industria pesante, farmaceutica, energia, nucleare, utility, agroalimentare, chimica e aeronautica. Distribuzione di energia industriale.",
+    "refs.seo.title": "Referenze · clienti, partner, qualifica MASE | Ener-Co",
+    "refs.seo.description": "Referenze clienti, partner integratori e paesi di intervento di Ener-Co. Certificazione MASE Rhône-Alpes. 7 paesi coperti in Europa e a livello internazionale.",
+    "eng.seo.title": "Impegni della direzione · qualità, sicurezza, ambiente | Ener-Co",
+    "eng.seo.description": "Impegni della direzione Ener-Co: qualità delle prestazioni, prevenzione SSA, responsabilità ambientale, etica, competenze e miglioramento continuo. Coerente con MASE e ISO 9001.",
+    "recrut.seo.title": "Lavora con noi · offerte di lavoro | Ener-Co",
+    "recrut.seo.description": "Ener-Co assume. Offerte di lavoro tecniche nella distribuzione di energia industriale: capo squadra montaggio, elettricista MT/BT, tecnico di cantiere. Auvergne-Rhône-Alpes.",
+    "contact.seo.title": "Contatti · richiedere uno studio | Ener-Co",
+    "contact.seo.description": "Contattate Ener-Co per uno studio tecnico, un preventivo o un collegamento di potenza. Sede a Vaulx-en-Velin, interventi in Francia, Europa e a livello internazionale.",
+    "err.seo.title": "Pagina non trovata · Ener-Co",
+    "nav.skip": "Vai al contenuto",
+    "home.teaser.n1": "01 · MT",
+    "home.teaser.n2": "02 · BT",
+    "home.teaser.n3": "03 · Condotti sbarre",
+    "exp.scope.n1": "01 / MT",
+    "exp.scope.n2": "02 / BT",
+    "exp.scope.n3": "03 / Quadri",
+    "exp.scope.n4": "04 / Condotti sbarre",
+    "exp.scope.n5": "05 / Potenza",
+    "exp.scope.n6": "06 / Messa in tensione",
+    "refs.country.it.city": "Milano · Aprilia",
+    "refs.country.de.city": "Jülich",
+    "refs.country.pl.city": "Jarosław",
+    "refs.country.be.city": "Anversa · Moustier-sur-Sambre",
+    "refs.country.es.city": "Alcobendas",
+    "refs.country.sn.city": "Dakar",
+    "refs.mase.name": "MASE Rhône-Alpes",
+    "footer.mase": "Certificazione MASE",
+    "footer.linkedin": "LinkedIn",
+    /* ---- V7 · pages legales et merci (IT) ---- */
+    "legal.seo.title": "Note legali | Ener-Co",
+    "legal.seo.description": "Note legali del sito ener-co.fr: editore, hosting, proprietà intellettuale, responsabile della pubblicazione.",
+    "legal.b01": "Mentions légales",
+    "legal.b02": "Informations légales",
+    "legal.b03": "Mentions légales.",
+    "legal.b04": "1. Éditeur du site",
+    "legal.b05": "2. Hébergeur du site",
+    "legal.b06": "3. Propriété intellectuelle",
+    "legal.b07": "4. Données personnelles",
+    "legal.b08": "5. Cookies",
+    "legal.b09": "6. Liens externes",
+    "legal.b10": "7. Loi applicable et juridiction",
+    "legal.b11": "8. Contact",
+    "legal.b12": "Informations relatives à l'éditeur du site, à son hébergeur, à la propriété intellectuelle des contenus et aux conditions générales d'utilisation.",
+    "legal.b13": "Le site <strong>www.ener-co.fr</strong> est édité par&nbsp;:<br> <strong>Ener-Co SAS</strong>, Société par actions simplifiée<br> Capital social&nbsp;: 45&nbsp;000&nbsp;€<br> Siège social&nbsp;: 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> SIRET&nbsp;: 809&nbsp;073&nbsp;992&nbsp;00012<br> TVA intracommunautaire&nbsp;: FR09&nbsp;809073992<br> Code APE&nbsp;: 43.21A, Travaux d'installation électrique dans tous locaux<br> Téléphone&nbsp;: <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a><br> Courriel&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>",
+    "legal.b14": "<strong>Responsable de la publication&nbsp;:</strong> la Direction d'Ener-Co SAS.",
+    "legal.b15": "<strong>OVH SAS</strong><br> 2 rue Kellermann, 59100 Roubaix, France<br> Téléphone&nbsp;: <a href=\"tel:+33972101007\">+33&nbsp;(0)9&nbsp;72&nbsp;10&nbsp;10&nbsp;07</a><br> Site web&nbsp;: <a href=\"https://www.ovhcloud.com\" target=\"_blank\" rel=\"noopener\">www.ovhcloud.com</a>",
+    "legal.b16": "L'ensemble du site, structure, textes, photographies, schémas, logos, code source, est la propriété exclusive d'Ener-Co SAS ou des titulaires de droits ayant autorisé leur publication.",
+    "legal.b17": "Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, des éléments du site, par quelque procédé que ce soit, est interdite sans l'autorisation écrite préalable d'Ener-Co SAS.",
+    "legal.b18": "Les marques et logos de tiers reproduits sur le site (clients, partenaires, fabricants) demeurent la propriété exclusive de leurs titulaires respectifs. Leur mention illustre des chantiers ou références d'Ener-Co et ne constitue ni un partenariat commercial ni un endossement.",
+    "legal.b19": "Les informations recueillies via le formulaire de contact ou de candidature sont strictement destinées à Ener-Co SAS pour le traitement de votre demande. Elles ne sont ni cédées ni vendues à des tiers.",
+    "legal.b20": "Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés modifiée, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition sur vos données personnelles. Pour exercer ces droits, contactez&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>.",
+    "legal.b21": "Pour le détail des traitements, consultez notre <a href=\"politique-de-confidentialite.html\">politique de confidentialité</a>.",
+    "legal.b22": "Le site ener-co.fr utilise uniquement des cookies techniques nécessaires à son fonctionnement (préférence de langue, etc.). Aucun cookie publicitaire ou de mesure d'audience tierce n'est déposé sans votre consentement explicite.",
+    "legal.b23": "Le site peut contenir des liens vers des sites tiers. Ener-Co SAS n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leur disponibilité ou la collecte de données qu'ils opèrent.",
+    "legal.b24": "Les présentes mentions légales sont régies par le droit français. En cas de litige, et après tentative de résolution amiable, les tribunaux de Lyon seront seuls compétents.",
+    "legal.b25": "Pour toute question relative au site ou à ces mentions légales&nbsp;:<br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>",
+    "legal.b26": "Dernière mise à jour&nbsp;: avril 2026.",
+    "privacy.seo.title": "Informativa sulla privacy | Ener-Co",
+    "privacy.seo.description": "Informativa sulla privacy del sito ener-co.fr: trattamento dei dati personali, finalità, base giuridica, durata, diritti GDPR.",
+    "privacy.b01": "Politique de confidentialité",
+    "privacy.b02": "RGPD &amp; vie privée",
+    "privacy.b03": "Politique de confidentialité.",
+    "privacy.b04": "1. Responsable du traitement",
+    "privacy.b05": "2. Données collectées et finalités",
+    "privacy.b06": "3. Base légale du traitement",
+    "privacy.b07": "4. Destinataires des données",
+    "privacy.b08": "5. Durée de conservation",
+    "privacy.b09": "6. Vos droits",
+    "privacy.b10": "7. Réclamation auprès de la CNIL",
+    "privacy.b11": "8. Cookies",
+    "privacy.b12": "9. Sécurité",
+    "privacy.b13": "10. Modifications",
+    "privacy.b14": "Quelles données personnelles Ener-Co collecte, pour quelle finalité, sur quelle base légale, combien de temps, et quels sont vos droits.",
+    "privacy.b15": "<strong>Ener-Co SAS</strong><br> 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>",
+    "privacy.b16": "Ener-Co collecte uniquement les données strictement nécessaires au traitement de vos demandes&nbsp;:",
+    "privacy.b17": "Vos données sont traitées exclusivement par Ener-Co et son personnel habilité (direction commerciale, direction technique, RH). Elles ne sont ni vendues, ni cédées, ni transférées hors de l'Union européenne.",
+    "privacy.b18": "Aucun sous-traitant externe n'a accès aux données collectées via les formulaires du site, à l'exception de l'hébergeur du site et de la messagerie professionnelle Ener-Co (stockage et acheminement technique).",
+    "privacy.b19": "Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés modifiée, vous disposez des droits suivants&nbsp;:",
+    "privacy.b20": "Pour exercer ces droits, écrivez-nous à <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> ou par courrier&nbsp;: Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin. Une preuve d'identité pourra vous être demandée.",
+    "privacy.b21": "Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL&nbsp;: <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener\">www.cnil.fr</a>.",
+    "privacy.b22": "Le site ener-co.fr utilise uniquement un cookie technique de préférence de langue. Aucun cookie publicitaire, aucune mesure d'audience tierce (Google Analytics, Meta Pixel, etc.) n'est déposé sans consentement.",
+    "privacy.b23": "Si vous souhaitez supprimer ce cookie technique, vous pouvez le faire via les paramètres de votre navigateur. Cela ne perturbera pas le bon fonctionnement du site, hormis le rétablissement de la langue par défaut à chaque visite.",
+    "privacy.b24": "Ener-Co met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre la perte, l'utilisation abusive, l'accès non autorisé, la divulgation, l'altération ou la destruction (chiffrement TLS du site, contrôles d'accès, sauvegardes).",
+    "privacy.b25": "La présente politique de confidentialité peut être modifiée pour s'adapter à l'évolution de la réglementation, des pratiques de l'entreprise ou de la jurisprudence. La date de dernière mise à jour figure ci-dessous.",
+    "privacy.b26": "Dernière mise à jour&nbsp;: avril 2026.",
+    "privacy.b27": "<strong>Formulaire de contact&nbsp;:</strong> nom, prénom, raison sociale, fonction, courriel, téléphone, message. Finalité&nbsp;: répondre à votre demande commerciale ou technique.",
+    "privacy.b28": "<strong>Candidature (recrutement)&nbsp;:</strong> nom, prénom, courriel, téléphone, CV, lettre de motivation. Finalité&nbsp;: traiter votre candidature.",
+    "privacy.b29": "<strong>Cookies techniques&nbsp;:</strong> préférence de langue (FR/EN/IT). Finalité&nbsp;: confort de navigation. Aucune donnée d'identification personnelle.",
+    "privacy.b30": "<strong>Mesures précontractuelles</strong> à votre demande (article 6.1.b RGPD), pour les demandes commerciales et techniques.",
+    "privacy.b31": "<strong>Intérêt légitime</strong> d'Ener-Co (article 6.1.f RGPD), pour le suivi des candidatures.",
+    "privacy.b32": "<strong>Consentement</strong> (article 6.1.a RGPD), uniquement pour les éventuelles communications optionnelles.",
+    "privacy.b33": "<strong>Demandes commerciales/techniques&nbsp;:</strong> 3&nbsp;ans à compter du dernier contact.",
+    "privacy.b34": "<strong>Candidatures non retenues&nbsp;:</strong> 2&nbsp;ans à compter de la dernière interaction (sauf opposition explicite du candidat).",
+    "privacy.b35": "<strong>Documents contractuels (clients, fournisseurs)&nbsp;:</strong> 10&nbsp;ans (obligation comptable et fiscale).",
+    "privacy.b36": "<strong>Cookies techniques&nbsp;:</strong> 13&nbsp;mois maximum.",
+    "privacy.b37": "<strong>Droit d'accès</strong> à vos données personnelles.",
+    "privacy.b38": "<strong>Droit de rectification</strong> en cas de données inexactes ou incomplètes.",
+    "privacy.b39": "<strong>Droit à l'effacement</strong> (« droit à l'oubli »).",
+    "privacy.b40": "<strong>Droit à la limitation</strong> du traitement.",
+    "privacy.b41": "<strong>Droit à la portabilité</strong> de vos données.",
+    "privacy.b42": "<strong>Droit d'opposition</strong> au traitement, notamment à des fins de prospection.",
+    "privacy.b43": "<strong>Droit de définir des directives</strong> relatives au sort de vos données après votre décès.",
+    "merci.seo.title": "Richiesta inviata | Ener-Co",
+    "merci.seo.description": "La sua richiesta è stata inviata a Ener-Co. La ricontatteremo a breve.",
+    "merci.b01": "Richiesta inviata",
+    "merci.b02": "Vedere i progetti",
+    "merci.b03": "Vedere le referenze",
+    "merci.b04": "Grazie, la sua richiesta ci è pervenuta.",
+    "merci.b05": "Nel frattempo",
+    "merci.b06": "Contatto diretto",
+    "merci.b07": "Un membro della direzione commerciale la ricontatterà a breve per precisare il perimetro tecnico e le prossime tappe. In caso di urgenza, può contattarci direttamente per telefono.",
+    "merci.b08": "Potete esplorare i nostri cantieri documentati, i nostri settori di intervento e le nostre referenze clienti.",
+    "merci.b09": "<strong>Centralino commerciale</strong><br> <a href=\"tel:+33426076779\" data-coord-href=\"tel\" data-coord=\"telephone\">+33 (0)4 26 07 67 79</a><br> <a href=\"mailto:contact@ener-co.fr\" data-coord-href=\"mailto\" data-coord=\"email\">contact@ener-co.fr</a>",
+    "merci.b10": "<strong>Sede legale</strong><br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France",
   },
 };
 
@@ -1934,6 +2303,9 @@ function applyLang(lang) {
   // Re-applique la colorisation du nom Ener-Co · les data-i18n viennent de
   // remplacer du texte brut, on doit re-hydrater les spans.
   if (typeof colorizeBrandName === "function") colorizeBrandName();
+  // Certains blocs traduits contiennent des coordonnees (page merci) :
+  // on les reapplique pour ne pas retomber sur la valeur ecrite en dur.
+  if (typeof applyCoordonnees === "function") applyCoordonnees();
 }
 
 /* ---- LANG SWITCHER ---- */
@@ -2272,7 +2644,7 @@ function colorizeBrandName(root) {
    contenu produits par la console d'edition (/content/textes/*.json) et on
    applique leurs valeurs par-dessus. Un texte vide ou un fichier absent =
    on garde simplement la valeur d'origine. */
-const TEXT_FILES = ["commun", "accueil", "expertise", "realisations", "references", "secteurs", "engagements", "recrutement", "contact"];
+const TEXT_FILES = ["commun", "accueil", "expertise", "realisations", "references", "secteurs", "engagements", "recrutement", "contact", "legal", "privacy", "merci"];
 
 async function loadEditableTexts() {
   await Promise.all(TEXT_FILES.map(async (name) => {
@@ -2289,6 +2661,68 @@ async function loadEditableTexts() {
       });
     } catch (e) { /* hors ligne ou fichier absent : on garde les valeurs par defaut */ }
   }));
+}
+
+/* ---- COORDONNEES EDITABLES VIA LA CONSOLE ----
+   Telephone, email et adresse sont ecrits en dur dans chaque page (valeur par
+   defaut) et marques par data-coord="cle" (texte affiche) et
+   data-coord-href="tel|mailto" (lien cliquable). Au chargement on lit
+   /content/coordonnees.json et on remplace partout d'un coup. */
+let COORD = null; // coordonnees chargees, reappliquees apres chaque changement de langue
+
+function applyCoordonnees() {
+  const c = COORD;
+  if (!c) return;
+  document.querySelectorAll("[data-coord]").forEach((el) => {
+    const v = c[el.getAttribute("data-coord")];
+    if (typeof v === "string" && v !== "") el.textContent = v;
+  });
+  document.querySelectorAll("[data-coord-href]").forEach((el) => {
+    const kind = el.getAttribute("data-coord-href");
+    if (kind === "tel" && c.telephone_lien) el.setAttribute("href", "tel:" + c.telephone_lien);
+    if (kind === "mailto" && c.email) el.setAttribute("href", "mailto:" + c.email);
+  });
+}
+
+async function loadCoordonnees() {
+  try {
+    const res = await fetch("/content/coordonnees.json", { cache: "no-cache" });
+    if (!res.ok) return;
+    const c = await res.json();
+    if (!c || typeof c !== "object") return;
+    COORD = c;
+    applyCoordonnees();
+  } catch (e) { /* fichier absent ou hors ligne : on garde les valeurs par defaut */ }
+}
+
+/* ---- PHOTOS DES REALISATIONS EDITABLES VIA LA CONSOLE ----
+   Chaque <img> d'un cas est marque data-photo="cN.i" et garde sa photo
+   d'origine (jpg + webp). Si la console designe une autre photo pour cet
+   emplacement, on remplace la source et on retire les variantes webp (qui
+   correspondaient a l'ancienne image). Si la valeur est inchangee, on ne
+   touche a rien : la version optimisee reste servie. */
+async function loadPhotosRealisations() {
+  if (!document.querySelector("[data-photo]")) return;
+  try {
+    const res = await fetch("/content/realisations-photos.json", { cache: "no-cache" });
+    if (!res.ok) return;
+    const data = await res.json();
+    if (!data || !Array.isArray(data.cas)) return;
+    data.cas.forEach((c) => {
+      if (!c || !c.cle) return;
+      for (let i = 1; i <= 8; i++) {
+        const v = c["photo" + i];
+        if (typeof v !== "string" || v === "") continue;
+        const img = document.querySelector('[data-photo="' + c.cle + "." + i + '"]');
+        if (!img) continue;
+        const current = "/" + img.getAttribute("src").replace(/^\//, "");
+        if (v === current) continue;
+        const pic = img.closest("picture");
+        if (pic) pic.querySelectorAll("source").forEach((s) => s.remove());
+        img.setAttribute("src", v);
+      }
+    });
+  } catch (e) { /* fichier absent ou hors ligne : photos d'origine */ }
 }
 
 /* ---- INIT ---- */
@@ -2315,4 +2749,6 @@ document.addEventListener("DOMContentLoaded", () => {
     applyLang(saved);
     colorizeBrandName();
   });
+  loadCoordonnees();
+  loadPhotosRealisations();
 });

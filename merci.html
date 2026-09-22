@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#14181d">
 
-  <title>Demande envoyée | Ener-Co</title>
-  <meta name="description" content="Votre demande a bien été transmise à Ener-Co. Nous reviendrons vers vous rapidement.">
+  <title data-i18n="merci.seo.title">Demande envoyée | Ener-Co</title>
+  <meta name="description" content="Votre demande a bien été transmise à Ener-Co. Nous reviendrons vers vous rapidement." data-i18n-attr="content:merci.seo.description">
   <meta name="robots" content="noindex, follow">
 
   <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -17,7 +17,7 @@
 </head>
 <body>
 
-  <a href="#main" class="skip-link">Aller au contenu</a>
+  <a href="#main" class="skip-link" data-i18n="nav.skip">Aller au contenu</a>
 
   <header class="site-header">
     <div class="header-inner">
@@ -46,7 +46,7 @@
           </div>
         </div>
         <a href="contact.html" class="header-cta" data-i18n="nav.cta">Nous consulter</a>
-        <a href="tel:+33426076779" class="header-mobile-tel" aria-label="Appeler Ener-Co">
+        <a href="tel:+33426076779" class="header-mobile-tel" data-coord-href="tel" aria-label="Appeler Ener-Co">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         </a>
         <button type="button" class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-drawer">
@@ -59,21 +59,21 @@
   <div class="backdrop" aria-hidden="true"></div>
   <aside id="mobile-drawer" class="mobile-drawer" aria-label="Menu mobile" aria-hidden="true">
     <nav aria-label="Navigation mobile">
-      <a href="index.html">Accueil</a>
-      <a href="expertise.html">Expertise</a>
-      <a href="realisations.html">Réalisations</a>
-      <a href="secteurs.html">Secteurs</a>
-      <a href="references.html">Références</a>
-      <a href="engagements.html">Engagements</a>
-      <a href="recrutement.html">Recrutement</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="expertise.html" data-i18n="nav.expertise">Expertise</a>
+      <a href="realisations.html" data-i18n="nav.realisations">Réalisations</a>
+      <a href="secteurs.html" data-i18n="nav.secteurs">Secteurs</a>
+      <a href="references.html" data-i18n="nav.references">Références</a>
+      <a href="engagements.html" data-i18n="nav.engagements">Engagements</a>
+      <a href="recrutement.html" data-i18n="nav.recrutement">Recrutement</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
     </nav>
     <div class="mobile-drawer__footer">
-      <a href="tel:+33426076779" class="mobile-drawer__tel">
+      <a href="tel:+33426076779" class="mobile-drawer__tel" data-coord-href="tel">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        +33 (0)4 26 07 67 79
+        <span data-coord="telephone">+33 (0)4 26 07 67 79</span>
       </a>
-      <a href="contact.html" class="mobile-drawer__cta">Nous consulter</a>
+      <a href="contact.html" class="mobile-drawer__cta" data-i18n="nav.cta">Nous consulter</a>
     </div>
   </aside>
 
@@ -81,9 +81,9 @@
 
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Demande envoyée</span>
-        <h1>Merci, votre demande nous est parvenue.</h1>
-        <p class="page-hero__lede">Un membre de la direction commerciale revient vers vous rapidement pour préciser le périmètre technique et les prochaines étapes. En cas d'urgence, vous pouvez nous joindre directement par téléphone.</p>
+        <span class="eyebrow" data-i18n="merci.b01">Demande envoyée</span>
+        <h1 data-i18n="merci.b04">Merci, votre demande nous est parvenue.</h1>
+        <p class="page-hero__lede" data-i18n="merci.b07">Un membre de la direction commerciale revient vers vous rapidement pour préciser le périmètre technique et les prochaines étapes. En cas d'urgence, vous pouvez nous joindre directement par téléphone.</p>
       </div>
     </section>
 
@@ -91,22 +91,22 @@
       <div class="container container--narrow">
 
         <article class="legal-article">
-          <h2>Pendant ce temps</h2>
-          <p>Vous pouvez explorer nos chantiers documentés, nos secteurs d'intervention et nos références clients.</p>
+          <h2 data-i18n="merci.b05">Pendant ce temps</h2>
+          <p data-i18n="merci.b08">Vous pouvez explorer nos chantiers documentés, nos secteurs d'intervention et nos références clients.</p>
           <p style="margin-top:18px;">
-            <a href="realisations.html" class="button button--accent" style="margin-right:10px;">Voir les réalisations <span class="arrow" aria-hidden="true">→</span></a>
-            <a href="references.html" class="button button--ghost-dark">Voir les références</a>
+            <a href="realisations.html" class="button button--accent" style="margin-right:10px;"><span data-i18n="merci.b02">Voir les réalisations</span> <span class="arrow" aria-hidden="true">→</span></a>
+            <a href="references.html" class="button button--ghost-dark" data-i18n="merci.b03">Voir les références</a>
           </p>
         </article>
 
         <article class="legal-article">
-          <h2>Contact direct</h2>
-          <p>
+          <h2 data-i18n="merci.b06">Contact direct</h2>
+          <p data-i18n="merci.b09">
             <strong>Standard commercial</strong><br>
-            <a href="tel:+33426076779">+33 (0)4 26 07 67 79</a><br>
-            <a href="mailto:contact@ener-co.fr">contact@ener-co.fr</a>
+            <a href="tel:+33426076779" data-coord-href="tel" data-coord="telephone">+33 (0)4 26 07 67 79</a><br>
+            <a href="mailto:contact@ener-co.fr" data-coord-href="mailto" data-coord="email">contact@ener-co.fr</a>
           </p>
-          <p>
+          <p data-i18n="merci.b10">
             <strong>Siège social</strong><br>
             Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France
           </p>
@@ -139,23 +139,23 @@
         <div class="footer__col">
           <h4 data-i18n="footer.office.title">Siège social</h4>
           <address>
-            Ener-Co SAS<br>
-            11 rue Sigmund Freud<br>
-            69120 Vaulx-en-Velin · France<br>
-            <a href="tel:+33426076779">+33 (0)4 26 07 67 79</a><br>
-            <a href="mailto:contact@ener-co.fr">contact@ener-co.fr</a>
+            <span data-coord="societe">Ener-Co SAS</span><br>
+            <span data-coord="adresse_rue">11 rue Sigmund Freud</span><br>
+            <span data-coord="adresse_ville">69120 Vaulx-en-Velin · France</span><br>
+            <a href="tel:+33426076779" data-coord-href="tel" data-coord="telephone">+33 (0)4 26 07 67 79</a><br>
+            <a href="mailto:contact@ener-co.fr" data-coord-href="mailto" data-coord="email">contact@ener-co.fr</a>
           </address>
         </div>
         <div class="footer__col">
           <h4 data-i18n="footer.company.title">Société</h4>
           <ul>
-            <li>Certification MASE</li>
-            <li><a href="https://www.linkedin.com/company/ener-co-fr" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li data-i18n="footer.mase">Certification MASE</li>
+            <li><a href="https://www.linkedin.com/company/ener-co-fr" target="_blank" rel="noopener" data-i18n="footer.linkedin">LinkedIn</a></li>
           </ul>
         </div>
       </div>
       <div class="footer__bottom">
-        <span>© <span id="year">2026</span> Ener-Co SAS · <span data-i18n="footer.rights">Tous droits réservés.</span></span>
+        <span>© <span id="year">2026</span> <span data-coord="societe">Ener-Co SAS</span> · <span data-i18n="footer.rights">Tous droits réservés.</span></span>
         <div class="footer__links">
           <a href="mentions-legales.html" data-i18n="footer.legal1">Mentions légales</a>
           <a href="politique-de-confidentialite.html" data-i18n="footer.legal2">Politique de confidentialité</a>

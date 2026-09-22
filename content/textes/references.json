@@ -335,6 +335,60 @@
       "fr": "Direction commerciale",
       "en": "Sales management",
       "it": "Direzione commerciale"
+    },
+    {
+      "cle": "refs.seo.title",
+      "fr": "Références · clients, partenaires, qualification MASE | Ener-Co",
+      "en": "References · clients, partners, MASE qualification | Ener-Co",
+      "it": "Referenze · clienti, partner, qualifica MASE | Ener-Co"
+    },
+    {
+      "cle": "refs.seo.description",
+      "fr": "Références clients, partenaires intégrateurs et pays d'intervention d'Ener-Co. Certification MASE Rhône-Alpes. 7 pays couverts en Europe et à l'international.",
+      "en": "Ener-Co client references, integrator partners and countries of operation. MASE Rhône-Alpes certification. 7 countries covered in Europe and internationally.",
+      "it": "Referenze clienti, partner integratori e paesi di intervento di Ener-Co. Certificazione MASE Rhône-Alpes. 7 paesi coperti in Europa e a livello internazionale."
+    },
+    {
+      "cle": "refs.country.it.city",
+      "fr": "Milan · Aprilia",
+      "en": "Milan · Aprilia",
+      "it": "Milano · Aprilia"
+    },
+    {
+      "cle": "refs.country.de.city",
+      "fr": "Jülich",
+      "en": "Jülich",
+      "it": "Jülich"
+    },
+    {
+      "cle": "refs.country.pl.city",
+      "fr": "Jarosław",
+      "en": "Jarosław",
+      "it": "Jarosław"
+    },
+    {
+      "cle": "refs.country.be.city",
+      "fr": "Anvers · Moustier-sur-Sambre",
+      "en": "Antwerp · Moustier-sur-Sambre",
+      "it": "Anversa · Moustier-sur-Sambre"
+    },
+    {
+      "cle": "refs.country.es.city",
+      "fr": "Alcobendas",
+      "en": "Alcobendas",
+      "it": "Alcobendas"
+    },
+    {
+      "cle": "refs.country.sn.city",
+      "fr": "Dakar",
+      "en": "Dakar",
+      "it": "Dakar"
+    },
+    {
+      "cle": "refs.mase.name",
+      "fr": "MASE Rhône-Alpes",
+      "en": "MASE Rhône-Alpes",
+      "it": "MASE Rhône-Alpes"
     }
   ]
 }

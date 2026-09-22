@@ -341,6 +341,36 @@
       "fr": "Voir le détail des implantations",
       "en": "See all locations",
       "it": "Vedere il dettaglio delle sedi"
+    },
+    {
+      "cle": "home.seo.title",
+      "fr": "Ener-Co · Distribution d'énergie industrielle | HTA, TGBT, gaines à barres",
+      "en": "Ener-Co · Industrial power distribution | MV, LV, busways",
+      "it": "Ener-Co · Distribuzione di energia industriale | MT, BT, condotti sbarre"
+    },
+    {
+      "cle": "home.seo.description",
+      "fr": "Ener-Co · distribution d'énergie industrielle sur sites techniques sensibles. HTA, TGBT, gaines à barres. France, Europe et international. Certifié MASE.",
+      "en": "Ener-Co · industrial power distribution on sensitive technical sites. MV, LV, busways. France, Europe and international. MASE certified.",
+      "it": "Ener-Co · distribuzione di energia industriale su siti tecnici sensibili. MT, BT, condotti sbarre. Francia, Europa e internazionale. Certificata MASE."
+    },
+    {
+      "cle": "home.teaser.n1",
+      "fr": "01 · HTA",
+      "en": "01 · MV",
+      "it": "01 · MT"
+    },
+    {
+      "cle": "home.teaser.n2",
+      "fr": "02 · TGBT",
+      "en": "02 · LV",
+      "it": "02 · BT"
+    },
+    {
+      "cle": "home.teaser.n3",
+      "fr": "03 · Gaines à barres",
+      "en": "03 · Busways",
+      "it": "03 · Condotti sbarre"
     }
   ]
 }

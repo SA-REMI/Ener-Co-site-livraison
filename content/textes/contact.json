@@ -233,6 +233,18 @@
       "fr": "Précisez l'objet de votre demande",
       "en": "Specify the subject of your request",
       "it": "Specificare l'oggetto della richiesta"
+    },
+    {
+      "cle": "contact.seo.title",
+      "fr": "Contact · demander une étude | Ener-Co",
+      "en": "Contact · request a study | Ener-Co",
+      "it": "Contatti · richiedere uno studio | Ener-Co"
+    },
+    {
+      "cle": "contact.seo.description",
+      "fr": "Contactez Ener-Co pour une étude technique, un chiffrage ou un raccordement puissance. Siège social à Vaulx-en-Velin, interventions France, Europe et à l'international.",
+      "en": "Contact Ener-Co for a technical study, a quotation or a power connection. Head office in Vaulx-en-Velin, operations in France, Europe and internationally.",
+      "it": "Contattate Ener-Co per uno studio tecnico, un preventivo o un collegamento di potenza. Sede a Vaulx-en-Velin, interventi in Francia, Europa e a livello internazionale."
     }
   ]
 }

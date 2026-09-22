@@ -245,6 +245,54 @@
       "fr": "Direction commerciale",
       "en": "Sales management",
       "it": "Direzione commerciale"
+    },
+    {
+      "cle": "exp.seo.title",
+      "fr": "Expertise · HTA, TGBT, gaines à barres | Ener-Co",
+      "en": "Expertise · MV, LV, busways | Ener-Co",
+      "it": "Competenze · MT, BT, condotti sbarre | Ener-Co"
+    },
+    {
+      "cle": "exp.seo.description",
+      "fr": "Périmètre d'intervention Ener-Co : haute tension, alimentations TGBT, tableaux, gaines à barres, raccordements puissance et mise sous tension. Sans sous-traitance.",
+      "en": "Ener-Co's scope of work: medium voltage, LV feeders, switchboards, busways, power connections and energisation. No subcontracting.",
+      "it": "Perimetro di intervento Ener-Co: media tensione, alimentazioni BT, quadri, condotti sbarre, collegamenti di potenza e messa in tensione. Senza subappalto."
+    },
+    {
+      "cle": "exp.scope.n1",
+      "fr": "01 / HTA",
+      "en": "01 / MV",
+      "it": "01 / MT"
+    },
+    {
+      "cle": "exp.scope.n2",
+      "fr": "02 / TGBT",
+      "en": "02 / LV",
+      "it": "02 / BT"
+    },
+    {
+      "cle": "exp.scope.n3",
+      "fr": "03 / Tableaux",
+      "en": "03 / Switchboards",
+      "it": "03 / Quadri"
+    },
+    {
+      "cle": "exp.scope.n4",
+      "fr": "04 / GAB",
+      "en": "04 / Busways",
+      "it": "04 / Condotti sbarre"
+    },
+    {
+      "cle": "exp.scope.n5",
+      "fr": "05 / Puissance",
+      "en": "05 / Power",
+      "it": "05 / Potenza"
+    },
+    {
+      "cle": "exp.scope.n6",
+      "fr": "06 / MST",
+      "en": "06 / Energisation",
+      "it": "06 / Messa in tensione"
     }
   ]
 }

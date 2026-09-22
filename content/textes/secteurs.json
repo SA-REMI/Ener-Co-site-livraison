@@ -623,6 +623,18 @@
       "fr": "Avec exploitation et maintenance",
       "en": "With operation and maintenance",
       "it": "Con esercizio e manutenzione"
+    },
+    {
+      "cle": "sect.seo.title",
+      "fr": "Secteurs d'intervention | Ener-Co",
+      "en": "Sectors | Ener-Co",
+      "it": "Settori di intervento | Ener-Co"
+    },
+    {
+      "cle": "sect.seo.description",
+      "fr": "Ener-Co intervient sur data centers, industrie lourde, pharma, énergie, nucléaire, utilités, agroalimentaire, chimie et aéronautique. Distribution d'énergie industrielle.",
+      "en": "Ener-Co operates in data centres, heavy industry, pharma, energy, nuclear, utilities, food processing, chemicals and aerospace. Industrial power distribution.",
+      "it": "Ener-Co interviene in data center, industria pesante, farmaceutica, energia, nucleare, utility, agroalimentare, chimica e aeronautica. Distribuzione di energia industriale."
     }
   ]
 }

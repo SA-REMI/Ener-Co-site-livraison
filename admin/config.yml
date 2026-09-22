@@ -136,6 +136,84 @@ collections:
         description: "Menu de navigation, pied de page et messages d'erreur · ces textes apparaissent sur toutes les pages."
         fields: *champs_texte
 
+  - name: "txt_merci"
+    label: "Page « merci » · textes"
+    delete: false
+    files:
+      - name: "textes"
+        label: "Textes de la page de confirmation"
+        file: "content/textes/merci.json"
+        description: "La page affichée après l'envoi du formulaire de contact, dans les trois langues."
+        fields: *champs_texte
+
+  - name: "txt_legal"
+    label: "Mentions légales · textes"
+    delete: false
+    files:
+      - name: "textes"
+        label: "Textes des mentions légales"
+        file: "content/textes/legal.json"
+        description: "Page en français. Les cases Anglais et Italien contiennent le même texte français : traduisez-les si vous le souhaitez. Certains blocs contiennent des balises comme <strong> ou <br> : gardez-les telles quelles."
+        fields: *champs_texte
+
+  - name: "txt_privacy"
+    label: "Politique de confidentialité · textes"
+    delete: false
+    files:
+      - name: "textes"
+        label: "Textes de la politique de confidentialité"
+        file: "content/textes/privacy.json"
+        description: "Page en français. Les cases Anglais et Italien contiennent le même texte français : traduisez-les si vous le souhaitez. Certains blocs contiennent des balises comme <strong> ou <a> : gardez-les telles quelles."
+        fields: *champs_texte
+
+  # ------------------------------------------------------------------------
+  # COORDONNEES · telephone, email, adresse (en-tete, pied de page, bandeaux)
+  # Un seul endroit, applique sur toutes les pages au chargement.
+  # ------------------------------------------------------------------------
+  - name: "coordonnees"
+    label: "Coordonnées (téléphone, email, adresse)"
+    delete: false
+    files:
+      - name: "coordonnees"
+        label: "Coordonnées de la société"
+        file: "content/coordonnees.json"
+        description: "Le téléphone, l'email et l'adresse affichés dans l'en-tête, le pied de page et les bandeaux de contact de toutes les pages. Une modification ici se répercute partout."
+        fields:
+          - { name: "societe", label: "Raison sociale", widget: "string", hint: "ex : Ener-Co SAS" }
+          - { name: "telephone", label: "Téléphone (tel qu'affiché)", widget: "string", hint: "ex : +33 (0)4 26 07 67 79" }
+          - { name: "telephone_lien", label: "Téléphone (format lien, sans espaces)", widget: "string", hint: "ex : +33426076779. Sert au clic-pour-appeler sur mobile." }
+          - { name: "email", label: "Adresse email", widget: "string", hint: "ex : contact@ener-co.fr" }
+          - { name: "adresse_rue", label: "Adresse · rue", widget: "string", hint: "ex : 11 rue Sigmund Freud" }
+          - { name: "adresse_ville", label: "Adresse · code postal et ville", widget: "string", hint: "ex : 69120 Vaulx-en-Velin · France" }
+
+  # ------------------------------------------------------------------------
+  # PHOTOS DES REALISATIONS · 4 photos par cas
+  # La photo d'origine reste tant qu'on n'en choisit pas une autre.
+  # ------------------------------------------------------------------------
+  - name: "photos_realisations"
+    label: "Réalisations · photos"
+    delete: false
+    files:
+      - name: "cas"
+        label: "Photos de chaque réalisation"
+        file: "content/realisations-photos.json"
+        description: "Les 4 photos de chaque cas de la page Réalisations. Cliquez un cas pour le déplier et remplacer une photo. Formats jpg ou png, 1600 px de large maximum conseillé."
+        fields:
+          - name: "cas"
+            label: "Réalisations"
+            label_singular: "Réalisation"
+            widget: "list"
+            collapsed: true
+            allow_add: false
+            summary: "{{fields.intitule}}"
+            fields:
+              - { name: "intitule", label: "Réalisation", widget: "string", hint: "Repère seulement : le titre affiché sur le site se modifie dans « Réalisations · textes »." }
+              - { name: "photo1", label: "Photo 1", widget: "image", media_folder: "/assets/images/realisations", public_folder: "/assets/images/realisations" }
+              - { name: "photo2", label: "Photo 2", widget: "image", media_folder: "/assets/images/realisations", public_folder: "/assets/images/realisations" }
+              - { name: "photo3", label: "Photo 3", widget: "image", media_folder: "/assets/images/realisations", public_folder: "/assets/images/realisations" }
+              - { name: "photo4", label: "Photo 4", widget: "image", media_folder: "/assets/images/realisations", public_folder: "/assets/images/realisations" }
+              - { name: "cle", label: "Référence technique", widget: "hidden" }
+
   # ------------------------------------------------------------------------
   # REFERENCES CLIENTS · logos (liste d'images)
   # ------------------------------------------------------------------------

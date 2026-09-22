@@ -1,0 +1,52 @@
+{
+  "cas": [
+    {
+      "cle": "c6",
+      "intitule": "Remplacement de tubes cuivre · site sidérurgique",
+      "photo1": "/assets/images/siderurgie/siderurgie-1.jpg",
+      "photo2": "/assets/images/siderurgie/siderurgie-2.jpg",
+      "photo3": "/assets/images/siderurgie/siderurgie-3.jpg",
+      "photo4": "/assets/images/siderurgie/siderurgie-4.jpg"
+    },
+    {
+      "cle": "c2",
+      "intitule": "Chaufferie gaz 2000 A · Est lyonnais",
+      "photo1": "/assets/images/chaufferie-gaz-1.jpg",
+      "photo2": "/assets/images/chaufferie-gaz-2.jpg",
+      "photo3": "/assets/images/chaufferie-gaz-3.jpg",
+      "photo4": "/assets/images/chaufferie-gaz-4.jpg"
+    },
+    {
+      "cle": "c5",
+      "intitule": "Poste HTA · Panattoni, Colombier-Saugnieu.",
+      "photo1": "/assets/images/poste-hta-panattoni/panattoni-hta-1.jpg",
+      "photo2": "/assets/images/poste-hta-panattoni/panattoni-hta-2.jpg",
+      "photo3": "/assets/images/poste-hta-panattoni/panattoni-hta-3.jpg",
+      "photo4": "/assets/images/poste-hta-panattoni/panattoni-hta-4.jpg"
+    },
+    {
+      "cle": "c3",
+      "intitule": "Fibre Excellence · installation Eta-com",
+      "photo1": "/assets/images/sg-hd-2.png",
+      "photo2": "/assets/images/st-gaudens-5.jpg",
+      "photo3": "/assets/images/st-gaudens-6.jpg",
+      "photo4": "/assets/images/st-gaudens-7.jpg"
+    },
+    {
+      "cle": "c4",
+      "intitule": "Poste HTA · cellules Schneider Electric.",
+      "photo1": "/assets/images/poste-hta/poste-hta-3.jpg",
+      "photo2": "/assets/images/poste-hta/poste-hta-1.jpg",
+      "photo3": "/assets/images/poste-hta/poste-hta-4.jpg",
+      "photo4": "/assets/images/poste-hta/poste-hta-5.jpg"
+    },
+    {
+      "cle": "c1",
+      "intitule": "Saint-Gaudens · ligne neuve Beto-Bar IP68 LB16EA",
+      "photo1": "/assets/images/sg-hd-main.png",
+      "photo2": "/assets/images/st-gaudens-2.jpg",
+      "photo3": "/assets/images/st-gaudens-3.jpg",
+      "photo4": "/assets/images/st-gaudens-4.jpg"
+    }
+  ]
+}

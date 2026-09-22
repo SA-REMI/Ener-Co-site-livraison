@@ -1,0 +1,274 @@
+{
+  "textes": [
+    {
+      "cle": "privacy.seo.title",
+      "fr": "Politique de confidentialité | Ener-Co",
+      "en": "Privacy policy | Ener-Co",
+      "it": "Informativa sulla privacy | Ener-Co"
+    },
+    {
+      "cle": "privacy.seo.description",
+      "fr": "Politique de confidentialité du site ener-co.fr, traitement des données personnelles, finalités, base légale, durée, droits RGPD.",
+      "en": "Privacy policy for ener-co.fr: personal data processing, purposes, legal basis, retention, GDPR rights.",
+      "it": "Informativa sulla privacy del sito ener-co.fr: trattamento dei dati personali, finalità, base giuridica, durata, diritti GDPR."
+    },
+    {
+      "cle": "privacy.b01",
+      "fr": "Politique de confidentialité",
+      "en": "Politique de confidentialité",
+      "it": "Politique de confidentialité"
+    },
+    {
+      "cle": "privacy.b02",
+      "fr": "RGPD &amp; vie privée",
+      "en": "RGPD &amp; vie privée",
+      "it": "RGPD &amp; vie privée"
+    },
+    {
+      "cle": "privacy.b03",
+      "fr": "Politique de confidentialité.",
+      "en": "Politique de confidentialité.",
+      "it": "Politique de confidentialité."
+    },
+    {
+      "cle": "privacy.b04",
+      "fr": "1. Responsable du traitement",
+      "en": "1. Responsable du traitement",
+      "it": "1. Responsable du traitement"
+    },
+    {
+      "cle": "privacy.b05",
+      "fr": "2. Données collectées et finalités",
+      "en": "2. Données collectées et finalités",
+      "it": "2. Données collectées et finalités"
+    },
+    {
+      "cle": "privacy.b06",
+      "fr": "3. Base légale du traitement",
+      "en": "3. Base légale du traitement",
+      "it": "3. Base légale du traitement"
+    },
+    {
+      "cle": "privacy.b07",
+      "fr": "4. Destinataires des données",
+      "en": "4. Destinataires des données",
+      "it": "4. Destinataires des données"
+    },
+    {
+      "cle": "privacy.b08",
+      "fr": "5. Durée de conservation",
+      "en": "5. Durée de conservation",
+      "it": "5. Durée de conservation"
+    },
+    {
+      "cle": "privacy.b09",
+      "fr": "6. Vos droits",
+      "en": "6. Vos droits",
+      "it": "6. Vos droits"
+    },
+    {
+      "cle": "privacy.b10",
+      "fr": "7. Réclamation auprès de la CNIL",
+      "en": "7. Réclamation auprès de la CNIL",
+      "it": "7. Réclamation auprès de la CNIL"
+    },
+    {
+      "cle": "privacy.b11",
+      "fr": "8. Cookies",
+      "en": "8. Cookies",
+      "it": "8. Cookies"
+    },
+    {
+      "cle": "privacy.b12",
+      "fr": "9. Sécurité",
+      "en": "9. Sécurité",
+      "it": "9. Sécurité"
+    },
+    {
+      "cle": "privacy.b13",
+      "fr": "10. Modifications",
+      "en": "10. Modifications",
+      "it": "10. Modifications"
+    },
+    {
+      "cle": "privacy.b14",
+      "fr": "Quelles données personnelles Ener-Co collecte, pour quelle finalité, sur quelle base légale, combien de temps, et quels sont vos droits.",
+      "en": "Quelles données personnelles Ener-Co collecte, pour quelle finalité, sur quelle base légale, combien de temps, et quels sont vos droits.",
+      "it": "Quelles données personnelles Ener-Co collecte, pour quelle finalité, sur quelle base légale, combien de temps, et quels sont vos droits."
+    },
+    {
+      "cle": "privacy.b15",
+      "fr": "<strong>Ener-Co SAS</strong><br> 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>",
+      "en": "<strong>Ener-Co SAS</strong><br> 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>",
+      "it": "<strong>Ener-Co SAS</strong><br> 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>"
+    },
+    {
+      "cle": "privacy.b16",
+      "fr": "Ener-Co collecte uniquement les données strictement nécessaires au traitement de vos demandes&nbsp;:",
+      "en": "Ener-Co collecte uniquement les données strictement nécessaires au traitement de vos demandes&nbsp;:",
+      "it": "Ener-Co collecte uniquement les données strictement nécessaires au traitement de vos demandes&nbsp;:"
+    },
+    {
+      "cle": "privacy.b17",
+      "fr": "Vos données sont traitées exclusivement par Ener-Co et son personnel habilité (direction commerciale, direction technique, RH). Elles ne sont ni vendues, ni cédées, ni transférées hors de l'Union européenne.",
+      "en": "Vos données sont traitées exclusivement par Ener-Co et son personnel habilité (direction commerciale, direction technique, RH). Elles ne sont ni vendues, ni cédées, ni transférées hors de l'Union européenne.",
+      "it": "Vos données sont traitées exclusivement par Ener-Co et son personnel habilité (direction commerciale, direction technique, RH). Elles ne sont ni vendues, ni cédées, ni transférées hors de l'Union européenne."
+    },
+    {
+      "cle": "privacy.b18",
+      "fr": "Aucun sous-traitant externe n'a accès aux données collectées via les formulaires du site, à l'exception de l'hébergeur du site et de la messagerie professionnelle Ener-Co (stockage et acheminement technique).",
+      "en": "Aucun sous-traitant externe n'a accès aux données collectées via les formulaires du site, à l'exception de l'hébergeur du site et de la messagerie professionnelle Ener-Co (stockage et acheminement technique).",
+      "it": "Aucun sous-traitant externe n'a accès aux données collectées via les formulaires du site, à l'exception de l'hébergeur du site et de la messagerie professionnelle Ener-Co (stockage et acheminement technique)."
+    },
+    {
+      "cle": "privacy.b19",
+      "fr": "Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés modifiée, vous disposez des droits suivants&nbsp;:",
+      "en": "Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés modifiée, vous disposez des droits suivants&nbsp;:",
+      "it": "Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés modifiée, vous disposez des droits suivants&nbsp;:"
+    },
+    {
+      "cle": "privacy.b20",
+      "fr": "Pour exercer ces droits, écrivez-nous à <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> ou par courrier&nbsp;: Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin. Une preuve d'identité pourra vous être demandée.",
+      "en": "Pour exercer ces droits, écrivez-nous à <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> ou par courrier&nbsp;: Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin. Une preuve d'identité pourra vous être demandée.",
+      "it": "Pour exercer ces droits, écrivez-nous à <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> ou par courrier&nbsp;: Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin. Une preuve d'identité pourra vous être demandée."
+    },
+    {
+      "cle": "privacy.b21",
+      "fr": "Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL&nbsp;: <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener\">www.cnil.fr</a>.",
+      "en": "Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL&nbsp;: <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener\">www.cnil.fr</a>.",
+      "it": "Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL&nbsp;: <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener\">www.cnil.fr</a>."
+    },
+    {
+      "cle": "privacy.b22",
+      "fr": "Le site ener-co.fr utilise uniquement un cookie technique de préférence de langue. Aucun cookie publicitaire, aucune mesure d'audience tierce (Google Analytics, Meta Pixel, etc.) n'est déposé sans consentement.",
+      "en": "Le site ener-co.fr utilise uniquement un cookie technique de préférence de langue. Aucun cookie publicitaire, aucune mesure d'audience tierce (Google Analytics, Meta Pixel, etc.) n'est déposé sans consentement.",
+      "it": "Le site ener-co.fr utilise uniquement un cookie technique de préférence de langue. Aucun cookie publicitaire, aucune mesure d'audience tierce (Google Analytics, Meta Pixel, etc.) n'est déposé sans consentement."
+    },
+    {
+      "cle": "privacy.b23",
+      "fr": "Si vous souhaitez supprimer ce cookie technique, vous pouvez le faire via les paramètres de votre navigateur. Cela ne perturbera pas le bon fonctionnement du site, hormis le rétablissement de la langue par défaut à chaque visite.",
+      "en": "Si vous souhaitez supprimer ce cookie technique, vous pouvez le faire via les paramètres de votre navigateur. Cela ne perturbera pas le bon fonctionnement du site, hormis le rétablissement de la langue par défaut à chaque visite.",
+      "it": "Si vous souhaitez supprimer ce cookie technique, vous pouvez le faire via les paramètres de votre navigateur. Cela ne perturbera pas le bon fonctionnement du site, hormis le rétablissement de la langue par défaut à chaque visite."
+    },
+    {
+      "cle": "privacy.b24",
+      "fr": "Ener-Co met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre la perte, l'utilisation abusive, l'accès non autorisé, la divulgation, l'altération ou la destruction (chiffrement TLS du site, contrôles d'accès, sauvegardes).",
+      "en": "Ener-Co met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre la perte, l'utilisation abusive, l'accès non autorisé, la divulgation, l'altération ou la destruction (chiffrement TLS du site, contrôles d'accès, sauvegardes).",
+      "it": "Ener-Co met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre la perte, l'utilisation abusive, l'accès non autorisé, la divulgation, l'altération ou la destruction (chiffrement TLS du site, contrôles d'accès, sauvegardes)."
+    },
+    {
+      "cle": "privacy.b25",
+      "fr": "La présente politique de confidentialité peut être modifiée pour s'adapter à l'évolution de la réglementation, des pratiques de l'entreprise ou de la jurisprudence. La date de dernière mise à jour figure ci-dessous.",
+      "en": "La présente politique de confidentialité peut être modifiée pour s'adapter à l'évolution de la réglementation, des pratiques de l'entreprise ou de la jurisprudence. La date de dernière mise à jour figure ci-dessous.",
+      "it": "La présente politique de confidentialité peut être modifiée pour s'adapter à l'évolution de la réglementation, des pratiques de l'entreprise ou de la jurisprudence. La date de dernière mise à jour figure ci-dessous."
+    },
+    {
+      "cle": "privacy.b26",
+      "fr": "Dernière mise à jour&nbsp;: avril 2026.",
+      "en": "Dernière mise à jour&nbsp;: avril 2026.",
+      "it": "Dernière mise à jour&nbsp;: avril 2026."
+    },
+    {
+      "cle": "privacy.b27",
+      "fr": "<strong>Formulaire de contact&nbsp;:</strong> nom, prénom, raison sociale, fonction, courriel, téléphone, message. Finalité&nbsp;: répondre à votre demande commerciale ou technique.",
+      "en": "<strong>Formulaire de contact&nbsp;:</strong> nom, prénom, raison sociale, fonction, courriel, téléphone, message. Finalité&nbsp;: répondre à votre demande commerciale ou technique.",
+      "it": "<strong>Formulaire de contact&nbsp;:</strong> nom, prénom, raison sociale, fonction, courriel, téléphone, message. Finalité&nbsp;: répondre à votre demande commerciale ou technique."
+    },
+    {
+      "cle": "privacy.b28",
+      "fr": "<strong>Candidature (recrutement)&nbsp;:</strong> nom, prénom, courriel, téléphone, CV, lettre de motivation. Finalité&nbsp;: traiter votre candidature.",
+      "en": "<strong>Candidature (recrutement)&nbsp;:</strong> nom, prénom, courriel, téléphone, CV, lettre de motivation. Finalité&nbsp;: traiter votre candidature.",
+      "it": "<strong>Candidature (recrutement)&nbsp;:</strong> nom, prénom, courriel, téléphone, CV, lettre de motivation. Finalité&nbsp;: traiter votre candidature."
+    },
+    {
+      "cle": "privacy.b29",
+      "fr": "<strong>Cookies techniques&nbsp;:</strong> préférence de langue (FR/EN/IT). Finalité&nbsp;: confort de navigation. Aucune donnée d'identification personnelle.",
+      "en": "<strong>Cookies techniques&nbsp;:</strong> préférence de langue (FR/EN/IT). Finalité&nbsp;: confort de navigation. Aucune donnée d'identification personnelle.",
+      "it": "<strong>Cookies techniques&nbsp;:</strong> préférence de langue (FR/EN/IT). Finalité&nbsp;: confort de navigation. Aucune donnée d'identification personnelle."
+    },
+    {
+      "cle": "privacy.b30",
+      "fr": "<strong>Mesures précontractuelles</strong> à votre demande (article 6.1.b RGPD), pour les demandes commerciales et techniques.",
+      "en": "<strong>Mesures précontractuelles</strong> à votre demande (article 6.1.b RGPD), pour les demandes commerciales et techniques.",
+      "it": "<strong>Mesures précontractuelles</strong> à votre demande (article 6.1.b RGPD), pour les demandes commerciales et techniques."
+    },
+    {
+      "cle": "privacy.b31",
+      "fr": "<strong>Intérêt légitime</strong> d'Ener-Co (article 6.1.f RGPD), pour le suivi des candidatures.",
+      "en": "<strong>Intérêt légitime</strong> d'Ener-Co (article 6.1.f RGPD), pour le suivi des candidatures.",
+      "it": "<strong>Intérêt légitime</strong> d'Ener-Co (article 6.1.f RGPD), pour le suivi des candidatures."
+    },
+    {
+      "cle": "privacy.b32",
+      "fr": "<strong>Consentement</strong> (article 6.1.a RGPD), uniquement pour les éventuelles communications optionnelles.",
+      "en": "<strong>Consentement</strong> (article 6.1.a RGPD), uniquement pour les éventuelles communications optionnelles.",
+      "it": "<strong>Consentement</strong> (article 6.1.a RGPD), uniquement pour les éventuelles communications optionnelles."
+    },
+    {
+      "cle": "privacy.b33",
+      "fr": "<strong>Demandes commerciales/techniques&nbsp;:</strong> 3&nbsp;ans à compter du dernier contact.",
+      "en": "<strong>Demandes commerciales/techniques&nbsp;:</strong> 3&nbsp;ans à compter du dernier contact.",
+      "it": "<strong>Demandes commerciales/techniques&nbsp;:</strong> 3&nbsp;ans à compter du dernier contact."
+    },
+    {
+      "cle": "privacy.b34",
+      "fr": "<strong>Candidatures non retenues&nbsp;:</strong> 2&nbsp;ans à compter de la dernière interaction (sauf opposition explicite du candidat).",
+      "en": "<strong>Candidatures non retenues&nbsp;:</strong> 2&nbsp;ans à compter de la dernière interaction (sauf opposition explicite du candidat).",
+      "it": "<strong>Candidatures non retenues&nbsp;:</strong> 2&nbsp;ans à compter de la dernière interaction (sauf opposition explicite du candidat)."
+    },
+    {
+      "cle": "privacy.b35",
+      "fr": "<strong>Documents contractuels (clients, fournisseurs)&nbsp;:</strong> 10&nbsp;ans (obligation comptable et fiscale).",
+      "en": "<strong>Documents contractuels (clients, fournisseurs)&nbsp;:</strong> 10&nbsp;ans (obligation comptable et fiscale).",
+      "it": "<strong>Documents contractuels (clients, fournisseurs)&nbsp;:</strong> 10&nbsp;ans (obligation comptable et fiscale)."
+    },
+    {
+      "cle": "privacy.b36",
+      "fr": "<strong>Cookies techniques&nbsp;:</strong> 13&nbsp;mois maximum.",
+      "en": "<strong>Cookies techniques&nbsp;:</strong> 13&nbsp;mois maximum.",
+      "it": "<strong>Cookies techniques&nbsp;:</strong> 13&nbsp;mois maximum."
+    },
+    {
+      "cle": "privacy.b37",
+      "fr": "<strong>Droit d'accès</strong> à vos données personnelles.",
+      "en": "<strong>Droit d'accès</strong> à vos données personnelles.",
+      "it": "<strong>Droit d'accès</strong> à vos données personnelles."
+    },
+    {
+      "cle": "privacy.b38",
+      "fr": "<strong>Droit de rectification</strong> en cas de données inexactes ou incomplètes.",
+      "en": "<strong>Droit de rectification</strong> en cas de données inexactes ou incomplètes.",
+      "it": "<strong>Droit de rectification</strong> en cas de données inexactes ou incomplètes."
+    },
+    {
+      "cle": "privacy.b39",
+      "fr": "<strong>Droit à l'effacement</strong> (« droit à l'oubli »).",
+      "en": "<strong>Droit à l'effacement</strong> (« droit à l'oubli »).",
+      "it": "<strong>Droit à l'effacement</strong> (« droit à l'oubli »)."
+    },
+    {
+      "cle": "privacy.b40",
+      "fr": "<strong>Droit à la limitation</strong> du traitement.",
+      "en": "<strong>Droit à la limitation</strong> du traitement.",
+      "it": "<strong>Droit à la limitation</strong> du traitement."
+    },
+    {
+      "cle": "privacy.b41",
+      "fr": "<strong>Droit à la portabilité</strong> de vos données.",
+      "en": "<strong>Droit à la portabilité</strong> de vos données.",
+      "it": "<strong>Droit à la portabilité</strong> de vos données."
+    },
+    {
+      "cle": "privacy.b42",
+      "fr": "<strong>Droit d'opposition</strong> au traitement, notamment à des fins de prospection.",
+      "en": "<strong>Droit d'opposition</strong> au traitement, notamment à des fins de prospection.",
+      "it": "<strong>Droit d'opposition</strong> au traitement, notamment à des fins de prospection."
+    },
+    {
+      "cle": "privacy.b43",
+      "fr": "<strong>Droit de définir des directives</strong> relatives au sort de vos données après votre décès.",
+      "en": "<strong>Droit de définir des directives</strong> relatives au sort de vos données après votre décès.",
+      "it": "<strong>Droit de définir des directives</strong> relatives au sort de vos données après votre décès."
+    }
+  ]
+}
