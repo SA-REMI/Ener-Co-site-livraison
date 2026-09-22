@@ -162,18 +162,34 @@
 <div class="cover">
   <div class="cover-logo">Ener<span class="o">-</span>Co</div>
   <h1>Guide de la console d'édition</h1>
-  <p>Comment modifier vous-même le texte et les logos du site, en toute sécurité, sans aucune connaissance technique.</p>
+  <p>Comment modifier vous-même tout le contenu du site (textes, coordonnées, photos, logos, référencement), en toute sécurité, sans aucune connaissance technique. Et, pour l'administrateur, comment donner ou retirer un accès.</p>
   <div class="sub">Document à conserver · imprimable · valable pour tous les collègues autorisés</div>
 </div>
 
 <div class="page">
 
+  <style>
+    .part { margin: 56px 0 6px; padding: 14px 18px; border-radius: 12px; background: #3D4452; color: #fff; font-size: 15px; font-weight: 800; letter-spacing: .3px; text-transform: uppercase; }
+    .part.admin { background: #0a8a46; }
+    .part small { display:block; font-weight: 500; text-transform: none; letter-spacing: 0; opacity: .85; margin-top: 3px; font-size: 14px; }
+    .ntl { background:#fff; }
+    .ntl-top { background:#0E1E25; color:#fff; padding:10px 16px; font-weight:700; font-size:13.5px; display:flex; gap:18px; }
+    .ntl-top span { opacity:.75; font-weight:500; }
+    .ntl-side { flex:0 0 200px; background:#F6F8FA; border-right:1px solid #E2E6EB; padding:14px 12px; font-size:13.5px; }
+    .ntl-side div { padding:6px 10px; border-radius:7px; color:#3D4452; }
+    .ntl-side div.act { background:#E7F7EE; color:#0a6e3a; font-weight:700; }
+    .btn-ntl { background:#2E5BA1; color:#fff; border:none; border-radius:7px; padding:8px 16px; font-weight:700; font-size:13.5px; }
+    .btn-ntl.ghost { background:#fff; color:#2E5BA1; border:1px solid #2E5BA1; }
+    .user-row { display:flex; justify-content:space-between; align-items:center; border:1px solid #E2E6EB; border-radius:8px; padding:10px 14px; margin-bottom:8px; font-size:14px; }
+    .user-row small { color:#8A93A0; }
+  </style>
+
   <div class="card" style="margin-top:28px">
     <h3 style="margin-top:0">En 30 secondes</h3>
-    <p>La <b>console</b> est une page privée où vous modifiez les textes et les logos du site. Vous vous connectez avec votre <b>email et un mot de passe</b> (pas besoin de compte technique). Vous changez ce que vous voulez, vous cliquez <b>Publier</b>, et le site se met à jour tout seul en une à deux minutes.</p>
+    <p>La <b>console</b> est une page privée où vous modifiez le contenu du site : textes en trois langues, coordonnées, photos, logos, titres affichés par Google, pages légales. Vous vous connectez avec votre <b>email et un mot de passe</b> (pas besoin de compte technique). Vous changez ce que vous voulez, vous cliquez <b>Publier</b>, et le site se met à jour tout seul en une à deux minutes.</p>
     <div class="note ok">
       <b>Vous ne pouvez rien casser.</b>
-      Vous ne touchez jamais au design ni à la structure du site, uniquement aux textes et aux logos. Et si vous effacez un texte par erreur, le site remet automatiquement la version d'origine.
+      Vous ne touchez jamais à la mise en page ni à la structure du site, uniquement au contenu. Et si vous effacez un texte par erreur, le site remet automatiquement la version d'origine.
     </div>
   </div>
 
@@ -183,19 +199,28 @@
     <a href="#c2">2 · La carte des zones modifiables</a>
     <a href="#c3">3 · Modifier un texte (pas à pas)</a>
     <a href="#c4">4 · Les trois langues (FR / EN / IT)</a>
-    <a href="#c5">5 · Changer ou ajouter un logo client</a>
-    <a href="#c6">6 · Publier et voir le résultat</a>
-    <a href="#c7">7 · Règles d'or et questions fréquentes</a>
+    <a href="#c5">5 · Modifier le téléphone, l'email, l'adresse</a>
+    <a href="#c6">6 · Changer une photo de réalisation</a>
+    <a href="#c7">7 · Changer ou ajouter un logo client</a>
+    <a href="#c8">8 · Titres d'onglet et descriptions Google</a>
+    <a href="#c9">9 · Mentions légales et politique de confidentialité</a>
+    <a href="#c10">10 · Enregistrer, publier, voir le résultat</a>
+    <a href="#c11">11 · Règles d'or et questions fréquentes</a>
+    <a href="#c12">12 · Administration · créer un compte</a>
+    <a href="#c13">13 · Administration · retirer un accès, mot de passe</a>
+    <a href="#c14">14 · Administration · bonnes pratiques</a>
   </div>
+
+  <div class="part">Partie A · Pour tous les collègues<small>Modifier le contenu du site, sans aucune connaissance technique.</small></div>
 
   <!-- ============ 1 ============ -->
   <h2 id="c1"><span class="num">1</span> Se connecter à la console</h2>
-  <p class="lead">L'adresse de la console est l'adresse de votre site suivie de <span class="kbd">/admin</span>.</p>
+  <p class="lead">L'adresse de la console est l'adresse du site suivie de <span class="kbd">/admin</span>.</p>
 
   <div class="shot">
     <div class="browser-bar">
       <div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
-      <div class="url">rococo-sawine-57adcf.netlify.app/admin</div>
+      <div class="url">ener-co.netlify.app/admin</div>
     </div>
     <div style="padding:46px 20px; text-align:center; background:#F6F8FA;">
       <div style="font-weight:800; font-size:20px; color:#3D4452; margin-bottom:6px;">Ener<span style="color:#F26419">-</span>Co</div>
@@ -205,23 +230,23 @@
   </div>
   <div class="caption">L'écran d'accueil de la console.</div>
 
-  <div class="step"><span class="badge">1</span><div class="body">Ouvrez votre navigateur et tapez l'adresse de la console : <span class="kbd">rococo-sawine-57adcf.netlify.app/admin</span> <i>(ou votre nouvelle adresse si le site a été renommé)</i>. <b>Astuce : mettez-la en favori</b> pour y revenir d'un clic.</div></div>
+  <div class="step"><span class="badge">1</span><div class="body">Ouvrez votre navigateur et tapez l'adresse de la console : <span class="kbd">https://ener-co.netlify.app/admin/</span> <i>(quand le site sera sur ener-co.fr, ce sera ener-co.fr/admin)</i>. <b>Astuce : mettez-la en favori</b> pour y revenir d'un clic.</div></div>
   <div class="step"><span class="badge">2</span><div class="body">Cliquez sur <b>« Se connecter »</b>, saisissez votre <b>email</b> et votre <b>mot de passe</b>.</div></div>
   <div class="step"><span class="badge">3</span><div class="body">La console s'ouvre. Vous y êtes.</div></div>
 
   <div class="note info">
     <b>Première fois ? Vous avez reçu un email d'invitation.</b>
-    Ouvrez-le, cliquez sur « Accept the invite » et choisissez votre mot de passe. Si vous l'avez oublié plus tard, cliquez « Forgot password ? » sur l'écran de connexion : un email vous permet d'en remettre un.
+    Ouvrez-le, cliquez sur « Accept the invite » et choisissez votre mot de passe. Vous êtes alors redirigé vers la console. Si vous oubliez ce mot de passe plus tard, cliquez « Forgot password ? » sur l'écran de connexion : un email vous permet d'en remettre un.
   </div>
 
   <!-- ============ 2 ============ -->
   <h2 id="c2"><span class="num">2</span> La carte des zones modifiables</h2>
-  <p class="lead">À gauche de la console, la colonne <b>« Collections »</b> liste tout ce que vous pouvez modifier. Une ligne = une page du site.</p>
+  <p class="lead">À gauche de la console, la colonne <b>« Collections »</b> liste tout ce que vous pouvez modifier. Une ligne = une page du site, ou un type de contenu.</p>
 
   <div class="shot">
     <div class="browser-bar">
       <div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
-      <div class="url">rococo-sawine-57adcf.netlify.app/admin/#/</div>
+      <div class="url">ener-co.netlify.app/admin/#/</div>
     </div>
     <div class="cms-top">Contenus <span style="color:#9AA3B0">Media</span> <span class="right"></span></div>
     <div class="cms">
@@ -251,29 +276,18 @@
       </div>
     </div>
   </div>
-  <div class="caption">La colonne de gauche : chaque page du site a sa propre entrée.</div>
+  <div class="caption">La colonne de gauche : 15 zones, chacune pour un type de contenu.</div>
 
   <div class="zones">
-    <div class="zone"><div class="zt">Accueil · textes</div><div class="zd">Tous les textes de la page d'accueil (titre, accroche, chiffres, sections).</div></div>
-    <div class="zone"><div class="zt">Expertise · textes</div><div class="zd">Les textes de la page Expertise.</div></div>
-    <div class="zone"><div class="zt">Réalisations · textes</div><div class="zd">Les textes de la page Réalisations.</div></div>
-    <div class="zone"><div class="zt">Secteurs · textes</div><div class="zd">Les textes de la page Secteurs.</div></div>
-    <div class="zone"><div class="zt">Engagements · textes</div><div class="zd">Les textes de la page Engagements.</div></div>
-    <div class="zone"><div class="zt">Recrutement · textes</div><div class="zd">Les textes de la page Recrutement (dont les offres).</div></div>
-    <div class="zone"><div class="zt">Références · textes</div><div class="zd">Les textes de la page Références (hors logos).</div></div>
-    <div class="zone"><div class="zt">Contact · textes</div><div class="zd">Les textes de la page Contact.</div></div>
+    <div class="zone"><div class="zt">Accueil · textes</div><div class="zd">Tous les textes de la page d'accueil (titre, accroche, chiffres, sections), plus son titre d'onglet et sa description Google.</div></div>
+    <div class="zone"><div class="zt">Expertise, Réalisations, Secteurs, Engagements, Recrutement, Références, Contact · textes</div><div class="zd">Même principe pour chacune de ces pages.</div></div>
     <div class="zone"><div class="zt">Commun</div><div class="zd">Le menu (y compris sur mobile), le pied de page et les messages d'erreur, présents sur toutes les pages.</div></div>
     <div class="zone"><div class="zt">Page « merci » · textes</div><div class="zd">La page affichée après l'envoi du formulaire de contact.</div></div>
-    <div class="zone"><div class="zt">Mentions légales · textes</div><div class="zd">Le texte des mentions légales (en français). Certains blocs contiennent des balises comme &lt;strong&gt; ou &lt;br&gt; : laissez-les en place.</div></div>
-    <div class="zone"><div class="zt">Politique de confidentialité · textes</div><div class="zd">Le texte RGPD (en français). Même consigne pour les balises.</div></div>
-    <div class="zone"><div class="zt">Coordonnées</div><div class="zd">Téléphone, email et adresse. Une seule saisie, reprise dans l'en-tête, le pied de page et les bandeaux de toutes les pages.</div></div>
-    <div class="zone"><div class="zt">Réalisations · photos</div><div class="zd">Les 4 photos de chaque réalisation. Remplacez une photo, la précédente reste tant que vous n'en choisissez pas d'autre.</div></div>
-    <div class="zone"><div class="zt">Références · logos</div><div class="zd">Les logos clients du bandeau défilant et de la page Références.</div></div>
-  </div>
-
-  <div class="note info">
-    <b>Titres d'onglet et descriptions Google.</b>
-    Chaque page a, dans sa liste de textes, une ligne « titre » (le nom affiché dans l'onglet du navigateur) et une ligne « description » (le résumé que Google affiche sous le lien). Elles se modifient comme n'importe quel texte.
+    <div class="zone"><div class="zt">Mentions légales · textes</div><div class="zd">Le texte des mentions légales (en français). Voir le chapitre 9.</div></div>
+    <div class="zone"><div class="zt">Politique de confidentialité · textes</div><div class="zd">Le texte RGPD (en français). Voir le chapitre 9.</div></div>
+    <div class="zone"><div class="zt">Coordonnées</div><div class="zd">Téléphone, email et adresse. Une seule saisie, reprise partout. Voir le chapitre 5.</div></div>
+    <div class="zone"><div class="zt">Réalisations · photos</div><div class="zd">Les 4 photos de chaque réalisation. Voir le chapitre 6.</div></div>
+    <div class="zone"><div class="zt">Références · logos</div><div class="zd">Les logos clients du bandeau défilant et de la page Références. Voir le chapitre 7.</div></div>
   </div>
 
   <!-- ============ 3 ============ -->
@@ -281,7 +295,7 @@
   <p class="lead">Exemple : changer l'accroche de la page d'accueil. La méthode est la même pour <b>n'importe quel</b> texte de <b>n'importe quelle</b> page.</p>
 
   <div class="step"><span class="badge">1</span><div class="body">Dans la colonne de gauche, cliquez sur la page voulue, par exemple <b>« Accueil · textes »</b>, puis sur <b>« Textes de la page d'accueil »</b>.</div></div>
-  <div class="step"><span class="badge">2</span><div class="body">Vous voyez la <b>liste de tous les textes</b> de la page. Chaque ligne affiche le texte tel qu'il apparaît sur le site, ce qui vous aide à le reconnaître.</div></div>
+  <div class="step"><span class="badge">2</span><div class="body">Vous voyez la <b>liste de tous les textes</b> de la page. Chaque ligne affiche le texte tel qu'il apparaît sur le site, ce qui vous aide à le reconnaître. La loupe <b>« Tout rechercher »</b> en haut de la colonne de gauche retrouve un texte par un mot qu'il contient.</div></div>
 
   <div class="shot">
     <div class="browser-bar">
@@ -342,7 +356,71 @@
   </div>
 
   <!-- ============ 5 ============ -->
-  <h2 id="c5"><span class="num">5</span> Changer ou ajouter un logo client</h2>
+  <h2 id="c5"><span class="num">5</span> Modifier le téléphone, l'email, l'adresse</h2>
+  <p class="lead">Les coordonnées apparaissent à des dizaines d'endroits (en-tête, menu mobile, bandeaux de contact, pied de page). Vous ne les modifiez qu'<b>une seule fois</b>.</p>
+
+  <div class="shot">
+    <div class="browser-bar">
+      <div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+      <div class="url">.../admin/#/collections/coordonnees/entries/coordonnees</div>
+    </div>
+    <div class="cms-top">Contenus <span class="right"><button class="btn-save">Enregistrer</button><button class="btn-pub">Publier ▾</button></span></div>
+    <div style="padding:18px 22px;">
+      <div class="field"><label>Raison sociale</label><div class="inp">Ener-Co SAS</div></div>
+      <div class="field"><label>Téléphone (tel qu'affiché)</label><div class="inp">+33 (0)4 26 07 67 79</div></div>
+      <div class="field"><label>Téléphone (format lien, sans espaces)</label><div class="inp">+33426076779</div></div>
+      <div class="field"><label>Adresse email</label><div class="inp">contact@ener-co.fr</div></div>
+      <div class="field"><label>Adresse · rue</label><div class="inp">11 rue Sigmund Freud</div></div>
+      <div class="field"><label>Adresse · code postal et ville</label><div class="inp">69120 Vaulx-en-Velin · France</div></div>
+    </div>
+  </div>
+  <div class="caption">La fiche Coordonnées : six cases, reprises sur toutes les pages.</div>
+
+  <div class="step"><span class="badge">1</span><div class="body">Colonne de gauche → <b>« Coordonnées (téléphone, email, adresse) »</b> → <b>« Coordonnées de la société »</b>.</div></div>
+  <div class="step"><span class="badge">2</span><div class="body">Modifiez la case voulue. <b>Le téléphone a deux cases</b> : celle « tel qu'affiché » (avec espaces et parenthèses, ce que voit le visiteur) et celle « format lien » (le même numéro <b>sans espaces</b>, avec l'indicatif +33 : c'est lui qui compose l'appel quand on touche le numéro sur mobile). Changez les deux.</div></div>
+  <div class="step"><span class="badge">3</span><div class="body">Cliquez sur <b>« Publier »</b>. L'en-tête, le pied de page et tous les bandeaux de toutes les pages sont mis à jour.</div></div>
+
+  <div class="note info">
+    <b>Les mentions légales et la politique de confidentialité citent aussi l'adresse et l'email.</b>
+    Ce sont des textes juridiques à part entière : ils ne suivent pas cette fiche. Si vous changez d'adresse, pensez à les corriger aussi (chapitre 9).
+  </div>
+
+  <!-- ============ 6 ============ -->
+  <h2 id="c6"><span class="num">6</span> Changer une photo de réalisation</h2>
+  <p class="lead">Chaque réalisation de la page « Réalisations » a 4 photos. Vous pouvez en remplacer une sans toucher aux autres.</p>
+
+  <div class="shot">
+    <div class="browser-bar">
+      <div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+      <div class="url">.../admin/#/collections/photos_realisations/entries/cas</div>
+    </div>
+    <div class="cms-top">Contenus <span class="right"><button class="btn-save">Enregistrer</button><button class="btn-pub">Publier ▾</button></span></div>
+    <div style="padding:18px 22px;">
+      <div class="cms-row"><span class="chev">›</span><span class="txt">Remplacement de tubes cuivre · site sidérurgique</span></div>
+      <div class="cms-row"><span class="chev">›</span><span class="txt">Chaufferie gaz 2000 A · Est lyonnais</span></div>
+      <div class="cms-row"><span class="chev">›</span><span class="txt muted">Poste HTA · Panattoni, Colombier-Saugnieu.</span></div>
+      <div style="margin-top:14px;padding:12px 14px;border:1px solid #E2E6EB;border-radius:9px;">
+        <div class="field"><label>Photo 1</label><div style="display:flex;gap:10px;align-items:center;"><div style="width:84px;height:56px;background:#D4DAE0;border-radius:6px;"></div><button class="btn-save">Choisir une image</button><span style="color:#8A93A0;font-size:13px;">siderurgie-1.jpg</span></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="caption">La liste des réalisations, et une photo dépliée avec son bouton de remplacement.</div>
+
+  <div class="step"><span class="badge">1</span><div class="body">Colonne de gauche → <b>« Réalisations · photos »</b> → <b>« Photos de chaque réalisation »</b>. Cliquez sur la réalisation concernée pour la déplier.</div></div>
+  <div class="step"><span class="badge">2</span><div class="body">Sous la photo à changer (Photo 1 à Photo 4), cliquez <b>« Choisir une image »</b>, puis <b>« Téléverser »</b> et sélectionnez le fichier sur votre ordinateur. Vous pouvez aussi reprendre une image déjà présente dans la médiathèque.</div></div>
+  <div class="step"><span class="badge">3</span><div class="body">Cliquez sur <b>« Publier »</b>.</div></div>
+
+  <div class="note info">
+    <b>Quelle photo utiliser ?</b>
+    Un fichier <b>jpg ou png</b>, idéalement <b>1 600 pixels de large</b> au maximum et moins de 500 Ko. Une photo de téléphone brute (4 000 pixels, 4 Mo) fonctionne mais ralentit la page : réduisez-la avant si vous pouvez, ou demandez-nous. Pensez à <b>flouter les visages</b> et à <b>retirer les informations confidentielles</b> (noms de clients, plaques, écrans) avant de publier.
+  </div>
+  <div class="note warn">
+    <b>Le titre de la réalisation ne se change pas ici.</b>
+    La ligne « Réalisation » n'est qu'un repère. Pour modifier le titre ou la description d'un chantier, allez dans <b>« Réalisations · textes »</b>. Pour <b>ajouter</b> une réalisation entièrement nouvelle, demandez-nous : c'est la seule opération qui reste technique.
+  </div>
+
+  <!-- ============ 7 ============ -->
+  <h2 id="c7"><span class="num">7</span> Changer ou ajouter un logo client</h2>
   <p class="lead">Les logos clients se gèrent dans <b>« Références · logos clients »</b>.</p>
 
   <div class="shot">
@@ -362,18 +440,41 @@
 
   <div class="step"><span class="badge">1</span><div class="body"><b>Modifier un client existant :</b> cliquez sur sa ligne. Vous pouvez changer son <b>nom</b>, remplacer son <b>logo</b> (bouton de téléversement), ou ajuster son <b>format</b> (paysage, carré, très allongé) pour qu'il soit bien cadré.</div></div>
   <div class="step"><span class="badge">2</span><div class="body"><b>Ajouter un client :</b> cliquez sur <b>« Ajouter client + »</b>, remplissez le nom, téléversez le logo, choisissez le format.</div></div>
-  <div class="step"><span class="badge">3</span><div class="body">Cliquez sur <b>« Publier »</b>.</div></div>
+  <div class="step"><span class="badge">3</span><div class="body"><b>Retirer un client :</b> la croix à droite de sa ligne. Puis <b>« Publier »</b>.</div></div>
 
   <div class="note info">
     <b>Quel fichier de logo utiliser ?</b>
     De préférence un PNG au fond transparent. Si vous n'avez que la version sur fond blanc ou coloré, envoyez-la quand même : on peut la nettoyer pour vous.
   </div>
 
-  <!-- ============ 6 ============ -->
-  <h2 id="c6"><span class="num">6</span> Publier et voir le résultat</h2>
-  <p class="lead">Tant que vous n'avez pas cliqué « Publier », rien ne change sur le site public.</p>
+  <!-- ============ 8 ============ -->
+  <h2 id="c8"><span class="num">8</span> Titres d'onglet et descriptions Google</h2>
+  <p class="lead">Chaque page a un <b>titre</b> (le nom affiché dans l'onglet du navigateur et en bleu dans Google) et une <b>description</b> (le résumé que Google affiche sous le lien). Ils comptent pour le référencement.</p>
 
-  <div class="step"><span class="badge">1</span><div class="body">Cliquez sur <b>« Publier »</b> (bouton vert en haut à droite) puis <b>« Publish now »</b>.</div></div>
+  <div class="step"><span class="badge">1</span><div class="body">Ouvrez la page concernée, par exemple <b>« Recrutement · textes »</b>, et tapez <b>« | Ener-Co »</b> dans la loupe « Tout rechercher » : les lignes « titre » se terminent toutes ainsi. La ligne « description » est juste en dessous.</div></div>
+  <div class="step"><span class="badge">2</span><div class="body">Modifiez comme un texte normal, dans les trois langues. Gardez le titre <b>court (60 caractères environ)</b> et la description <b>en une ou deux phrases (160 caractères environ)</b> : au-delà, Google coupe.</div></div>
+  <div class="step"><span class="badge">3</span><div class="body">Cliquez sur <b>« Publier »</b>. Google prendra le changement en compte lors de son prochain passage, sous quelques jours.</div></div>
+
+  <!-- ============ 9 ============ -->
+  <h2 id="c9"><span class="num">9</span> Mentions légales et politique de confidentialité</h2>
+  <p class="lead">Ces deux pages sont modifiables comme les autres, avec deux particularités.</p>
+
+  <div class="card">
+    <div class="annot"><span class="pin">1</span><div><b>Elles sont en français dans les trois langues.</b> Les cases Anglais et Italien contiennent volontairement le texte français (droit français). Vous pouvez les traduire si vous le souhaitez, ce n'est pas obligatoire.</div></div>
+    <div class="annot"><span class="pin">2</span><div><b>Certains blocs contiennent des balises</b>, comme <span class="kbd">&lt;strong&gt;</span>, <span class="kbd">&lt;br&gt;</span> ou <span class="kbd">&lt;a href=…&gt;</span>. Ce sont des repères de mise en forme (gras, retour à la ligne, lien). <b>Laissez-les en place</b> et modifiez seulement le texte entre elles. Si vous en cassez une, la page reste lisible mais la mise en forme du bloc change : videz la case et publiez pour revenir à l'original.</div></div>
+    <div class="annot"><span class="pin">3</span><div><b>Ce sont des textes à valeur juridique.</b> Capital, RCS, hébergeur, responsable de la publication : vérifiez avec la direction avant de modifier.</div></div>
+  </div>
+
+  <!-- ============ 10 ============ -->
+  <h2 id="c10"><span class="num">10</span> Enregistrer, publier, voir le résultat</h2>
+  <p class="lead">Il y a deux boutons en haut à droite. Ils ne font pas la même chose.</p>
+
+  <div class="card">
+    <div class="annot"><span class="pin">1</span><div><b>« Enregistrer »</b> garde votre travail en <b>brouillon</b>, visible seulement dans la console. Rien ne change sur le site. Utile si vous êtes interrompu.</div></div>
+    <div class="annot"><span class="pin">2</span><div><b>« Publier » puis « Publish now »</b> met la modification <b>en ligne</b>. C'est le seul bouton qui change le site public.</div></div>
+  </div>
+
+  <div class="step"><span class="badge">1</span><div class="body">Cliquez sur <b>« Publier »</b> (bouton vert) puis <b>« Publish now »</b>.</div></div>
   <div class="step"><span class="badge">2</span><div class="body"><b>Patientez une à deux minutes.</b> Le site se reconstruit tout seul en coulisses.</div></div>
   <div class="step"><span class="badge">3</span><div class="body">Ouvrez le site public et <b>rafraîchissez la page</b> <span class="kbd">Ctrl + F5</span>. Votre modification est en ligne.</div></div>
 
@@ -382,26 +483,100 @@
     C'est presque toujours le cache du navigateur. Forcez le rafraîchissement avec <span class="kbd">Ctrl + F5</span> (ou <span class="kbd">Cmd + Maj + R</span> sur Mac). Patientez encore une minute si besoin.
   </div>
 
-  <!-- ============ 7 ============ -->
-  <h2 id="c7"><span class="num">7</span> Règles d'or et questions fréquentes</h2>
+  <!-- ============ 11 ============ -->
+  <h2 id="c11"><span class="num">11</span> Règles d'or et questions fréquentes</h2>
 
   <div class="card">
-    <div class="annot"><span class="pin">✓</span><div><b>Vous ne pouvez pas casser le site.</b> Vous ne touchez qu'aux textes et aux logos, jamais à la mise en page.</div></div>
+    <div class="annot"><span class="pin">✓</span><div><b>Vous ne pouvez pas casser le site.</b> Vous ne touchez qu'au contenu, jamais à la mise en page.</div></div>
     <div class="annot"><span class="pin">✓</span><div><b>Une case vide = version d'origine.</b> Impossible de « vider » le site par accident.</div></div>
     <div class="annot"><span class="pin">✓</span><div><b>Tout est enregistré et réversible.</b> Chaque publication est historisée. En cas de doute, on peut revenir en arrière.</div></div>
     <div class="annot"><span class="pin">✓</span><div><b>Ne modifiez jamais la « Référence technique ».</b> C'est le seul champ à ne pas toucher.</div></div>
+    <div class="annot"><span class="pin">✓</span><div><b>Ne partagez pas votre mot de passe.</b> Chaque collègue a le sien (chapitre 12) : on sait ainsi qui a fait quoi.</div></div>
   </div>
 
   <h3>Questions fréquentes</h3>
   <table>
     <tr><th>Question</th><th>Réponse</th></tr>
-    <tr><td>J'ai modifié un texte mais je ne le vois pas sur le site.</td><td>Avez-vous cliqué « Publier » ? Ensuite, attendez une à deux minutes et faites <span class="kbd">Ctrl + F5</span>.</td></tr>
+    <tr><td>J'ai modifié un texte mais je ne le vois pas sur le site.</td><td>Avez-vous cliqué « Publier » (et pas seulement « Enregistrer ») ? Ensuite, attendez une à deux minutes et faites <span class="kbd">Ctrl + F5</span>.</td></tr>
     <tr><td>J'ai effacé un texte par erreur.</td><td>Laissez la case vide et publiez : le site remet la version d'origine. Aucun dégât.</td></tr>
     <tr><td>Je ne sais pas traduire en anglais ou italien.</td><td>Laissez la case telle quelle (l'ancienne version reste) ou demandez de l'aide.</td></tr>
     <tr><td>J'ai oublié mon mot de passe.</td><td>Sur l'écran de connexion, cliquez « Forgot password ? ». Un email vous permet d'en choisir un nouveau.</td></tr>
     <tr><td>Puis-je travailler depuis chez moi ?</td><td>Oui, la console est accessible depuis n'importe quel navigateur, avec votre email et mot de passe.</td></tr>
     <tr><td>Est-ce que je peux supprimer une ligne de texte ?</td><td>Inutile : pour annuler une modification, videz simplement les cases. Le site reprendra la version d'origine.</td></tr>
+    <tr><td>Deux personnes peuvent-elles modifier en même temps ?</td><td>Oui, mais pas le même texte au même moment : la dernière publication l'emporte. Sur une même page, prévenez-vous.</td></tr>
+    <tr><td>Je veux ajouter une page ou une réalisation entièrement nouvelle.</td><td>C'est la seule opération qui reste technique. Envoyez le contenu (textes, photos) et on l'intègre.</td></tr>
   </table>
+
+  <div class="part admin">Partie B · Pour l'administrateur<small>Donner ou retirer l'accès à la console. Réservé à la personne qui détient le compte Netlify d'Ener-Co.</small></div>
+
+  <!-- ============ 12 ============ -->
+  <h2 id="c12"><span class="num" style="background:#0a8a46">12</span> Créer un compte : inviter un collègue</h2>
+  <p class="lead">Les comptes ne se créent pas depuis la console mais depuis <b>Netlify</b>, l'hébergeur du site. Seule la personne qui possède le compte Netlify d'Ener-Co peut le faire. Un collègue ne peut <b>pas</b> s'inscrire seul : c'est voulu.</p>
+
+  <div class="shot ntl">
+    <div class="browser-bar">
+      <div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+      <div class="url">app.netlify.com/projects/ener-co/...</div>
+    </div>
+    <div class="ntl-top">Netlify <span>Projet ener-co</span></div>
+    <div class="cms" style="min-height:200px;">
+      <div class="ntl-side">
+        <div>Project overview</div>
+        <div class="act">Project configuration</div>
+        <div>Deploys</div>
+        <div>Forms</div>
+      </div>
+      <div class="cms-main">
+        <div style="font-weight:700;color:#1E2530;margin-bottom:4px;">Identity</div>
+        <div style="color:#5A6473;font-size:13.5px;margin-bottom:14px;">Registration : <b>Invite only</b></div>
+        <div style="display:flex;gap:8px;margin-bottom:14px;"><button class="btn-ntl">Invite users</button><button class="btn-ntl ghost">Settings</button></div>
+        <div class="user-row"><span>willy.taunay@sa-remi.fr</span><small>Confirmed</small></div>
+        <div class="user-row"><span>katia.picquet@sa-remi.fr</span><small>Invited · en attente</small></div>
+      </div>
+    </div>
+  </div>
+  <div class="caption">La page Identity de Netlify : la liste des comptes et le bouton d'invitation.</div>
+
+  <div class="step"><span class="badge" style="background:#0a8a46">1</span><div class="body">Connectez-vous sur <span class="kbd">app.netlify.com</span> avec le compte Ener-Co, puis ouvrez le projet <b>ener-co</b>.</div></div>
+  <div class="step"><span class="badge" style="background:#0a8a46">2</span><div class="body">Menu de gauche → <b>« Project configuration »</b> → section <b>« Identity »</b>.</div></div>
+  <div class="step"><span class="badge" style="background:#0a8a46">3</span><div class="body">Cliquez <b>« Invite users »</b>, saisissez l'<b>adresse email professionnelle</b> du collègue (une par ligne si plusieurs), puis <b>« Send »</b>.</div></div>
+  <div class="step"><span class="badge" style="background:#0a8a46">4</span><div class="body">Le collègue reçoit un email <i>« You've been invited to join ener-co.netlify.app »</i>. Il clique <b>« Accept the invite »</b>, choisit un <b>mot de passe</b>, et arrive directement dans la console. Prévenez-le que cet email vient de Netlify, pour qu'il ne le prenne pas pour un courrier indésirable.</div></div>
+  <div class="step"><span class="badge" style="background:#0a8a46">5</span><div class="body">Dans la liste, son statut passe de <i>Invited</i> à <i>Confirmed</i>. Tant qu'il n'a pas accepté, il apparaît en attente : vous pouvez renvoyer l'invitation depuis sa ligne.</div></div>
+
+  <div class="note info">
+    <b>Si le lien d'invitation ouvre la page d'accueil sans rien demander.</b>
+    Le collègue va sur <span class="kbd">ener-co.netlify.app/admin</span>, clique « Se connecter », puis <b>« Forgot password ? »</b> avec son email : il reçoit un lien pour définir son mot de passe. Même résultat.
+  </div>
+  <div class="note warn">
+    <b>Gardez « Registration » sur « Invite only ».</b>
+    C'est ce réglage qui empêche n'importe qui sur internet de se créer un compte. Ne le passez jamais sur « Open ».
+  </div>
+
+  <!-- ============ 13 ============ -->
+  <h2 id="c13"><span class="num" style="background:#0a8a46">13</span> Retirer un accès, réinitialiser un mot de passe</h2>
+
+  <h3>Retirer l'accès d'un collègue (départ, changement de poste)</h3>
+  <div class="step"><span class="badge" style="background:#0a8a46">1</span><div class="body">Netlify → projet ener-co → <b>Project configuration</b> → <b>Identity</b>.</div></div>
+  <div class="step"><span class="badge" style="background:#0a8a46">2</span><div class="body">Cliquez sur la <b>ligne du collègue</b> dans la liste.</div></div>
+  <div class="step"><span class="badge" style="background:#0a8a46">3</span><div class="body">Cliquez <b>« Delete user »</b> et confirmez. Son accès est coupé immédiatement. Ce qu'il a publié reste en ligne, bien sûr.</div></div>
+
+  <h3>Réinitialiser un mot de passe</h3>
+  <div class="card">
+    <div class="annot"><span class="pin" style="background:#0a8a46">1</span><div><b>Le collègue peut le faire seul</b> : sur l'écran de connexion de la console, « Forgot password ? », puis suivre l'email reçu. C'est la voie normale.</div></div>
+    <div class="annot"><span class="pin" style="background:#0a8a46">2</span><div><b>Vous pouvez le déclencher pour lui</b> : dans Identity, cliquez sa ligne, puis <b>« Send recovery email »</b>. Il reçoit le même lien.</div></div>
+    <div class="annot"><span class="pin" style="background:#0a8a46">3</span><div><b>Vous ne voyez jamais les mots de passe</b>, ni les vôtres ni ceux des autres. C'est normal et c'est une sécurité : personne ne peut vous les demander.</div></div>
+  </div>
+
+  <!-- ============ 14 ============ -->
+  <h2 id="c14"><span class="num" style="background:#0a8a46">14</span> Bonnes pratiques d'administration</h2>
+
+  <div class="card">
+    <div class="annot"><span class="pin" style="background:#0a8a46">✓</span><div><b>Un compte par personne</b>, avec son email professionnel. Jamais de compte partagé « communication@… » : on doit pouvoir savoir qui a publié quoi.</div></div>
+    <div class="annot"><span class="pin" style="background:#0a8a46">✓</span><div><b>Retirez les accès le jour du départ</b> d'un collègue, en même temps que sa messagerie.</div></div>
+    <div class="annot"><span class="pin" style="background:#0a8a46">✓</span><div><b>Faites un tour de la liste Identity deux fois par an</b> : chaque compte doit correspondre à quelqu'un qui a encore besoin d'éditer le site.</div></div>
+    <div class="annot"><span class="pin" style="background:#0a8a46">✓</span><div><b>Le compte Netlify lui-même est la clé de tout.</b> Gardez ses identifiants en lieu sûr, et assurez-vous qu'une seconde personne de confiance sait où ils sont.</div></div>
+    <div class="annot"><span class="pin" style="background:#0a8a46">✓</span><div><b>En cas de doute sur une publication</b>, tout est historisé : demandez-nous, on peut revenir à n'importe quelle version antérieure.</div></div>
+  </div>
 
   <div class="note info" style="margin-top:26px">
     <b>Un doute, un blocage, une idée ?</b>
@@ -409,7 +584,7 @@
   </div>
 
   <footer>
-    Ener-Co · Guide de la console d'édition · document interne
+    Ener-Co · Guide de la console d'édition · document interne · mis à jour septembre 2026
   </footer>
 
 </div>
