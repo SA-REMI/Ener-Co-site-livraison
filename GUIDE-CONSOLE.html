@@ -150,7 +150,8 @@
 
   footer { text-align:center; color:#8A93A0; font-size:13px; margin-top:50px; }
 
-  @media (max-width:680px){ .zones{grid-template-columns:1fr} .toc{columns:1} .cms-side{display:none} }
+  /* ecran seulement : sur papier (A4 ~ 700 px utiles) cette regle masquerait la colonne des maquettes */
+  @media screen and (max-width:680px){ .zones{grid-template-columns:1fr} .toc{columns:1} .cms-side{display:none} }
   @media print {
     body{background:#fff} .cover{padding:30px 0}
     .shot,.card{box-shadow:none} h2{break-after:avoid} .step,.shot,.zone{break-inside:avoid}
