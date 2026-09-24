@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ener-Co · Company Profile 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "IBM Plex Sans", "Segoe UI", Arial, sans-serif; color: #1E2530; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  .page { width: 210mm; height: 297mm; position: relative; overflow: hidden; page-break-after: always; background: #fff; }
+  .page:last-child { page-break-after: auto; }
+  .pad { padding: 16mm 15mm; height: 100%; display: flex; flex-direction: column; }
+
+  /* en-tete et pied courants */
+  .hd { display: flex; align-items: baseline; justify-content: space-between; border-bottom: 2px solid #F26419; padding-bottom: 7mm; margin-bottom: 9mm; }
+  .lg { font-family: Oswald, sans-serif; font-size: 25pt; font-weight: 700; letter-spacing: -0.5px; }
+  .lg .a { color: #F26419; } .lg .b { color: #1FB85F; }
+  .hd .rt { font-size: 7pt; letter-spacing: 2.2px; color: #8A93A0; text-transform: uppercase; font-weight: 600; }
+  .ft { position: absolute; left: 15mm; right: 15mm; bottom: 9mm; display: flex; justify-content: space-between; align-items: center; font-size: 6.8pt; color: #98A1AD; letter-spacing: .3px; }
+  .ft .no { font-family: Oswald, sans-serif; font-size: 12pt; font-weight: 700; color: #F26419; }
+
+  /* titres */
+  .eyebrow { font-size: 7.5pt; letter-spacing: 2.6px; text-transform: uppercase; font-weight: 700; color: #F26419; display: flex; align-items: center; gap: 8px; }
+  .eyebrow::before { content: ""; width: 16px; height: 2px; background: #F26419; display: inline-block; }
+  h1.big { font-family: Oswald, sans-serif; font-weight: 700; font-size: 40pt; line-height: .97; text-transform: uppercase; letter-spacing: -0.4px; margin: 5mm 0 0; }
+  h2.sec { font-family: Oswald, sans-serif; font-weight: 700; font-size: 25pt; line-height: 1.02; text-transform: uppercase; margin: 3mm 0 0; letter-spacing: -0.2px; }
+  .or { color: #F26419; }
+  p.lede { font-size: 10pt; line-height: 1.62; color: #454F5C; max-width: 95%; }
+
+  /* couverture */
+  .cover { background: #14181d; }
+  .cover img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .cover .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,13,16,.80) 0%, rgba(10,13,16,.30) 34%, rgba(10,13,16,.55) 62%, rgba(10,13,16,.94) 100%); }
+  .cover .in { position: absolute; inset: 0; padding: 17mm 15mm; display: flex; flex-direction: column; justify-content: space-between; color: #fff; }
+  .cover .lg { font-size: 30pt; }
+  .cover .lg .b { color: #3BD37E; }
+  .cover h1 { font-family: Oswald, sans-serif; font-weight: 700; font-size: 46pt; line-height: .95; text-transform: uppercase; letter-spacing: -0.6px; }
+  .cover .kicker { font-size: 8pt; letter-spacing: 3.4px; text-transform: uppercase; color: #F9A26C; font-weight: 600; margin-bottom: 5mm; }
+  .cover .sub { font-size: 11pt; line-height: 1.55; color: #D6DBE1; max-width: 118mm; margin-top: 7mm; font-weight: 300; }
+  .cover .base { display: flex; gap: 11mm; border-top: 1px solid rgba(255,255,255,.22); padding-top: 6mm; margin-top: 9mm; }
+  .cover .base div { font-size: 7.5pt; color: #AEB6C0; letter-spacing: .4px; }
+  .cover .base b { display: block; font-family: Oswald, sans-serif; font-size: 16pt; color: #fff; font-weight: 600; letter-spacing: 0; }
+
+  /* chiffres cles */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid #E2E6EB; border-bottom: 1px solid #E2E6EB; }
+  .stat { padding: 6mm 4mm 6mm 5mm; border-left: 3px solid #F26419; }
+  .stat + .stat { border-left: 3px solid #F26419; margin-left: 4mm; }
+  .stat b { display: block; font-family: Oswald, sans-serif; font-size: 23pt; font-weight: 700; line-height: 1; }
+  .stat span { display: block; font-size: 6.9pt; letter-spacing: 1.5px; text-transform: uppercase; color: #77818E; margin-top: 2.5mm; font-weight: 600; }
+
+  /* points forts */
+  .pt { border-top: 1px solid #E8ECF0; padding: 4.2mm 0; }
+  .pt b { font-size: 10pt; font-weight: 600; }
+  .pt span { display: block; font-size: 9pt; color: #6B7684; margin-top: 1mm; }
+
+  /* grilles d images */
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .trio { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3.5mm; }
+  figure { position: relative; overflow: hidden; border-radius: 3px; background: #EEF1F4; }
+  figure img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 7mm 4mm 3mm; font-size: 7pt; color: #fff; letter-spacing: .6px; background: linear-gradient(transparent, rgba(8,11,14,.85)); font-weight: 500; }
+
+  /* domaines d expertise */
+  .dom { display: grid; grid-template-columns: 1fr 1fr; gap: 0 7mm; }
+  .d { display: flex; gap: 4mm; padding: 4.4mm 0; border-top: 1px solid #E8ECF0; }
+  .d .n { font-family: Oswald, sans-serif; font-size: 13pt; font-weight: 700; color: #F26419; min-width: 9mm; line-height: 1.1; }
+  .d b { font-size: 10pt; font-weight: 600; display: block; }
+  .d span { font-size: 8.4pt; color: #6B7684; line-height: 1.5; display: block; margin-top: .8mm; }
+
+  /* fiches chantier */
+  .case { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; align-items: start; }
+  .case.rev { direction: rtl; } .case.rev > * { direction: ltr; }
+  .case .txt { padding-top: 1mm; }
+  .case h3 { font-family: Oswald, sans-serif; font-size: 16pt; font-weight: 600; text-transform: uppercase; line-height: 1.06; margin: 2.5mm 0 3mm; }
+  .case p { font-size: 8.8pt; line-height: 1.6; color: #55606E; }
+  .facts { margin-top: 4mm; }
+  .facts div { display: flex; gap: 3mm; border-top: 1px solid #E8ECF0; padding: 2.4mm 0; font-size: 8pt; }
+  .facts dt { color: #949DA9; min-width: 21mm; letter-spacing: .8px; text-transform: uppercase; font-size: 6.8pt; font-weight: 600; padding-top: .5mm; }
+  .facts dd { color: #2A3140; font-weight: 500; }
+
+  /* secteurs */
+  .sect { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; }
+  .sc { border: 1px solid #E2E6EB; border-radius: 5px; padding: 4.5mm 4.5mm 3mm; position: relative; overflow: hidden; }
+  .sc.hi { background: #FFF6F0; border-color: #F9C9A9; }
+  .sc .n { font-family: Oswald, sans-serif; font-size: 7.5pt; color: #F26419; font-weight: 700; letter-spacing: 1.6px; }
+  .sc h4 { font-family: Oswald, sans-serif; font-size: 11pt; font-weight: 600; text-transform: uppercase; line-height: 1.1; margin: 1.5mm 0 3mm; }
+  .sc li { list-style: none; font-size: 7.8pt; color: #4F5A68; padding: 1.7mm 0 1.7mm 3.4mm; border-top: 1px solid #EDF0F3; position: relative; line-height: 1.35; }
+  .sc li::before { content: ""; position: absolute; left: 0; top: 3.4mm; width: 3px; height: 3px; border-radius: 50%; background: #F9A26C; }
+  .sc .ghost { position: absolute; right: 2mm; bottom: -3mm; font-family: Oswald, sans-serif; font-size: 34pt; font-weight: 700; color: rgba(30,37,48,.05); }
+
+  /* pays */
+  .geo { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2.6mm; }
+  .cy { border: 1px solid #E2E6EB; border-radius: 5px; padding: 4mm 1.5mm; text-align: center; }
+  .cy.hq { background: #FFF6F0; border-color: #F9C9A9; }
+  .cy b { font-family: Oswald, sans-serif; font-size: 13pt; font-weight: 700; display: block; color: #1E2530; }
+  .cy span { font-size: 7.4pt; display: block; margin-top: 1.5mm; font-weight: 600; }
+  .cy em { font-size: 6.2pt; color: #8A93A0; font-style: normal; display: block; margin-top: .8mm; line-height: 1.25; }
+
+  /* logos */
+  .wall { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2.6mm; }
+  .wall div { border: 1px solid #E8ECF0; border-radius: 4px; height: 15mm; display: flex; align-items: center; justify-content: center; padding: 2.5mm; }
+  .wall img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+  /* dos */
+  .back { background: #1E2530; color: #fff; }
+  .back img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .42; }
+  .back .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,16,21,.72) 0%, rgba(12,16,21,.52) 40%, rgba(12,16,21,.88) 100%); }
+  .back .in { position: absolute; inset: 0; padding: 17mm 15mm; display: flex; flex-direction: column; justify-content: space-between; }
+  .back .lg .b { color: #3BD37E; }
+  .back h2 { font-family: Oswald, sans-serif; font-size: 30pt; font-weight: 700; text-transform: uppercase; line-height: 1; }
+  .ct { display: grid; grid-template-columns: 1fr 1fr; gap: 7mm; border-top: 1px solid rgba(255,255,255,.2); padding-top: 7mm; }
+  .ct .k { font-size: 6.8pt; letter-spacing: 2px; text-transform: uppercase; color: #8B96A3; font-weight: 600; }
+  .ct .v { font-size: 10.5pt; margin-top: 1.8mm; line-height: 1.55; color: #EDF0F3; }
+  /* bande des secteurs */
+  .sx { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2.4mm; }
+  .sx div { border: 1px solid #E8ECF0; border-radius: 4px; padding: 3mm 2mm; text-align: center; font-size: 7.6pt; font-weight: 600; color: #3D4452; }
+  /* bloc certification */
+  .mase { display: flex; align-items: center; gap: 5mm; border: 1px solid #E2E6EB; border-radius: 5px; padding: 4mm 5mm; background: #FAFBFC; }
+  .mase img { height: 15mm; }
+  .mase b { font-size: 9.5pt; display: block; }
+  .mase span { font-size: 8pt; color: #6B7684; display: block; margin-top: 1mm; line-height: 1.45; }
+  /* bande sombre de bas de page */
+  .band { background: #1E2530; border-radius: 5px; padding: 6mm 7mm; color: #fff; display: flex; align-items: center; justify-content: space-between; gap: 7mm; }
+  .band p { font-family: Oswald, sans-serif; font-size: 12pt; font-weight: 600; text-transform: uppercase; line-height: 1.2; flex: 1.55; }
+  .band .r { font-size: 8pt; color: #AEB6C0; text-align: right; line-height: 1.55; flex: 1; }
+  .legal { font-size: 7.2pt; color: #AAB3BE; line-height: 1.6; border-top: 1px solid rgba(255,255,255,.14); padding-top: 5mm; }
+</style>
+</head>
+<body>
+
+<!-- ============ 01 · COUVERTURE ============ -->
+<section class="page cover">
+  <img class="bg" src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/siderurgie/siderurgie-3.jpg" alt="">
+  <div class="veil"></div>
+  <div class="in">
+    <div class="lg"><span class="a">Ener</span><span class="a">-</span><span class="b">Co</span></div>
+    <div>
+      <div class="kicker">Company Profile · 2026</div>
+      <h1>Industrial<br>power<br><span class="or">distribution.</span></h1>
+      <p class="sub">From medium voltage preparation to final energisation. On sensitive technical and industrial sites, in France, Europe and internationally. Without subcontracting of intervention.</p>
+      <div class="base">
+        <div><b>2015</b>Established</div>
+        <div><b>7</b>Countries</div>
+        <div><b>36</b>Referenced clients</div>
+        <div><b>MASE</b>HSE certified</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 · IDENTITE ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="hd">
+      <div class="lg"><span class="a">Ener</span><span class="a">-</span><span class="b">Co</span></div>
+      <div class="rt">Since 2015 · Vaulx-en-Velin, France</div>
+    </div>
+
+    <div class="eyebrow">Who we are</div>
+    <h1 class="big">One entity,<br>one technical<br>reading, <span class="or">end to end.</span></h1>
+    <p class="lede" style="margin-top:6mm">Ener-Co covers the entire industrial power distribution chain: MV preparation, LV feeders, switchboards and outlets, busways, power connections and energisation. We do not outsource site execution. No cascade of subcontractors, no diluted responsibility: one accountable interlocutor, from the first MV cable to final energisation.</p>
+
+    <div style="margin-top:8mm" class="stats">
+      <div class="stat"><b>2015</b><span>Established</span></div>
+      <div class="stat"><b>7</b><span>Countries</span></div>
+      <div class="stat"><b>10</b><span>Industry sectors</span></div>
+      <div class="stat"><b>36</b><span>Clients</span></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:9mm;margin-top:8mm">
+      <div>
+        <div class="pt"><b>100% in-house teams</b><span>No subcontracting of site execution, ever.</span></div>
+        <div class="pt"><b>Manufacturer-independent</b><span>We work with all busway and switchgear systems.</span></div>
+        <div class="pt"><b>International deployment</b><span>Active in 7 countries, available for any tender.</span></div>
+        <div class="pt"><b>All IP classes, all power ranges</b><span>From standard tertiary to IP68 industrial.</span></div>
+        <div class="pt" style="border-bottom:1px solid #E8ECF0"><b>MASE certified · Rhône-Alpes</b><span>Health, safety and environment management system.</span></div>
+        <div class="mase" style="margin-top:6mm">
+          <img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logo-mase.jpg" alt="">
+          <div><b>Certification MASE Rhône-Alpes</b><span>Corporate Safety Management System<br>Health · Safety · Environment</span></div>
+        </div>
+      </div>
+      <div class="duo" style="grid-template-columns:1fr;gap:4mm">
+        <figure style="height:52mm"><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/siderurgie/siderurgie-1.jpg" alt=""><figcaption>Copper busbar connections · steelworks site</figcaption></figure>
+        <figure style="height:52mm"><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/poste-hta/poste-hta-1.jpg" alt=""><figcaption>MV switchgear · Schneider Electric cells</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="ft"><span>Ener-Co SAS · 11 rue Sigmund Freud, 69120 Vaulx-en-Velin · contact@ener-co.fr · +33 4 26 07 67 79</span><span class="no">02</span></div>
+  </div>
+</section>
+
+<!-- ============ 03 · EXPERTISE ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="hd">
+      <div class="lg"><span class="a">Ener</span><span class="a">-</span><span class="b">Co</span></div>
+      <div class="rt">Scope of work</div>
+    </div>
+
+    <div class="eyebrow">The complete chain</div>
+    <h2 class="sec">Six domains, <span class="or">one continuous scope.</span></h2>
+    <p class="lede" style="margin-top:4mm">Every link of the industrial power distribution chain is handled by our own teams. This continuity removes the interfaces where responsibility usually dilutes.</p>
+
+    <div class="dom" style="margin-top:6mm">
+      <div class="d"><div class="n">01</div><div><b>Medium voltage</b><span>MV preparation, substation installation, cells and interfaces.</span></div></div>
+      <div class="d"><div class="n">02</div><div><b>LV feeders</b><span>Main low voltage supplies and distribution boards.</span></div></div>
+      <div class="d"><div class="n">03</div><div><b>Switchboards &amp; outlets</b><span>Boards, outlets, cable routing and terminations.</span></div></div>
+      <div class="d"><div class="n">04</div><div><b>Busways</b><span>All IP classes, all power ranges, every manufacturer.</span></div></div>
+      <div class="d"><div class="n">05</div><div><b>Power connections</b><span>High-current connections, copper works, supporting.</span></div></div>
+      <div class="d"><div class="n">06</div><div><b>Energisation</b><span>Testing, commissioning and final energisation.</span></div></div>
+    </div>
+
+    <div class="trio" style="margin-top:8mm">
+      <figure style="height:44mm"><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/st-gaudens-1.jpg" alt=""><figcaption>Busway &amp; transformer</figcaption></figure>
+      <figure style="height:44mm"><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/poste-hta-panattoni/panattoni-hta-3.jpg" alt=""><figcaption>MV terminations</figcaption></figure>
+      <figure style="height:44mm"><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/chaufferie-gaz-3.jpg" alt=""><figcaption>Boiler plant supply</figcaption></figure>
+    </div>
+
+    <div class="eyebrow" style="margin-top:9mm">Where we operate</div>
+    <div class="sx" style="margin-top:4mm">
+      <div>Data centres</div><div>Heavy industry</div><div>Pharma &amp; biotech</div><div>Energy</div><div>Nuclear</div>
+      <div>Utilities</div><div>Food industry</div><div>Technical sites</div><div>Chemistry</div><div>Aerospace</div>
+    </div>
+
+    <div class="band" style="margin-top:8mm">
+      <p>Ener-Co operates where service<br>continuity is <span class="or" style="white-space:nowrap">non-negotiable.</span></p>
+      <div class="r">Ten industry sectors, from data centres to classified nuclear zones. Same teams, same standard of execution.</div>
+    </div>
+
+    <div class="ft"><span>ener-co.fr</span><span class="no">03</span></div>
+  </div>
+</section>
+
+<!-- ============ 04 · CHANTIERS 1 ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="hd">
+      <div class="lg"><span class="a">Ener</span><span class="a">-</span><span class="b">Co</span></div>
+      <div class="rt">Selected projects</div>
+    </div>
+
+    <div class="eyebrow">Documented projects</div>
+    <h2 class="sec">On site, <span class="or">in our own hands.</span></h2>
+
+    <div class="case" style="margin-top:7mm">
+      <figure style="height:88mm"><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/siderurgie/siderurgie-4.jpg" alt=""></figure>
+      <div class="txt">
+        <div class="eyebrow" style="font-size:6.8pt">Steel industry · KiloAmps</div>
+        <h3>Copper tube replacement · steelworks site</h3>
+        <p>Summer intervention at a major French steelworks: replacement of copper tube sets by a team of six Ener-Co employees, within a tight shutdown window. Weekend work, anchoring on concrete structures and handling of bulky parts in a confined space.</p>
+        <dl class="facts">
+          <div><dt>Client</dt><dd>Major French steelworks</dd></div>
+          <div><dt>Partner</dt><dd>KiloAmps</dd></div>
+          <div><dt>Works</dt><dd>Replacement of copper tube sets</dd></div>
+          <div style="border-bottom:1px solid #E8ECF0"><dt>Context</dt><dd>Tight shutdown · confined space</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="case rev" style="margin-top:9mm">
+      <figure style="height:88mm"><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/st-gaudens-3.jpg" alt=""></figure>
+      <div class="txt">
+        <div class="eyebrow" style="font-size:6.8pt">Beto-Bar IP68 · Fibre Excellence</div>
+        <h3>Saint-Gaudens · new Beto-Bar IP68 line</h3>
+        <p>Installation of a new Beto-Bar IP68 LB16EA low voltage busway line at the Fibre Excellence site in Saint-Gaudens, in an environment demanding precision, coordination and finishing quality.</p>
+        <dl class="facts">
+          <div><dt>Client</dt><dd>Fibre Excellence · Saint-Gaudens</dd></div>
+          <div><dt>System</dt><dd>Eta-com</dd></div>
+          <div><dt>Scope</dt><dd>Supporting, connection, junction finishing</dd></div>
+          <div style="border-bottom:1px solid #E8ECF0"><dt>Context</dt><dd>Active industrial site</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="ft"><span>ener-co.fr</span><span class="no">04</span></div>
+  </div>
+</section>
+
+<!-- ============ 05 · CHANTIERS 2 ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="hd">
+      <div class="lg"><span class="a">Ener</span><span class="a">-</span><span class="b">Co</span></div>
+      <div class="rt">Selected projects</div>
+    </div>
+
+    <div class="case" style="margin-top:2mm">
+      <figure style="height:82mm"><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/chaufferie-gaz-1.jpg" alt=""></figure>
+      <div class="txt">
+        <div class="eyebrow" style="font-size:6.8pt">Dalkia · KiloAmps</div>
+        <h3>2000 A gas boiler plant · East Lyon</h3>
+        <p>2000 A three-phase aluminium busway line of around 5 m, built for the main supply of a gas boiler plant in East Lyon, with a demand for reliability and service continuity.</p>
+        <dl class="facts">
+          <div><dt>Client</dt><dd>Dalkia</dd></div>
+          <div><dt>Partner</dt><dd>KiloAmps</dd></div>
+          <div><dt>Line</dt><dd>2000 A three-phase aluminium</dd></div>
+          <div style="border-bottom:1px solid #E8ECF0"><dt>Works</dt><dd>Layout, supporting, connections, energisation</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="case rev" style="margin-top:9mm">
+      <figure style="height:82mm"><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/poste-hta-panattoni/panattoni-hta-2.jpg" alt=""></figure>
+      <div class="txt">
+        <div class="eyebrow" style="font-size:6.8pt">MV substation · Panattoni</div>
+        <h3>MV substation · Colombier-Saugnieu</h3>
+        <p>Installation of an MV substation on the Panattoni site: equipment positioning, technical routing, organisation of connections and treatment of interfaces in a dedicated technical room.</p>
+        <dl class="facts">
+          <div><dt>Site</dt><dd>Panattoni · Colombier-Saugnieu</dd></div>
+          <div><dt>Scope</dt><dd>Substation layout, routing, interfaces</dd></div>
+          <div><dt>Context</dt><dd>Dedicated technical room</dd></div>
+          <div style="border-bottom:1px solid #E8ECF0"><dt>Reading</dt><dd>Installation quality, clarity of routing</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="trio" style="margin-top:8mm">
+      <figure style="height:40mm"><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/siderurgie/siderurgie-2.jpg" alt=""><figcaption>Copper works · handling</figcaption></figure>
+      <figure style="height:40mm"><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/poste-hta/poste-hta-6.jpg" alt=""><figcaption>MV cells · commissioning</figcaption></figure>
+      <figure style="height:40mm"><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/sg-hd-main.png" alt=""><figcaption>Busway run</figcaption></figure>
+    </div>
+
+    <div class="ft"><span>ener-co.fr</span><span class="no">05</span></div>
+  </div>
+</section>
+
+<!-- ============ 06 · REFERENCES PAR SECTEUR ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="hd">
+      <div class="lg"><span class="a">Ener</span><span class="a">-</span><span class="b">Co</span></div>
+      <div class="rt">References 2024 · 2026</div>
+    </div>
+
+    <div class="eyebrow">Field references · 2024 to 2026</div>
+    <h2 class="sec">References <span class="or">by sector.</span></h2>
+
+    <div class="sect" style="margin-top:6mm">
+      <div class="sc hi">
+        <div class="n">01</div><h4>Data centres &amp; digital infrastructure</h4>
+        <ul>
+          <li>DATA4 Marcoussis · 4x5000A IP55</li>
+          <li>Vantage DC / ENERIA MXP · Milan, Italy</li>
+          <li>EVIDEN Data Center · Jülich, Germany</li>
+          <li>DATAONE · Grenoble / Eybens</li>
+          <li>Tornado DC03 · Alcobendas, Spain</li>
+        </ul>
+        <div class="ghost">01</div>
+      </div>
+      <div class="sc">
+        <div class="n">02</div><h4>Glass industry &amp; specialist processes</h4>
+        <ul>
+          <li>O-I Jarosław · Poland</li>
+          <li>O-I Aprilia · Italy</li>
+          <li>O-I Reims · France</li>
+          <li>AGC Moustier-sur-Sambre · Belgium</li>
+          <li>SEPR Le Pontet · Saint-Gobain</li>
+          <li>Aubert &amp; Duval Pamiers</li>
+        </ul>
+        <div class="ghost">02</div>
+      </div>
+      <div class="sc">
+        <div class="n">03</div><h4>Heavy industry &amp; energy</h4>
+        <ul>
+          <li>Norske Skog Golbey · paper mill</li>
+          <li>TotalEnergies Grandpuits</li>
+          <li>CNR Hydroelectric · Vaugris</li>
+          <li>ArcelorMittal Fos-sur-Mer</li>
+          <li>Ugitech Ugine · steelworks</li>
+          <li>Fibre Excellence · Saint-Gaudens</li>
+        </ul>
+        <div class="ghost">03</div>
+      </div>
+    </div>
+
+    <div class="sect" style="margin-top:4mm">
+      <div class="sc">
+        <div class="n">04</div><h4>Nuclear &amp; defence</h4>
+        <ul>
+          <li>CEA Cadarache · classified zones</li>
+          <li>Framatome · Romans-sur-Isère</li>
+          <li>AETV Salives · nuclear environment</li>
+          <li>Base Aérienne 942 · French Air Force</li>
+        </ul>
+        <div class="ghost">04</div>
+      </div>
+      <div class="sc hi">
+        <div class="n">05</div><h4>Chemicals · pharma · petrochemicals</h4>
+        <ul>
+          <li>Novo Nordisk Chartres · 6 lines</li>
+          <li>Air Liquide Fos-sur-Mer</li>
+          <li>Petroineos Lavéra · refinery</li>
+          <li>Naphtachimie Martigues</li>
+          <li>Solvay Saint-Fons</li>
+          <li>Adisseo Roussillon</li>
+        </ul>
+        <div class="ghost">05</div>
+      </div>
+      <div class="sc">
+        <div class="n">06</div><h4>Tertiary, infrastructure &amp; landmarks</h4>
+        <ul>
+          <li>Tour Eiffel · Paris, 2024 Olympics</li>
+          <li>SIAAP Seine Amont · Grand Paris</li>
+          <li>Banque de France · Vic-le-Comte</li>
+          <li>Delta3 Multimodal Platform · Dourges</li>
+          <li>DHL Saint-Exupéry Airport</li>
+          <li>Tramway T10 Vénissieux · Vinci</li>
+        </ul>
+        <div class="ghost">06</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5mm;margin-top:7mm">
+      <div class="mase">
+        <img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logo-mase.jpg" alt="">
+        <div><b>Certification MASE Rhône-Alpes</b><span>Health · Safety · Environment<br>Corporate Safety Management System</span></div>
+      </div>
+      <figure style="height:27mm"><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/st-gaudens-7.jpg" alt=""><figcaption>Busway installation · active site</figcaption></figure>
+    </div>
+
+    <div class="ft"><span>ener-co.fr · SIRET 809 073 992 00012 · APE 4321A</span><span class="no">06</span></div>
+  </div>
+</section>
+
+<!-- ============ 07 · COUVERTURE GEO + PARTENAIRES ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="hd">
+      <div class="lg"><span class="a">Ener</span><span class="a">-</span><span class="b">Co</span></div>
+      <div class="rt">Coverage · Partners</div>
+    </div>
+
+    <div class="eyebrow">Geographic footprint</div>
+    <h2 class="sec">Seven countries, <span class="or">no restriction.</span></h2>
+
+    <div class="geo" style="margin-top:6mm">
+      <div class="cy hq"><b style="color:#2E5BA1">FR</b><span>France</span><em>Lyon · Paris<br>Marseille</em></div>
+      <div class="cy"><b style="color:#1FB85F">IT</b><span>Italy</span><em>Milan · Aprilia</em></div>
+      <div class="cy"><b style="color:#D8541A">DE</b><span>Germany</span><em>Jülich</em></div>
+      <div class="cy"><b style="color:#D8541A">PL</b><span>Poland</span><em>Jarosław</em></div>
+      <div class="cy"><b>BE</b><span>Belgium</span><em>Moustier-sur-<br>Sambre</em></div>
+      <div class="cy"><b style="color:#D8541A">ES</b><span>Spain</span><em>Alcobendas</em></div>
+      <div class="cy"><b style="color:#1FB85F">SN</b><span>Senegal</span><em>Dakar</em></div>
+    </div>
+
+    <p style="font-size:8.6pt;line-height:1.6;color:#6B7684;margin-top:5mm;font-style:italic">Ener-Co operates across borders, deploying dedicated teams wherever the project requires. No geographic restriction, no manufacturer exclusivity, available for any international tender. Operations also carried out in Martinique.</p>
+
+    <div class="eyebrow" style="margin-top:9mm">Partners &amp; clients · 36 references</div>
+    <h2 class="sec">Trusted by <span class="or">industry leaders.</span></h2>
+
+    <div class="wall" style="margin-top:6mm">
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/totalenergies.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/framatome.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/air-liquide.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/saint-gobain.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/arcelormittal.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/airbus.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/cea.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/eviden.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/novo-nordisk.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/solvay.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/vantage.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/data4.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/data-one.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/fibre-excellence.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/adisseo.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/petroineos.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/agc.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/cnr.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/aubert-duval.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/ugitech.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/hazemeyer.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/lynred.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/dhl.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/norske-skog.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/eiffage.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/schneider-electric.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/spie.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/ineo.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/actemium.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/cegelec.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/eta-com.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/kiloamps.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/santerne.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/solstyce.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/ega.png"></div>
+      <div><img src="file:///C:/Dev/Ener-Co-site-livraison/assets/logos/clemessy.png"></div>
+    </div>
+
+    <div class="ft"><span>ener-co.fr</span><span class="no">07</span></div>
+  </div>
+</section>
+
+<!-- ============ 08 · DOS ============ -->
+<section class="page back">
+  <img class="bg" src="file:///C:/Dev/Ener-Co-site-livraison/assets/images/siderurgie/siderurgie-2.jpg" alt="">
+  <div class="veil"></div>
+  <div class="in">
+    <div class="lg"><span class="a">Ener</span><span class="a">-</span><span class="b">Co</span></div>
+
+    <div>
+      <div class="eyebrow" style="color:#F9A26C">Get in touch</div>
+      <h2 style="margin-top:4mm">Let us read<br>your <span class="or">installation.</span></h2>
+      <p style="font-size:10pt;line-height:1.6;color:#C9D0D8;max-width:110mm;margin-top:5mm;font-weight:300">Send us your technical scope: we come back with a reading of the installation, the constraints we see, and the next steps.</p>
+
+      <div class="ct" style="margin-top:9mm">
+        <div>
+          <div class="k">Head office</div>
+          <div class="v">Ener-Co SAS<br>11 rue Sigmund Freud<br>69120 Vaulx-en-Velin, France</div>
+        </div>
+        <div>
+          <div class="k">Contact</div>
+          <div class="v">+33 (0)4 26 07 67 79<br>contact@ener-co.fr<br>ener-co.fr</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="legal">
+      Ener-Co SAS · Société par actions simplifiée · Capital 45 000 € · RCS Lyon 809 073 992 · SIRET 809 073 992 00012 · APE 4321A · VAT FR09 809073992<br>
+      MASE certified Rhône-Alpes · Health, Safety, Environment · Company Profile 2026
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
