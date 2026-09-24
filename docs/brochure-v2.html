@@ -34,15 +34,15 @@
   /* couverture */
   .cover { background: #14181d; }
   .cover img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .cover .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,13,16,.80) 0%, rgba(10,13,16,.30) 34%, rgba(10,13,16,.55) 62%, rgba(10,13,16,.94) 100%); }
+  .cover .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(9,12,16,.88) 0%, rgba(9,12,16,.36) 20%, rgba(9,12,16,.40) 40%, rgba(9,12,16,.94) 55%, rgba(9,12,16,.97) 70%, rgba(9,12,16,.98) 100%); }
   .cover .in { position: absolute; inset: 0; padding: 17mm 15mm; display: flex; flex-direction: column; justify-content: space-between; color: #fff; }
   .cover .lg { font-size: 30pt; }
   .cover .lg .b { color: #3BD37E; }
   .cover h1 { font-family: Oswald, sans-serif; font-weight: 700; font-size: 46pt; line-height: .95; text-transform: uppercase; letter-spacing: -0.6px; }
   .cover .kicker { font-size: 8pt; letter-spacing: 3.4px; text-transform: uppercase; color: #F9A26C; font-weight: 600; margin-bottom: 5mm; }
-  .cover .sub { font-size: 11pt; line-height: 1.55; color: #D6DBE1; max-width: 118mm; margin-top: 7mm; font-weight: 300; }
+  .cover .sub { font-size: 11pt; line-height: 1.55; color: #E6EAEE; max-width: 118mm; margin-top: 7mm; font-weight: 300; }
   .cover .base { display: flex; gap: 11mm; border-top: 1px solid rgba(255,255,255,.22); padding-top: 6mm; margin-top: 9mm; }
-  .cover .base div { font-size: 7.5pt; color: #AEB6C0; letter-spacing: .4px; }
+  .cover .base div { font-size: 7.5pt; color: #C6CDD5; letter-spacing: .4px; }
   .cover .base b { display: block; font-family: Oswald, sans-serif; font-size: 16pt; color: #fff; font-weight: 600; letter-spacing: 0; }
 
   /* chiffres cles */
@@ -60,9 +60,9 @@
   /* grilles d images */
   .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
   .trio { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3.5mm; }
-  figure { position: relative; overflow: hidden; border-radius: 3px; background: #EEF1F4; }
-  figure img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 7mm 4mm 3mm; font-size: 7pt; color: #fff; letter-spacing: .6px; background: linear-gradient(transparent, rgba(8,11,14,.85)); font-weight: 500; }
+  figure { display: flex; flex-direction: column; }
+  figure img { width: 100%; flex: 1; min-height: 0; object-fit: cover; display: block; border-radius: 3px; background: #EEF1F4; }
+  figcaption { padding: 1.9mm 0 0; font-size: 6.9pt; color: #6B7684; letter-spacing: .5px; font-weight: 500; }
 
   /* domaines d expertise */
   .dom { display: grid; grid-template-columns: 1fr 1fr; gap: 0 7mm; }
@@ -107,14 +107,14 @@
 
   /* dos */
   .back { background: #1E2530; color: #fff; }
-  .back img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .42; }
-  .back .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,16,21,.72) 0%, rgba(12,16,21,.52) 40%, rgba(12,16,21,.88) 100%); }
+  .back img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .55; }
+  .back .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,15,20,.86) 0%, rgba(11,15,20,.58) 20%, rgba(11,15,20,.94) 33%, rgba(11,15,20,.97) 55%, rgba(11,15,20,.98) 100%); }
   .back .in { position: absolute; inset: 0; padding: 17mm 15mm; display: flex; flex-direction: column; justify-content: space-between; }
   .back .lg .b { color: #3BD37E; }
   .back h2 { font-family: Oswald, sans-serif; font-size: 30pt; font-weight: 700; text-transform: uppercase; line-height: 1; }
   .ct { display: grid; grid-template-columns: 1fr 1fr; gap: 7mm; border-top: 1px solid rgba(255,255,255,.2); padding-top: 7mm; }
-  .ct .k { font-size: 6.8pt; letter-spacing: 2px; text-transform: uppercase; color: #8B96A3; font-weight: 600; }
-  .ct .v { font-size: 10.5pt; margin-top: 1.8mm; line-height: 1.55; color: #EDF0F3; }
+  .ct .k { font-size: 6.8pt; letter-spacing: 2px; text-transform: uppercase; color: #C6CED7; font-weight: 600; }
+  .ct .v { font-size: 10.5pt; margin-top: 1.8mm; line-height: 1.55; color: #F4F6F8; }
   /* bande des secteurs */
   .sx { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2.4mm; }
   .sx div { border: 1px solid #E8ECF0; border-radius: 4px; padding: 3mm 2mm; text-align: center; font-size: 7.6pt; font-weight: 600; color: #3D4452; }
@@ -124,10 +124,10 @@
   .mase b { font-size: 9.5pt; display: block; }
   .mase span { font-size: 8pt; color: #6B7684; display: block; margin-top: 1mm; line-height: 1.45; }
   /* bande sombre de bas de page */
-  .band { background: #1E2530; border-radius: 5px; padding: 6mm 7mm; color: #fff; display: flex; align-items: center; justify-content: space-between; gap: 7mm; }
+  .band { background: #FFF6F0; border: 1px solid #F9C9A9; border-left: 4px solid #F26419; border-radius: 5px; padding: 6mm 7mm; color: #1E2530; display: flex; align-items: center; justify-content: space-between; gap: 7mm; }
   .band p { font-family: Oswald, sans-serif; font-size: 12pt; font-weight: 600; text-transform: uppercase; line-height: 1.2; flex: 1.55; }
-  .band .r { font-size: 8pt; color: #AEB6C0; text-align: right; line-height: 1.55; flex: 1; }
-  .legal { font-size: 7.2pt; color: #AAB3BE; line-height: 1.6; border-top: 1px solid rgba(255,255,255,.14); padding-top: 5mm; }
+  .band .r { font-size: 8pt; color: #5A6473; text-align: right; line-height: 1.55; flex: 1; }
+  .legal { font-size: 7.2pt; color: #D5DBE2; line-height: 1.6; border-top: 1px solid rgba(255,255,255,.14); padding-top: 5mm; }
 </style>
 </head>
 <body>
@@ -505,7 +505,7 @@
     <div>
       <div class="eyebrow" style="color:#F9A26C">Get in touch</div>
       <h2 style="margin-top:4mm">Let us read<br>your <span class="or">installation.</span></h2>
-      <p style="font-size:10pt;line-height:1.6;color:#C9D0D8;max-width:110mm;margin-top:5mm;font-weight:300">Send us your technical scope: we come back with a reading of the installation, the constraints we see, and the next steps.</p>
+      <p style="font-size:10pt;line-height:1.6;color:#DDE3E9;max-width:110mm;margin-top:5mm;font-weight:300">Send us your technical scope: we come back with a reading of the installation, the constraints we see, and the next steps.</p>
 
       <div class="ct" style="margin-top:9mm">
         <div>
