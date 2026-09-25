@@ -154,9 +154,17 @@
             <div class="field field--full">
               <label for="subject" data-i18n="contact.form.label.subject">Type de demande</label>
               <input type="text" id="subject" name="subject" list="subject-suggestions" autocomplete="off" placeholder="Précisez l'objet de votre demande" data-i18n-attr="placeholder:contact.form.subject.ph">
+              <!-- Les 8 propositions viennent du dictionnaire et suivent la langue.
+                   data-i18n-attr agit sur l'attribut value, celui que lit le navigateur. -->
               <datalist id="subject-suggestions">
-                <option value="Chiffrage · Devis"></option>
-                <option value="Candidature · Recrutement"></option>
+                <option value="Étude technique préliminaire" data-i18n-attr="value:contact.form.opt.1"></option>
+                <option value="Chiffrage · devis" data-i18n-attr="value:contact.form.opt.2"></option>
+                <option value="Alimentation principale · raccordement puissance" data-i18n-attr="value:contact.form.opt.3"></option>
+                <option value="Extension / remplacement de ligne" data-i18n-attr="value:contact.form.opt.4"></option>
+                <option value="Gaines à barres · implantation" data-i18n-attr="value:contact.form.opt.5"></option>
+                <option value="Demande partenariat" data-i18n-attr="value:contact.form.opt.6"></option>
+                <option value="Candidature · recrutement" data-i18n-attr="value:contact.form.opt.7"></option>
+                <option value="Autre" data-i18n-attr="value:contact.form.opt.8"></option>
               </datalist>
             </div>
 
