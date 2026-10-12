@@ -49,3 +49,83 @@
   from = "/GUIDE-CONSOLE.html"
   to = "/404.html"
   status = 404
+
+# ============================================================================
+# ANCIEN SITE WORDPRESS · redirections permanentes (301)
+# Les 10 adresses connues de Google au 12/10/2026, relevees dans le sitemap
+# de l'ancien site. Une 301 transfere le credit de referencement acquis vers
+# la nouvelle page : sans elles, Google voit des erreurs et dereference.
+# A conserver plusieurs annees : des liens externes pointent encore dessus.
+# ============================================================================
+
+# Correspondances directes
+[[redirects]]
+  from = "/contact/"
+  to = "/contact.html"
+  status = 301
+[[redirects]]
+  from = "/mentions-legales/"
+  to = "/mentions-legales.html"
+  status = 301
+[[redirects]]
+  from = "/politique-de-confidentialite/"
+  to = "/politique-de-confidentialite.html"
+  status = 301
+
+# Gaines a barres : devenu l'un des six domaines de la page Expertise
+[[redirects]]
+  from = "/gaines-a-barres/"
+  to = "/expertise.html"
+  status = 301
+
+# Nos clients : devenu la page References
+[[redirects]]
+  from = "/nos-clients/"
+  to = "/references.html"
+  status = 301
+
+# Activites de l'ancienne societe (REMI Transfert / REMI Genie Electromecanique)
+# qui ne figurent pas au catalogue Ener-Co actuel. Redirigees vers l'accueil,
+# qui presente le perimetre reel. A reorienter si l'une redevient d'actualite.
+[[redirects]]
+  from = "/transfert-industriel/"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/pupitres-simulateurs/"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/panneaux-photovoltaiques/"
+  to = "/"
+  status = 301
+
+# Article de demonstration WordPress, sans contenu utile
+[[redirects]]
+  from = "/2020/10/25/bonjour-tout-le-monde/"
+  to = "/"
+  status = 301
+
+# Anciens plans de site WordPress
+[[redirects]]
+  from = "/wp-sitemap.xml"
+  to = "/sitemap.xml"
+  status = 301
+[[redirects]]
+  from = "/wp-sitemap-posts-page-1.xml"
+  to = "/sitemap.xml"
+  status = 301
+[[redirects]]
+  from = "/wp-sitemap-posts-post-1.xml"
+  to = "/sitemap.xml"
+  status = 301
+
+# Les chemins d'administration WordPress n'existent plus
+[[redirects]]
+  from = "/wp-admin/*"
+  to = "/404.html"
+  status = 404
+[[redirects]]
+  from = "/wp-login.php"
+  to = "/404.html"
+  status = 404

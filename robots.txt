@@ -1,0 +1,10 @@
+# Ener-Co · acces des moteurs de recherche
+User-agent: *
+Allow: /
+
+# Espaces non publics
+Disallow: /admin/
+Disallow: /docs/
+Disallow: /legacy/
+
+Sitemap: https://ener-co.fr/sitemap.xml
