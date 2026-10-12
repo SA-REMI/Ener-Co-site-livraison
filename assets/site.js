@@ -206,8 +206,8 @@ const I18N = {
 
     "home.stats.s1.dt": "Depuis <span>2015</span>",
     "home.stats.s1.dd": "Ener-Co SAS · entreprise française spécialisée",
-    "home.stats.s2.dt": "<span>7</span> pays",
-    "home.stats.s2.dd": "France · Italie · Allemagne · Pologne · Belgique · Espagne · Sénégal",
+    "home.stats.s2.dt": "<span>8</span> pays",
+    "home.stats.s2.dd": "France · Italie · Allemagne · Pologne · Belgique · Espagne · Sénégal · Côte d'Ivoire",
     "home.stats.s3.dt": "MASE",
     "home.stats.s3.dd": "Certification SSE · Rhône-Alpes",
     "home.stats.s4.dt": "<span>100%</span> interne",
@@ -639,7 +639,7 @@ const I18N = {
     "sect.seo.title": "Secteurs d'intervention | Ener-Co",
     "sect.seo.description": "Ener-Co intervient sur data centers, industrie lourde, pharma, énergie, nucléaire, utilités, agroalimentaire, chimie et aéronautique. Distribution d'énergie industrielle.",
     "refs.seo.title": "Références · clients, partenaires, qualification MASE | Ener-Co",
-    "refs.seo.description": "Références clients, partenaires intégrateurs et pays d'intervention d'Ener-Co. Certification MASE Rhône-Alpes. 7 pays couverts en Europe et à l'international.",
+    "refs.seo.description": "Références clients, partenaires intégrateurs et pays d'intervention d'Ener-Co. Certification MASE Rhône-Alpes. 8 pays couverts en Europe et à l'international.",
     "eng.seo.title": "Engagements de direction · qualité, sécurité, environnement | Ener-Co",
     "eng.seo.description": "Engagements de la direction Ener-Co : qualité des prestations, prévention SSE, responsabilité environnementale, éthique, compétences et amélioration continue. Cohérent MASE et ISO 9001.",
     "recrut.seo.title": "Recrutement · offres d'emploi | Ener-Co",
@@ -683,7 +683,7 @@ const I18N = {
     "legal.b12": "Informations relatives à l'éditeur du site, à son hébergeur, à la propriété intellectuelle des contenus et aux conditions générales d'utilisation.",
     "legal.b13": "Le site <strong>www.ener-co.fr</strong> est édité par&nbsp;:<br> <strong>Ener-Co SAS</strong>, Société par actions simplifiée<br> Capital social&nbsp;: 45&nbsp;000&nbsp;€<br> Siège social&nbsp;: 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> SIRET&nbsp;: 809&nbsp;073&nbsp;992&nbsp;00012<br> TVA intracommunautaire&nbsp;: FR09&nbsp;809073992<br> Code APE&nbsp;: 43.21A, Travaux d'installation électrique dans tous locaux<br> Téléphone&nbsp;: <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a><br> Courriel&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>",
     "legal.b14": "<strong>Responsable de la publication&nbsp;:</strong> la Direction d'Ener-Co SAS.",
-    "legal.b15": "<strong>OVH SAS</strong><br> 2 rue Kellermann, 59100 Roubaix, France<br> Téléphone&nbsp;: <a href=\"tel:+33972101007\">+33&nbsp;(0)9&nbsp;72&nbsp;10&nbsp;10&nbsp;07</a><br> Site web&nbsp;: <a href=\"https://www.ovhcloud.com\" target=\"_blank\" rel=\"noopener\">www.ovhcloud.com</a>",
+    "legal.b15": "<strong>Netlify, Inc.</strong><br> 512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis<br> Site web&nbsp;: <a href=\"https://www.netlify.com\" target=\"_blank\" rel=\"noopener\">www.netlify.com</a><br> Le nom de domaine ener-co.fr est enregistré auprès d'OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.",
     "legal.b16": "L'ensemble du site, structure, textes, photographies, schémas, logos, code source, est la propriété exclusive d'Ener-Co SAS ou des titulaires de droits ayant autorisé leur publication.",
     "legal.b17": "Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, des éléments du site, par quelque procédé que ce soit, est interdite sans l'autorisation écrite préalable d'Ener-Co SAS.",
     "legal.b18": "Les marques et logos de tiers reproduits sur le site (clients, partenaires, fabricants) demeurent la propriété exclusive de leurs titulaires respectifs. Leur mention illustre des chantiers ou références d'Ener-Co et ne constitue ni un partenariat commercial ni un endossement.",
@@ -694,7 +694,7 @@ const I18N = {
     "legal.b23": "Le site peut contenir des liens vers des sites tiers. Ener-Co SAS n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leur disponibilité ou la collecte de données qu'ils opèrent.",
     "legal.b24": "Les présentes mentions légales sont régies par le droit français. En cas de litige, et après tentative de résolution amiable, les tribunaux de Lyon seront seuls compétents.",
     "legal.b25": "Pour toute question relative au site ou à ces mentions légales&nbsp;:<br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>",
-    "legal.b26": "Dernière mise à jour&nbsp;: avril 2026.",
+    "legal.b26": "Dernière mise à jour&nbsp;: octobre 2026.",
     "privacy.seo.title": "Politique de confidentialité | Ener-Co",
     "privacy.seo.description": "Politique de confidentialité du site ener-co.fr, traitement des données personnelles, finalités, base légale, durée, droits RGPD.",
     "privacy.b01": "Politique de confidentialité",
@@ -752,6 +752,11 @@ const I18N = {
     "merci.b08": "Vous pouvez explorer nos chantiers documentés, nos secteurs d'intervention et nos références clients.",
     "merci.b09": "<strong>Standard commercial</strong><br> <a href=\"tel:+33426076779\" data-coord-href=\"tel\" data-coord=\"telephone\">+33 (0)4 26 07 67 79</a><br> <a href=\"mailto:contact@ener-co.fr\" data-coord-href=\"mailto\" data-coord=\"email\">contact@ener-co.fr</a>",
     "merci.b10": "<strong>Siège social</strong><br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France",
+    "refs.country.ci": "Côte d'Ivoire",
+    "refs.country.ci.city": "Abidjan",
+    "contact.form.erreur": "L'envoi a échoué. Vérifiez votre connexion et réessayez, ou contactez-nous directement par email.",
+    "home.carte.alt": "Carte des pays d'intervention Ener-Co · France, Europe, Sénégal, Côte d'Ivoire et Martinique",
+    "refs.carte.alt": "Carte des pays d'intervention Ener-Co · Europe, Afrique de l'Ouest et Caraïbes",
   },
 
   en: {
@@ -959,8 +964,8 @@ const I18N = {
 
     "home.stats.s1.dt": "Since <span>2015</span>",
     "home.stats.s1.dd": "Ener-Co SAS · specialised French company",
-    "home.stats.s2.dt": "<span>7</span> countries",
-    "home.stats.s2.dd": "France · Italy · Germany · Poland · Belgium · Spain · Senegal",
+    "home.stats.s2.dt": "<span>8</span> countries",
+    "home.stats.s2.dd": "France · Italy · Germany · Poland · Belgium · Spain · Senegal · Ivory Coast",
     "home.stats.s3.dt": "MASE",
     "home.stats.s3.dd": "HSE certification · Rhône-Alpes",
     "home.stats.s4.dt": "<span>100%</span> in-house",
@@ -1392,7 +1397,7 @@ const I18N = {
     "sect.seo.title": "Sectors | Ener-Co",
     "sect.seo.description": "Ener-Co operates in data centres, heavy industry, pharma, energy, nuclear, utilities, food processing, chemicals and aerospace. Industrial power distribution.",
     "refs.seo.title": "References · clients, partners, MASE qualification | Ener-Co",
-    "refs.seo.description": "Ener-Co client references, integrator partners and countries of operation. MASE Rhône-Alpes certification. 7 countries covered in Europe and internationally.",
+    "refs.seo.description": "Ener-Co client references, integrator partners and countries of operation. MASE Rhône-Alpes certification. 8 countries covered in Europe and internationally.",
     "eng.seo.title": "Management commitments · quality, safety, environment | Ener-Co",
     "eng.seo.description": "Ener-Co management commitments: service quality, HSE prevention, environmental responsibility, ethics, skills and continuous improvement. Consistent with MASE and ISO 9001.",
     "recrut.seo.title": "Careers · job offers | Ener-Co",
@@ -1436,7 +1441,7 @@ const I18N = {
     "legal.b12": "Informations relatives à l'éditeur du site, à son hébergeur, à la propriété intellectuelle des contenus et aux conditions générales d'utilisation.",
     "legal.b13": "Le site <strong>www.ener-co.fr</strong> est édité par&nbsp;:<br> <strong>Ener-Co SAS</strong>, Société par actions simplifiée<br> Capital social&nbsp;: 45&nbsp;000&nbsp;€<br> Siège social&nbsp;: 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> SIRET&nbsp;: 809&nbsp;073&nbsp;992&nbsp;00012<br> TVA intracommunautaire&nbsp;: FR09&nbsp;809073992<br> Code APE&nbsp;: 43.21A, Travaux d'installation électrique dans tous locaux<br> Téléphone&nbsp;: <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a><br> Courriel&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>",
     "legal.b14": "<strong>Responsable de la publication&nbsp;:</strong> la Direction d'Ener-Co SAS.",
-    "legal.b15": "<strong>OVH SAS</strong><br> 2 rue Kellermann, 59100 Roubaix, France<br> Téléphone&nbsp;: <a href=\"tel:+33972101007\">+33&nbsp;(0)9&nbsp;72&nbsp;10&nbsp;10&nbsp;07</a><br> Site web&nbsp;: <a href=\"https://www.ovhcloud.com\" target=\"_blank\" rel=\"noopener\">www.ovhcloud.com</a>",
+    "legal.b15": "<strong>Netlify, Inc.</strong><br> 512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis<br> Site web&nbsp;: <a href=\"https://www.netlify.com\" target=\"_blank\" rel=\"noopener\">www.netlify.com</a><br> Le nom de domaine ener-co.fr est enregistré auprès d'OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.",
     "legal.b16": "L'ensemble du site, structure, textes, photographies, schémas, logos, code source, est la propriété exclusive d'Ener-Co SAS ou des titulaires de droits ayant autorisé leur publication.",
     "legal.b17": "Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, des éléments du site, par quelque procédé que ce soit, est interdite sans l'autorisation écrite préalable d'Ener-Co SAS.",
     "legal.b18": "Les marques et logos de tiers reproduits sur le site (clients, partenaires, fabricants) demeurent la propriété exclusive de leurs titulaires respectifs. Leur mention illustre des chantiers ou références d'Ener-Co et ne constitue ni un partenariat commercial ni un endossement.",
@@ -1447,7 +1452,7 @@ const I18N = {
     "legal.b23": "Le site peut contenir des liens vers des sites tiers. Ener-Co SAS n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leur disponibilité ou la collecte de données qu'ils opèrent.",
     "legal.b24": "Les présentes mentions légales sont régies par le droit français. En cas de litige, et après tentative de résolution amiable, les tribunaux de Lyon seront seuls compétents.",
     "legal.b25": "Pour toute question relative au site ou à ces mentions légales&nbsp;:<br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>",
-    "legal.b26": "Dernière mise à jour&nbsp;: avril 2026.",
+    "legal.b26": "Dernière mise à jour&nbsp;: octobre 2026.",
     "privacy.seo.title": "Privacy policy | Ener-Co",
     "privacy.seo.description": "Privacy policy for ener-co.fr: personal data processing, purposes, legal basis, retention, GDPR rights.",
     "privacy.b01": "Politique de confidentialité",
@@ -1505,6 +1510,11 @@ const I18N = {
     "merci.b08": "You can explore our documented projects, our sectors and our client references.",
     "merci.b09": "<strong>Sales desk</strong><br> <a href=\"tel:+33426076779\" data-coord-href=\"tel\" data-coord=\"telephone\">+33 (0)4 26 07 67 79</a><br> <a href=\"mailto:contact@ener-co.fr\" data-coord-href=\"mailto\" data-coord=\"email\">contact@ener-co.fr</a>",
     "merci.b10": "<strong>Head office</strong><br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France",
+    "refs.country.ci": "Ivory Coast",
+    "refs.country.ci.city": "Abidjan",
+    "contact.form.erreur": "Sending failed. Check your connection and try again, or contact us directly by email.",
+    "home.carte.alt": "Map of Ener-Co operating countries · France, Europe, Senegal, Ivory Coast and Martinique",
+    "refs.carte.alt": "Map of Ener-Co operating countries · Europe, West Africa and the Caribbean",
   },
 
   it: {
@@ -1712,8 +1722,8 @@ const I18N = {
 
     "home.stats.s1.dt": "Dal <span>2015</span>",
     "home.stats.s1.dd": "Ener-Co SAS · azienda francese specializzata",
-    "home.stats.s2.dt": "<span>7</span> paesi",
-    "home.stats.s2.dd": "Francia · Italia · Germania · Polonia · Belgio · Spagna · Senegal",
+    "home.stats.s2.dt": "<span>8</span> paesi",
+    "home.stats.s2.dd": "Francia · Italia · Germania · Polonia · Belgio · Spagna · Senegal · Costa d'Avorio",
     "home.stats.s3.dt": "MASE",
     "home.stats.s3.dd": "Certificazione SSA · Rhône-Alpes",
     "home.stats.s4.dt": "<span>100%</span> interno",
@@ -2145,7 +2155,7 @@ const I18N = {
     "sect.seo.title": "Settori di intervento | Ener-Co",
     "sect.seo.description": "Ener-Co interviene in data center, industria pesante, farmaceutica, energia, nucleare, utility, agroalimentare, chimica e aeronautica. Distribuzione di energia industriale.",
     "refs.seo.title": "Referenze · clienti, partner, qualifica MASE | Ener-Co",
-    "refs.seo.description": "Referenze clienti, partner integratori e paesi di intervento di Ener-Co. Certificazione MASE Rhône-Alpes. 7 paesi coperti in Europa e a livello internazionale.",
+    "refs.seo.description": "Referenze clienti, partner integratori e paesi di intervento di Ener-Co. Certificazione MASE Rhône-Alpes. 8 paesi coperti in Europa e a livello internazionale.",
     "eng.seo.title": "Impegni della direzione · qualità, sicurezza, ambiente | Ener-Co",
     "eng.seo.description": "Impegni della direzione Ener-Co: qualità delle prestazioni, prevenzione SSA, responsabilità ambientale, etica, competenze e miglioramento continuo. Coerente con MASE e ISO 9001.",
     "recrut.seo.title": "Lavora con noi · offerte di lavoro | Ener-Co",
@@ -2189,7 +2199,7 @@ const I18N = {
     "legal.b12": "Informations relatives à l'éditeur du site, à son hébergeur, à la propriété intellectuelle des contenus et aux conditions générales d'utilisation.",
     "legal.b13": "Le site <strong>www.ener-co.fr</strong> est édité par&nbsp;:<br> <strong>Ener-Co SAS</strong>, Société par actions simplifiée<br> Capital social&nbsp;: 45&nbsp;000&nbsp;€<br> Siège social&nbsp;: 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France<br> RCS Lyon&nbsp;: 809&nbsp;073&nbsp;992<br> SIRET&nbsp;: 809&nbsp;073&nbsp;992&nbsp;00012<br> TVA intracommunautaire&nbsp;: FR09&nbsp;809073992<br> Code APE&nbsp;: 43.21A, Travaux d'installation électrique dans tous locaux<br> Téléphone&nbsp;: <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a><br> Courriel&nbsp;: <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a>",
     "legal.b14": "<strong>Responsable de la publication&nbsp;:</strong> la Direction d'Ener-Co SAS.",
-    "legal.b15": "<strong>OVH SAS</strong><br> 2 rue Kellermann, 59100 Roubaix, France<br> Téléphone&nbsp;: <a href=\"tel:+33972101007\">+33&nbsp;(0)9&nbsp;72&nbsp;10&nbsp;10&nbsp;07</a><br> Site web&nbsp;: <a href=\"https://www.ovhcloud.com\" target=\"_blank\" rel=\"noopener\">www.ovhcloud.com</a>",
+    "legal.b15": "<strong>Netlify, Inc.</strong><br> 512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis<br> Site web&nbsp;: <a href=\"https://www.netlify.com\" target=\"_blank\" rel=\"noopener\">www.netlify.com</a><br> Le nom de domaine ener-co.fr est enregistré auprès d'OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.",
     "legal.b16": "L'ensemble du site, structure, textes, photographies, schémas, logos, code source, est la propriété exclusive d'Ener-Co SAS ou des titulaires de droits ayant autorisé leur publication.",
     "legal.b17": "Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, des éléments du site, par quelque procédé que ce soit, est interdite sans l'autorisation écrite préalable d'Ener-Co SAS.",
     "legal.b18": "Les marques et logos de tiers reproduits sur le site (clients, partenaires, fabricants) demeurent la propriété exclusive de leurs titulaires respectifs. Leur mention illustre des chantiers ou références d'Ener-Co et ne constitue ni un partenariat commercial ni un endossement.",
@@ -2200,7 +2210,7 @@ const I18N = {
     "legal.b23": "Le site peut contenir des liens vers des sites tiers. Ener-Co SAS n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leur disponibilité ou la collecte de données qu'ils opèrent.",
     "legal.b24": "Les présentes mentions légales sont régies par le droit français. En cas de litige, et après tentative de résolution amiable, les tribunaux de Lyon seront seuls compétents.",
     "legal.b25": "Pour toute question relative au site ou à ces mentions légales&nbsp;:<br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin<br> <a href=\"mailto:contact@ener-co.fr\">contact@ener-co.fr</a> · <a href=\"tel:+33426076779\">+33&nbsp;(0)4&nbsp;26&nbsp;07&nbsp;67&nbsp;79</a>",
-    "legal.b26": "Dernière mise à jour&nbsp;: avril 2026.",
+    "legal.b26": "Dernière mise à jour&nbsp;: octobre 2026.",
     "privacy.seo.title": "Informativa sulla privacy | Ener-Co",
     "privacy.seo.description": "Informativa sulla privacy del sito ener-co.fr: trattamento dei dati personali, finalità, base giuridica, durata, diritti GDPR.",
     "privacy.b01": "Politique de confidentialité",
@@ -2258,8 +2268,44 @@ const I18N = {
     "merci.b08": "Potete esplorare i nostri cantieri documentati, i nostri settori di intervento e le nostre referenze clienti.",
     "merci.b09": "<strong>Centralino commerciale</strong><br> <a href=\"tel:+33426076779\" data-coord-href=\"tel\" data-coord=\"telephone\">+33 (0)4 26 07 67 79</a><br> <a href=\"mailto:contact@ener-co.fr\" data-coord-href=\"mailto\" data-coord=\"email\">contact@ener-co.fr</a>",
     "merci.b10": "<strong>Sede legale</strong><br> Ener-Co SAS, 11 rue Sigmund Freud, 69120 Vaulx-en-Velin, France",
+    "refs.country.ci": "Costa d'Avorio",
+    "refs.country.ci.city": "Abidjan",
+    "contact.form.erreur": "Invio non riuscito. Verifichi la connessione e riprovi, oppure ci contatti direttamente via email.",
+    "home.carte.alt": "Mappa dei paesi di intervento Ener-Co · Francia, Europa, Senegal, Costa d'Avorio e Martinica",
+    "refs.carte.alt": "Mappa dei paesi di intervento Ener-Co · Europa, Africa occidentale e Caraibi",
   },
 };
+
+/* ---- LANGUE ET URL ----
+   Le francais vit a la racine, l'anglais sous /en/, l'italien sous /it/.
+   Chaque langue a donc sa propre URL, seule facon pour un moteur de recherche
+   d'indexer les trois versions : une URL = une langue.
+
+   La langue est deduite de l'URL, jamais d'un choix memorise. Si elle venait
+   d'un localStorage, un visiteur ayant deja choisi le francais verrait la page
+   italienne reecrite en francais apres son chargement, et un robot d'indexation
+   relirait la version francaise sous l'URL italienne.
+
+   On ne redirige pas selon la langue du navigateur : les robots Google explorent
+   depuis les Etats-Unis, seraient renvoyes sur /en/ et ne verraient jamais le
+   francais. Le choix reste celui du visiteur. */
+const LANGS = ["fr", "en", "it"];
+
+function currentLang() {
+  const premier = window.location.pathname.split("/").filter(Boolean)[0];
+  return premier === "en" || premier === "it" ? premier : "fr";
+}
+
+function langUrl(lang) {
+  const parts = window.location.pathname.split("/").filter(Boolean);
+  if (parts[0] === "en" || parts[0] === "it") parts.shift();
+  let fichier = parts.join("/");
+  // La racine d'une langue s'ecrit /it/ et non /it/index.html : c'est la forme
+  // declaree en canonique, on evite de faire pointer le selecteur ailleurs.
+  if (fichier === "index.html" || fichier === "index") fichier = "";
+  const prefixe = lang === "fr" ? "/" : "/" + lang + "/";
+  return prefixe + fichier + window.location.search + window.location.hash;
+}
 
 /* ---- APPLY TRANSLATIONS ---- */
 function applyLang(lang) {
@@ -2298,7 +2344,8 @@ function applyLang(lang) {
   const currentLangLabel = document.querySelector(".lang-current");
   if (currentLangLabel) currentLangLabel.textContent = lang.toUpperCase();
 
-  try { localStorage.setItem("enerco.lang", lang); } catch (e) {}
+  // Pas de memorisation de la langue : elle est portee par l'URL. Un reglage
+  // memorise ici ne reglerait plus rien et finirait par contredire l'adresse.
 
   // Re-applique la colorisation du nom Ener-Co · les data-i18n viennent de
   // remplacer du texte brut, on doit re-hydrater les spans.
@@ -2326,11 +2373,14 @@ function initLangSwitch() {
     });
   }
 
+  // Changer de langue change d'adresse. On ne traduit plus la page en place :
+  // chaque langue a sa propre URL, le selecteur y conduit.
   document.querySelectorAll("[data-lang]").forEach((btn) => {
     btn.addEventListener("click", () => {
-      applyLang(btn.dataset.lang);
       if (menu) menu.classList.remove("is-open");
       if (trigger) trigger.setAttribute("aria-expanded", "false");
+      const cible = langUrl(btn.dataset.lang);
+      if (btn.dataset.lang !== currentLang()) window.location.href = cible;
     });
   });
 }
@@ -2575,7 +2625,7 @@ function initClientStrip() {
 
   // 1) On tente de lire la source unique editable par le CMS
   if (window.fetch && location.protocol.indexOf("http") === 0) {
-    fetch("content/references.json", { cache: "no-cache" })
+    fetch("/content/references.json", { cache: "no-cache" })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (data) {
         if (data && Array.isArray(data.clients) && data.clients.length) {
@@ -2727,11 +2777,7 @@ async function loadPhotosRealisations() {
 
 /* ---- INIT ---- */
 document.addEventListener("DOMContentLoaded", () => {
-  let saved = "fr";
-  try { saved = localStorage.getItem("enerco.lang") || "fr"; } catch (e) {}
-  if (!I18N[saved]) saved = "fr";
-
-  applyLang(saved);
+  applyLang(currentLang());
   colorizeBrandName(); // colorise 'Ener-Co' apres premier applyLang
   initLangSwitch();
   initHeaderScroll();
@@ -2744,9 +2790,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const yearNode = document.getElementById("year");
   if (yearNode) yearNode.textContent = new Date().getFullYear();
 
-  // Applique par-dessus les textes edites dans la console (sans bloquer l'affichage).
+  // Applique par-dessus les textes edites dans la console (sans bloquer
+  // l'affichage). La langue est relue depuis l'URL, comme au premier appel :
+  // c'est ce second passage qui fait apparaitre les textes de la console, donc
+  // une erreur ici desactiverait la console sans rien afficher d'anormal.
   loadEditableTexts().then(() => {
-    applyLang(saved);
+    applyLang(currentLang());
     colorizeBrandName();
   });
   loadCoordonnees();

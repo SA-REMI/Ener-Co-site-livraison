@@ -44,7 +44,12 @@ puis ouvrez `http://localhost:4177/`. Ouvrir les fichiers en `file://` ne suffit
 index.html, expertise.html, realisations.html, secteurs.html,
 references.html, engagements.html, recrutement.html, contact.html,
 merci.html, mentions-legales.html, politique-de-confidentialite.html,
-404.html                       les 13 pages (en-tête et pied de page dupliqués dans chacune)
+404.html                       les 12 pages françaises, qui servent de source (en-tête
+                               et pied de page dupliqués dans chacune)
+en/, it/                       les mêmes pages en anglais et en italien · GÉNÉRÉES,
+                               ne jamais les modifier à la main (voir chapitre 5)
+build-langues.js               le générateur des trois langues et du plan du site
+sitemap.xml, robots.txt        plan du site (30 URL, généré) et accès des moteurs
 assets/site.css                toute la mise en forme (environ 3 700 lignes)
 assets/site.js                 dictionnaire des langues + comportements (environ 2 750 lignes)
 assets/images/                 photos de chantier (jpg + webp), un sous-dossier par chantier
@@ -67,23 +72,57 @@ ETAT_DES_LIEUX_SITE.md         analyse détaillée du site et scénarios d'hébe
 
 ## 5 · Le système de langues
 
-Dans `assets/site.js`, l'objet `I18N` contient trois dictionnaires `fr`, `en`, `it` de **724 clés chacun**, strictement symétriques. Une clé ressemble à `home.hero.h1` (page `home`, section `hero`, élément `h1`). Les préfixes utilisés : `nav`, `footer`, `err` (communs), `home`, `exp`, `real`, `sect`, `refs`, `eng`, `recrut`, `contact`, `merci`, `legal`, `privacy`.
+Dans `assets/site.js`, l'objet `I18N` contient trois dictionnaires `fr`, `en`, `it` de **726 clés chacun**, strictement symétriques. Une clé ressemble à `home.hero.h1` (page `home`, section `hero`, élément `h1`). Les préfixes utilisés : `nav`, `footer`, `err` (communs), `home`, `exp`, `real`, `sect`, `refs`, `eng`, `recrut`, `contact`, `merci`, `legal`, `privacy`.
 
 Dans le HTML :
 
 - `data-i18n="home.hero.h1"` sur un élément : son contenu est remplacé par la valeur de la clé. Si la valeur contient `<` ou `&`, elle est injectée en HTML (gras, liens, retours à la ligne), sinon en texte.
-- `data-i18n-attr="content:home.seo.description"` : remplace un attribut. Utilisé pour la balise `<meta name="description">`. La balise `<title>` porte un `data-i18n` classique.
+- `data-i18n-attr="content:home.seo.description"` : remplace un attribut. Utilisé pour `<meta name="description">`, `og:title` et `og:description`. La balise `<title>` porte un `data-i18n` classique.
 
-La fonction `applyLang(lang)` parcourt ces attributs, met à jour le sélecteur, mémorise le choix dans `localStorage` (`enerco.lang`), puis ré-applique la colorisation du nom Ener-Co et les coordonnées (chapitre 6).
+### Une URL par langue
 
-**Pour ajouter un texte traduit**, quatre gestes, tous obligatoires :
+Un moteur de recherche attribue une langue à une URL, pas à un visiteur. Tant que les trois langues partageaient la même adresse, seul le français était indexé et les traductions restaient invisibles. Chaque langue a donc son propre emplacement :
 
-1. dans la page, poser `data-i18n="ns.nouvelle.cle"` avec le texte français en contenu par défaut ;
+| Langue | Emplacement | Exemple |
+| :- | :- | :- |
+| français | racine du dépôt | `/expertise.html` |
+| anglais | dossier `en/` | `/en/expertise.html` |
+| italien | dossier `it/` | `/it/expertise.html` |
+
+Ces 22 fichiers sont **générés**, et versionnés dans le dépôt. Il n'y a pas d'étape de build sur Netlify : la commande reste vide dans `netlify.toml`, Netlify publie le dossier tel quel. Un déploiement ne peut donc pas échouer sur une erreur de script, propriété qu'on ne veut pas perdre.
+
+La langue est déduite de l'URL par `currentLang()`, jamais d'un choix mémorisé. **Rien n'est écrit dans `localStorage`** : un réglage mémorisé finirait par contredire l'adresse, et un visiteur ayant choisi le français verrait la page italienne réécrite en français après son chargement. Le sélecteur de langue ne traduit plus la page en place, il conduit à l'adresse de la langue voulue (`langUrl()`).
+
+**On ne redirige jamais selon la langue du navigateur.** Les robots Google explorent depuis les États-Unis : ils seraient renvoyés sur `/en/` et ne verraient jamais le français.
+
+Les chemins d'assets sont **absolus** (`/assets/site.css`). Un chemin relatif serait cherché dans `/it/assets/` depuis une page italienne, et la page sortirait sans style. Les liens entre pages, eux, restent relatifs et sans slash (`href="contact.html"`) : depuis `/it/` le navigateur les résout dans `/it/`, ce qui garde le visiteur dans sa langue sans aucune réécriture.
+
+### Régénérer après avoir touché au dictionnaire
+
+```
+node build-langues.js              génère les trois langues
+node build-langues.js verifier   n'écrit rien, échoue si le dépôt est périmé
+```
+
+Le script régénère **aussi les pages françaises**, volontairement : la page française est à la fois source et sortie, ce qui garantit que le texte écrit en dur dans le HTML ne peut pas diverger du dictionnaire. Sans cela l'écart passe inaperçu, et c'est le HTML que lit un robot, pas le dictionnaire.
+
+Il refuse d'écrire quoi que ce soit, même partiellement, si un contrôle échoue : dictionnaire dissymétrique, balise fermante introuvable, `data-i18n` imbriqués, attribut `lang` ou canonique absent, ou **un seul texte non remplacé**.
+
+Ce dernier contrôle est le plus utile, et il compte au lieu de se contenter d'un seuil. Une clé posée dans le HTML mais absente du dictionnaire laisse le texte en français dans les trois langues : il n'est traduisible par personne, ni par le code ni par la console, et la page se fait indexer comme un doublon sans que rien ne paraisse anormal à l'écran. Un contrôle du type « il reste au moins un remplacement » ne garderait rien, puisque chaque page porte des clés `nav.*` et `footer.*` toujours présentes : il serait toujours satisfait. Le générateur exige donc que **tous** les porteurs soient remplacés, et nomme la clé fautive.
+
+Les six refus ont été vérifiés en fabriquant chaque panne : chacun s'arrête, nomme le motif, et laisse le dépôt intact.
+
+Lancez `verifier` avant de pousser (chapitre 9). Si vous modifiez `site.js` sans régénérer, les visiteurs voient le bon texte, parce que `applyLang` repasse côté navigateur, mais **les robots lisent la version périmée**.
+
+**Pour ajouter un texte traduit**, cinq gestes, tous obligatoires :
+
+1. dans la page française, poser `data-i18n="ns.nouvelle.cle"` avec le texte français en contenu par défaut ;
 2. dans `site.js`, ajouter la clé dans les trois dictionnaires `fr`, `en`, `it` ;
 3. dans `content/textes/<page>.json`, ajouter une entrée `{ "cle": "ns.nouvelle.cle", "fr": …, "en": …, "it": … }` pour que la console la propose ;
-4. lancer le contrôle d'intégrité du chapitre 9.
+4. lancer `node build-langues.js` ;
+5. lancer le contrôle d'intégrité du chapitre 9.
 
-Si vous oubliez l'étape 3, le texte s'affiche mais n'est pas éditable par les collègues. Si vous oubliez une langue à l'étape 2, le contrôle d'intégrité vous arrête.
+Si vous oubliez l'étape 3, le texte s'affiche mais n'est pas éditable par les collègues. Si vous oubliez une langue à l'étape 2, le générateur vous arrête. Si vous oubliez l'étape 4, `verifier` vous arrête.
 
 ## 6 · La console et les surcharges de contenu
 
@@ -155,7 +194,15 @@ Les commits de la console et les vôtres se mélangent sur `main` : c'est voulu.
 
 ## 9 · Contrôles avant de pousser
 
-Trois contrôles, à lancer depuis la racine du dépôt. Ils prennent quelques secondes et ont évité plusieurs régressions.
+Quatre contrôles, à lancer depuis la racine du dépôt. Ils prennent quelques secondes et ont évité plusieurs régressions.
+
+**Fraîcheur des versions par langue** · le premier à lancer, et le seul qui soit automatique :
+
+```
+node build-langues.js verifier
+```
+
+Il n'écrit rien et sort en erreur si une page `en/` ou `it/`, une page française, ou `sitemap.xml` ne correspond plus au dictionnaire. Un échec se répare par `node build-langues.js`. Ne poussez pas sans ce contrôle : une page périmée s'affiche correctement pour un visiteur, parce que `applyLang` repasse côté navigateur, et reste fausse pour un robot d'indexation. Le défaut est donc invisible à l'œil.
 
 **Intégrité des langues et de la console** (Node) : le script suivant vérifie que `site.js` se charge, que les trois dictionnaires ont le même nombre de clés, qu'aucune clé utilisée dans une page n'est absente d'une langue, et que chaque clé utilisée existe dans un fichier de la console.
 
@@ -187,6 +234,10 @@ console.log('absentes de la console :', [...used].filter(k => !inJson.has(k)).jo
 - **Dépôt dans OneDrive** : copies de conflit, fichiers restaurés d'une autre machine, `.claude/launch.json` modifié dans votre dos. Jamais.
 - **Double tiret et tiret cadratin** : règle éditoriale du projet, aucun double tiret ni tiret cadratin dans les textes du site. Utiliser le point médian `·`, la virgule, ou reformuler.
 - **La surcharge JSON gagne** : voir chapitre 6. Modifier `site.js` seul ne suffit pas pour un texte déjà présent dans un JSON.
+- **Ne modifiez jamais `en/` ni `it/` à la main** : le prochain `node build-langues.js` écrasera votre travail sans prévenir. Modifiez la page française, puis régénérez.
+- **Une page périmée ne se voit pas à l'œil** : `applyLang` retraduit côté navigateur, donc l'écran est juste même quand le fichier est faux. Seuls les robots d'indexation lisent le fichier. C'est `verifier` qui le détecte, pas un regard sur l'écran.
+- **Chemins d'assets absolus obligatoires** (`/assets/…`) : un chemin relatif serait cherché dans `/it/assets/` depuis une page italienne. Les liens entre pages, au contraire, doivent rester relatifs et sans slash pour garder le visiteur dans sa langue.
+- **Redirection du formulaire** : `window.location.href = "merci.html"`, sans slash initial. Avec un slash, un envoi depuis `/it/contact.html` renverrait le visiteur sur la page française.
 - **Pages légales** : les valeurs contiennent des balises HTML (`<strong>`, `<br>`, `<a>`). Les cases EN et IT contiennent volontairement le texte français.
 - **Menu mobile** : dupliqué dans chaque page, traduit par les mêmes clés `nav.*` que le menu desktop.
 - **`@media (max-width)` s'applique aussi au papier** : une page A4 imprimée fait environ 700 px utiles. Toute règle destinée aux petits écrans doit être écrite `@media screen and (max-width: …)`, sinon elle s'applique à l'impression.

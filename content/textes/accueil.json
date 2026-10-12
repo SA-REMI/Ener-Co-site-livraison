@@ -56,15 +56,15 @@
     },
     {
       "cle": "home.stats.s2.dt",
-      "fr": "<span>7</span> pays",
-      "en": "<span>7</span> countries",
-      "it": "<span>7</span> paesi"
+      "fr": "<span>8</span> pays",
+      "en": "<span>8</span> countries",
+      "it": "<span>8</span> paesi"
     },
     {
       "cle": "home.stats.s2.dd",
-      "fr": "France · Italie · Allemagne · Pologne · Belgique · Espagne · Sénégal",
-      "en": "France · Italy · Germany · Poland · Belgium · Spain · Senegal",
-      "it": "Francia · Italia · Germania · Polonia · Belgio · Spagna · Senegal"
+      "fr": "France · Italie · Allemagne · Pologne · Belgique · Espagne · Sénégal · Côte d'Ivoire",
+      "en": "France · Italy · Germany · Poland · Belgium · Spain · Senegal · Ivory Coast",
+      "it": "Francia · Italia · Germania · Polonia · Belgio · Spagna · Senegal · Costa d'Avorio"
     },
     {
       "cle": "home.stats.s3.dt",
@@ -371,6 +371,12 @@
       "fr": "03 · Gaines à barres",
       "en": "03 · Busways",
       "it": "03 · Condotti sbarre"
+    },
+    {
+      "cle": "home.carte.alt",
+      "fr": "Carte des pays d'intervention Ener-Co · France, Europe, Sénégal, Côte d'Ivoire et Martinique",
+      "en": "Map of Ener-Co operating countries · France, Europe, Senegal, Ivory Coast and Martinique",
+      "it": "Mappa dei paesi di intervento Ener-Co · Francia, Europa, Senegal, Costa d'Avorio e Martinica"
     }
   ]
 }

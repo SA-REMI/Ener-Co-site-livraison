@@ -344,9 +344,9 @@
     },
     {
       "cle": "refs.seo.description",
-      "fr": "Références clients, partenaires intégrateurs et pays d'intervention d'Ener-Co. Certification MASE Rhône-Alpes. 7 pays couverts en Europe et à l'international.",
-      "en": "Ener-Co client references, integrator partners and countries of operation. MASE Rhône-Alpes certification. 7 countries covered in Europe and internationally.",
-      "it": "Referenze clienti, partner integratori e paesi di intervento di Ener-Co. Certificazione MASE Rhône-Alpes. 7 paesi coperti in Europa e a livello internazionale."
+      "fr": "Références clients, partenaires intégrateurs et pays d'intervention d'Ener-Co. Certification MASE Rhône-Alpes. 8 pays couverts en Europe et à l'international.",
+      "en": "Ener-Co client references, integrator partners and countries of operation. MASE Rhône-Alpes certification. 8 countries covered in Europe and internationally.",
+      "it": "Referenze clienti, partner integratori e paesi di intervento di Ener-Co. Certificazione MASE Rhône-Alpes. 8 paesi coperti in Europa e a livello internazionale."
     },
     {
       "cle": "refs.country.it.city",
@@ -389,6 +389,24 @@
       "fr": "MASE Rhône-Alpes",
       "en": "MASE Rhône-Alpes",
       "it": "MASE Rhône-Alpes"
+    },
+    {
+      "cle": "refs.country.ci",
+      "fr": "Côte d'Ivoire",
+      "en": "Ivory Coast",
+      "it": "Costa d'Avorio"
+    },
+    {
+      "cle": "refs.country.ci.city",
+      "fr": "Abidjan",
+      "en": "Abidjan",
+      "it": "Abidjan"
+    },
+    {
+      "cle": "refs.carte.alt",
+      "fr": "Carte des pays d'intervention Ener-Co · Europe, Afrique de l'Ouest et Caraïbes",
+      "en": "Map of Ener-Co operating countries · Europe, West Africa and the Caribbean",
+      "it": "Mappa dei paesi di intervento Ener-Co · Europa, Africa occidentale e Caraibi"
     }
   ]
 }

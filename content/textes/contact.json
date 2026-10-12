@@ -245,6 +245,12 @@
       "fr": "Contactez Ener-Co pour une étude technique, un chiffrage ou un raccordement puissance. Siège social à Vaulx-en-Velin, interventions France, Europe et à l'international.",
       "en": "Contact Ener-Co for a technical study, a quotation or a power connection. Head office in Vaulx-en-Velin, operations in France, Europe and internationally.",
       "it": "Contattate Ener-Co per uno studio tecnico, un preventivo o un collegamento di potenza. Sede a Vaulx-en-Velin, interventi in Francia, Europa e a livello internazionale."
+    },
+    {
+      "cle": "contact.form.erreur",
+      "fr": "L'envoi a échoué. Vérifiez votre connexion et réessayez, ou contactez-nous directement par email.",
+      "en": "Sending failed. Check your connection and try again, or contact us directly by email.",
+      "it": "Invio non riuscito. Verifichi la connessione e riprovi, oppure ci contatti direttamente via email."
     }
   ]
 }

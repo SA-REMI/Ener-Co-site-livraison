@@ -98,9 +98,9 @@
     },
     {
       "cle": "legal.b15",
-      "fr": "<strong>OVH SAS</strong><br> 2 rue Kellermann, 59100 Roubaix, France<br> Téléphone&nbsp;: <a href=\"tel:+33972101007\">+33&nbsp;(0)9&nbsp;72&nbsp;10&nbsp;10&nbsp;07</a><br> Site web&nbsp;: <a href=\"https://www.ovhcloud.com\" target=\"_blank\" rel=\"noopener\">www.ovhcloud.com</a>",
-      "en": "<strong>OVH SAS</strong><br> 2 rue Kellermann, 59100 Roubaix, France<br> Téléphone&nbsp;: <a href=\"tel:+33972101007\">+33&nbsp;(0)9&nbsp;72&nbsp;10&nbsp;10&nbsp;07</a><br> Site web&nbsp;: <a href=\"https://www.ovhcloud.com\" target=\"_blank\" rel=\"noopener\">www.ovhcloud.com</a>",
-      "it": "<strong>OVH SAS</strong><br> 2 rue Kellermann, 59100 Roubaix, France<br> Téléphone&nbsp;: <a href=\"tel:+33972101007\">+33&nbsp;(0)9&nbsp;72&nbsp;10&nbsp;10&nbsp;07</a><br> Site web&nbsp;: <a href=\"https://www.ovhcloud.com\" target=\"_blank\" rel=\"noopener\">www.ovhcloud.com</a>"
+      "fr": "<strong>Netlify, Inc.</strong><br> 512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis<br> Site web&nbsp;: <a href=\"https://www.netlify.com\" target=\"_blank\" rel=\"noopener\">www.netlify.com</a><br> Le nom de domaine ener-co.fr est enregistré auprès d'OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.",
+      "en": "<strong>Netlify, Inc.</strong><br> 512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis<br> Site web&nbsp;: <a href=\"https://www.netlify.com\" target=\"_blank\" rel=\"noopener\">www.netlify.com</a><br> Le nom de domaine ener-co.fr est enregistré auprès d'OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.",
+      "it": "<strong>Netlify, Inc.</strong><br> 512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis<br> Site web&nbsp;: <a href=\"https://www.netlify.com\" target=\"_blank\" rel=\"noopener\">www.netlify.com</a><br> Le nom de domaine ener-co.fr est enregistré auprès d'OVH SAS, 2 rue Kellermann, 59100 Roubaix, France."
     },
     {
       "cle": "legal.b16",
@@ -164,9 +164,9 @@
     },
     {
       "cle": "legal.b26",
-      "fr": "Dernière mise à jour&nbsp;: avril 2026.",
-      "en": "Dernière mise à jour&nbsp;: avril 2026.",
-      "it": "Dernière mise à jour&nbsp;: avril 2026."
+      "fr": "Dernière mise à jour&nbsp;: octobre 2026.",
+      "en": "Dernière mise à jour&nbsp;: octobre 2026.",
+      "it": "Dernière mise à jour&nbsp;: octobre 2026."
     }
   ]
 }

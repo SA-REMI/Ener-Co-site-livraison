@@ -1,63 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ener-co.fr/contact.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://ener-co.fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/"/>
+    <lastmod>2026-10-12</lastmod>
   </url>
   <url>
-    <loc>https://ener-co.fr/engagements.html</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://ener-co.fr/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/it/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/"/>
+    <lastmod>2026-10-12</lastmod>
   </url>
   <url>
     <loc>https://ener-co.fr/expertise.html</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/expertise.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/expertise.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/expertise.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/expertise.html"/>
+    <lastmod>2026-10-12</lastmod>
   </url>
   <url>
-    <loc>https://ener-co.fr/</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://ener-co.fr/en/expertise.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/expertise.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/expertise.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/expertise.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/expertise.html"/>
+    <lastmod>2026-10-12</lastmod>
   </url>
   <url>
-    <loc>https://ener-co.fr/mentions-legales.html</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://ener-co.fr/politique-de-confidentialite.html</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://ener-co.fr/realisations.html</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ener-co.fr/recrutement.html</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ener-co.fr/references.html</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://ener-co.fr/it/expertise.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/expertise.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/expertise.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/expertise.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/expertise.html"/>
+    <lastmod>2026-10-12</lastmod>
   </url>
   <url>
     <loc>https://ener-co.fr/secteurs.html</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/secteurs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/secteurs.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/secteurs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/secteurs.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/en/secteurs.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/secteurs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/secteurs.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/secteurs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/secteurs.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/it/secteurs.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/secteurs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/secteurs.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/secteurs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/secteurs.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/realisations.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/realisations.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/realisations.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/realisations.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/realisations.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/en/realisations.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/realisations.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/realisations.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/realisations.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/realisations.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/it/realisations.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/realisations.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/realisations.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/realisations.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/realisations.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/references.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/references.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/references.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/references.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/references.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/en/references.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/references.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/references.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/references.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/references.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/it/references.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/references.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/references.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/references.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/references.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/engagements.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/engagements.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/engagements.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/engagements.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/engagements.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/en/engagements.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/engagements.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/engagements.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/engagements.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/engagements.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/it/engagements.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/engagements.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/engagements.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/engagements.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/engagements.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/recrutement.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/recrutement.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/recrutement.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/recrutement.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/recrutement.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/en/recrutement.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/recrutement.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/recrutement.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/recrutement.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/recrutement.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/it/recrutement.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/recrutement.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/recrutement.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/recrutement.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/recrutement.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/contact.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/contact.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/it/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/contact.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/mentions-legales.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/mentions-legales.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/en/mentions-legales.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/mentions-legales.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/it/mentions-legales.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/mentions-legales.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/politique-de-confidentialite.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/politique-de-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/politique-de-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/politique-de-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/politique-de-confidentialite.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/en/politique-de-confidentialite.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/politique-de-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/politique-de-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/politique-de-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/politique-de-confidentialite.html"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://ener-co.fr/it/politique-de-confidentialite.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ener-co.fr/politique-de-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ener-co.fr/en/politique-de-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ener-co.fr/it/politique-de-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ener-co.fr/politique-de-confidentialite.html"/>
+    <lastmod>2026-10-12</lastmod>
   </url>
 </urlset>
