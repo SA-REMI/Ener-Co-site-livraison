@@ -97,6 +97,22 @@ La langue est déduite de l'URL par `currentLang()`, jamais d'un choix mémoris�
 
 Les chemins d'assets sont **absolus** (`/assets/site.css`). Un chemin relatif serait cherché dans `/it/assets/` depuis une page italienne, et la page sortirait sans style. Les liens entre pages, eux, restent relatifs et sans slash (`href="contact.html"`) : depuis `/it/` le navigateur les résout dans `/it/`, ce qui garde le visiteur dans sa langue sans aucune réécriture.
 
+### Les données structurées, et pourquoi `data-ld` est un attribut
+
+Le contenu d'une balise `<script type="application/ld+json">` n'est pas du HTML : ni `data-i18n` ni `data-i18n-attr` ne l'atteignent. Sans traitement, la page italienne déclarerait à Google un fil d'Ariane en français et des adresses pointant vers la version française.
+
+Les modèles vivent donc dans `build-langues.js`, dans la constante `MODELES`, et la page ne porte qu'une balise vide :
+
+```html
+<script type="application/ld+json" data-ld="fil"></script>
+```
+
+Trois modèles existent : `entreprise` (accueil), `fil` (fil d'Ariane, sur chaque page métier) et `service` (catalogue des six domaines, sur la page expertise). Le générateur remplit le corps à chaque passage, en résolvant deux marques : `@i18n:<clé>` donne la valeur du dictionnaire, `@base` donne la racine de la langue (`https://ener-co.fr` ou `https://ener-co.fr/it`).
+
+**Le modèle doit vivre dans un attribut, jamais dans le corps.** La page française est à la fois source et sortie : une marque placée dans le corps serait résolue puis écrite dans sa propre source, donc détruite. Au passage suivant il n'y aurait plus rien à traduire et les pages anglaise et italienne recevraient les valeurs françaises, sans aucun message. C'est exactement pour cette raison que `data-i18n` est un attribut, et `data-ld` suit le même principe.
+
+L'offre d'emploi de `recrutement.html` ne porte pas de `data-ld` : elle est laissée telle quelle. Seules les balises porteuses de l'attribut sont réécrites.
+
 ### Régénérer après avoir touché au dictionnaire
 
 ```

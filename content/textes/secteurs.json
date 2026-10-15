@@ -626,15 +626,15 @@
     },
     {
       "cle": "sect.seo.title",
-      "fr": "Secteurs d'intervention | Ener-Co",
-      "en": "Sectors | Ener-Co",
-      "it": "Settori di intervento | Ener-Co"
+      "fr": "Secteurs · data centers, industrie lourde, énergie | Ener-Co",
+      "en": "Sectors · data centres, heavy industry, energy | Ener-Co",
+      "it": "Settori · data center, industria pesante, energia | Ener-Co"
     },
     {
       "cle": "sect.seo.description",
-      "fr": "Ener-Co intervient sur data centers, industrie lourde, pharma, énergie, nucléaire, utilités, agroalimentaire, chimie et aéronautique. Distribution d'énergie industrielle.",
-      "en": "Ener-Co operates in data centres, heavy industry, pharma, energy, nuclear, utilities, food processing, chemicals and aerospace. Industrial power distribution.",
-      "it": "Ener-Co interviene in data center, industria pesante, farmaceutica, energia, nucleare, utility, agroalimentare, chimica e aeronautica. Distribuzione di energia industriale."
+      "fr": "Data centers, industrie lourde, pharmacie, énergie, nucléaire, utilités, agroalimentaire, chimie et aéronautique. Distribution d'énergie industrielle.",
+      "en": "Data centres, heavy industry, pharmaceuticals, energy, nuclear, utilities, food processing, chemicals and aerospace. Industrial power distribution.",
+      "it": "Data center, industria pesante, farmaceutica, energia, nucleare, utility, agroalimentare, chimica e aeronautica. Distribuzione di energia industriale."
     }
   ]
 }

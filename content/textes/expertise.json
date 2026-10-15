@@ -248,15 +248,15 @@
     },
     {
       "cle": "exp.seo.title",
-      "fr": "Expertise · HTA, TGBT, gaines à barres | Ener-Co",
-      "en": "Expertise · MV, LV, busways | Ener-Co",
-      "it": "Competenze · MT, BT, condotti sbarre | Ener-Co"
+      "fr": "Gaines à barres, HTA, TGBT · notre expertise | Ener-Co",
+      "en": "Busways, MV and LV switchgear · our expertise | Ener-Co",
+      "it": "Condotti sbarre, MT, BT · le nostre competenze | Ener-Co"
     },
     {
       "cle": "exp.seo.description",
-      "fr": "Périmètre d'intervention Ener-Co : haute tension, alimentations TGBT, tableaux, gaines à barres, raccordements puissance et mise sous tension. Sans sous-traitance.",
-      "en": "Ener-Co's scope of work: medium voltage, LV feeders, switchboards, busways, power connections and energisation. No subcontracting.",
-      "it": "Perimetro di intervento Ener-Co: media tensione, alimentazioni BT, quadri, condotti sbarre, collegamenti di potenza e messa in tensione. Senza subappalto."
+      "fr": "Haute tension, alimentations TGBT, tableaux, gaines à barres, raccordements puissance et mise sous tension. Tout est exécuté sans sous-traitance.",
+      "en": "Medium voltage, LV feeders, switchboards, busways, power connections and energisation. Everything delivered in house, with no subcontracting.",
+      "it": "Media tensione, alimentazioni BT, quadri, condotti sbarre, collegamenti di potenza e messa in tensione. Tutto eseguito senza subappalto."
     },
     {
       "cle": "exp.scope.n1",

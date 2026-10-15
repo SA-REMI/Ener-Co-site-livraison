@@ -338,15 +338,15 @@
     },
     {
       "cle": "refs.seo.title",
-      "fr": "Références · clients, partenaires, qualification MASE | Ener-Co",
-      "en": "References · clients, partners, MASE qualification | Ener-Co",
-      "it": "Referenze · clienti, partner, qualifica MASE | Ener-Co"
+      "fr": "Références clients et qualification MASE | Ener-Co",
+      "en": "Client references and MASE qualification | Ener-Co",
+      "it": "Referenze clienti e qualifica MASE | Ener-Co"
     },
     {
       "cle": "refs.seo.description",
-      "fr": "Références clients, partenaires intégrateurs et pays d'intervention d'Ener-Co. Certification MASE Rhône-Alpes. 8 pays couverts en Europe et à l'international.",
-      "en": "Ener-Co client references, integrator partners and countries of operation. MASE Rhône-Alpes certification. 8 countries covered in Europe and internationally.",
-      "it": "Referenze clienti, partner integratori e paesi di intervento di Ener-Co. Certificazione MASE Rhône-Alpes. 8 paesi coperti in Europa e a livello internazionale."
+      "fr": "Références clients, partenaires intégrateurs et pays d'intervention. Certification MASE Rhône-Alpes. 8 pays couverts en Europe et à l'international.",
+      "en": "Client references, integrator partners and countries of operation. MASE Rhône-Alpes certification. 8 countries covered in Europe and worldwide.",
+      "it": "Referenze clienti, partner integratori e paesi di intervento. Certificazione MASE Rhône-Alpes. 8 paesi coperti in Europa e nel mondo."
     },
     {
       "cle": "refs.country.it.city",

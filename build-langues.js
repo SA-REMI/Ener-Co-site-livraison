@@ -251,6 +251,133 @@ function substituerAttributs(html, dict, journal) {
 }
 
 /* ---------------------------------------------------------------------------
+   5 bis · DONNEES STRUCTUREES
+   Le contenu d'une balise <script type="application/ld+json"> n'est pas du HTML :
+   ni data-i18n ni data-i18n-attr ne l'atteignent. Sans traitement, une page
+   italienne declarerait a Google un fil d'Ariane en francais et des adresses
+   pointant vers la version francaise.
+
+   On y reconnait deux marques :
+     @i18n:<cle>   remplacee par la valeur du dictionnaire, echappee pour JSON
+     @base         racine de la langue courante, sans barre finale
+                   (https://ener-co.fr en francais, https://ener-co.fr/it en italien)
+
+   Une marque qui survit est une erreur : elle partirait telle quelle dans le
+   JSON livre aux moteurs. On les compte, et on refuse d'ecrire s'il en reste.
+--------------------------------------------------------------------------- */
+/* Les modeles vivent ICI et non dans le corps des balises, pour une raison
+   precise : la page francaise est a la fois source et sortie. Si le modele
+   vivait dans le corps, le generateur le detruirait en le resolvant, et au
+   passage suivant les pages anglaise et italienne recevraient les valeurs
+   francaises, sans que rien ne le signale. Un data-i18n survit parce que la
+   cle vit dans un ATTRIBUT ; on applique le meme principe avec data-ld. */
+const NAV_DE_PAGE = {
+  'expertise.html': 'nav.expertise',
+  'secteurs.html': 'nav.secteurs',
+  'realisations.html': 'nav.realisations',
+  'references.html': 'nav.references',
+  'engagements.html': 'nav.engagements',
+  'recrutement.html': 'nav.recrutement',
+  'contact.html': 'nav.contact',
+};
+const PAYS_SERVIS = ['FR', 'IT', 'DE', 'PL', 'BE', 'ES', 'SN', 'CI', 'MQ'];
+const ID_ENTREPRISE = SITE + '/#entreprise';
+const DOMAINES = ['exp.s1.h', 'exp.s2.h', 'exp.s3.h', 'exp.s4.h', 'exp.s5.h', 'exp.s6.h'];
+
+const MODELES = {
+  entreprise: () => ({
+    '@context': 'https://schema.org',
+    '@type': 'ElectricalContractor',
+    '@id': ID_ENTREPRISE,
+    name: 'Ener-Co',
+    legalName: 'Ener-Co SAS',
+    url: '@base/',
+    logo: SITE + '/assets/enerco-logo.png',
+    image: SITE + '/assets/images/siderurgie/siderurgie-1.jpg',
+    description: '@i18n:home.seo.description',
+    telephone: '+33426076779',
+    email: 'contact@ener-co.fr',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '11 rue Sigmund Freud',
+      postalCode: '69120',
+      addressLocality: 'Vaulx-en-Velin',
+      addressCountry: 'FR',
+      addressRegion: 'Auvergne-Rhône-Alpes',
+    },
+    areaServed: PAYS_SERVIS,
+    knowsAbout: DOMAINES.map((k) => '@i18n:' + k),
+  }),
+  fil: (page) => ({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '@i18n:nav.home', item: '@base/' },
+      { '@type': 'ListItem', position: 2, name: '@i18n:' + NAV_DE_PAGE[page], item: '@base/' + page },
+    ],
+  }),
+  service: () => ({
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: '@i18n:nav.expertise',
+    description: '@i18n:exp.seo.description',
+    serviceType: '@i18n:exp.s4.h',
+    provider: { '@id': ID_ENTREPRISE },
+    areaServed: PAYS_SERVIS,
+    url: '@base/expertise.html',
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: '@i18n:nav.expertise',
+      itemListElement: DOMAINES.map((k) => ({
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: '@i18n:' + k },
+      })),
+    },
+  }),
+};
+
+function substituerDonneesStructurees(html, dict, lang, page, journal) {
+  const racine = SITE + (DOSSIER[lang] ? '/' + DOSSIER[lang] : '');
+
+  // Seules les balises porteuses de data-ld sont reecrites. Les autres, comme
+  // l'offre d'emploi du recrutement, sont laissees telles quelles.
+  html = html.replace(/<script type="application\/ld\+json" data-ld="([a-z]+)">([\s\S]*?)<\/script>/gi,
+    (tout, nom) => {
+      const modele = MODELES[nom];
+      if (!modele) { journal.erreurs.push('modele de donnees structurees inconnu : ' + nom); return tout; }
+      if (nom === 'fil' && !NAV_DE_PAGE[page]) {
+        journal.erreurs.push("fil d'Ariane demande sur une page sans libelle de navigation : " + page);
+        return tout;
+      }
+      const corps = '\n' + JSON.stringify(modele(page), null, 2) + '\n';
+      let neuf = corps.replace(/@i18n:([A-Za-z0-9_.]+)/g, (_m, cle) => {
+        const v = dict[cle];
+        if (v === undefined) { journal.clesAbsentes.push(cle); return _m; }
+        // Le JSON-LD n'est pas du HTML : une entite comme &amp; y resterait
+        // litterale et Google lirait "Tableaux &amp; departs". On decode.
+        const clair = String(v)
+          .replace(/&nbsp;/g, ' ').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+          .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&');
+        // JSON.stringify ajoute les guillemets : la marque vit deja entre
+        // guillemets dans le document, on ne garde donc que le contenu echappe.
+        journal.structurees++;
+        return JSON.stringify(clair).slice(1, -1);
+      });
+      neuf = neuf.replace(/@base/g, () => { journal.structurees++; return racine; });
+      // L'attribut data-ld est reecrit tel quel : c'est lui qui permettra au
+      // passage suivant de reconstruire le bloc. Le perdre rendrait la page
+      // francaise impossible a retraduire.
+      return '<script type="application/ld+json" data-ld="' + nom + '">' + neuf + '  </script>';
+    });
+
+  // GARDE · aucune marque ne doit subsister, y compris hors des blocs traites.
+  for (const m of html.matchAll(/@i18n:[A-Za-z0-9_.]+|@base/g)) {
+    journal.erreurs.push('marque non resolue dans les donnees structurees : ' + m[0]);
+  }
+  return html;
+}
+
+/* ---------------------------------------------------------------------------
    6 · EN-TETES PAR LANGUE
    Canonique propre a la langue, jeu de hreflang reciproque et x-default sur le
    francais. Le bloc est d'abord retire puis reecrit, pour que relancer le
@@ -322,7 +449,7 @@ function produire() {
   console.log('Dictionnaire · ' + nbCles + ' cles x ' + LANGUES.length + ' langues\n');
 
   const aEcrire = [];
-  const journalGlobal = { porteurs: 0, remplaces: 0, attributs: 0, hreflang: 0, clesAbsentes: [], erreurs: [] };
+  const journalGlobal = { porteurs: 0, remplaces: 0, attributs: 0, hreflang: 0, structurees: 0, clesAbsentes: [], erreurs: [] };
 
   const taches = [];
   for (const page of INDEXABLES) for (const l of LANGUES) taches.push({ page, lang: l, indexable: true });
@@ -333,11 +460,12 @@ function produire() {
     const source = path.join(RACINE, page);
     if (!fs.existsSync(source)) { journalGlobal.erreurs.push('page absente : ' + page); continue; }
 
-    const journal = { porteurs: 0, remplaces: 0, attributs: 0, hreflang: 0, clesAbsentes: [], erreurs: [] };
+    const journal = { porteurs: 0, remplaces: 0, attributs: 0, hreflang: 0, structurees: 0, clesAbsentes: [], erreurs: [] };
     let html = fs.readFileSync(source, 'utf8');
     controlerImbrication(html, journal);
     html = substituerTextes(html, dict[lang], journal);
     html = substituerAttributs(html, dict[lang], journal);
+    html = substituerDonneesStructurees(html, dict[lang], lang, page, journal);
     html = entetes(html, lang, page, indexable, journal);
 
     /* GARDE · tout porteur data-i18n doit avoir ete remplace.
@@ -367,7 +495,7 @@ function produire() {
       : path.join(RACINE, page);
     aEcrire.push({ cible, html, page, lang, journal });
 
-    for (const k of ['porteurs', 'remplaces', 'attributs', 'hreflang']) journalGlobal[k] += journal[k];
+    for (const k of ['porteurs', 'remplaces', 'attributs', 'hreflang', 'structurees']) journalGlobal[k] += journal[k];
     journalGlobal.clesAbsentes.push(...journal.clesAbsentes);
     journalGlobal.erreurs.push(...journal.erreurs);
   }
@@ -396,6 +524,7 @@ function produire() {
   console.log('Textes remplaces    ' + journalGlobal.remplaces + ' / ' + journalGlobal.porteurs + ' porteurs');
   console.log('Attributs ecrits    ' + journalGlobal.attributs);
   console.log('Jeux de hreflang    ' + journalGlobal.hreflang);
+  console.log('Donnees structurees ' + journalGlobal.structurees + ' marque(s) resolue(s)');
 
   if (VERIFIER) {
     console.log('\nVERIFICATION · fichiers perimes : ' + perimes);

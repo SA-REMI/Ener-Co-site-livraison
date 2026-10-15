@@ -266,15 +266,15 @@
     },
     {
       "cle": "recrut.seo.title",
-      "fr": "Recrutement · offres d'emploi | Ener-Co",
-      "en": "Careers · job offers | Ener-Co",
-      "it": "Lavora con noi · offerte di lavoro | Ener-Co"
+      "fr": "Recrutement · électricien HTA/BT, chef d'équipe | Ener-Co",
+      "en": "Careers · MV/LV electrician and team leader jobs | Ener-Co",
+      "it": "Lavora con noi · elettricista MT/BT, capo squadra | Ener-Co"
     },
     {
       "cle": "recrut.seo.description",
-      "fr": "Ener-Co recrute. Offres d'emploi techniques en distribution d'énergie industrielle : chef d'équipe montage, électricien HTA/BT, technicien chantier. Auvergne-Rhône-Alpes.",
-      "en": "Ener-Co is hiring. Technical jobs in industrial power distribution: assembly team leader, MV/LV electrician, site technician. Auvergne-Rhône-Alpes.",
-      "it": "Ener-Co assume. Offerte di lavoro tecniche nella distribuzione di energia industriale: capo squadra montaggio, elettricista MT/BT, tecnico di cantiere. Auvergne-Rhône-Alpes."
+      "fr": "Ener-Co recrute en distribution d'énergie industrielle : chef d'équipe montage, électricien HTA/BT, technicien chantier. Auvergne-Rhône-Alpes.",
+      "en": "Ener-Co is hiring in industrial power distribution: assembly team leader, MV/LV electrician, site technician. Auvergne-Rhône-Alpes, France.",
+      "it": "Ener-Co assume nella distribuzione di energia industriale: capo squadra montaggio, elettricista MT/BT, tecnico di cantiere. Auvergne-Rhône-Alpes."
     }
   ]
 }
