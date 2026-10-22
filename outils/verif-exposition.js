@@ -58,6 +58,15 @@ const PUBLIC_LEGITIME = [
   /^_redirects$/,
 ];
 
+/* Un document n'est jamais une ressource de page, ou qu'il soit range.
+   Le 22 octobre 2026, une brochure PDF de 856 ko dormait dans assets/,
+   telechargeable par qui connaissait l'adresse et liee depuis aucune page.
+   Elle annoncait six pays quand le site en declarait huit. La liste ci-dessus
+   couvrait tout assets/ sans distinction : elle ne l'a jamais signalee.
+   Un document qui doit etre public se place et se lie volontairement ; tant
+   qu'il n'est pas lie, il est oublie, et un oubli se perime. */
+const DOCUMENTS = /\.(pdf|docx?|xlsx?|pptx?|odt|ods|zip|rar|7z|csv|md)$/i;
+
 const demander = (chemin) => new Promise((ok) => {
   const req = https.get({ host: HOTE, path: '/' + chemin, timeout: 20000 }, (r) => {
     let taille = 0;
@@ -71,7 +80,8 @@ const demander = (chemin) => new Promise((ok) => {
 (async () => {
   const fichiers = execSync('git ls-files', { cwd: RACINE, encoding: 'utf8' })
     .split('\n').map((s) => s.trim()).filter(Boolean);
-  const aTester = fichiers.filter((f) => !PUBLIC_LEGITIME.some((re) => re.test(f)));
+  const aTester = fichiers.filter((f) =>
+    DOCUMENTS.test(f) || !PUBLIC_LEGITIME.some((re) => re.test(f)));
 
   console.log('Hote interroge        ' + HOTE);
   console.log('Fichiers versionnes   ' + fichiers.length);
