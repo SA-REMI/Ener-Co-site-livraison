@@ -24,12 +24,49 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
+# ATTENTION · force = true est INDISPENSABLE sur toutes les regles qui bloquent
+# un fichier EXISTANT. Sur Netlify, un fichier present dans le dossier publie
+# l'emporte sur une redirection : sans force, la regle est ecrite, deployee, et
+# ne s'applique jamais. Les fichiers ci-dessous etaient servis en clair malgre
+# leurs regles, constate le 22 octobre 2026.
+#
+# Le piege se double d'un piege de recette : tester "/legacy/n-importe-quoi"
+# renvoie bien 404, parce que ce chemin n'existe pas. Seul le VRAI chemin du
+# fichier teste la regle. Voir outils/verif-exposition.js.
+
 # Le dossier legacy (ancien contact.php conserve pour archive) n'est pas servi.
 # Netlify n'execute pas le PHP : sans cette regle le code source serait visible.
 [[redirects]]
   from = "/legacy/*"
   to = "/404.html"
   status = 404
+  force = true
+
+# Les outils de generation ne sont pas des pages.
+[[redirects]]
+  from = "/outils/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/build-langues.js"
+  to = "/404.html"
+  status = 404
+  force = true
+
+# Documents de travail internes, versionnes mais non publies.
+[[redirects]]
+  from = "/GUIDE-REPRISE-TECHNIQUE.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/BRIEF-INTEGRATION.md"
+  to = "/404.html"
+  status = 404
+  force = true
 
 # Les anciennes URL du traitement PHP redirigent vers la page contact
 [[redirects]]
@@ -43,6 +80,7 @@
   from = "/docs/*"
   to = "/404.html"
   status = 404
+  force = true
 
 # L'ancienne adresse publique du guide ne repond plus.
 [[redirects]]

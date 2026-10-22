@@ -220,6 +220,19 @@ node build-langues.js verifier
 
 Il n'écrit rien et sort en erreur si une page `en/` ou `it/`, une page française, ou `sitemap.xml` ne correspond plus au dictionnaire. Un échec se répare par `node build-langues.js`. Ne poussez pas sans ce contrôle : une page périmée s'affiche correctement pour un visiteur, parce que `applyLang` repasse côté navigateur, et reste fausse pour un robot d'indexation. Le défaut est donc invisible à l'œil.
 
+**Exposition des fichiers internes** · à lancer **après** le déploiement, pas avant :
+
+```
+node outils/verif-exposition.js
+```
+
+Il demande à git la liste des fichiers versionnés, retire ceux qui ont vocation à être publics, et vérifie que tous les autres répondent autre chose que 200 sur le site en ligne.
+
+Deux pièges, découverts le 22 octobre 2026, quand cinq fichiers internes étaient servis en clair malgré leurs règles :
+
+- **Sur Netlify, un fichier présent dans le dossier publié l'emporte sur une redirection.** Toute règle qui bloque un fichier existant doit porter `force = true`, sinon elle est écrite, déployée, et ne s'applique jamais.
+- **Une telle règle ne se teste que sur le vrai chemin du fichier.** Tester `/legacy/n-importe-quoi` renvoie 404 parce que ce chemin n'existe pas, et le contrôle passe au vert alors que `/legacy/contact.php` reste accessible.
+
 **Intégrité des langues et de la console** (Node) : le script suivant vérifie que `site.js` se charge, que les trois dictionnaires ont le même nombre de clés, qu'aucune clé utilisée dans une page n'est absente d'une langue, et que chaque clé utilisée existe dans un fichier de la console.
 
 ```js
